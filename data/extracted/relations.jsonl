@@ -570,3 +570,128 @@
 {"rel":"person_relation","person_a":"shaikh-fazlullah-nuri","person_b":"bihbahani-sayyid-abdullah","type":"rival","note_en":"Political rivals long before the revolution, and adversaries throughout it.","note_fa":"رقیبان سیاسی از مدت‌ها پیش از انقلاب و دشمنان در سراسر آن."}
 {"rel":"person_relation","person_a":"shaikh-fazlullah-nuri","person_b":"ain-al-dawlah","type":"ally","note_en":"Nuri backed 'Ain al-Dawlah's policies after receiving the court litigation.","note_fa":"نوری پس از گرفتن مرافعات دربار از سیاست‌های عین‌الدوله پشتیبانی کرد."}
 {"rel":"person_relation","person_a":"najmabadi-shaikh-hadi","person_b":"malkum-khan","type":"collaborator","note_en":"Najmabadi belonged to Malkum Khan's Faramushkhanah.","note_fa":"نجم‌آبادی از اعضای فراموش‌خانهٔ ملکم‌خان بود."}
+{"rel": "person_group", "person_id": "sayyid-aqa-tirfurush", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the wood sellers, carpenters, chair makers, turners, straw plaiters", "role_fa": "نمایندهٔ چوب‌فروشان، نجاران، صندلی‌سازان، خراطان، حصیربافان"}
+{"rel": "person_group", "person_id": "sayyid-aqa-tirfurush", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "muhammad-ibrahim-varis", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the linen drapers, silk sellers, peddlers", "role_fa": "نمایندهٔ کرباس‌فروشان، ابریشم‌فروشان، دوره‌گردان"}
+{"rel": "person_group", "person_id": "muhammad-ibrahim-varis", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "muhammad-taqi-bunakdar", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the linen drapers", "role_fa": "نمایندهٔ کرباس‌فروشان"}
+{"rel": "person_group", "person_id": "muhammad-taqi-bunakdar", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "ibrahim-khaiyatbashi", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the tailors, cloakmakers, dressmakers, embroiderers", "role_fa": "نمایندهٔ خیاطان، عباودوزان، لباس‌دوزان، گلدوزان"}
+{"rel": "person_group", "person_id": "ibrahim-khaiyatbashi", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "sayyid-ahmad-zargarbashi", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the goldsmiths, blacksmiths, tinmen", "role_fa": "نمایندهٔ زرگران، آهنگران، حلبی‌سازان"}
+{"rel": "person_group", "person_id": "sayyid-ahmad-zargarbashi", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "shaikh-ibrahim-bulurfurush", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the crystal sellers, window cutters", "role_fa": "نمایندهٔ بلورفروشان، شیشه‌بران"}
+{"rel": "person_group", "person_id": "shaikh-ibrahim-bulurfurush", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "amin-al-tujjar-mir-abd-al-mutallib", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the butchers, tanners, chicken sellers, lamb sellers", "role_fa": "نمایندهٔ قصابان، دباغان، مرغ‌فروشان، بره‌فروشان"}
+{"rel": "person_group", "person_id": "amin-al-tujjar-mir-abd-al-mutallib", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "muhammad-baqir-baqqal", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the grocers, cereals and legumes dealers, nut sellers, fruit sellers, forage sellers, rice sellers", "role_fa": "نمایندهٔ بقالان، غله و حبوبات‌فروشان، خشکبارفروشان، میوه‌فروشان، علاف‌ها، برنج‌فروشان"}
+{"rel": "person_group", "person_id": "muhammad-baqir-baqqal", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "hasan-ali-alaqiband", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the lace sellers, gold embroiderers, galloon weavers and sewers", "role_fa": "نمایندهٔ یراق‌فروشان، زردوزان، قیطان‌بافان و قیطان‌دوزان"}
+{"rel": "person_group", "person_id": "hasan-ali-alaqiband", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "hasan-panjah-ali-mimar", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the well cleaners, master builders, brick burners, brickmakers, ceramic and jug makers", "role_fa": "نمایندهٔ مقنیان، معماران، آجرپزان، خشت‌مالان، سفالگران و کوزه‌گران"}
+{"rel": "person_group", "person_id": "hasan-panjah-ali-mimar", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "mulla-hasan-varis", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the brokers", "role_fa": "نمایندهٔ دلالان"}
+{"rel": "person_group", "person_id": "mulla-hasan-varis", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "husain-burujirdi-guild", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the blacksmiths, horseshoe makers, nail makers, balustrade makers", "role_fa": "نمایندهٔ آهنگران، نعل‌بندان، میخ‌سازان، نرده‌سازان"}
+{"rel": "person_group", "person_id": "husain-burujirdi-guild", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "husain-tihrani-saqatfurush", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the grocers, sugar and tea sellers", "role_fa": "نمایندهٔ بقالان، قند و چای‌فروشان"}
+{"rel": "person_group", "person_id": "husain-tihrani-saqatfurush", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "husain-ali-urusiduz", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the shoemakers, cobblers", "role_fa": "نمایندهٔ کفاشان، پینه‌دوزان"}
+{"rel": "person_group", "person_id": "husain-ali-urusiduz", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "abbas-quli-nanva", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the bakers, forage sellers", "role_fa": "نمایندهٔ نانوایان، علاف‌ها"}
+{"rel": "person_group", "person_id": "abbas-quli-nanva", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "abd-al-vahhab-kulahduz", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the hat makers, furriers", "role_fa": "نمایندهٔ کلاه‌دوزان، پوستین‌دوزان"}
+{"rel": "person_group", "person_id": "abd-al-vahhab-kulahduz", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "ali-akbar-tabbakh", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the rice cookers, cooks, gravy cookers", "role_fa": "نمایندهٔ چلوپزان، طباخان، آبگوشت‌پزان"}
+{"rel": "person_group", "person_id": "ali-akbar-tabbakh", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "sayyid-muhammad-saatsaz", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the watchmakers", "role_fa": "نمایندهٔ ساعت‌سازان"}
+{"rel": "person_group", "person_id": "sayyid-muhammad-saatsaz", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "ghulam-riza-yakhdansaz", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the trunk makers, saddle makers, quiver makers, veil makers", "role_fa": "نمایندهٔ یخدان‌سازان، زین‌سازان، ترکش‌دوزان، چادردوزان"}
+{"rel": "person_group", "person_id": "ghulam-riza-yakhdansaz", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "muhammad-baqir-shama", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the soap makers, oil sellers", "role_fa": "نمایندهٔ صابون‌پزان، روغن‌فروشان"}
+{"rel": "person_group", "person_id": "muhammad-baqir-shama", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "muhammad-taqi-harati", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the copper makers, pistol makers, carriage makers, sword makers", "role_fa": "نمایندهٔ مسگران، تفنگ‌سازان، کالسکه‌سازان، شمشیرسازان"}
+{"rel": "person_group", "person_id": "muhammad-taqi-harati", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "mahmud-khunsari-kitabfurush", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the paper sellers, booksellers, printers", "role_fa": "نمایندهٔ کاغذفروشان، کتاب‌فروشان، چاپچیان"}
+{"rel": "person_group", "person_id": "mahmud-khunsari-kitabfurush", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "mustafa-simsar", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the secondhand dealers, quilt makers", "role_fa": "نمایندهٔ سمساران، لحاف‌دوزان"}
+{"rel": "person_group", "person_id": "mustafa-simsar", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "mahdi-saqatfurush", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the sugar and tea sellers", "role_fa": "نمایندهٔ قند و چای‌فروشان"}
+{"rel": "person_group", "person_id": "mahdi-saqatfurush", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "valiullah-khan-nasr", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the medical doctors", "role_fa": "نمایندهٔ اطبا"}
+{"rel": "person_group", "person_id": "valiullah-khan-nasr", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "muhammad-taqi-tajir-dihbandah", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the stocking sellers, sandal sellers", "role_fa": "نمایندهٔ جوراب‌فروشان، گیوه‌فروشان"}
+{"rel": "person_group", "person_id": "muhammad-taqi-tajir-dihbandah", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "husain-ali-mahruzadah", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the straw plaiters, wood sellers", "role_fa": "نمایندهٔ حصیربافان، چوب‌فروشان"}
+{"rel": "person_group", "person_id": "husain-ali-mahruzadah", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "mirza-hasan-guild", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the shoemakers, cobblers (substitute delegate)", "role_fa": "نمایندهٔ کفاشان، پینه‌دوزان (نمایندهٔ علی‌البدل)"}
+{"rel": "person_group", "person_id": "mirza-hasan-guild", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel": "person_group", "person_id": "mirza-husain-ali-sigari", "group_id": "first-majlis", "role_type": "representative", "role_en": "deputy for the cigarette sellers", "role_fa": "نمایندهٔ سیگارفروشان"}
+{"rel": "person_group", "person_id": "mirza-husain-ali-sigari", "group_id": "guilds", "role_type": "representative", "role_en": "guild representative", "role_fa": "نمایندهٔ صنف"}
+{"rel":"person_group","person_id":"muazid-al-saltanah","group_id":"national-revolutionary-committee","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"muazid-al-saltanah","group_id":"first-majlis","role_type":"representative","role_en":"deputy","role_fa":"نماینده"}
+{"rel":"person_group","person_id":"muazid-al-saltanah","group_id":"mujahidin","role_type":"founder","role_en":"formed the volunteer force defending the Majlis","role_fa":"نیروی داوطلب مدافع مجلس را تشکیل داد"}
+{"rel":"person_group","person_id":"husain-quli-nawab","group_id":"national-revolutionary-committee","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"husain-quli-nawab","group_id":"first-majlis","role_type":"representative","role_en":"deputy","role_fa":"نماینده"}
+{"rel":"person_group","person_id":"mumtaz-al-dawlah","group_id":"national-revolutionary-committee","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"mumtaz-al-dawlah","group_id":"first-majlis","role_type":"leader","role_en":"president of the Majlis in 1908","role_fa":"رئیس مجلس در ۱۲۸۷"}
+{"rel":"person_group","person_id":"hakim-al-mulk","group_id":"national-revolutionary-committee","role_type":"member","role_en":"member; the committee met at his house","role_fa":"عضو؛ کمیته در خانهٔ او تشکیل جلسه می‌داد"}
+{"rel":"person_group","person_id":"taqizadah","group_id":"national-revolutionary-committee","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"taqizadah","group_id":"azerbaijan-anjuman-tehran","role_type":"leader","role_en":"head of an anjuman of some three thousand members","role_fa":"رئیس انجمنی با نزدیک سه هزار عضو"}
+{"rel":"person_group","person_id":"malik-al-mutikallimin","group_id":"national-revolutionary-committee","role_type":"leader","role_en":"led its meetings","role_fa":"جلسات آن را اداره می‌کرد"}
+{"rel":"person_group","person_id":"malik-al-mutikallimin","group_id":"union-theology-students","role_type":"leader","role_en":"leader","role_fa":"رهبر"}
+{"rel":"person_group","person_id":"malik-al-mutikallimin","group_id":"tehran-social-democratic-society","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"haidar-khan-amu-ughlu","group_id":"tehran-social-democratic-society","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"sulaiman-maikadah","group_id":"brothers-qazvin-gate-anjuman","role_type":"leader","role_en":"leader","role_fa":"رهبر"}
+{"rel":"person_group","person_id":"sulaiman-maikadah","group_id":"national-revolutionary-committee","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"sad-al-dawlah","group_id":"first-majlis","role_type":"representative","role_en":"deputy of the nobles; headed the committee that wrote the constitution","role_fa":"نمایندهٔ اعیان؛ رئیس کمیتهٔ تدوین قانون اساسی"}
+{"rel":"person_group","person_id":"sani-al-dawlah","group_id":"first-majlis","role_type":"representative","role_en":"deputy of the nobles and landowners; first president","role_fa":"نمایندهٔ اعیان و مالکان؛ نخستین رئیس"}
+{"rel":"person_group","person_id":"mukhbir-al-saltanah","group_id":"first-majlis","role_type":"member","role_en":"Minister of Science; helped ratify the constitution","role_fa":"وزیر علوم؛ در تصویب قانون اساسی نقش داشت"}
+{"rel":"person_group","person_id":"vusuq-al-dawlah","group_id":"first-majlis","role_type":"representative","role_en":"merchants' representative; vice-president","role_fa":"نمایندهٔ تجار؛ نایب‌رئیس"}
+{"rel":"person_group","person_id":"vakil-al-tujjar","group_id":"first-majlis","role_type":"representative","role_en":"merchants' delegate","role_fa":"نمایندهٔ تجار"}
+{"rel":"person_group","person_id":"vakil-al-tujjar","group_id":"merchants","role_type":"representative","role_en":"delegate","role_fa":"نماینده"}
+{"rel":"person_group","person_id":"ahsan-al-dawlah","group_id":"first-majlis","role_type":"representative","role_en":"radical delegate of the smallholders from Azerbaijan","role_fa":"نمایندهٔ رادیکال خرده‌مالکان آذربایجان"}
+{"rel":"person_group","person_id":"vakil-al-ruaya","group_id":"first-majlis","role_type":"representative","role_en":"deputy for Hamadan","role_fa":"نمایندهٔ همدان"}
+{"rel":"person_group","person_id":"zanjani-shaikh-ibrahim","group_id":"first-majlis","role_type":"representative","role_en":"liberal-radical deputy","role_fa":"نمایندهٔ آزادی‌خواه رادیکال"}
+{"rel":"person_group","person_id":"mushavir-al-mulk","group_id":"first-majlis","role_type":"representative","role_en":"deputy","role_fa":"نماینده"}
+{"rel":"person_group","person_id":"siqat-al-saltanah-yahya","group_id":"first-majlis","role_type":"representative","role_en":"deputy of the nobles","role_fa":"نمایندهٔ اعیان"}
+{"rel":"person_group","person_id":"lisan-al-hukama","group_id":"first-majlis","role_type":"representative","role_en":"deputy of the nobles","role_fa":"نمایندهٔ اعیان"}
+{"rel":"person_group","person_id":"azizullah-simani","group_id":"jews","role_type":"representative","role_en":"elected deputy of the Jewish community, pressed to stand down","role_fa":"نمایندهٔ منتخب جامعهٔ یهودی که به کناره‌گیری واداشته شد"}
+{"rel":"person_group","person_id":"arbab-jamshid","group_id":"zoroastrian-anjuman","role_type":"representative","role_en":"the community's deputy in the Majlis","role_fa":"نمایندهٔ جامعه در مجلس"}
+{"rel":"person_group","person_id":"yahya-iskandari","group_id":"adamiyat-society","role_type":"member","role_en":"active member","role_fa":"عضو فعال"}
+{"rel":"person_group","person_id":"sulaiman-iskandari","group_id":"adamiyat-society","role_type":"member","role_en":"active member","role_fa":"عضو فعال"}
+{"rel":"person_group","person_id":"ihtisham-al-saltanah","group_id":"first-majlis","role_type":"leader","role_en":"second president of the Majlis","role_fa":"دومین رئیس مجلس"}
+{"rel":"group_relation","group_a":"national-revolutionary-committee","group_b":"social-democrats-organization","type":"allied","note_en":"The committee was connected to the Baku organisation."}
+{"rel":"group_relation","group_a":"national-revolutionary-committee","group_b":"tehran-social-democratic-society","type":"allied","note_en":"Membership overlapped so heavily that the two are hard to separate."}
+{"rel":"group_relation","group_a":"central-anjuman-of-guilds","group_b":"guilds","type":"branch_of"}
+{"rel":"group_relation","group_a":"central-anjuman-of-guilds","group_b":"first-majlis","type":"allied","note_en":"It backed the thirty-two guild deputies."}
+{"rel":"group_relation","group_a":"second-secret-anjuman","group_b":"secret-anjuman-tehran","type":"successor"}
+{"rel":"group_relation","group_a":"azerbaijan-anjuman-tehran","group_b":"tabriz-anjuman","type":"allied"}
+{"rel":"event_group","event_id":"provincial-anjuman-law-1907","group_id":"provincial-departmental-anjumans","role_type":"participant"}
+{"rel":"event_group","event_id":"provincial-anjuman-law-1907","group_id":"first-majlis","role_type":"perpetrator"}
+{"rel":"event_group","event_id":"provincial-anjuman-law-1907","group_id":"village-anjumans","role_type":"target"}
+{"rel":"event_group","event_id":"non-muslims-forgo-representation-1906","group_id":"jews","role_type":"victim"}
+{"rel":"event_group","event_id":"non-muslims-forgo-representation-1906","group_id":"armenians","role_type":"victim"}
+{"rel":"event_group","event_id":"non-muslims-forgo-representation-1906","group_id":"zoroastrians","role_type":"participant"}
+{"rel":"event_group","event_id":"non-muslims-forgo-representation-1906","group_id":"second-secret-anjuman","role_type":"perpetrator"}
+{"rel":"event_participant","event_id":"non-muslims-forgo-representation-1906","person_id":"azizullah-simani","role_type":"victim","role_en":"elected then pressed to stand down","role_fa":"برگزیده و سپس به کناره‌گیری واداشته شد"}
+{"rel":"event_participant","event_id":"non-muslims-forgo-representation-1906","person_id":"arbab-jamshid","role_type":"participant","role_en":"secured the Zoroastrian seat","role_fa":"کرسی زردشتیان را حفظ کرد"}
+{"rel":"event_participant","event_id":"non-muslims-forgo-representation-1906","person_id":"tabatabai-sayyid-muhammad","role_type":"perpetrator","role_en":"led the request that they withdraw; then 'represented' the Armenians","role_fa":"درخواست کناره‌گیری را رهبری کرد و سپس «نمایندهٔ» ارمنیان شد"}
+{"rel":"event_participant","event_id":"non-muslims-forgo-representation-1906","person_id":"bihbahani-sayyid-abdullah","role_type":"perpetrator","role_en":"'represented' the Jews in their place","role_fa":"به‌جای آنان «نمایندهٔ» یهودیان شد"}
+{"rel":"event_participant","event_id":"first-electoral-law-1906","person_id":"sani-al-dawlah","role_type":"author","role_en":"helped draft the electoral laws","role_fa":"در تدوین قانون انتخابات نقش داشت"}
+{"rel":"event_participant","event_id":"first-electoral-law-1906","person_id":"mushir-al-dawlah","role_type":"author","role_en":"headed the drafting council and signed the law","role_fa":"ریاست شورای تدوین را داشت و قانون را امضا کرد"}
+{"rel":"event_participant","event_id":"first-electoral-law-1906","person_id":"mushir-al-mulk","role_type":"author","role_en":"contributor","role_fa":"از تدوین‌کنندگان"}
+{"rel":"event_participant","event_id":"first-electoral-law-1906","person_id":"mutamin-al-mulk","role_type":"author","role_en":"contributor","role_fa":"از تدوین‌کنندگان"}
+{"rel":"event_participant","event_id":"first-electoral-law-1906","person_id":"muhtashim-al-saltanah","role_type":"author","role_en":"contributor","role_fa":"از تدوین‌کنندگان"}
+{"rel":"event_participant","event_id":"first-electoral-law-1906","person_id":"mukhbir-al-saltanah","role_type":"author","role_en":"contributor","role_fa":"از تدوین‌کنندگان"}
+{"rel":"event_participant","event_id":"fundamental-laws-signed-1906","person_id":"sad-al-dawlah","role_type":"author","role_en":"headed the committee that wrote the constitution, drawing on the Belgian model","role_fa":"ریاست کمیتهٔ تدوین قانون اساسی را داشت و از الگوی بلژیک بهره گرفت"}
+{"rel":"event_participant","event_id":"fundamental-laws-signed-1906","person_id":"mukhbir-al-saltanah","role_type":"participant","role_en":"instrumental in its ratification","role_fa":"در تصویب آن نقش کلیدی داشت"}
+{"rel":"event_participant","event_id":"majlis-rejects-anglo-russian-loan-1906","person_id":"muhammad-ali-shah","role_type":"target","role_en":"had sought the loan","role_fa":"خواهان وام بود"}
+{"rel":"person_relation","person_a":"sad-al-dawlah","person_b":"taqizadah","type":"rival","note_en":"Competed for leadership of the liberal-radical faction; Sa'd al-Dawlah lost and drifted to the shah's camp.","note_fa":"بر سر رهبری جناح آزادی‌خواه–رادیکال رقابت کردند؛ سعدالدوله باخت و به اردوی شاه گروید."}
+{"rel":"person_relation","person_a":"sad-al-dawlah","person_b":"sani-al-dawlah","type":"rival","note_en":"Fought over the presidency of the Majlis in its first year.","note_fa":"در نخستین سال بر سر ریاست مجلس رقابت کردند."}
+{"rel":"person_relation","person_a":"sani-al-dawlah","person_b":"mukhbir-al-saltanah","type":"kin","note_en":"Brothers.","note_fa":"برادران."}
+{"rel":"person_relation","person_a":"mushir-al-mulk","person_b":"mushir-al-dawlah","type":"kin","note_en":"Son.","note_fa":"پسر."}
+{"rel":"person_relation","person_a":"mutamin-al-mulk","person_b":"mushir-al-dawlah","type":"kin","note_en":"Son.","note_fa":"پسر."}
+{"rel":"person_relation","person_a":"vusuq-al-dawlah","person_b":"qavam-al-saltanah","type":"kin","note_en":"Brothers, and nephews of Amin al-Dawlah.","note_fa":"برادران و خواهرزادگان امین‌الدوله."}
+{"rel":"person_relation","person_a":"sani-al-dawlah","person_b":"muzaffar-al-din-shah","type":"kin","note_en":"Son-in-law.","note_fa":"داماد."}
+{"rel":"person_relation","person_a":"sulaiman-iskandari","person_b":"yahya-iskandari","type":"kin","note_en":"Brothers; Sulaiman took Yahya's seat after his death.","note_fa":"برادران؛ سلیمان پس از مرگ یحیی کرسی او را گرفت."}
