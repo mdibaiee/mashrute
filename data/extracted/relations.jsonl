@@ -1225,3 +1225,11 @@
 {"rel":"person_relation","person_a":"vahid-al-mulk-shaibani","person_b":"browne-edward","type":"mentor","note_en":"Studied at Cambridge with Browne.","note_fa":"در کمبریج نزد براون درس خواند."}
 {"rel":"person_relation","person_a":"pilusian-vram","person_b":"taqizadah","type":"collaborator","note_en":"Their French correspondence of 1909–10 shaped the Democrat Party's organisation.","note_fa":"مکاتبات فرانسوی آنان در ۱۲۸۸–۸۹ به سازمان حزب دموکرات شکل داد."}
 {"rel":"person_relation","person_a":"ter-hacobian","person_b":"taqizadah","type":"collaborator","note_en":"Ter Hacobian supplied much of the party's doctrine from Tabriz and later Tehran.","note_fa":"ترهاکوبیان بخش بزرگی از آموزهٔ حزب را از تبریز و سپس تهران فراهم کرد."}
+{"rel":"group_relation","group_a":"bakhtiari","group_b":"tribes","type":"branch_of"}
+{"rel":"group_relation","group_a":"qashqai","group_b":"tribes","type":"branch_of"}
+{"rel":"group_relation","group_a":"shahsavan","group_b":"tribes","type":"branch_of"}
+{"rel":"group_relation","group_a":"chalbiyanlu","group_b":"tribes","type":"branch_of"}
+{"rel":"group_relation","group_a":"jalali-tribe","group_b":"tribes","type":"branch_of"}
+{"rel":"group_relation","group_a":"baluch","group_b":"tribes","type":"branch_of"}
+{"rel":"group_relation","group_a":"khamsah-tribes","group_b":"tribes","type":"branch_of"}
+{"rel":"group_relation","group_a":"tangistani-tribes","group_b":"tribes","type":"branch_of"}
