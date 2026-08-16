@@ -1,0 +1,655 @@
+{
+ "records": [
+  {
+   "gregorian": {
+    "year": 1909,
+    "month": 7,
+    "day": 31
+   },
+   "hijri": {
+    "year": 1327,
+    "month": 7,
+    "day": 13,
+    "precision": "day"
+   },
+   "jalali": {
+    "year": 1288,
+    "month": 5,
+    "day": 9
+   },
+   "raw": "۳۱ ژوئية ۱۹۰۹ [۱۳ رجب ۱۳۲۷ هق./٩ مرداد ۱۲۸۸]"
+  },
+  {
+   "gregorian": {
+    "year": 1907,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1325,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۷ [۱۳۲۵ هق./ ۱۳۸۶]"
+  },
+  {
+   "gregorian": {
+    "year": 1909,
+    "month": 7,
+    "day": null
+   },
+   "hijri": {
+    "year": 1327,
+    "month": 7,
+    "day": null,
+    "precision": "month"
+   },
+   "jalali": {
+    "year": 1388,
+    "month": 5,
+    "day": null
+   },
+   "raw": "ژوئية ۱۹۰۹ [رجب ۱۳۲۷ هق./ مرداد ۱۳۸۸]"
+  },
+  {
+   "gregorian": {
+    "year": 1906,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1329,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۶ [۱۳۲۹-۱۳۲۴ هق./ ۱۲۹۰-۱۲۸۵]"
+  },
+  {
+   "gregorian": {
+    "year": 1906,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۶ [۱۳۲۴ ه.ق./ ۱۲۸۵]"
+  },
+  {
+   "gregorian": {
+    "year": 1900,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1319,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۰ (۱۳۱۹ هق.)"
+  },
+  {
+   "gregorian": {
+    "year": 1905,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۵ (۱۳۲۴ ه.ق.)"
+  },
+  {
+   "gregorian": {
+    "year": 1904,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۴ [۱۳۲۴-۱۳۲۳ ه.ق./ ۱۲۸۴-۱۲۸۳]"
+  },
+  {
+   "gregorian": {
+    "year": 1906,
+    "month": 8,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": 6,
+    "day": null,
+    "precision": "month"
+   },
+   "jalali": {
+    "year": 1285,
+    "month": 5,
+    "day": null
+   },
+   "raw": "اوت ۱۹۰۶ [جمادی‌الثانی ۱۳۲۴ هق. / مرداد ۱۲۸۵]"
+  },
+  {
+   "gregorian": {
+    "year": 1906,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1326,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۶ [۱۳۲۶-۱۳۲۴ هق.| ۱۲۸۷-۱۲۸۵]"
+  },
+  {
+   "gregorian": {
+    "year": 1906,
+    "month": 12,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "دسامبر ۱۹۰۶ [۱۳۲۴ هق./ آذر ۱1۲۸۵]"
+  },
+  {
+   "gregorian": {
+    "year": 1907,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۷ [۱۳۲۴ هق./ ۱۲۸۶]"
+  },
+  {
+   "gregorian": {
+    "year": 1906,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۶ [۱۴ ذیقعدهُ ۱۳۲۴ هق./ ۱۲۸۵]"
+  },
+  {
+   "gregorian": {
+    "year": 1908,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1327,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۸ [۱۳۲۷-۱۳۲۶ هق./ ۱۲۸۸-۷]"
+  },
+  {
+   "gregorian": {
+    "year": 1908,
+    "month": 6,
+    "day": 13
+   },
+   "hijri": {
+    "year": 1326,
+    "month": 5,
+    "day": 23,
+    "precision": "day"
+   },
+   "jalali": {
+    "year": 1287,
+    "month": 3,
+    "day": 23
+   },
+   "raw": "۱۳ ژوئن ۱۹۰۸ [۲۳ جمادی‌الاولی ۱۳۲۶ هق./ ۲۳ خرداد ۱۲۸۷]"
+  },
+  {
+   "gregorian": {
+    "year": 1909,
+    "month": 4,
+    "day": null
+   },
+   "hijri": {
+    "year": 1327,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": {
+    "year": 1288,
+    "month": 1,
+    "day": null
+   },
+   "raw": "آوریل ۱۹۰۹ [۱۳۲۷ هق./ فروردین ۱۲۸۸]"
+  },
+  {
+   "gregorian": {
+    "year": 1909,
+    "month": 7,
+    "day": null
+   },
+   "hijri": {
+    "year": 1327,
+    "month": 6,
+    "day": 26,
+    "precision": "day"
+   },
+   "jalali": {
+    "year": 1288,
+    "month": 4,
+    "day": null
+   },
+   "raw": "ژوئية ۱۹۰۹ [۲۶ جمادی‌الاخری ۱۳۲۷ هق./ تیر ۱۲۸۸]"
+  },
+  {
+   "gregorian": {
+    "year": 1910,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1328,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۱۰ [۱۳۲۸ هق./ ۱۲۸۹]"
+  },
+  {
+   "gregorian": {
+    "year": 1910,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1329,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۱۰ [۱۳۲۹ هق./ ۱۲۸۹]"
+  },
+  {
+   "gregorian": {
+    "year": 1911,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1329,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": {
+    "year": 1290,
+    "month": 2,
+    "day": null
+   },
+   "raw": "۱٩۱۱ [۱۳۲۹ هق./ اردیبهشت ۱۲۹۰]"
+  },
+  {
+   "gregorian": {
+    "year": 1911,
+    "month": 12,
+    "day": 24
+   },
+   "hijri": {
+    "year": 1329,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": {
+    "year": 1290,
+    "month": 10,
+    "day": 3
+   },
+   "raw": "۲۴ دسامبر ۱۹۱۱ [۱۳۲۹ هق./ ۳ دی ۱۲۹۰]"
+  },
+  {
+   "gregorian": {
+    "year": 1906,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۶ [۱۳۲۴ هق./ ۱۲۸۵]"
+  },
+  {
+   "gregorian": {
+    "year": 1906,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1329,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۶ [۱۳۲۹-۱۳۲۳ هق./ ۱۳۹۰-۱۲۸۵]"
+  },
+  {
+   "gregorian": {
+    "year": 1911,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1289,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": {
+    "year": 1289,
+    "month": 10,
+    "day": 20
+   },
+   "raw": "۱۹۱۱ [۲۰ دی ۱۲۸۹ توافق جدیدی با روسیه حاصل شد. تهران توانست همه بدهیهایش به روسیه را به قرارداد جدیدی با نرخ بهرة کمتر سالانه (معادل ۷ درصد)"
+  }
+ ],
+ "index": {
+  "1909-07-31": {
+   "gregorian": {
+    "year": 1909,
+    "month": 7,
+    "day": 31
+   },
+   "hijri": {
+    "year": 1327,
+    "month": 7,
+    "day": 13,
+    "precision": "day"
+   },
+   "jalali": {
+    "year": 1288,
+    "month": 5,
+    "day": 9
+   },
+   "raw": "۳۱ ژوئية ۱۹۰۹ [۱۳ رجب ۱۳۲۷ هق./٩ مرداد ۱۲۸۸]"
+  },
+  "1907": {
+   "gregorian": {
+    "year": 1907,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1325,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۷ [۱۳۲۵ هق./ ۱۳۸۶]"
+  },
+  "1909-07": {
+   "gregorian": {
+    "year": 1909,
+    "month": 7,
+    "day": null
+   },
+   "hijri": {
+    "year": 1327,
+    "month": 6,
+    "day": 26,
+    "precision": "day"
+   },
+   "jalali": {
+    "year": 1288,
+    "month": 4,
+    "day": null
+   },
+   "raw": "ژوئية ۱۹۰۹ [۲۶ جمادی‌الاخری ۱۳۲۷ هق./ تیر ۱۲۸۸]"
+  },
+  "1906": {
+   "gregorian": {
+    "year": 1906,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1329,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۶ [۱۳۲۹-۱۳۲۴ هق./ ۱۲۹۰-۱۲۸۵]"
+  },
+  "1900": {
+   "gregorian": {
+    "year": 1900,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1319,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۰ (۱۳۱۹ هق.)"
+  },
+  "1905": {
+   "gregorian": {
+    "year": 1905,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۵ (۱۳۲۴ ه.ق.)"
+  },
+  "1904": {
+   "gregorian": {
+    "year": 1904,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۴ [۱۳۲۴-۱۳۲۳ ه.ق./ ۱۲۸۴-۱۲۸۳]"
+  },
+  "1906-08": {
+   "gregorian": {
+    "year": 1906,
+    "month": 8,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": 6,
+    "day": null,
+    "precision": "month"
+   },
+   "jalali": {
+    "year": 1285,
+    "month": 5,
+    "day": null
+   },
+   "raw": "اوت ۱۹۰۶ [جمادی‌الثانی ۱۳۲۴ هق. / مرداد ۱۲۸۵]"
+  },
+  "1906-12": {
+   "gregorian": {
+    "year": 1906,
+    "month": 12,
+    "day": null
+   },
+   "hijri": {
+    "year": 1324,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "دسامبر ۱۹۰۶ [۱۳۲۴ هق./ آذر ۱1۲۸۵]"
+  },
+  "1908": {
+   "gregorian": {
+    "year": 1908,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1327,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۰۸ [۱۳۲۷-۱۳۲۶ هق./ ۱۲۸۸-۷]"
+  },
+  "1908-06-13": {
+   "gregorian": {
+    "year": 1908,
+    "month": 6,
+    "day": 13
+   },
+   "hijri": {
+    "year": 1326,
+    "month": 5,
+    "day": 23,
+    "precision": "day"
+   },
+   "jalali": {
+    "year": 1287,
+    "month": 3,
+    "day": 23
+   },
+   "raw": "۱۳ ژوئن ۱۹۰۸ [۲۳ جمادی‌الاولی ۱۳۲۶ هق./ ۲۳ خرداد ۱۲۸۷]"
+  },
+  "1909-04": {
+   "gregorian": {
+    "year": 1909,
+    "month": 4,
+    "day": null
+   },
+   "hijri": {
+    "year": 1327,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": {
+    "year": 1288,
+    "month": 1,
+    "day": null
+   },
+   "raw": "آوریل ۱۹۰۹ [۱۳۲۷ هق./ فروردین ۱۲۸۸]"
+  },
+  "1910": {
+   "gregorian": {
+    "year": 1910,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1328,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": null,
+   "raw": "۱۹۱۰ [۱۳۲۸ هق./ ۱۲۸۹]"
+  },
+  "1911": {
+   "gregorian": {
+    "year": 1911,
+    "month": null,
+    "day": null
+   },
+   "hijri": {
+    "year": 1329,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": {
+    "year": 1290,
+    "month": 2,
+    "day": null
+   },
+   "raw": "۱٩۱۱ [۱۳۲۹ هق./ اردیبهشت ۱۲۹۰]"
+  },
+  "1911-12-24": {
+   "gregorian": {
+    "year": 1911,
+    "month": 12,
+    "day": 24
+   },
+   "hijri": {
+    "year": 1329,
+    "month": null,
+    "day": null,
+    "precision": "year"
+   },
+   "jalali": {
+    "year": 1290,
+    "month": 10,
+    "day": 3
+   },
+   "raw": "۲۴ دسامبر ۱۹۱۱ [۱۳۲۹ هق./ ۳ دی ۱۲۹۰]"
+  }
+ }
+}
