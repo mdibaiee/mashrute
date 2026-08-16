@@ -1,0 +1,2207 @@
+[
+ {
+  "text_en": "The Revolutionary Committee meets secretly in Tehran",
+  "text_fa": "تشکیل جلسه مخفيانه کمیته انقلاب در تهران 07 ۲۲",
+  "date_raw_en": "May 1904",
+  "date_raw_fa": "مه ۱۹۰۴",
+  "period_en": null,
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1904,
+   "g_month": 5,
+   "precision": "month"
+  },
+  "jalali": {
+   "raw": "اردیبهشت ۱۲۸۳",
+   "month": 2,
+   "year": 1283,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The 1905 Russian Revolution begins",
+  "text_fa": "انقلاب ۱۹۰۵ روسیه ۱ 07 ۲۳",
+  "date_raw_en": "January 22,1905",
+  "date_raw_fa": "ژانویهٌ ۱۹۰۵",
+  "period_en": null,
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1905,
+   "g_month": 1,
+   "g_day": 22,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲ دی ۱۲۸۳",
+   "month": 10,
+   "year": 1283,
+   "day": 2,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Secret Anjuman of Tehran meets",
+  "text_fa": "تشکیل جلسة انجمن مخفی تهران",
+  "date_raw_en": "February 23, 1905",
+  "date_raw_fa": "فوريةٌ ۱۹۰۵",
+  "period_en": null,
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1905,
+   "g_month": 2,
+   "g_day": 23,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۴ اسفند ۱۲۸۳",
+   "month": 12,
+   "year": 1283,
+   "day": 4,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The Iranian Organization of Social Democrats is formed in Baku",
+  "text_fa": "تشکیل فرقهً ایرانی اجتماعیون عامیون در باکو 0 مارس -",
+  "date_raw_en": "1905",
+  "date_raw_fa": "۱۹۰۵",
+  "period_en": null,
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1905,
+   "precision": "year"
+  },
+  "jalali": {
+   "raw": "۱۲۸۲",
+   "year": 1282,
+   "year_end": null,
+   "precision": "year"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Strikes and protests in Tehran against Belgian customs official Joseph Naus; alliance between the two ranking clerics of Tehran, Sayyid Muhammad Tabataba'i and Sayyid 'Abdullah Bihbahani, to lead the protests",
+  "text_fa": "اعتراضها و اعتصابها در تهران علیه ژوزف‌نوز: رئیس بلژیکی گمرکات؛ اتحاد دو روحانی برجستهة تهران؛ سیدمحمد طباطبایی و سید عبدالله بهبهانی برای رهبری اعتراضها ۱۳",
+  "date_raw_en": "March-April 1905",
+  "date_raw_fa": "آوریل ۱۹۰۵",
+  "period_en": null,
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1905,
+   "g_month": 3,
+   "g_year_end": 1905,
+   "g_month_end": 4,
+   "precision": "month_range"
+  },
+  "jalali": {
+   "raw": "اسفند ۱۲۸۳ - فروردین ۱۲۸۴",
+   "month": 12,
+   "year": 1283,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Strikes and sanctuary of two thousand protesters in the Shah “Abd al-'Azim Shrine outside Tehran; calls for a house of justice",
+  "text_fa": "اعتصاب و تحصّن دو هزار معترض در حرم حضرت عبدالعظیم؛ تقاضای عدالتخانه 0 ۱۲",
+  "date_raw_en": "December 13, 1905",
+  "date_raw_fa": "دسامبر ۱۹۰۵",
+  "period_en": null,
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1905,
+   "g_month": 12,
+   "g_day": 13,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۲ آذر ۱۲۸۴",
+   "month": 9,
+   "year": 1284,
+   "day": 22,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Muzaffar al-Din Shah issues a decree that calls for the formation of a house of justice; protesters return to Tehran",
+  "text_fa": "صدور فرمان مظفرالدین شاه برای تأسیس عدالتخانه؛ بازگشت معترضان به تهران 0 ۷",
+  "date_raw_en": "January 12,1906",
+  "date_raw_fa": "ژانویة ۱٩۰۶",
+  "period_en": null,
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 1,
+   "g_day": 12,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۲ دی ۱۲۸۴",
+   "month": 10,
+   "year": 1284,
+   "day": 22,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The satirical newspaper Mulla Nasr al-Din is published in Baku",
+  "text_fa": "انتشار نشرية طنز ملانصرالدین در تفلیس 07",
+  "date_raw_en": "April 7, 1906",
+  "date_raw_fa": "آوریل ۱۹۰۶",
+  "period_en": null,
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 4,
+   "g_day": 7,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۸ فروردین ۱۲۸۵",
+   "month": 1,
+   "year": 1285,
+   "day": 18,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Nationalists take sanctuary in Qum and in the British Legation in Tehran",
+  "text_fa": "بست‌نشینی ملیون در قم و در باغ کنسولگری بریتانیا 0",
+  "date_raw_en": "July 1906",
+  "date_raw_fa": "ژوئيةٌ ۱۹۰۶",
+  "period_en": null,
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 7,
+   "precision": "month"
+  },
+  "jalali": {
+   "raw": "تبر - مرداد 1۲۸۵",
+   "month": 5,
+   "year": 1285,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Official date (actual date: August 9, 1906) of the royal proclama- tion by Muzaffar al-Din Shah that allows the formation of a majlis (national assembly) and the drafting of a constitution",
+  "text_fa": "تاریخ رسمی صدور فرمان مشروطیت توسط مظفرالدین شاه مبنی برتشکیل مجلس و تدوین قانون اساسی (تاریخ واقعی ٩",
+  "date_raw_en": "August 5, 1906",
+  "date_raw_fa": "۵اوت ۱۹۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 8,
+   "g_day": 5,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۲ مرداد ۱۲۸۵",
+   "month": 5,
+   "year": 1285,
+   "day": 12,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": null,
+  "text_fa": ") 07",
+  "date_raw_en": null,
+  "date_raw_fa": "اوت ۱۹۰۶",
+  "period_en": null,
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 8
+  },
+  "jalali": {
+   "raw": "۱۸ مرداد ۱۲۸۵",
+   "month": 5,
+   "year": 1285,
+   "day": 18,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": false
+ },
+ {
+  "text_en": "First electoral laws are issued",
+  "text_fa": "صدور اولین قانون انتخابات 2 ۷",
+  "date_raw_en": "September 9, 1906",
+  "date_raw_fa": "٩سپتامبر ۱۹۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 9,
+   "g_day": 9,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۸شهریور ۱۳۸۵",
+   "month": 6,
+   "year": 1385,
+   "day": 18,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The First Majlis opens in Tehran; the Tabriz Anjuman (Tabriz Provincial Council) opens",
+  "text_fa": "افتتاح مجلس اول در تهران؛ افتتاح انجمن تبریز",
+  "date_raw_en": "October 7, 1906",
+  "date_raw_fa": "اکتبر ۱۹۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 10,
+   "g_day": 7,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۵ مهر ۱۲۸۵",
+   "month": 7,
+   "year": 1285,
+   "day": 15,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The Secret Center, a branch of the Organization of Social Democ- rats in Baku, is formed in Tabriz; volunteer fighters known as Mujahidin and Fada'in are recruited",
+  "text_fa": "تشکیل مرکز غیبی. شعبهٌ فرقةٌ اجتماعیون عامیون باکو در تبریز؛ داوطلبان معروف به مجاهدین و فداییان متشکل می‌شوند ۱٩ ۲",
+  "date_raw_en": "October 1906",
+  "date_raw_fa": "اکتبر ۱۹۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 10,
+   "precision": "month"
+  },
+  "jalali": {
+   "raw": "مهر - آبان ۱۲۸۵",
+   "month": 8,
+   "year": 1285,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Anjuman, newspaper of the Tabriz Anjuman, is published",
+  "text_fa": "انتشار انجمن, روزنامةٌ انجمن تبریز ۲ ۲۷",
+  "date_raw_en": "October 19, 1906",
+  "date_raw_fa": "اکتبر ۱۹۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 10,
+   "g_day": 19,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۷ مهر ۱۲۸۵",
+   "month": 7,
+   "year": 1285,
+   "day": 27,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Leading cleric and leader of the Friday prayer Haj Mirza Karim is expelled from Tabriz",
+  "text_fa": "اخراج حاج‌ميرزاكريم؛ روحانی برجسته و امام‌جمعهٌ تبریزه از شهر ۲ ۴",
+  "date_raw_en": "October 27,1906",
+  "date_raw_fa": "اکتبر ۱۹۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 10,
+   "g_day": 27,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۵ آبان ۱۲۸۵",
+   "month": 8,
+   "year": 1285,
+   "day": 5,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Crown Prince Muhammad 'Ali Mirza attempts to close down the Tabriz Anjuman but is prevented by public protests",
+  "text_fa": "تلاش محمدعلی میرزای ولیعهد برای بستن انجمن تبریز, اما با اعتراض عمومی مواجه می‌شود و منصرف می‌شود ۲",
+  "date_raw_en": "November 4, 1906",
+  "date_raw_fa": "نوامبر ۱۹۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 11,
+   "g_day": 4,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۳ آبان ۱۲۸۵",
+   "month": 8,
+   "year": 1285,
+   "day": 13,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Strikes by three thousand fisherman in Anzali, Gilan; urban women in several cities join the campaign to establish a national bank and to boycott foreign textiles",
+  "text_fa": "اعتصاب سه هزار صیّاد در انزلی؛ زنان چندین شهر به مبارزه برای تأسیس بانک ملی و تحریم پارچ خارجی می‌پیوندند ۲۵",
+  "date_raw_en": "November 1906",
+  "date_raw_fa": "نوامبر ۱۹۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 11,
+   "precision": "month"
+  },
+  "jalali": {
+   "raw": "آبان - آذر ۱۲۸۵",
+   "month": 9,
+   "year": 1285,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The newspaper Majlis is published in Tehran",
+  "text_fa": "انتشار روزنامهٌ مجلس در تهران ۱۶",
+  "date_raw_en": "November 25, 1906",
+  "date_raw_fa": "نوامبر ۱۹۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 11,
+   "g_day": 25,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۴ آذر ۱۲۸۵",
+   "month": 9,
+   "year": 1285,
+   "day": 4,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The crown prince arrives in Tehran",
+  "text_fa": "ورود ولیعهد به تهران",
+  "date_raw_en": "December 16, 1906",
+  "date_raw_fa": "دسامبر ۱٩۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 12,
+   "g_day": 16,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۵ آذر ۱۲۸۵",
+   "month": 9,
+   "year": 1285,
+   "day": 25,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The constitution is signed by Muzaffar al-Din Shah",
+  "text_fa": "توشیح قانون اساسی به دست مظفرالدین‌شاه",
+  "date_raw_en": "December 30, 1906",
+  "date_raw_fa": "۳۰ دسامبر ۱۹۰۶",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1906,
+   "g_month": 12,
+   "g_day": 30,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "دی ۱۲۸۵",
+   "month": 10,
+   "year": 1285,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Muzaffar al-Din Shah dies",
+  "text_fa": "مرگ مظفرالدین شاه",
+  "date_raw_en": "January 8, 1907",
+  "date_raw_fa": "۸ ژانویةٌ ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 1,
+   "g_day": 8,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۸ دی ۱۲۸۵",
+   "month": 10,
+   "year": 1285,
+   "day": 18,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Muhammad 'Ali Shah is crowned the new king; most Majlis delegates are not invited to the ceremony",
+  "text_fa": null,
+  "date_raw_en": "January 19, 1907",
+  "date_raw_fa": null,
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 1,
+   "g_day": 19,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": false
+ },
+ {
+  "text_en": "Women's meeting in Tehran adopts resolution to establish girls' schools and to abolish high dowries",
+  "text_fa": "به تخت نشستن محمدعلی شاه؛ بیشتر نمایندگان مسجلس به مراسم تاجگذاری دعوت نشده‌اند ۲ ۲۰ انوية ۱٩۰۷ [۳۰ دی ۱۲۸۵] تصویب تأسیس مدارس دخترانه و لغو جهیزیه‌های سنگین در قطعنامةً اجتماع زنان در تهران ۷",
+  "date_raw_en": "January 20,1907",
+  "date_raw_fa": "ژانویةٌ ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 1,
+   "g_day": 20,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۳۰ دی ۱۲۸۵",
+   "month": 10,
+   "year": 1285,
+   "day": 30,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Azerbaijani delegates arrive in Tehran (Hasan 'laqizadah, lead- ing Azerbaijani delegate, is already in Tehran)",
+  "text_fa": "ورود نمایندگان آذربایجان به تهران (حسن تقی‌زاده؛ نماینده برجستهٌ آذربایجان, مدتی قبل به تهران وارد شده بود)",
+  "date_raw_en": "February 7,1907",
+  "date_raw_fa": "فوريةٌ ۱٩۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 2,
+   "g_day": 7,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۸ بهمن ۱۲۸۵",
+   "month": 11,
+   "year": 1285,
+   "day": 18,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Muhammad 'Ali Shah is forced to dismiss Belgian customs official M. Naus",
+  "text_fa": "عزل نوز مسئول‌بلژیکی گمرکات توسط محمدعلی شاه که از این کار اکراه داشت ۲۳",
+  "date_raw_en": "February 10, 1907",
+  "date_raw_fa": "۱۰ فوریةٌ ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 2,
+   "g_day": 10,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۱ بهمن ۱۲۸۵",
+   "month": 11,
+   "year": 1285,
+   "day": 21,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Five hundred peasants go on a rent strike in Rasht, Gilan",
+  "text_fa": "اعتصاب پانصد دهقان در رشت در امتناع از پرداخت اجاره مارس -",
+  "date_raw_en": "March 23, 1907",
+  "date_raw_fa": "مارس ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 3,
+   "g_day": 23,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۳ فروردین ۱۲۸۶",
+   "month": 1,
+   "year": 1286,
+   "day": 3,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Majlis abolishes tuyuls (fiefs) and ratifies tax reforms",
+  "text_fa": "الغای تیول و تصویب اصلاحات مالیاتی در مجلس ۲",
+  "date_raw_en": "March-April 1907",
+  "date_raw_fa": "آوریل ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 3,
+   "g_year_end": 1907,
+   "g_month_end": 4,
+   "precision": "month_range"
+  },
+  "jalali": {
+   "raw": "نروردین ۱۲۸۶",
+   "month": 1,
+   "year": 1286,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Leading cleric Mirza Hasan Mujtahid is expelled from Tabriz",
+  "text_fa": "اخراج میرزا حسن مجتهد روحانی عالی‌مقام از تبریز ۲۶",
+  "date_raw_en": "April 1907",
+  "date_raw_fa": "آوریل ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 4,
+   "precision": "month"
+  },
+  "jalali": {
+   "raw": "فروردین ۱۲۸۶",
+   "month": 1,
+   "year": 1286,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Former premier Amin al-Sultan returns from exile to again assume the post of premier; there is much opposition to this appointment",
+  "text_fa": "بازگشت امین‌السلطان. صدراعظم سابق از تبعید برای صدارت دوباره؛ با انتصاب او مخالفت بسیار صورت می‌گیرد",
+  "date_raw_en": "April 26,1907",
+  "date_raw_fa": "آوریل ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 4,
+   "g_day": 26,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۶ اردیبهشت ۱۲۸۶",
+   "month": 2,
+   "year": 1286,
+   "day": 6,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "'Tabriz general strike begins against Shaikh Fazlullah Nuri and his proposed constitutional revisions",
+  "text_fa": "آغاز اعتصاب عمومی تبریز علیه شیخ فضل‌الله نوری و پیشنهاد او در مورد تجدید نظر در قانون اساسی",
+  "date_raw_en": "April 27,1907",
+  "date_raw_fa": "آوریل ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 4,
+   "g_day": 27,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The newspaper Habl al-Matin is published in Tehran",
+  "text_fa": "انتشار روزنامهٌ حبل‌المتین در تهران",
+  "date_raw_en": "Aptil 29, 1907",
+  "date_raw_fa": "۲۹ آوریل ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 4,
+   "g_day": 29,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "اردیبهشت ۱۲۸۶",
+   "month": 2,
+   "year": 1286,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Socialist newspaper Sur-i Israfil begins publication in Tehran",
+  "text_fa": "انتشار روزنامهٌ سوسیالیستی صور اسرافیل در تهران 0 ۱۳",
+  "date_raw_en": "May 30, 1907",
+  "date_raw_fa": "۳۰ مه ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 5,
+   "g_day": 30,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "خرداد ۱۲۸۶",
+   "month": 3,
+   "year": 1286,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "A compromise is worked out between Majlis delegates and Nuri over the Supplementary Constitutional Laws",
+  "text_fa": "مصالحة نمایندگان مجلس و نوری در مورد متمم قانون اساسی 2 ۲۱",
+  "date_raw_en": "June 13, 1907",
+  "date_raw_fa": "ژوئن ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 6,
+   "g_day": 13,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۳ خرداد ۱۲۸۶",
+   "month": 3,
+   "year": 1286,
+   "day": 23,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Nuri takes sanctuary at the Shah 'Abd al-'Azim Shrine",
+  "text_fa": "بست نشستن نوری در حرم حضرت عبدالعظیم",
+  "date_raw_en": "June 21, 1907",
+  "date_raw_fa": "ژوئن ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 6,
+   "g_day": 21,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The Anglo-Russian Convention is signed in St. Petersburg; Iran is divided between the two powers; Premier Amin al-Sultan is assassinated by a Fada'i member of the secret Anjumans of the Mujahidin in Tehran",
+  "text_fa": "امضای قرارداد ۱۹۰۷ روس و انگلیس در سنت پترزبورگ؛ ایران بین دو قدرت تقسیم می‌شود؛ امین‌السلطان صدراعظم به دست یک فدایی عضو انجمنهای مخقی مجاهدین در تهران به قتل می‌رسد ,.",
+  "date_raw_en": "August 31,1907",
+  "date_raw_fa": "۳۱ اوت ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 8,
+   "g_day": 31,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "شهربور ۱۲۸۶",
+   "month": 6,
+   "year": 1286,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The 'Abbasi Anjumans establish fourteen branches in the towns and villages of Gilan; Majlis orders the closing of all town, village, and district anjumans",
+  "text_fa": "ایجاد چهارده شعبهٌ انجمنهای‌عباسی در شهرها و روستاهای گیلان؛ مجلس فرمان تعطیلی کلیة انجمنهای شهرهای کوچک و روستاها را صادر می‌کند 0 ۲۴",
+  "date_raw_en": "Summer-Fall 1907",
+  "date_raw_fa": "تابستان - پاییز ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "precision": "season",
+   "season": "Summer",
+   "season_end": "Fall"
+  },
+  "jalali": {
+   "raw": "۱۲۸۶",
+   "year": 1286,
+   "year_end": null,
+   "precision": "year"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Congress of the Organization of Social Democrats (Muja- hidin) takes place in Mashhad",
+  "text_fa": "برگزاری کنگره فرقة اجتماعیون عامیون (مجاهدین) در مشهد 7",
+  "date_raw_en": "September 24, 1907",
+  "date_raw_fa": "سپتامبر ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 9,
+   "g_day": 24,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲ مهر ۱۲۸۶",
+   "month": 7,
+   "year": 1286,
+   "day": 2,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Supplementary Constitutional Laws are officially ratified by the Majlis",
+  "text_fa": "تضویب رسمی متمم قانون اساسی در مجلس 7",
+  "date_raw_en": "October 7, 1907",
+  "date_raw_fa": "۷اکتبر ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 10,
+   "g_day": 7,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۵ مهر ۱۲۸۶",
+   "month": 7,
+   "year": 1286,
+   "day": 15,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The newspaper Musavat begins publication in Tehran",
+  "text_fa": "انتشار روزنامهٌ مساوات در تهران 0 ۱۲",
+  "date_raw_en": "October 13, 1907",
+  "date_raw_fa": "۱۳اکتبر ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 10,
+   "g_day": 13,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۱ مهر ۱۲۸۶",
+   "month": 7,
+   "year": 1286,
+   "day": 21,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Muhammad 'Ali Shah visits the Majlis and swears again to uphold the constitution",
+  "text_fa": "حضور محمدعلی شاه در مجلس؛ او بار دیگر سوگند می‌خورد که حافظ قانون اساسی باشد 0 ۱۵",
+  "date_raw_en": "November,12, 1907",
+  "date_raw_fa": "نوامبر ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 11,
+   "precision": "unparsed_year"
+  },
+  "jalali": {
+   "raw": "۲۱ آبان ۱۲۸۶",
+   "month": 8,
+   "year": 1286,
+   "day": 21,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Unsuccessful coup against the Majlis by Muhammad 'Ali Shah, with the backing of Shaikh Fazlullah Nuri; anticonstitutionalist forces threaten to attack the Jewish ghetto",
+  "text_fa": "کودتای نافرجام محمدعلی شاء با پشتیبانی شیخ فضل‌الله نوری علیه مجلس؛ تهدید مستبدین به حمله به محلهٌ بهودیان",
+  "date_raw_en": "December 15, 1907",
+  "date_raw_fa": "دسامبر ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 12,
+   "g_day": 15,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۴ آذر ۱۲۸۶",
+   "month": 9,
+   "year": 1286,
+   "day": 24,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Secret meeting of Armenian Dashnak Party leaders with Majlis delegates",
+  "text_fa": "جلسة مخفی رهبران حزب داشناک ارمنی با نمایندگان مجلس 0",
+  "date_raw_en": "December 30, 1907",
+  "date_raw_fa": "۳۰ دسامبر ۱۹۰۷",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1907,
+   "g_month": 12,
+   "g_day": 30,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "دی ۱۲۸۶",
+   "month": 10,
+   "year": 1286,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Assassination of Zoroastrian constitutionalist Firaidun Zartushti",
+  "text_fa": "قتل فریدون زرتشتی مشروطه خواه زردشتی 0",
+  "date_raw_en": "January 1908",
+  "date_raw_fa": "ژانویهٌ ۱٩۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 1,
+   "precision": "month"
+  },
+  "jalali": {
+   "raw": "دی ۱۲۸۶",
+   "month": 10,
+   "year": 1286,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Assassination attempt against Muhammad 'Ali Shah by the revo- lutionaries",
+  "text_fa": "سوء قصد به محمدعلی شاء از جانب انقلابیون 0 ۱۴",
+  "date_raw_en": "February, 1908",
+  "date_raw_fa": "فوریة ۱٩۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 2,
+   "precision": "month"
+  },
+  "jalali": {
+   "raw": "بهمن ۱۲۸۶",
+   "month": 11,
+   "year": 1286,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Majlis discusses the status of women's councils The Lesser Autocracy: June 23, 1908 to July 16, 1909",
+  "text_fa": "بحث مجلس درباره انجمنهای زنان 0",
+  "date_raw_en": "March 14, 1908",
+  "date_raw_fa": "مارس ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة اول : ۵ اوت ۱٩۹۰۲ تا ۲۳ ژولن ۱۹۰۸ [۱۴ مرداد ۱۲۸۵ تا ۲ تبر ۱۲۸۷]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 3,
+   "g_day": 14,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۳ اسفند ۱۳۸۶",
+   "month": 12,
+   "year": 1386,
+   "day": 23,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Muhammad 'Ali Shah and members of the Cossack Brigade leave the palace abruptly and settle at the royal garden outside Tehran",
+  "text_fa": "خروج ناگهانی محمدعلی شاه و افراد بریگاد قزاق از کاخ و استقرار آنها در باغ شاه 07 ۵",
+  "date_raw_en": "June 3, 1908",
+  "date_raw_fa": "۳ژوئن ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 6,
+   "g_day": 3,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۳ خرداد ۱۲۸۷",
+   "month": 3,
+   "year": 1287,
+   "day": 13,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Muhammad 'Ali Shah arrests dignitaries whom he had called to the garden to negotiate with him",
+  "text_fa": "دستگیری افراد عالی مقامی که برای مذاکره به باغْ شاه احضار شده بودند به فرمان محمدعلی‌شاه ۸",
+  "date_raw_en": "June 5,1908",
+  "date_raw_fa": "ژوئن ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 6,
+   "g_day": 5,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۵ خرداد ۱۲۸۷",
+   "month": 3,
+   "year": 1287,
+   "day": 15,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Muhammad 'Ali Shah issues an ultimatum to the nation",
+  "text_fa": "اولتیماتوم محمدعلی شاه به ملت ۵ ۱۲",
+  "date_raw_en": "June 8, 1908",
+  "date_raw_fa": "ژوئن ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 6,
+   "g_day": 8,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۸ خرداد ۱۲۸۷",
+   "month": 3,
+   "year": 1287,
+   "day": 18,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The shah demands the exile of four leading constitutionalists and the disarmament of the Mujahidin forces",
+  "text_fa": "تقاضای تبعید چهار مشروطه‌خواه برجسته و خلع سلاح مجاهدین از سوی شاه 0 ۱۵",
+  "date_raw_en": "June 12, 1908",
+  "date_raw_fa": "ژوئن ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 6,
+   "g_day": 12,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۲ خرداد ۱۲۸۷",
+   "month": 3,
+   "year": 1287,
+   "day": 22,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Six Majlis delegates present a letter of appeal to the shah",
+  "text_fa": "تسلیم تقاضانامةٌ شش نمایندٌ مجلس به شاه ۲ ۲۳",
+  "date_raw_en": "June 15,1908",
+  "date_raw_fa": "ژوئن ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 6,
+   "g_day": 15,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۵ خرداد ۱۲۸۷",
+   "month": 3,
+   "year": 1287,
+   "day": 25,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Coup d'état by the Cossack Brigade in Tehran; the Majlis is bom- barded",
+  "text_fa": "کودتای بریگاد قزاق در تهران؛ مجلس به توپ بسته می‌شود ۵ ۲۴",
+  "date_raw_en": "June 23, 1908",
+  "date_raw_fa": "ژوئن ۱٩۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 6,
+   "g_day": 23,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲ تبر ۱۲۸۷",
+   "month": 4,
+   "year": 1287,
+   "day": 2,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Azali Babi revolutionaries Malik al-Mutikallimin and Mirza Jahangir Khan Shirazi are executed (Sayyid Jamal al-Din Isfahani is later arrested and also executed); the ranking clerics Bihbahani and Tabataba'i are beaten and placed under house arrest; many others, such as Hasan Taqizadah and 'Ali Akbar Dihkhuda, editor of Sur-i Israfil, obtain sanctuary at foreign legations and eventually leave the country",
+  "text_fa": "قتل ملک‌المتکلمین و میرزا جهانگیرخان شیرازی (سید جمال‌الدین اصفهانی نیز بعداً دستگیر و اعدام می‌شود)؛ روحانیان برجسته؛ بهبهانی و طباطبایی؛ مورد ضرب و شتم واقع می‌شوند و در منزلشان تحت‌الحفظ قرار می‌گیرند؛ بسیاری دیگر مانند حسن تقی‌زاده و علی اکبر دهخدا (سردبیر صور اسرافیل)؛ به سفارتخانه‌های خارجی پناهنده می‌شوند و سرانجام از کشور می‌روند ۵",
+  "date_raw_en": "June 24, 1908",
+  "date_raw_fa": "ژوئن ۱٩۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 6,
+   "g_day": 24,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۳ تبر ۱۲۸۷",
+   "month": 4,
+   "year": 1287,
+   "day": 3,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Civil war in Azerbaijan led by Sattar Khan, Baqir Khan, the Secret Center, and Transcaucasian revolutionaries; Tabriz becomes the new center of national resistance; all who join the nationalists' struggle are called mujahidin or fada'in",
+  "text_fa": "جنگ داخلی در آذربایجان به رهبری ستارخان؛ باقرخان؛ مرکز غیبی؛ و انقلابیون قفقاز؛ تبزیز کانون جدید مقاومت ملی می‌شود؛ کلیه کسانی که به مبارزه ملیون ملحق می‌شوند مجاهدین یا فداییان نامیده می‌شوند ۳ 07 ۲۳",
+  "date_raw_en": "July 1908",
+  "date_raw_fa": "ژوئية ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 7,
+   "precision": "month"
+  },
+  "jalali": {
+   "raw": "نیر ۱۲۸۷",
+   "month": 4,
+   "year": 1287,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The Turkish Revolution restores a constitutional regime to that nation",
+  "text_fa": "اعد رژیم مشروطه در کی انقلاب عثمانی 0 ۱۸",
+  "date_raw_en": "July 23, 1908",
+  "date_raw_fa": "ژوئيةٌ ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 7,
+   "g_day": 23,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱ مرداد 1۳۸۷",
+   "month": 5,
+   "year": 1387,
+   "day": 1,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The Tabriz Anjuman resumes its activities",
+  "text_fa": "تجدید فعالیت انجمن تبریز ۱ 0",
+  "date_raw_en": "August 18,1908",
+  "date_raw_fa": "اوت ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 8,
+   "g_day": 18,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۷ مرداد ۱۲۸۷",
+   "month": 5,
+   "year": 1287,
+   "day": 27,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Battle of Tavalash in the Caspian region; defeat of agovernment military campaign to regain control of the area from local villagers",
+  "text_fa": "نبرد طوالش؛ شکست لشکرکشی حکومت برای خارج کردن منطقه از کنترل روستاییان محل 2",
+  "date_raw_en": "September 1908",
+  "date_raw_fa": "سپتامبر ۱٩۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 9,
+   "precision": "month"
+  },
+  "jalali": {
+   "raw": "شهریور - مهر ۱۲۸۷",
+   "month": 7,
+   "year": 1287,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "A temporary victory of the resistance in 'Tabriz",
+  "text_fa": "پیروزی موقت مقاومت کنندگان در تبریز 0",
+  "date_raw_en": "October 5, 1908",
+  "date_raw_fa": "۵اکتبر ۱٩۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 10,
+   "g_day": 5,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۳ مهر ۱۲۸۷",
+   "month": 7,
+   "year": 1287,
+   "day": 13,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Conference of the Tabriz Social Democrats",
+  "text_fa": "کنفرانس سوسیال دموکراتهای تبریز 0 ۳۰",
+  "date_raw_en": "October 16, 1908",
+  "date_raw_fa": "۱۶اکتبر ۱٩۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 10,
+   "g_day": 16,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۳ مهر ۱۲۸۷",
+   "month": 7,
+   "year": 1287,
+   "day": 23,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The Persia Committee of London is formed",
+  "text_fa": "تشکیل کميتة ایران در لندن ۱٩ 60",
+  "date_raw_en": "October 30, 1908",
+  "date_raw_fa": "اکتبر ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 10,
+   "g_day": 30,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۸ آبان ۱۲۸۷",
+   "month": 8,
+   "year": 1287,
+   "day": 8,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "'Treaty of friendship between the Organization of Social Democrats and the Armenian Hnchak Party",
+  "text_fa": "پیمان دوستی میان فرقهٌ اجتماعیون عامیون و حزب هنچاک آرمنی 0 ۵",
+  "date_raw_en": "November 19, 1908",
+  "date_raw_fa": "نوامبر ۱۹۰۸",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1908,
+   "g_month": 11,
+   "g_day": 19,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۸ آبان ۱۲۸۷",
+   "month": 8,
+   "year": 1287,
+   "day": 28,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Samsam al-Saltanah, head of Bakhtiari forces, gains control of Isfahan and reestablishes the constitutional order in that city",
+  "text_fa": "کنترل اصفهان به دست صمصام‌السلطنه رئیس ایل بختیاری و اعادهُ مشروطه در این شهر 0 ۴",
+  "date_raw_en": "January 5, 1909",
+  "date_raw_fa": "ژانويةٌ ۱٩۰۹",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 1,
+   "g_day": 5,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۵ دی ۱۲۸۷",
+   "month": 10,
+   "year": 1287,
+   "day": 15,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Royalists forces besiege Tabriz",
+  "text_fa": null,
+  "date_raw_en": "February 4, 1909",
+  "date_raw_fa": null,
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 2,
+   "g_day": 4,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": false
+ },
+ {
+  "text_en": "Revolutionary forces regain control of Rasht; Governor Sardar Afkham is killed",
+  "text_fa": "محاصرهٌ تبریز توسط قشون سلطنتی 0 ۸فورية ۱۹۰۹ [۱۹ بهمن ۱۲۸۷] کنترل رشت به دست نیروهای انقلابی؛ سردار انخم. حاکم گیلان کشته می‌شود",
+  "date_raw_en": "February 8, 1909",
+  "date_raw_fa": "فوريةٌ ۱۹۰۹",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 2,
+   "g_day": 8,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۹ بهمن ۱۲۸۷",
+   "month": 11,
+   "year": 1287,
+   "day": 19,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Russian intervention ends the royalists siege of Tabriz; Russians disarm the population and occupy the city",
+  "text_fa": "خاتمهٌ محاصرهٌ تبریز با مداخلة روسیه؛ روسها مردم را خلع سلاح و شهر را اشغال می‌کنند 07 ۱",
+  "date_raw_en": "April 29, 1909",
+  "date_raw_fa": "0 آوریل ۱۹۰۹",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 4,
+   "g_day": 29,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "اردیبهشت ۱۲۸۸",
+   "month": 2,
+   "year": 1288,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The second electoral laws are published The Second Constitutional Period: July 16, 1909 to December 24, 1911",
+  "text_fa": null,
+  "date_raw_en": "July 1, 1909",
+  "date_raw_fa": null,
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 7,
+   "g_day": 1,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": false
+ },
+ {
+  "text_en": "Reconquest of Tehran by revolutionary forces from Isfahan and Rasht",
+  "text_fa": "صدور دومین قانون انتخابات 7 ۱۶ ژوثيةٌ ۱۹۰۹ [۲۵ تیر ۱۲۸۸] فتح تهران به دست نیروهای انقلابی از اصفهان و رشت 0 ۱۸",
+  "date_raw_en": "July 16, 1909",
+  "date_raw_fa": "ژوئية ۱۹۰۹",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "استبداد صغیر : ۲۳ ژوئن ۱۹۰۸ ۱۱۱۷ ژوئیة ۱۹۰٩ [۲ تبر ۱۲۸۷ تا ۲۶ تیر ۱۲۸۸]",
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 7,
+   "g_day": 16,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۵ تیر ۱۲۸۸",
+   "month": 4,
+   "year": 1288,
+   "day": 25,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Muhammad “Ali Shah is deposed; his twelve-year-old son Ahmad Shah is pronounced the new shah and a regency is established",
+  "text_fa": "خلع محمدعلی شاه؛ پسر دوازده ساله‌اش احمدمیرزا به سلطنت می‌رسد و نایب‌السلطنه‌ای تعیین می‌شود",
+  "date_raw_en": "July 18, 1909",
+  "date_raw_fa": "ژوئية ۱۹۰۹",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 7,
+   "g_day": 18,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۷ تبر ۱۲۸۸",
+   "month": 4,
+   "year": 1288,
+   "day": 27,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Execution of Shaikh Fazlullah Nuri",
+  "text_fa": "اعدام شیخ فضل‌الله نوری 07 ۱۷",
+  "date_raw_en": "July 31, 1909",
+  "date_raw_fa": "۳۱ ژوئية ۱۹۰۹",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 7,
+   "g_day": 31,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "مرداد ۱۲۸۸",
+   "month": 5,
+   "year": 1288,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The Directory is formed",
+  "text_fa": "تشکیل هیئت مدیره ۱ 7 ۲۴",
+  "date_raw_en": "August 17,1909",
+  "date_raw_fa": "اوت ۱۹۰۹",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 8,
+   "g_day": 17,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۶ مرداد ۱۲۸۸",
+   "month": 5,
+   "year": 1288,
+   "day": 26,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The social democratic newspaper Iran-i Naw begins publication in Tehran",
+  "text_fa": "انتشار روزنامهٌ سوسیال دموکراتیک ایران و در تهران ٩ 7",
+  "date_raw_en": "August 24,1909",
+  "date_raw_fa": "اوت ۱۹۰۹",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 8,
+   "g_day": 24,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۳۰ مرداد ۱۲۸۸",
+   "month": 5,
+   "year": 1288,
+   "day": 30,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The former shah leaves for Odessa, Russia",
+  "text_fa": "عزیمت شاه سابق به اودسا (روسیه) 0 نوامیر ۱۹۰۹ [آبان ۱۲۸۸] انتشار مقاله‌های طایره هوادار حقوق زنان در ایران نو 0 ۱۵",
+  "date_raw_en": "September 9, 1909",
+  "date_raw_fa": "سپتامبر ۱۹۰۹",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 9,
+   "g_day": 9,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "آبان ۱۲۸۸",
+   "month": 8,
+   "year": 1288,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Advocate of women's rights, Tayirah, publishes several columns in Iran-1 Naw",
+  "text_fa": null,
+  "date_raw_en": "November 1909",
+  "date_raw_fa": null,
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 11,
+   "precision": "month"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": false
+ },
+ {
+  "text_en": "The Second Majlis opens; the Democrat Party is formed by liberals and social democrats and sends a number of representatives to the Majlis",
+  "text_fa": "افتتاح مجلس دوم؛ حزب دموکرات که توسط لیبرالها و سوسیال دموکراتها تشکیل می‌شود تعدادی نماینده به مجلس می‌فرستد 0 ۱ فورية ۱٩۱۰ [۱۲ بهمن ۱۲۸۸] انحلال کلیهُ شعبه‌های فرقة اجتماعیون عامیون باکو در ایران؛ فرقه به شعبه‌های خود اعتماد ندارد و اختلاف نظر چشمگیری میان فرقه و حزب دموکرات دیده می‌شود 07",
+  "date_raw_en": "November 15, 1909",
+  "date_raw_fa": "نوامبر ۱۹۰۹",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1909,
+   "g_month": 11,
+   "g_day": 15,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۲ بهمن ۱۲۸۸",
+   "month": 11,
+   "year": 1288,
+   "day": 12,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The Baku Organization of Social Democrats closes all its affili- ate branches in Iran because it distrusts local branches and has significant dif- ferences with the Democrat Party April igio_ Fifty girls' schools already exist in Tehran April17, 1910 Major celebration in Tehran welcomes the arrival ofthe two Tabriz heroes, Sattar Khan and Baqir Khan June igi0_ Printers' strikes in 'Tehran",
+  "text_fa": null,
+  "date_raw_en": "February 1, 1910",
+  "date_raw_fa": null,
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 2,
+   "g_day": 1,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": false
+ },
+ {
+  "text_en": "Majlis asks Democrat Party leader Hasan Taqizadah to leave the assembly for three months",
+  "text_fa": "فعالیت پنجاه مدرسة دخترانه در کل تهران 0 ۱۷",
+  "date_raw_en": "July 3, 1910",
+  "date_raw_fa": "آوریل ۱٩۱۰",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 7,
+   "g_day": 3,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "فروردین ۱۲۸۹",
+   "month": 1,
+   "year": 1289,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The leading constitutionalist cleric Sayyid 'Abdullah Bihbahani is assassinated by supporters of the Democrat Party",
+  "text_fa": "استقبال گرم مردم تهران از دو قهرمان تبریزه ستارخان و باقرخان 7 ژوئن ۱٩۹۱۰ [خرداد ۱۲۸۹] اعتصاب چاپگران تهران 07 ۳",
+  "date_raw_en": "July 15, 1910",
+  "date_raw_fa": "آوریل ۱٩۱۰",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 7,
+   "g_day": 15,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "خرداد ۱۲۸۹",
+   "month": 3,
+   "year": 1289,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Hasan 'Taqizadah is voted out of the Majlis by the leading clerics",
+  "text_fa": "تقاضای مجلس از حسن تقی‌زاده رهبر حزب دموکرات/ مبتی بر سه ماه ترک مجلنس ۰ ۱۵ ُوئية ۱۹۱۰ (۲۳ تیر ۱۲۸۹] قتل سید عبدالله بهبهانی روحانی برجستهٌ مشروطه خواه به دست هواداران حزب دموکرات ۲ ووئية ۱٩۱۰ [۳۱ بر ۱۲۸۹] رأی روحانیان برجسته به اخراج تقی‌زاده از مجلس ۱ ۲۶",
+  "date_raw_en": "July 22, 1910",
+  "date_raw_fa": "ژوئية ۱٩۱۰",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 7,
+   "g_day": 22,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۲ تبر ۱۲۸۹",
+   "month": 4,
+   "year": 1289,
+   "day": 12,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "A new Bakhtiari-Democrat cabinet is formed",
+  "text_fa": "تشکیل کابینُ جدید بختباری - دموکرات",
+  "date_raw_en": "July 26, 1910",
+  "date_raw_fa": "ژوئية ۱۹۱۰",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 7,
+   "g_day": 26,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Assassination of two Democrat Party activists, 'Ali Muhammad Tarbiyat and Sayyid 'Abd al-Razzaq, by supporters of the Moderate Party",
+  "text_fa": "قتل علی محمد تربیت و سید عبدالرژاق فعالان حزب دموکرات توسط هواداران حزب اعتدالیون ۱ ۷ اوت ۱٩۹۱۰ [۱۶ مرداد ۱۲۸۹] درگیری نیروهای حکومت دموکرات - بختیاری و عده‌ای از رزمندگان مجاهدین در پارک اتابک؛ پای ستارخان تیر می‌خورد و او علیل می‌شود | ۱۶",
+  "date_raw_en": "August 2, 1910",
+  "date_raw_fa": "۲اوت ۱٩۱۰",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 8,
+   "g_day": 2,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۶ مرداد ۱۲۸۹",
+   "month": 5,
+   "year": 1289,
+   "day": 16,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Shoot-out at the Atabak Park between forces of the Democrat- Bakhtiari government and some of the mujahidin fighters; Sattar Khan is shot in the leg and is disabled",
+  "text_fa": null,
+  "date_raw_en": "August 7, 1910",
+  "date_raw_fa": null,
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 8,
+   "g_day": 7,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": false
+ },
+ {
+  "text_en": "A women's journal, Danish, begins publication in Tehran October igi0_ Iran-i Naw editor Muhammad Amin Rasulzadah publishes his Cri- tique of the Moderate Party or Social Moderates",
+  "text_fa": "انتشار نشريهة زنانة دانش در تهران |",
+  "date_raw_en": "September 16, 1910",
+  "date_raw_fa": "سپتامبر ۱۹۱۰",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 9,
+   "g_day": 16,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۵ شهریور ۱۲۸۹",
+   "month": 6,
+   "year": 1289,
+   "day": 25,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": null,
+  "text_fa": "سردیبیر ایران نی محمدامین رسول‌زاده تنقید فرفهُ اعتدالیون يا اجتماعیون اعتدالیون را چاپ می‌کند ۱",
+  "date_raw_en": null,
+  "date_raw_fa": "اکتبر ۱٩۱۰",
+  "period_en": null,
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 10
+  },
+  "jalali": {
+   "raw": "مهر ۱۲۸۹",
+   "month": 7,
+   "year": 1289,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": false
+ },
+ {
+  "text_en": "British ultimatum to Iran regarding safety of southern trade routes",
+  "text_fa": "اولتیماتوم بریتانیا به ایران در مورد امنیت راههای تجاری جنوب | ۲۳",
+  "date_raw_en": "October 16, 1910",
+  "date_raw_fa": "۱۶اکتبر ۱۹۱۰",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 10,
+   "g_day": 16,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲۴ مهر ۱۲۸۹",
+   "month": 7,
+   "year": 1289,
+   "day": 24,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Istanbul Conference of Muslims against imperialist powers",
+  "text_fa": "کنفرانس مسلمانان در استانبول علیه نیروهای امپریالیستی ۱ ۵",
+  "date_raw_en": "October 23, 1910",
+  "date_raw_fa": "اکتبر ۱٩۱۰",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 10,
+   "g_day": 23,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱ آبان ۱۲۸۹",
+   "month": 8,
+   "year": 1289,
+   "day": 1,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Russo-German Meeting at Potsdam",
+  "text_fa": "اجلاس روسیه - آلمان در پتسدام ۱ ۸",
+  "date_raw_en": "November 5, 1910",
+  "date_raw_fa": "نوامبر ۱٩۱۰",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1910,
+   "g_month": 11,
+   "g_day": 5,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۴ آبان ۱۲۸۹",
+   "month": 8,
+   "year": 1289,
+   "day": 14,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "New regent Nasir al-Mulk arrives in Tehran",
+  "text_fa": "ورود نایب‌السلطنة جدید. ناصرالملک به تهران ۱ ۹۸۷ ۲۱ اردیبهشت ۱۲۹۰] ورود مورگان شوست مستشار مالی امریکایی به انزلی ٩[ ۱۹۱۱2۸۳۰ ۱ خرداد ۱۲۹۰] انتصاب شوستر به سمت خزانه‌دار کل توسط مجلس ۱ ۷ ژوئیه - ۱۲",
+  "date_raw_en": "February 8, 1911",
+  "date_raw_fa": "فوريةٌ ۱٩۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 2,
+   "g_day": 8,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۹۱۱2۸۳۰ ۱ خرداد ۱۲۹۰",
+   "month": 3,
+   "year": 1290,
+   "day": 1,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "American financial adviser W. Morgan Shuster arrives in Anzali",
+  "text_fa": null,
+  "date_raw_en": "May 1, 1911",
+  "date_raw_fa": null,
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 5,
+   "g_day": 1,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": false
+ },
+ {
+  "text_en": "Majlis appoints Shuster treasurer general",
+  "text_fa": null,
+  "date_raw_en": "May 30, 1911",
+  "date_raw_fa": null,
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": null,
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 5,
+   "g_day": 30,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": false
+ },
+ {
+  "text_en": "The former shah, Muhammad 'Ali Mirza, secretly enters the country with Russian support and tries to overthrow the government; Shus- ter and the Democrats help raise an army that defeats him in Firuzkuh; Muhammad 'Ali Mirza escapes to Russia",
+  "text_fa": "ورود مخفیانهٌ محمدعلی میرزاه شاه سابق به کشور با حمایت روسیه به منظور براندازی حکومت؛ شوستر و دموکراتها کمک می‌کنند تا قشونی تشکیل شود و اين قشون محمدعلی میرزا را در فیروزکوه شکست می‌دهد؛ محمدعلی میرزا به روسیه می‌گریزد |",
+  "date_raw_en": "July 17-August 12, 1911",
+  "date_raw_fa": "اوت ۱٩۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 8,
+   "precision": "unparsed_year"
+  },
+  "jalali": {
+   "raw": "۲۶ تبر - ۲۱ مرداد ۱۳۹۰",
+   "month": 5,
+   "year": 1390,
+   "day": 21,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Vakil al-Ru'aya, deputy from Hamadan, unsuccessfully proposes women's suffrage to the Majlis",
+  "text_fa": "پيشنهاد وکیل‌الرعایا نماینده همدان در مجلس. در مورد اعطای حق رأی به زنان؛ که پذیرفته نمی‌شود",
+  "date_raw_en": "August 3, 1911",
+  "date_raw_fa": "۳اوت ۱۹۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 8,
+   "g_day": 3,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۲ مرداد ۱۳۹۰",
+   "month": 5,
+   "year": 1390,
+   "day": 12,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The third electoral laws are ratified",
+  "text_fa": "تصویب سومین قانون انتخابات",
+  "date_raw_en": "October 22,1911",
+  "date_raw_fa": "۲۲اکتبر ۱٩۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 10,
+   "g_day": 22,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۳۰ مهر ۱۲۹۰",
+   "month": 7,
+   "year": 1290,
+   "day": 30,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The first Russian ultimatum: the tsarist government demands an apology from the Iranian treasury general for supposed insult to Russian consul general Pokhitanoff November 29, 191. 'The second Russian ultimatum to Shuster and the Majlis is backed by the British government; Russian troops arrive in Qazvin; in the days that follow large anti-imperialist demonstrations take place in Tehran",
+  "text_fa": "اولتیماتوم اول روسیه؛ حکومت تزاری خواستار عذرخواهی خزانه‌دار کل ایران به خاطر توهینن به سرکنسول روسیه؛ پوخیتونوف می‌شود ۲٩",
+  "date_raw_en": "November 5, 1911",
+  "date_raw_fa": "۵ نوامبر ۱٩۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 11,
+   "g_day": 5,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Majlis rejects Russian ultimatum",
+  "text_fa": "حمایت حکومت بریتانیا از اولتیماتوم دوم روسیه به شوستر و مجلس؛ نیروهای روسیه وارد قزوین می‌شوند؛ در روزهای بعد تظاهرات ضد امپریالیستی بزرگی در تهران صورت می‌گیرد 0۲ ۳۰ نوامیر ٩[ ۱٩۱۱ آذر ۱۲۹۰] رد اولتیماتوم روسیه توسط مجلس 0 ۱ دسامیر ۱۹۱۱ (۱۰ آذر ۱۲۹۰] تظاهرات بزرگ زنان در بیرون مجلس 7 ۵",
+  "date_raw_en": "November 30, 1911",
+  "date_raw_fa": "نوامبر ۱٩۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 11,
+   "g_day": 30,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱٩۱۱ آذر ۱۲۹۰",
+   "month": 9,
+   "year": 1290,
+   "day": 11,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Large demonstration of women outside the Majlis",
+  "text_fa": "ارسال تلگراف انجمن مخدرات وطن به هواداران جنبش اعطای حق رای زنان در بریتانیا 7 ۲۱",
+  "date_raw_en": "December 1, 1911",
+  "date_raw_fa": "دسامبر ۱٩۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 12,
+   "g_day": 1,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۱۴ آذر ۱۲۹۰",
+   "month": 9,
+   "year": 1290,
+   "day": 14,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Anjuman of Ladies of the Homeland sends a telegram to British suffragists",
+  "text_fa": "رضایت دادن مجلس به تشکیل کمیته‌ای فرعی به ریاست سرداراسعد؛ این کمیته خیلی زود شرایط روسیه را قبول می‌کند؛ دموکراتها (بجز یک نفر) به این کميتة فرعی رأی نمی‌دهند 7 ۲۳",
+  "date_raw_en": "December 5, 1911",
+  "date_raw_fa": "دسامبر ۱٩۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 12,
+   "g_day": 5,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۳۰ دی ۱۲۹۰",
+   "month": 10,
+   "year": 1290,
+   "day": 30,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Majlis agrees to the formation of asubcommittee headed by Sardar As'ad, which, soon after, accepts the Russian terms; all Democrats, except one, refuse to vote for this subcommittee",
+  "text_fa": "به توپ بستن تبریز توسط نیروهای روسیه 07 ۲۴",
+  "date_raw_en": "December 21, 1911",
+  "date_raw_fa": "دسامبر ۱٩۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 12,
+   "g_day": 21,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۲بهمن ۱۲۹۰",
+   "month": 11,
+   "year": 1290,
+   "day": 2,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Russian troops bombard Tabriz",
+  "text_fa": "تعطیل مجلس دوم با کودتای ناصرالملک نایب‌السلطنه و کابینه, با حمایت بی‌پردٌ دو قدرت خارجی",
+  "date_raw_en": "December 23, 1911",
+  "date_raw_fa": "دسامبر ۱٩۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 12,
+   "g_day": 23,
+   "precision": "day"
+  },
+  "jalali": {
+   "raw": "۳بهمن ۱۲۹۰",
+   "month": 11,
+   "year": 1290,
+   "day": 3,
+   "precision": "day"
+  },
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "The Second Majlis is closed by a coup carried out by the regent Nasir al-Mulk and the cabinet, with the explicit backing of the two powers",
+  "text_fa": "-",
+  "date_raw_en": "December 24, 1911",
+  "date_raw_fa": "دسامبر ۱٩۱۱",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 12,
+   "g_day": 24,
+   "precision": "day"
+  },
+  "jalali": null,
+  "hijri": null,
+  "aligned": true
+ },
+ {
+  "text_en": "Russian troops massacre revolutionaries in Azerbai- jan, bomb Gilan, and deport many constitutionalists in the areas under their occupation, \\ \"",
+  "text_fa": "کشتار انقلابیون در آذربایجان و بمباران گیلان توسط نیروهای روسیه؛ و بسیاری از مشروطه‌خواهان از مناطق تحت اشفال روسیه رانده می‌شوند",
+  "date_raw_en": "December 1911-January 1912",
+  "date_raw_fa": "ژانويه ۱٩۱۲",
+  "period_en": "First Constitutional Period: August 5, 1906 to June 23, 1908",
+  "period_fa": "مشروطة دوم :1 ۱ ژوئیا ۱۹۰٩ تا ۲۴ دسامبر ۱٩۱۱ [۲۵ تیر ۱۲۸۸ تا ۳ دی ۱۲۹۰]",
+  "gregorian": {
+   "g_year": 1911,
+   "g_month": 12,
+   "g_year_end": 1912,
+   "g_month_end": 1,
+   "precision": "range"
+  },
+  "jalali": {
+   "raw": "بهمن ۱۲۹۰",
+   "month": 11,
+   "year": 1290,
+   "day": null,
+   "precision": "month"
+  },
+  "hijri": null,
+  "aligned": true
+ }
+]

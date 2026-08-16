@@ -1,0 +1,98 @@
+{
+ "1283": {
+  "nowruz_jd": 2416591,
+  "nowruz_gregorian": "1904-04-20",
+  "support": 1,
+  "total": 2,
+  "astronomical_jd": 2416561,
+  "delta_days": 30
+ },
+ "1284": {
+  "nowruz_jd": 2416926,
+  "nowruz_gregorian": "1905-03-21",
+  "support": 2,
+  "total": 2,
+  "astronomical_jd": 2416926,
+  "delta_days": 0
+ },
+ "1285": {
+  "nowruz_jd": 2417291,
+  "nowruz_gregorian": "1906-03-21",
+  "support": 11,
+  "total": 12,
+  "astronomical_jd": 2417292,
+  "delta_days": -1
+ },
+ "1286": {
+  "nowruz_jd": 2417656,
+  "nowruz_gregorian": "1907-03-21",
+  "support": 7,
+  "total": 7,
+  "astronomical_jd": 2417657,
+  "delta_days": -1
+ },
+ "1287": {
+  "nowruz_jd": 2418022,
+  "nowruz_gregorian": "1908-03-21",
+  "support": 13,
+  "total": 14,
+  "astronomical_jd": 2418022,
+  "delta_days": 0
+ },
+ "1288": {
+  "nowruz_jd": 2418387,
+  "nowruz_gregorian": "1909-03-21",
+  "support": 3,
+  "total": 5,
+  "astronomical_jd": 2418387,
+  "delta_days": 0
+ },
+ "1289": {
+  "nowruz_jd": 2418752,
+  "nowruz_gregorian": "1910-03-21",
+  "support": 4,
+  "total": 6,
+  "astronomical_jd": 2418753,
+  "delta_days": -1
+ },
+ "1290": {
+  "nowruz_jd": 2419014,
+  "nowruz_gregorian": "1910-12-08",
+  "support": 1,
+  "total": 7,
+  "astronomical_jd": 2419118,
+  "delta_days": -104
+ },
+ "1385": {
+  "nowruz_jd": 2417291,
+  "nowruz_gregorian": "1906-03-21",
+  "support": 1,
+  "total": 1,
+  "astronomical_jd": 2453816,
+  "delta_days": -36525
+ },
+ "1386": {
+  "nowruz_jd": 2417657,
+  "nowruz_gregorian": "1907-03-22",
+  "support": 1,
+  "total": 1,
+  "astronomical_jd": 2454181,
+  "delta_days": -36524
+ },
+ "1387": {
+  "nowruz_jd": 2418022,
+  "nowruz_gregorian": "1908-03-21",
+  "support": 1,
+  "total": 1,
+  "astronomical_jd": 2454546,
+  "delta_days": -36524
+ },
+ "1390": {
+  "nowruz_jd": 2419117,
+  "nowruz_gregorian": "1911-03-21",
+  "support": 1,
+  "total": 1,
+  "astronomical_jd": 2455642,
+  "delta_days": -36525
+ }
+}
