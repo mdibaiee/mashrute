@@ -107,3 +107,5 @@
 {"id":"qasr-i-shirin","name_en":"Qasr-i Shirin","name_fa":"قصر شیرین","type":"town","parent_id":"kirmanshah","modern_country":"Iran"}
 {"id":"langarud","name_en":"Langarud","name_fa":"لنگرود","type":"town","parent_id":"gilan","modern_country":"Iran"}
 {"id":"tunakabun","name_en":"Tunakabun","name_fa":"تنکابن","type":"district","parent_id":"mazandaran","modern_country":"Iran"}
+{"id":"gumish-tapah","name_en":"Gumish Tapah","name_fa":"گمیش‌تپه","type":"town","parent_id":"astarabad","modern_country":"Iran","description_en":"Landing place on the south-east Caspian where Muhammad 'Ali Mirza came ashore from a Russian boat on 17 July 1911, and from which he fled back to Russia after his defeat.","description_fa":"محل پیاده‌شدن محمدعلی میرزا از کشتی روسی در ۲۵ تیر ۱۲۹۰ در جنوب‌شرق خزر، و همان‌جا که پس از شکست به روسیه گریخت."}
+{"id":"ishratabad","name_en":"Ishratabad","name_fa":"عشرت‌آباد","type":"building","parent_id":"tehran","modern_country":"Iran","description_en":"Tehran residence assigned to Baqir Khan in 1910, as Atabak Park was to Sattar Khan.","description_fa":"اقامتگاه تهرانِ باقرخان در ۱۲۸۹، همان‌گونه که پارک اتابک از آنِ ستارخان بود."}

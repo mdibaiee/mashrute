@@ -1233,3 +1233,68 @@
 {"rel":"group_relation","group_a":"baluch","group_b":"tribes","type":"branch_of"}
 {"rel":"group_relation","group_a":"khamsah-tribes","group_b":"tribes","type":"branch_of"}
 {"rel":"group_relation","group_a":"tangistani-tribes","group_b":"tribes","type":"branch_of"}
+{"rel":"person_group","person_id":"ahmad-bihbahani","group_id":"moderate-party","role_type":"leader","role_en":"a leader of the party in the Majlis","role_fa":"از رهبران حزب در مجلس"}
+{"rel":"person_group","person_id":"zargham-al-saltanah","group_id":"bakhtiari","role_type":"leader","role_en":"Bakhtiari leader from Isfahan","role_fa":"سردار بختیاری اصفهان"}
+{"rel":"person_group","person_id":"dickey-bruce","group_id":"treasury-gendarmerie","role_type":"member","role_en":"member of the American mission","role_fa":"عضو هیئت امریکایی"}
+{"rel":"person_group","person_id":"taqizadah","group_id":"majlis-foreign-affairs-commission","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"vahid-al-mulk-shaibani","group_id":"majlis-foreign-affairs-commission","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"husain-quli-nawab","group_id":"majlis-foreign-affairs-commission","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"hakim-al-mulk","group_id":"majlis-foreign-affairs-commission","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"sattar-khan","group_id":"ahrar-anjuman","role_type":"affiliate","role_en":"sided with the Moderates' anjuman against the Democrats","role_fa":"در برابر دموکرات‌ها با انجمن اعتدالیون همراه شد"}
+{"rel":"person_group","person_id":"baqir-khan","group_id":"ahrar-anjuman","role_type":"affiliate","role_en":"sided with the Moderates' anjuman against the Democrats","role_fa":"در برابر دموکرات‌ها با انجمن اعتدالیون همراه شد"}
+{"rel":"person_group","person_id":"sardar-muhyi","group_id":"ahrar-anjuman","role_type":"affiliate","role_en":"sided with the Moderates' anjuman against the Democrats","role_fa":"در برابر دموکرات‌ها با انجمن اعتدالیون همراه شد"}
+{"rel":"person_group","person_id":"tabatabai-zia-al-din","group_id":"sharq","role_type":"editor","role_en":"editor","role_fa":"مدیر"}
+{"rel":"person_group","person_id":"shuster","group_id":"democrat-party","role_type":"affiliate","role_en":"worked closely with the Democrats; his gendarmerie officers were mostly Democrats","role_fa":"با دموکرات‌ها همکاری نزدیک داشت؛ افسران ژاندارمری‌اش عمدتاً دموکرات بودند"}
+{"rel":"group_relation","group_a":"ahrar-anjuman","group_b":"moderate-party","type":"allied","note_en":"A conservative group whose principal activity was to oppose the Democrats."}
+{"rel":"group_relation","group_a":"sharq","group_b":"zoroastrians","type":"allied","note_en":"Financed by the Zoroastrian community of Tehran."}
+{"rel":"group_relation","group_a":"yamut-turkmen","group_b":"royalist-army","type":"allied"}
+{"rel":"group_relation","group_a":"kalhur-kurds","group_b":"royalist-army","type":"allied"}
+{"rel":"group_relation","group_a":"national-legion","group_b":"democrat-party","type":"allied"}
+{"rel":"group_relation","group_a":"national-legion","group_b":"dar-al-funun","type":"branch_of"}
+{"rel":"group_relation","group_a":"national-legion","group_b":"political-college-tehran","type":"branch_of"}
+{"rel":"event_participant","event_id":"habl-al-matin-closed-1909","person_id":"sayyid-hasan-kashani","role_type":"victim","role_en":"sentenced to two years","role_fa":"به دو سال حبس محکوم شد"}
+{"rel":"event_group","event_id":"habl-al-matin-closed-1909","group_id":"habl-al-matin","role_type":"victim"}
+{"rel":"event_participant","event_id":"rahim-khan-takes-ardabil-1909","person_id":"rahim-khan-chalbiyanlu","role_type":"perpetrator","role_en":"occupied the city and slaughtered residents","role_fa":"شهر را گرفت و مردم را کشت"}
+{"rel":"event_group","event_id":"rahim-khan-takes-ardabil-1909","group_id":"shahsavan","role_type":"perpetrator"}
+{"rel":"event_group","event_id":"iran-i-naw-sharq-closed-1910","group_id":"iran-i-naw","role_type":"victim"}
+{"rel":"event_group","event_id":"iran-i-naw-sharq-closed-1910","group_id":"sharq","role_type":"victim"}
+{"rel":"event_participant","event_id":"iran-i-naw-sharq-closed-1910","person_id":"sardar-asad","role_type":"mediator","role_en":"lifted the ban after public protest","role_fa":"پس از اعتراض عمومی توقیف را لغو کرد"}
+{"rel":"event_participant","event_id":"iran-i-naw-sharq-closed-1910","person_id":"sipahdar","role_type":"perpetrator","role_en":"his government ordered the closures; he resigned when the ban was lifted","role_fa":"دولت او فرمان توقیف داد؛ با لغو آن استعفا کرد"}
+{"rel":"event_participant","event_id":"ter-hacobian-terrorism-essays-1910","person_id":"ter-hacobian","role_type":"author","role_en":"author of the eight essays","role_fa":"نویسندهٔ هشت مقاله"}
+{"rel":"event_group","event_id":"ter-hacobian-terrorism-essays-1910","group_id":"iran-i-naw","role_type":"participant"}
+{"rel":"event_participant","event_id":"salt-tax-abolished-1911","person_id":"shuster","role_type":"author","role_en":"abolished the tax","role_fa":"مالیات را لغو کرد"}
+{"rel":"event_participant","event_id":"stokes-appointment-blocked-1911","person_id":"stokes-major","role_type":"target","role_en":"his appointment was blocked","role_fa":"انتصابش مسدود شد"}
+{"rel":"event_participant","event_id":"stokes-appointment-blocked-1911","person_id":"grey-edward","role_type":"perpetrator","role_en":"reversed his approval under Russian pressure","role_fa":"زیر فشار روسیه از تأیید خود برگشت"}
+{"rel":"event_participant","event_id":"stokes-appointment-blocked-1911","person_id":"greenway-charles","role_type":"opponent","role_en":"warned the Foreign Office against him","role_fa":"وزارت خارجه را از او برحذر داشت"}
+{"rel":"event_participant","event_id":"stokes-appointment-blocked-1911","person_id":"shuster","role_type":"participant","role_en":"refused to confine Stokes to the south","role_fa":"نپذیرفت مأموریت استوکس به جنوب محدود شود"}
+{"rel":"event_group","event_id":"national-legion-formed-1911","group_id":"national-legion","role_type":"participant"}
+{"rel":"event_group","event_id":"national-legion-formed-1911","group_id":"dar-al-funun","role_type":"participant"}
+{"rel":"event_participant","event_id":"regents-programme-1911","person_id":"nasir-al-mulk","role_type":"author","role_en":"proposed the programme","role_fa":"برنامه را پیشنهاد کرد"}
+{"rel":"event_participant","event_id":"regents-programme-1911","person_id":"vusuq-al-dawlah","role_type":"participant","role_en":"as foreign minister strongly backed the article on reconciliation with Russia and Britain","role_fa":"در مقام وزیر خارجه از اصل آشتی با روسیه و بریتانیا سخت پشتیبانی کرد"}
+{"rel":"event_participant","event_id":"regents-programme-1911","person_id":"barclay-george","role_type":"witness","role_en":"read Article 2 as reducing 'the complete supremacy of the Medjliss'","role_fa":"اصل دوم را کاستن از «برتری کامل مجلس» خواند"}
+{"rel":"event_group","event_id":"regents-programme-1911","group_id":"provincial-departmental-anjumans","role_type":"target"}
+{"rel":"event_participant","event_id":"taqizadah-suspended-1910","person_id":"rawhani-shaikh-baqir","role_type":"perpetrator","role_en":"killed two Isma'ili pilgrims; Taqizadah's demand for his prosecution under Article 8 was used to force him out","role_fa":"دو زائر اسماعیلی را کشت؛ خواست تقی‌زاده برای محاکمهٔ او بر پایهٔ اصل هشتم دستاویز اخراجش شد"}
+{"rel":"event_participant","event_id":"taqizadah-suspended-1910","person_id":"yephrem-khan","role_type":"participant","role_en":"as Armenian chief of police, arrested the Shi'ite cleric — the fact used to outrage the 'ulama","role_fa":"در مقام رئیس ارمنی نظمیه روحانی شیعه را بازداشت کرد — همان که خشم علما را برانگیخت"}
+{"rel":"event_participant","event_id":"taqizadah-expelled-1910","person_id":"sattar-khan","role_type":"opponent","role_en":"joined the calls for his removal","role_fa":"به فراخوان برکناری او پیوست"}
+{"rel":"event_participant","event_id":"taqizadah-expelled-1910","person_id":"baqir-khan","role_type":"opponent","role_en":"joined the calls for his removal","role_fa":"به فراخوان برکناری او پیوست"}
+{"rel":"event_participant","event_id":"taqizadah-expelled-1910","person_id":"sardar-muhyi","role_type":"opponent","role_en":"joined the calls for his removal","role_fa":"به فراخوان برکناری او پیوست"}
+{"rel":"event_participant","event_id":"taqizadah-expelled-1910","person_id":"zargham-al-saltanah","role_type":"opponent","role_en":"joined the coalition against the Democrats","role_fa":"به ائتلاف علیه دموکرات‌ها پیوست"}
+{"rel":"event_participant","event_id":"taqizadah-expelled-1910","person_id":"pilusian-vram","role_type":"opponent","role_en":"argued that a deputy of Azerbaijan could not be removed by other delegates or by the Najaf 'ulama","role_fa":"استدلال کرد نمایندهٔ آذربایجان را دیگر نمایندگان یا علمای نجف نمی‌توانند برکنار کنند"}
+{"rel":"event_participant","event_id":"assassination-bihbahani-1910","person_id":"haidar-khan-amu-ughlu","role_type":"perpetrator","role_en":"the four mujahidin gunmen were associated with him; he went into hiding and was expelled in 1911","role_fa":"چهار مجاهد ضارب با او مرتبط بودند؛ پنهان شد و در ۱۲۹۰ از کشور اخراج گشت"}
+{"rel":"event_participant","event_id":"former-shah-returns-1911","person_id":"samsam-al-saltanah","role_type":"participant","role_en":"made premier; secretly offered the Russians to abandon the government if no compromise was reached","role_fa":"رئیس‌الوزرا شد؛ پنهانی به روس‌ها پیشنهاد داد اگر سازش نشود دولت را رها کند"}
+{"rel":"event_participant","event_id":"former-shah-returns-1911","person_id":"yephrem-khan","role_type":"leader","role_en":"commanded the Armenian forces, the only troops that did not need bribing","role_fa":"فرماندهی نیروهای ارمنی را داشت، تنها نیرویی که به رشوه نیاز نداشت"}
+{"rel":"event_participant","event_id":"former-shah-returns-1911","person_id":"shuster","role_type":"opponent","role_en":"helped raise the resistance army and put a bounty on the former shah's head","role_fa":"در بسیج ارتش مقاومت یاری کرد و برای سر شاه سابق جایزه گذاشت"}
+{"rel":"event_participant","event_id":"former-shah-returns-1911","person_id":"sardar-mufkham","role_type":"leader","role_en":"conservative Bakhtiari commander of the resistance army","role_fa":"فرماندهٔ محافظه‌کار بختیاری ارتش مقاومت"}
+{"rel":"event_group","event_id":"former-shah-returns-1911","group_id":"national-legion","role_type":"participant"}
+{"rel":"event_group","event_id":"former-shah-returns-1911","group_id":"yamut-turkmen","role_type":"opponent"}
+{"rel":"event_group","event_id":"former-shah-returns-1911","group_id":"kalhur-kurds","role_type":"opponent"}
+{"rel":"event_group","event_id":"former-shah-returns-1911","group_id":"shahsavan","role_type":"opponent"}
+{"rel":"event_participant","event_id":"shuster-appointed-1911","person_id":"nabil-al-dawlah","role_type":"mediator","role_en":"arranged the American mission from Washington","role_fa":"مأموریت امریکایی را از واشنگتن ترتیب داد"}
+{"rel":"event_participant","event_id":"shuster-appointed-1911","person_id":"husain-quli-nawab","role_type":"participant","role_en":"Shuster's closest ally in government; they chose the treasury staff together","role_fa":"نزدیک‌ترین هم‌پیمان شوستر در دولت؛ کارکنان خزانه را باهم برگزیدند"}
+{"rel":"event_participant","event_id":"shuster-appointed-1911","person_id":"farmanfarma","role_type":"opponent","role_en":"as a wealthy minister, resented the treasury's check on his extravagance","role_fa":"در مقام وزیری ثروتمند از مهار ولخرجی‌اش به دست خزانه‌داری دلگیر بود"}
+{"rel":"event_participant","event_id":"shuster-appointed-1911","person_id":"amir-azam","role_type":"opponent","role_en":"openly hostile as acting war minister","role_fa":"در مقام کفیل وزارت جنگ آشکارا دشمنی می‌کرد"}
+{"rel":"event_participant","event_id":"atabak-park-1910","person_id":"sardar-asad","role_type":"perpetrator","role_en":"Sattar Khan's bitter rival; the Bakhtiari-Democrat cabinet ordered the disarmament","role_fa":"رقیب سرسخت ستارخان؛ کابینهٔ بختیاری–دموکرات فرمان خلع سلاح را داد"}
+{"rel":"person_relation","person_a":"ahmad-bihbahani","person_b":"bihbahani-sayyid-abdullah","type":"kin","note_en":"Son.","note_fa":"پسر."}
+{"rel":"person_relation","person_a":"sattar-khan","person_b":"sardar-asad","type":"rival","note_en":"Sattar Khan's relations with the Bakhtiari leader were marked by 'strong jealousy and bitter anger': the Bakhtiaris and Democrats took the credit and the offices, while Tabriz's eleven-month resistance — which had broken the royalist army — was dismissed with the argument that constitutionalism 'sooner or later would have been established, whether or not you had participated'.","note_fa":"رابطهٔ ستارخان با سردار بختیاری آکنده از «حسادت شدید و خشم تلخ» بود: بختیاری‌ها و دموکرات‌ها اعتبار و مناصب را بردند، حال آنکه یازده ماه مقاومت تبریز — که کمر قوای استبداد را شکسته بود — با این استدلال نادیده گرفته شد که مشروطه «دیر یا زود برقرار می‌شد، چه شما شرکت می‌کردید چه نه»."}
+{"rel":"person_relation","person_a":"shuster","person_b":"husain-quli-nawab","type":"ally","note_en":"Shuster's closest working alliance in the Iranian government.","note_fa":"نزدیک‌ترین پیوند کاری شوستر در دولت ایران."}
+{"rel":"person_relation","person_a":"stokes-major","person_b":"browne-edward","type":"collaborator","note_en":"Stokes corresponded regularly with Browne and secretly supplied him with inside information on British policy in Iran as a way of challenging Grey.","note_fa":"استوکس مرتب با براون مکاتبه می‌کرد و پنهانی اطلاعات محرمانه دربارهٔ سیاست بریتانیا در ایران به او می‌داد تا سیاست گری را به چالش بکشد."}
