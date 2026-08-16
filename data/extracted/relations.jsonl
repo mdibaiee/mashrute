@@ -164,7 +164,6 @@
 {"rel":"person_relation","person_a":"afzal-vaziri","person_b":"bibi-khanum-astarabadi","type":"kin","note_en":"Daughter.","note_fa":"دختر."}
 {"rel":"person_relation","person_a":"asfik","person_b":"yephrem-khan","type":"kin","note_en":"Daughter.","note_fa":"دختر."}
 {"rel":"person_relation","person_a":"amin-al-zarb-son","person_b":"amin-al-zarb-father","type":"kin","note_en":"Son.","note_fa":"پسر."}
-{"rel":"person_relation","person_a":"tabatabai-sayyid-sadiq","person_b":"tabatabai-sayyid-muhammad","type":"kin","note_en":"Son.","note_fa":"پسر."}
 {"rel":"person_relation","person_a":"abd-al-baha","person_b":"bahaullah","type":"kin","note_en":"Son and successor.","note_fa":"پسر و جانشین."}
 {"rel":"person_relation","person_a":"malik-al-mutikallimin","person_b":"vaiz-isfahani","type":"collaborator","note_en":"The two great preachers of the movement, executed within months of each other.","note_fa":"دو خطیب بزرگ نهضت که در فاصلهٔ چند ماه از میان رفتند."}
 {"rel":"person_relation","person_a":"dihkhuda","person_b":"jahangir-khan-shirazi","type":"collaborator","note_en":"Co-editors of Sur-i Israfil.","note_fa":"هم‌سردبیران صور اسرافیل."}
@@ -399,7 +398,6 @@
 {"rel":"event_group","event_id":"young-turk-revolution-1908","group_id":"union-and-progress","role_type":"perpetrator"}
 {"rel":"person_group","person_id":"malkum-khan","group_id":"faramushkhanah","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
 {"rel":"person_group","person_id":"amin-al-dawlah","group_id":"faramushkhanah","role_type":"member","role_en":"member","role_fa":"عضو"}
-{"rel":"person_group","person_id":"tabatabai-sayyid-sadiq","group_id":"faramushkhanah","role_type":"member","role_en":"member","role_fa":"عضو"}
 {"rel":"person_group","person_id":"tabatabai-sayyid-muhammad","group_id":"freemasons","role_type":"member","role_en":"prominent Freemason","role_fa":"فراماسون برجسته"}
 {"rel":"person_group","person_id":"najmabadi-shaikh-hadi","group_id":"faramushkhanah","role_type":"member","role_en":"member; accused of Azali sympathies","role_fa":"عضو؛ متهم به گرایش ازلی"}
 {"rel":"person_group","person_id":"amir-kabir","group_id":"dar-al-funun","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
@@ -446,7 +444,6 @@
 {"rel":"event_group","event_id":"babi-suppression-1850","group_id":"babis","role_type":"victim"}
 {"rel":"person_relation","person_a":"asadabadi-al-afghani","person_b":"malkum-khan","type":"collaborator","note_en":"Both adopted the tactic of allying reformers with the 'ulama.","note_fa":"هر دو تاکتیک ائتلاف اصلاح‌طلبان با علما را برگزیدند."}
 {"rel":"person_relation","person_a":"asadabadi-al-afghani","person_b":"ernest-renan","type":"rival","note_en":"Their 1883 exchange on Islam and science."}
-{"rel":"person_relation","person_a":"tabatabai-sayyid-muhammad","person_b":"tabatabai-sayyid-sadiq","type":"kin","note_en":"Son of Sayyid Sadiq Tabataba'i, a Faramushkhanah member.","note_fa":"پسر سید صادق طباطبایی، از اعضای فراموش‌خانه."}
 {"rel":"person_group","person_id":"shabastari-muhammad","group_id":"tarbiyat-library","role_type":"member","role_en":"member of the Tabriz circle","role_fa":"عضو محفل تبریز"}
 {"rel":"person_group","person_id":"shabastari-muhammad","group_id":"mujahid-newspaper","role_type":"editor","role_en":"publisher","role_fa":"ناشر"}
 {"rel":"person_group","person_id":"husain-adalat","group_id":"adalat-newspaper","role_type":"editor","role_en":"publisher","role_fa":"ناشر"}
@@ -513,3 +510,63 @@
 {"rel":"person_relation","person_a":"tarbiyat-muhammad-ali","person_b":"taqizadah","type":"kin","note_en":"Brother-in-law.","note_fa":"باجناق."}
 {"rel":"person_relation","person_a":"tabatabai-muhammad-sadiq","person_b":"dawlatabadi-yahya","type":"rival","note_en":"Tried to expose Dawlatabadi's Azali affiliation to discredit his schools.","note_fa":"کوشید وابستگی ازلی دولت‌آبادی را برملا کند تا مدارسش را بی‌اعتبار سازد."}
 {"rel":"person_relation","person_a":"malik-al-mutikallimin","person_b":"asadabadi-al-afghani","type":"mentor","note_en":"Stayed with Asadabadi for three months on his way back from India.","note_fa":"در راه بازگشت از هند سه ماه نزد اسدآبادی ماند."}
+{"rel":"person_relation","person_a":"tabatabai-sayyid-muhammad","person_b":"tabatabai-sadiq-father","type":"kin","note_en":"Son of Sadiq Tabataba'i, a Faramushkhanah member.","note_fa":"پسر صادق طباطبایی، از اعضای فراموش‌خانه."}
+{"rel":"person_relation","person_a":"tabatabai-muhammad-sadiq","person_b":"tabatabai-sayyid-muhammad","type":"kin","note_en":"Son.","note_fa":"پسر."}
+{"rel":"person_group","person_id":"tabatabai-sadiq-father","group_id":"faramushkhanah","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"tabatabai-sayyid-muhammad","group_id":"awakening-of-iranians-lodge","role_type":"leader","role_en":"leading member","role_fa":"عضو برجسته"}
+{"rel":"person_group","person_id":"tabatabai-sayyid-muhammad","group_id":"islam-school","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"nazim-al-islam-kirmani","group_id":"islam-school","role_type":"member","role_en":"superintendent (nazim)","role_fa":"ناظم"}
+{"rel":"person_group","person_id":"shaikh-al-rais-qajar","group_id":"union-of-islam-journal","role_type":"author","role_en":"author and publisher","role_fa":"نویسنده و ناشر"}
+{"rel":"person_group","person_id":"shaikh-al-rais-qajar","group_id":"bahais","role_type":"affiliate","role_en":"mujtahid with Baha'i inclinations","role_fa":"مجتهدی با گرایش بهائی"}
+{"rel":"person_group","person_id":"mirza-asadullah-khan","group_id":"azali-babis","role_type":"leader","role_en":"leader in Isfahan","role_fa":"از رهبران اصفهان"}
+{"rel":"person_group","person_id":"burujirdi-ali-akbar","group_id":"mashruah-ulama","role_type":"member","role_en":"opponent of the house of justice","role_fa":"مخالف عدالتخانه"}
+{"rel":"person_group","person_id":"sayyid-abd-al-hamid","group_id":"theology-students","role_type":"member","role_en":"theology student","role_fa":"طلبه"}
+{"rel":"person_group","person_id":"najmabadi-shaikh-hadi","group_id":"freemasons","role_type":"member","role_en":"member of the Faramushkhanah circle","role_fa":"عضو محفل فراموش‌خانه"}
+{"rel":"event_participant","event_id":"bazaar-strike-spring-1905","person_id":"bihbahani-sayyid-abdullah","role_type":"leader","role_en":"incited the protest with the Naus photograph","role_fa":"با عکس نوز اعتراض را برانگیخت"}
+{"rel":"event_participant","event_id":"bazaar-strike-spring-1905","person_id":"tabatabai-sayyid-muhammad","role_type":"leader","role_en":"joined the alliance","role_fa":"به ائتلاف پیوست"}
+{"rel":"event_participant","event_id":"bazaar-strike-spring-1905","person_id":"naus","role_type":"target","role_en":"target of the protest","role_fa":"آماج اعتراض"}
+{"rel":"event_participant","event_id":"bazaar-strike-spring-1905","person_id":"muhammad-ali-shah","role_type":"mediator","role_en":"as crown prince, promised Naus's dismissal","role_fa":"در مقام ولیعهد وعدهٔ عزل نوز را داد"}
+{"rel":"event_group","event_id":"bazaar-strike-spring-1905","group_id":"merchants","role_type":"participant"}
+{"rel":"event_group","event_id":"bazaar-strike-spring-1905","group_id":"guilds","role_type":"participant"}
+{"rel":"event_participant","event_id":"vaiz-denounced-shah-mosque-1905","person_id":"vaiz-isfahani","role_type":"victim","role_en":"denounced and driven from the pulpit","role_fa":"تکفیر و از منبر رانده شد"}
+{"rel":"event_participant","event_id":"friday-mosque-sanctuary-1906","person_id":"malik-al-mutikallimin","role_type":"leader","role_en":"took sanctuary first","role_fa":"نخستین بست‌نشین"}
+{"rel":"event_participant","event_id":"friday-mosque-sanctuary-1906","person_id":"tabatabai-sayyid-muhammad","role_type":"leader","role_en":"joined the sanctuary","role_fa":"به بست پیوست"}
+{"rel":"event_participant","event_id":"friday-mosque-sanctuary-1906","person_id":"bihbahani-sayyid-abdullah","role_type":"leader","role_en":"ordered the students to free Sultan al-Va'izin","role_fa":"طلاب را به آزادسازی سلطان‌الواعظین فرستاد"}
+{"rel":"event_participant","event_id":"friday-mosque-sanctuary-1906","person_id":"sultan-al-vaizin","role_type":"victim","role_en":"imprisoned, then freed","role_fa":"زندانی و سپس آزاد شد"}
+{"rel":"event_participant","event_id":"friday-mosque-sanctuary-1906","person_id":"sayyid-abd-al-hamid","role_type":"victim","role_en":"killed; the movement's first martyr","role_fa":"کشته شد؛ نخستین شهید نهضت"}
+{"rel":"event_group","event_id":"friday-mosque-sanctuary-1906","group_id":"theology-students","role_type":"participant"}
+{"rel":"event_participant","event_id":"british-legation-bast-1906","person_id":"grant-duff","role_type":"mediator","role_en":"declined to expel the bastis, invoking the custom of bast","role_fa":"با استناد به سنت بست از بیرون‌راندن بست‌نشینان سر باز زد"}
+{"rel":"event_participant","event_id":"british-legation-bast-1906","person_id":"smart-walter","role_type":"witness","role_en":"described the encampment in his despatches and letters","role_fa":"اردوگاه را در گزارش‌ها و نامه‌هایش وصف کرد"}
+{"rel":"event_participant","event_id":"british-legation-bast-1906","person_id":"douglas-ja","role_type":"witness","role_en":"sent to the Tehran compound","role_fa":"به محوطهٔ سفارت تهران فرستاده شد"}
+{"rel":"event_participant","event_id":"british-legation-bast-1906","person_id":"haidar-khan-amu-ughlu","role_type":"participant","role_en":"encouraged and financed the first students to enter","role_fa":"نخستین طلاب ورودی را تشویق و تأمین مالی کرد"}
+{"rel":"event_participant","event_id":"british-legation-bast-1906","person_id":"grey-edward","role_type":"opponent","role_en":"uneasy at the legation's hospitality, fearing Russian reaction","role_fa":"از مهمان‌نوازی سفارت ناخرسند بود و از واکنش روسیه بیم داشت"}
+{"rel":"event_participant","event_id":"british-legation-bast-1906","person_id":"sani-al-dawlah","role_type":"participant","role_en":"discussed constitutional principles with the bastis","role_fa":"با بست‌نشینان دربارهٔ اصول مشروطه گفت‌وگو کرد"}
+{"rel":"event_group","event_id":"british-legation-bast-1906","group_id":"guilds","role_type":"participant"}
+{"rel":"event_group","event_id":"british-legation-bast-1906","group_id":"merchants","role_type":"participant"}
+{"rel":"event_group","event_id":"british-legation-bast-1906","group_id":"theology-students","role_type":"participant"}
+{"rel":"event_participant","event_id":"ain-al-dawlah-dismissed-1906","person_id":"ain-al-dawlah","role_type":"target","role_en":"dismissed","role_fa":"برکنار شد"}
+{"rel":"event_participant","event_id":"ain-al-dawlah-dismissed-1906","person_id":"mushir-al-dawlah","role_type":"participant","role_en":"appointed premier","role_fa":"به صدارت رسید"}
+{"rel":"event_participant","event_id":"ain-al-dawlah-dismissed-1906","person_id":"muhammad-ali-shah","role_type":"mediator","role_en":"as crown prince, urged the change","role_fa":"در مقام ولیعهد این تغییر را خواست"}
+{"rel":"event_participant","event_id":"national-majlis-agreed-1906","person_id":"mushir-al-mulk","role_type":"participant","role_en":"in the delegation that asked Grant Duff to mediate","role_fa":"در هیئتی که از گرنت داف میانجیگری خواست"}
+{"rel":"event_participant","event_id":"national-majlis-agreed-1906","person_id":"grant-duff","role_type":"mediator","role_en":"mediated between the bastis and the court","role_fa":"میان بست‌نشینان و دربار میانجیگری کرد"}
+{"rel":"event_group","event_id":"national-majlis-agreed-1906","group_id":"jews","role_type":"participant"}
+{"rel":"event_group","event_id":"national-majlis-agreed-1906","group_id":"armenians","role_type":"participant"}
+{"rel":"event_group","event_id":"national-majlis-agreed-1906","group_id":"zoroastrians","role_type":"participant"}
+{"rel":"event_participant","event_id":"awakening-lodge-founded-1907","person_id":"tabatabai-sayyid-muhammad","role_type":"leader","role_en":"leading member","role_fa":"عضو برجسته"}
+{"rel":"event_participant","event_id":"bast-shah-abd-al-azim-1905","person_id":"malik-al-mutikallimin","role_type":"mediator","role_en":"intermediary with the premier; drafted the appeals and raised funds","role_fa":"واسطهٔ مذاکره با صدراعظم؛ عریضه‌ها را نوشت و پول فراهم کرد"}
+{"rel":"event_participant","event_id":"bast-shah-abd-al-azim-1905","person_id":"dawlatabadi-yahya","role_type":"mediator","role_en":"intermediary; used his Ottoman contacts to insert the house-of-justice demand","role_fa":"واسطه؛ با روابط عثمانی‌اش خواست عدالتخانه را در عریضه گنجاند"}
+{"rel":"event_participant","event_id":"bast-shah-abd-al-azim-1905","person_id":"vaiz-isfahani","role_type":"participant","role_en":"preacher of the movement","role_fa":"واعظ نهضت"}
+{"rel":"event_group","event_id":"bast-shah-abd-al-azim-1905","group_id":"theology-students","role_type":"participant"}
+{"rel":"event_group","event_id":"bast-shah-abd-al-azim-1905","group_id":"azali-babis","role_type":"participant"}
+{"rel":"event_participant","event_id":"bast-qum-british-legation-1906","person_id":"shaikh-fazlullah-nuri","role_type":"participant","role_en":"joined the protesters at Qum, fearing isolation, while insisting that liberty was antithetical to Islam","role_fa":"از بیم انزوا به معترضان قم پیوست، اما اصرار داشت که آزادی با اسلام ناسازگار است"}
+{"rel":"event_participant","event_id":"bast-qum-british-legation-1906","person_id":"ihtisham-al-saltanah","role_type":"participant","role_en":"foreign minister who backed the nationalists and was exiled to the western borders","role_fa":"وزیر خارجه‌ای که از ملیون پشتیبانی کرد و به مرزهای غربی تبعید شد"}
+{"rel":"event_participant","event_id":"bast-qum-british-legation-1906","person_id":"majd-al-islam-kirmani","role_type":"victim","role_en":"arrested in the crackdown","role_fa":"در سرکوب دستگیر شد"}
+{"rel":"event_participant","event_id":"bast-qum-british-legation-1906","person_id":"vaiz-isfahani","role_type":"victim","role_en":"exiled to Mashhad","role_fa":"به مشهد تبعید شد"}
+{"rel":"person_relation","person_a":"nazim-al-islam-kirmani","person_b":"tabatabai-sayyid-muhammad","type":"ally","note_en":"Tabataba'i's patronage protected him from the conservative 'ulama.","note_fa":"حمایت طباطبایی او را از گزند علمای محافظه‌کار مصون داشت."}
+{"rel":"person_relation","person_a":"nazim-al-islam-kirmani","person_b":"najmabadi-shaikh-hadi","type":"mentor"}
+{"rel":"person_relation","person_a":"tabatabai-sayyid-muhammad","person_b":"shirazi-mirza-hasan","type":"mentor","note_en":"Sent to Tehran on Shirazi's recommendation after the Tobacco Protest.","note_fa":"پس از جنبش تنباکو با توصیهٔ شیرازی به تهران فرستاده شد."}
+{"rel":"person_relation","person_a":"bihbahani-sayyid-abdullah","person_b":"shirazi-mirza-hasan","type":"mentor","note_en":"Studied with him at the 'Atabat, then ignored his tobacco fatwa.","note_fa":"در عتبات نزد او درس خواند و سپس فتوای تنباکوی او را نادیده گرفت."}
+{"rel":"person_relation","person_a":"shaikh-fazlullah-nuri","person_b":"shirazi-mirza-hasan","type":"mentor","note_en":"Shirazi's leading student at the 'Atabat.","note_fa":"شاگرد برجستهٔ شیرازی در عتبات."}
+{"rel":"person_relation","person_a":"shaikh-fazlullah-nuri","person_b":"bihbahani-sayyid-abdullah","type":"rival","note_en":"Political rivals long before the revolution, and adversaries throughout it.","note_fa":"رقیبان سیاسی از مدت‌ها پیش از انقلاب و دشمنان در سراسر آن."}
+{"rel":"person_relation","person_a":"shaikh-fazlullah-nuri","person_b":"ain-al-dawlah","type":"ally","note_en":"Nuri backed 'Ain al-Dawlah's policies after receiving the court litigation.","note_fa":"نوری پس از گرفتن مرافعات دربار از سیاست‌های عین‌الدوله پشتیبانی کرد."}
+{"rel":"person_relation","person_a":"najmabadi-shaikh-hadi","person_b":"malkum-khan","type":"collaborator","note_en":"Najmabadi belonged to Malkum Khan's Faramushkhanah.","note_fa":"نجم‌آبادی از اعضای فراموش‌خانهٔ ملکم‌خان بود."}
