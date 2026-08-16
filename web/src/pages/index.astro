@@ -1,0 +1,301 @@
+---
+import Base from '../layouts/Base.astro';
+import AvatarStack from '../components/AvatarStack.astro';
+import counts from '../data/counts.json';
+import events from '../data/events.json';
+import links from '../data/links.json';
+import { EVENT_TYPE_LABEL, faDigits } from '../lib/util.js';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const sorted = [...events].sort((a, b) => a.date_sort.localeCompare(b.date_sort));
+
+// Group by year so the spine can carry year markers. The left/right side is
+// assigned from a running index across the whole timeline, not per year —
+// otherwise every year with a single event would stack up on the same side.
+const byYear = [];
+let seq = 0;
+for (const e of sorted) {
+  const y = e.date_g_year ?? 0;
+  if (!byYear.length || byYear[byYear.length - 1].year !== y) byYear.push({ year: y, events: [] });
+  byYear[byYear.length - 1].events.push({ ...e, side: seq++ % 2 === 0 ? 'l' : 'r' });
+}
+const years = byYear.map((b) => b.year);
+---
+<Base title="Chronology" wide>
+  <Fragment slot="title">
+    <span class="en">Chronology</span><span class="fa">گاه‌شمار</span>
+  </Fragment>
+  <Fragment slot="subtitle">
+    <span class="en">Every person, group and dated event extracted from Janet Afary's history of the revolution, in English and Persian. The timeline runs from the Treaty of Gulistan to the death of Sattar Khan — hover a cluster of faces to fan it out, and click anyone to open their page.</span>
+    <span class="fa">هر شخص، گروه و رویداد تاریخ‌داری که از تاریخ انقلاب به روایت ژانت آفاری استخراج شده، به فارسی و انگلیسی. گاه‌شمار از عهدنامهٔ گلستان تا مرگ ستارخان ادامه دارد — برای باز شدن حلقهٔ چهره‌ها نشانگر را روی آن ببرید و برای دیدن صفحهٔ هر کس رویش کلیک کنید.</span>
+  </Fragment>
+
+  <Fragment slot="head-extra">
+  <div class="homestats">
+    <span><b><span class="en">{counts.events}</span><span class="fa">{faDigits(counts.events)}</span></b><span class="en">events</span><span class="fa">رویداد</span></span>
+    <a href={`${base}/people/`}><b><span class="en">{counts.people}</span><span class="fa">{faDigits(counts.people)}</span></b><span class="en">people</span><span class="fa">شخص</span></a>
+    <a href={`${base}/groups/`}><b><span class="en">{counts.groups}</span><span class="fa">{faDigits(counts.groups)}</span></b><span class="en">groups</span><span class="fa">گروه</span></a>
+    <span><b><span class="en">{counts.relations}</span><span class="fa">{faDigits(counts.relations)}</span></b><span class="en">links</span><span class="fa">پیوند</span></span>
+  </div>
+  <div class="chrono-controls">
+    <div class="yearbar" id="yearbar">
+      {years.map((y) => (
+        <a href={`#y${y}`} class="yearbar__y" data-year={y}>
+          <span class="en">{y || '—'}</span><span class="fa">{y ? faDigits(y) : '—'}</span>
+        </a>
+      ))}
+    </div>
+    <label class="filter">
+      <span class="en">Filter</span><span class="fa">پالایش</span>
+      <select id="typeFilter">
+        <option value="">All types · همه</option>
+        {[...new Set(sorted.map((e) => e.type).filter(Boolean))].sort().map((t) => {
+          const lab = EVENT_TYPE_LABEL[t] || [t, t];
+          return <option value={t} data-en={lab[0]} data-fa={lab[1] || lab[0]}>{lab[0]}</option>;
+        })}
+      </select>
+    </label>
+  </div>
+  </Fragment>
+
+  <div class="timeline" id="timeline">
+    <div class="timeline__spine" aria-hidden="true"></div>
+
+    {byYear.map((bucket) => (
+      <section class="tl-year" id={`y${bucket.year}`}>
+        <div class="tl-year__marker"><span>
+          <span class="en">{bucket.year || '—'}</span><span class="fa">{bucket.year ? faDigits(bucket.year) : '—'}</span>
+        </span></div>
+
+        {bucket.events.map((e) => {
+          const people = links.eventPeople[e.id] || [];
+          const groups = links.eventGroups[e.id] || [];
+          const places = links.eventPlaces[e.id] || [];
+          const type = EVENT_TYPE_LABEL[e.type] || [e.type, e.type];
+          return (
+            <article
+              class:list={['tl-item', `tl-item--${e.side}`,
+                           e.significance === 1 ? 'tl-item--major' : '']}
+              data-type={e.type}
+            >
+              <span class="tl-item__node" aria-hidden="true"></span>
+              <div class="tl-card">
+                <div class="tl-card__meta">
+                  <time datetime={e.date_iso || ''}>
+                    <span class="en">{e.date_display_en}</span>
+                    <span class="fa">{e.date_display_fa || e.date_display_en}</span>
+                  </time>
+                  {e.type && <span class="tag"><span class="en">{type[0]}</span><span class="fa">{type[1]}</span></span>}
+                </div>
+
+                <h3>
+                  <a href={`${base}/events/${e.id}/`}>
+                    <span class="en">{e.title_en}</span>
+                    <span class="fa">{e.title_fa || e.title_en}</span>
+                  </a>
+                </h3>
+
+                <p class="tl-card__jal">
+                  <span class="en">{e.date_j_display_en}</span>
+                  <span class="fa">{e.date_j_display_fa}</span>
+                  {e.date_h_display_en && (
+                    <span class="tl-card__hij">
+                      · <span class="en">{e.date_h_display_en}</span><span class="fa">{e.date_h_display_fa}</span>
+                      {e.date_h_source === 'book'
+                        ? <sup title="Attested in the book">✓</sup>
+                        : <sup title="Computed, approximate">~</sup>}
+                    </span>
+                  )}
+                </p>
+
+                {(e.summary_en || e.summary_fa) && (
+                  <p class="tl-card__sum">
+                    <span class="en">{e.summary_en}</span>
+                    <span class="fa">{e.summary_fa || e.summary_en}</span>
+                  </p>
+                )}
+
+                {places.length > 0 && (
+                  <p class="tl-card__where">
+                    {places.map((pl, j) => (
+                      <>{j > 0 && <span> · </span>}
+                      <span class="en">{pl.name_en}</span><span class="fa">{pl.name_fa || pl.name_en}</span></>
+                    ))}
+                  </p>
+                )}
+
+                {people.length > 0 && (
+                  <div class="tl-card__people">
+                    <AvatarStack people={people} size={34} max={7} />
+                  </div>
+                )}
+
+                {groups.length > 0 && (
+                  <p class="tl-card__groups">
+                    {groups.slice(0, 4).map((g, j) => (
+                      <>{j > 0 && <span class="sep"> · </span>}
+                      <a href={`${base}/groups/${g.group_id}/`}>
+                        <span class="en">{g.name_en}</span><span class="fa">{g.name_fa || g.name_en}</span>
+                      </a></>
+                    ))}
+                    {groups.length > 4 && <span class="muted"> +{groups.length - 4}</span>}
+                  </p>
+                )}
+              </div>
+            </article>
+          );
+        })}
+      </section>
+    ))}
+  </div>
+
+  <p class="tl-empty" id="tlEmpty" hidden>
+    <span class="en">No events of that type.</span><span class="fa">رویدادی از این دست نیست.</span>
+  </p>
+
+  <script is:inline>
+    // <option> cannot hold the paired .en/.fa spans the rest of the page uses,
+    // so swap the option text by hand whenever the language changes.
+    function relabelOptions() {
+      var fa = document.documentElement.getAttribute('data-lang') === 'fa';
+      document.querySelectorAll('#typeFilter option[data-en]').forEach(function (o) {
+        o.textContent = fa ? o.dataset.fa : o.dataset.en;
+      });
+    }
+    relabelOptions();
+    document.addEventListener('langchange', relabelOptions);
+
+    // Type filter — hides items and any year block left empty.
+    var sel = document.getElementById('typeFilter');
+    var tl = document.getElementById('timeline');
+    var empty = document.getElementById('tlEmpty');
+    sel?.addEventListener('change', function () {
+      var v = sel.value;
+      var any = false;
+      tl.querySelectorAll('.tl-item').forEach(function (el) {
+        var show = !v || el.dataset.type === v;
+        el.hidden = !show;
+        if (show) any = true;
+      });
+      tl.querySelectorAll('.tl-year').forEach(function (y) {
+        var vis = y.querySelectorAll('.tl-item:not([hidden])').length;
+        y.hidden = vis === 0;
+      });
+      empty.hidden = any;
+    });
+
+    // Highlight the year in the rail as it scrolls past. We move the rail by
+    // setting scrollLeft rather than calling scrollIntoView, which would also
+    // scroll the page itself and fight the user.
+    var rail = document.getElementById('yearbar');
+    var chips = Array.prototype.slice.call(document.querySelectorAll('.yearbar__y'));
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var y = en.target.id.slice(1);
+        var active = null;
+        chips.forEach(function (c) {
+          var on = c.dataset.year === y;
+          c.classList.toggle('on', on);
+          if (on) active = c;
+        });
+        if (active && rail) {
+          var target = active.offsetLeft - rail.clientWidth / 2 + active.offsetWidth / 2;
+          rail.scrollTo({ left: Math.max(0, target), behavior: 'smooth' });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('.tl-year').forEach(function (s) { obs.observe(s); });
+  </script>
+
+  <style>
+    .homestats { display: flex; gap: 2rem; flex-wrap: wrap; margin: 1.3rem 0 .2rem; }
+    .homestats > * { text-decoration: none; display: flex; flex-direction: column;
+      font-family: var(--fs-ui); }
+    .homestats b { font-family: var(--fs-en); font-size: 1.7rem; line-height: 1;
+      font-weight: 600; color: var(--lapis); }
+    html[data-lang='fa'] .homestats b { font-family: var(--fs-fa); }
+    .homestats > * > :last-child { font-size: .72rem; text-transform: uppercase;
+      letter-spacing: .07em; color: var(--ink-3); margin-top: .35rem; }
+    .homestats a:hover b { color: var(--turquoise); }
+
+    .chrono-controls { display: flex; gap: 1rem; align-items: center; margin-top: 1.1rem;
+      flex-wrap: wrap; max-width: 100%; }
+    .yearbar { display: flex; gap: .3rem; overflow-x: auto; scrollbar-width: none;
+      padding-bottom: 2px; flex: 1 1 22rem; min-width: 0; }
+    .yearbar::-webkit-scrollbar { display: none; }
+    .yearbar__y { flex: none; font-family: var(--fs-ui); font-size: .78rem; text-decoration: none;
+      padding: .25rem .6rem; border-radius: 99px; border: 1px solid var(--line);
+      color: var(--ink-3); white-space: nowrap; }
+    .yearbar__y.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .filter { font-family: var(--fs-ui); font-size: .8rem; color: var(--ink-3); display: flex; gap: .45rem; align-items: center; }
+    .filter select { font: inherit; padding: .3rem .5rem; border-radius: 8px;
+      border: 1px solid var(--line); background: var(--paper-2); color: var(--ink); }
+
+    .timeline { position: relative; padding: 1.5rem 0 2rem; }
+    .timeline__spine {
+      position: absolute; top: 0; bottom: 0; inset-inline-start: 50%;
+      width: 3px; margin-inline-start: -1.5px; border-radius: 2px;
+      background: linear-gradient(to bottom,
+        transparent 0, var(--turquoise) 3%, var(--lapis) 35%,
+        var(--rose) 65%, var(--green) 92%, transparent 100%);
+      opacity: .5;
+    }
+    .tl-year { position: relative; }
+    .tl-year__marker { display: flex; justify-content: center; margin: 1.6rem 0 1.1rem; position: relative; z-index: 2; }
+    .tl-year__marker > span {
+      font-family: var(--fs-ui); font-size: .82rem; font-weight: 650; letter-spacing: .06em;
+      background: linear-gradient(135deg, var(--lapis), var(--accent-2)); color: #fff;
+      padding: .28rem .85rem; border-radius: 99px;
+      box-shadow: 0 0 0 5px var(--paper);
+    }
+
+    .tl-item { position: relative; width: calc(50% - 2.4rem); margin-bottom: 1.4rem; }
+    .tl-item--l { margin-inline-end: auto; }
+    .tl-item--r { margin-inline-start: auto; }
+    /* The node is offset by the gutter *plus half its own width*, so its centre
+       lands on the spine whatever size it is — a fixed offset left the larger
+       major-event nodes sitting off the line. */
+    .tl-item__node {
+      --n: 11px;
+      position: absolute; top: 1.55rem; width: var(--n); height: var(--n); border-radius: 50%;
+      background: var(--paper-2); border: 2px solid var(--line); z-index: 3;
+    }
+    .tl-item--l .tl-item__node { inset-inline-end: calc(-2.4rem - var(--n) / 2); }
+    .tl-item--r .tl-item__node { inset-inline-start: calc(-2.4rem - var(--n) / 2); }
+    .tl-item--major .tl-item__node { --n: 15px; background: var(--rose); border-color: var(--rose); }
+
+    .tl-card {
+      background: var(--paper-2); border: 1px solid var(--line-2);
+      border-radius: var(--radius); padding: .95rem 1.05rem 1rem;
+      box-shadow: var(--shadow); transition: border-color .18s ease, transform .18s ease;
+    }
+    .tl-card:hover { border-color: var(--line); transform: translateY(-1px); }
+    .tl-item--major .tl-card { border-inline-start: 3px solid var(--rose); }
+
+    .tl-card__meta { display: flex; gap: .5rem; align-items: baseline; flex-wrap: wrap; font-family: var(--fs-ui); }
+    .tl-card__meta time { font-size: .78rem; color: var(--lapis); font-weight: 600; letter-spacing: .02em; }
+    .tl-card h3 { margin: .35rem 0 .2rem; font-size: 1.06rem; line-height: 1.3; }
+    .tl-card h3 a { text-decoration: none; }
+    .tl-card h3 a:hover { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+    .tl-card__jal { margin: 0 0 .5rem; font-family: var(--fs-ui); font-size: .74rem; color: var(--ink-3); }
+    .tl-card__hij sup { font-size: .85em; opacity: .7; margin-inline-start: 1px; }
+    .tl-card__sum { margin: 0 0 .6rem; font-size: .92rem; color: var(--ink-2); }
+    .tl-card__where { margin: 0 0 .55rem; font-family: var(--fs-ui); font-size: .74rem; color: var(--ink-3); }
+    .tl-card__people { display: flex; margin: .1rem 0 .55rem; }
+    .tl-card__groups { margin: 0; font-family: var(--fs-ui); font-size: .76rem; }
+    .tl-card__groups a { color: var(--ink-2); text-decoration: none; border-bottom: 1px dotted var(--line); }
+    .tl-card__groups a:hover { color: var(--accent); border-color: var(--accent); }
+    .tl-empty { text-align: center; color: var(--ink-3); padding: 2rem 0; }
+
+    @media (max-width: 820px) {
+      .timeline__spine { inset-inline-start: 14px; }
+      .tl-item, .tl-item--l, .tl-item--r { width: auto; margin-inline: 0 0; padding-inline-start: 2.6rem; }
+        .tl-item--l .tl-item__node, .tl-item--r .tl-item__node { inset-inline-start: 9px; inset-inline-end: auto; }
+      .tl-item--l .tl-card__meta, html[dir='rtl'] .tl-item--r .tl-card__meta { justify-content: flex-start; }
+      .tl-item--l .tl-card__people, .tl-item--l .tl-card .stack,
+      html[dir='rtl'] .tl-item--r .tl-card__people, html[dir='rtl'] .tl-item--r .tl-card .stack { margin-inline-start: 0; }
+      .tl-year__marker { justify-content: flex-start; padding-inline-start: 0; }
+    }
+  </style>
+</Base>

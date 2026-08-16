@@ -1,0 +1,10 @@
+{
+  "_comment": "Hand-picked portraits that beat what the automatic match found. Wikipedia's lead image for an article is not always a picture of the person - for the Bab it was a photograph of his shrine - so these take precedence over anything fetch_portraits.py selects.",
+
+  "the-bab": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/%D8%B3%DB%8C%D8%AF_%D8%B9%D9%84%DB%8C_%D9%85%D8%AD%D9%85%D8%AF_%D8%A8%D8%A7%D8%A8.jpg/1280px-%D8%B3%DB%8C%D8%AF_%D8%B9%D9%84%DB%8C_%D9%85%D8%AD%D9%85%D8%AF_%D8%A8%D8%A7%D8%A8.jpg",
+    "page_url": "https://commons.wikimedia.org/wiki/File:%D8%B3%DB%8C%D8%AF_%D8%B9%D9%84%DB%8C_%D9%85%D8%AD%D9%85%D8%AF_%D8%A8%D8%A7%D8%A8.jpg",
+    "commons_file": "سید علی محمد باب.jpg",
+    "why": "the automatic match returned a photograph of the Shrine of the Bab, not the Bab"
+  }
+}

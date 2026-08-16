@@ -1,0 +1,171 @@
+---
+import Base from '../../layouts/Base.astro';
+import Avatar from '../../components/Avatar.astro';
+import groups from '../../data/groups.json';
+import events from '../../data/events.json';
+import links from '../../data/links.json';
+import { GROUP_TYPE_LABEL, paletteOf, faDigits } from '../../lib/util.js';
+
+export function getStaticPaths() {
+  return groups.map((g) => ({ params: { id: g.id }, props: { group: g } }));
+}
+const { group: g } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const byId = Object.fromEntries(groups.map((x) => [x.id, x]));
+const evById = Object.fromEntries(events.map((e) => [e.id, e]));
+const members = (links.groupPeople[g.id] || [])
+  .sort((a, b) => a.person_en.localeCompare(b.person_en));
+const myEvents = (links.groupEvents[g.id] || [])
+  .map((r) => ({ ...r, ev: evById[r.event_id] }))
+  .filter((r) => r.ev)
+  .sort((a, b) => a.ev.date_sort.localeCompare(b.ev.date_sort));
+const rels = links.groupRelations[g.id] || [];
+const parent = g.parent_id ? byId[g.parent_id] : null;
+const children = groups.filter((x) => x.parent_id === g.id);
+const label = GROUP_TYPE_LABEL[g.type] || [g.type, g.type];
+
+const REL = {
+  branch_of: ['Branch of', 'شعبه‌ای از'], allied: ['Allied with', 'هم‌پیمان با'],
+  opposed: ['Opposed to', 'در برابر'], split_from: ['Split from', 'انشعاب از'],
+  merged_into: ['Merged into', 'ادغام در'], successor: ['Successor to', 'جانشین'],
+};
+---
+<Base title={g.name_en}>
+  <div slot="title" class="gh-title" style={`--c1:${paletteOf(g.id)[0]}; --c2:${paletteOf(g.id)[1]}`}>
+    <span class="gh-mark" aria-hidden="true"></span>
+    <span>
+      <span class="en">{g.name_en}</span><span class="fa">{g.name_fa || g.name_en}</span>
+    </span>
+  </div>
+  <p slot="subtitle" class="gh-sub">
+    <span class="tag tag--accent"><span class="en">{label[0]}</span><span class="fa">{label[1]}</span></span>
+    {g.place_en && <span class="gh-place"><span class="en">{g.place_en}</span><span class="fa">{g.place_fa || g.place_en}</span></span>}
+  </p>
+
+  <div class="detail">
+    <div class="detail__main">
+      {(g.description_en || g.description_fa) && (
+        <p class="lede">
+          <span class="en">{g.description_en}</span>
+          <span class="fa">{g.description_fa || g.description_en}</span>
+        </p>
+      )}
+
+      {members.length > 0 && (
+        <section>
+          <h2><span class="en">People</span><span class="fa">اشخاص</span> <em><span class="en">{members.length}</span><span class="fa">{faDigits(members.length)}</span></em></h2>
+          <div class="memgrid">
+            {members.map((m) => (
+              <a class="mem" href={`${base}/people/${m.person_id}/`}>
+                <Avatar id={m.person_id} nameEn={m.person_en} nameFa={m.person_fa} size={40} link={false} />
+                <span class="mem__t">
+                  <b><span class="en">{m.person_en}</span><span class="fa">{m.person_fa || m.person_en}</span></b>
+                  {(m.role_en || m.role_fa) && (
+                    <i><span class="en">{m.role_en}</span><span class="fa">{m.role_fa || m.role_en}</span></i>
+                  )}
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {myEvents.length > 0 && (
+        <section>
+          <h2><span class="en">Events</span><span class="fa">رویدادها</span> <em><span class="en">{myEvents.length}</span><span class="fa">{faDigits(myEvents.length)}</span></em></h2>
+          <ol class="tl-mini">
+            {myEvents.map((r) => (
+              <li>
+                <a href={`${base}/events/${r.ev.id}/`}>
+                  <time>
+                    <span class="en">{r.ev.date_display_en}</span>
+                    <span class="fa">{r.ev.date_display_fa || r.ev.date_display_en}</span>
+                  </time>
+                  <b><span class="en">{r.ev.title_en}</span><span class="fa">{r.ev.title_fa || r.ev.title_en}</span></b>
+                </a>
+                {r.role_type && <span class="tl-mini__role">{r.role_type}</span>}
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+    </div>
+
+    <aside class="detail__side">
+      <dl class="facts">
+        {g.founded_display_en && (
+          <><dt><span class="en">Founded</span><span class="fa">تأسیس</span></dt>
+            <dd><span class="en">{g.founded_display_en}</span><span class="fa">{g.founded_display_fa || g.founded_display_en}</span></dd></>
+        )}
+        {g.dissolved_display_en && (
+          <><dt><span class="en">Dissolved</span><span class="fa">انحلال</span></dt>
+            <dd><span class="en">{g.dissolved_display_en}</span><span class="fa">{g.dissolved_display_fa || g.dissolved_display_en}</span></dd></>
+        )}
+        {(g.ideology_en || g.ideology_fa) && (
+          <><dt><span class="en">Ideology</span><span class="fa">مرام</span></dt>
+            <dd><span class="en">{g.ideology_en}</span><span class="fa">{g.ideology_fa || g.ideology_en}</span></dd></>
+        )}
+        {g.book_pages?.length > 0 && (
+          <><dt><span class="en">In the book</span><span class="fa">در کتاب</span></dt>
+            <dd class="muted">
+              <span class="en">pp. {g.book_pages.join(', ')}</span>
+              <span class="fa">ص‌ص {faDigits(g.book_pages.join('، '))}</span>
+            </dd></>
+        )}
+      </dl>
+
+      {(parent || children.length > 0 || rels.length > 0) && (
+        <div class="sidebox">
+          <h3><span class="en">Related groups</span><span class="fa">گروه‌های مرتبط</span></h3>
+          <ul class="sidelist">
+            {parent && (
+              <li>
+                <a href={`${base}/groups/${parent.id}/`}>
+                  <span class="en">{parent.name_en}</span><span class="fa">{parent.name_fa || parent.name_en}</span>
+                </a>
+                <em><span class="en">parent</span><span class="fa">گروه مادر</span></em>
+              </li>
+            )}
+            {children.map((c) => (
+              <li>
+                <a href={`${base}/groups/${c.id}/`}>
+                  <span class="en">{c.name_en}</span><span class="fa">{c.name_fa || c.name_en}</span>
+                </a>
+                <em><span class="en">part of this</span><span class="fa">زیرمجموعه</span></em>
+              </li>
+            ))}
+            {rels.map((r) => {
+              const lab = REL[r.type] || [r.type, r.type];
+              return (
+                <li>
+                  <a href={`${base}/groups/${r.group_b}/`}>
+                    <span class="en">{r.b_en}</span><span class="fa">{r.b_fa || r.b_en}</span>
+                  </a>
+                  <em><span class="en">{lab[0]}</span><span class="fa">{lab[1]}</span></em>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
+    </aside>
+  </div>
+
+  <p class="backlink"><a href={`${base}/groups/`}>← <span class="en">All groups</span><span class="fa">همهٔ گروه‌ها</span></a></p>
+
+  <style is:global>
+    .gh-title { display: flex; align-items: center; gap: .9rem; }
+    .gh-mark { width: 34px; height: 34px; border-radius: 9px; flex: none;
+      background: linear-gradient(145deg, var(--c1), var(--c2)); }
+    .gh-sub { display: flex; gap: .7rem; align-items: center; flex-wrap: wrap; }
+    .gh-place { font-family: var(--fs-ui); font-size: .8rem; color: var(--ink-3); }
+    .memgrid { display: grid; gap: .5rem; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); }
+    .mem { display: flex; gap: .6rem; align-items: center; text-decoration: none;
+      padding: .35rem; border-radius: 8px; }
+    .mem:hover { background: var(--paper-2); }
+    .mem__t { min-width: 0; }
+    .mem__t b { display: block; font-weight: 500; font-size: .9rem; line-height: 1.25; }
+    .mem__t i { display: block; font-style: normal; font-size: .74rem; color: var(--ink-3); }
+  </style>
+</Base>

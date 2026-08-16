@@ -1,0 +1,209 @@
+---
+import Base from '../../layouts/Base.astro';
+import Avatar from '../../components/Avatar.astro';
+import people from '../../data/people.json';
+import links from '../../data/links.json';
+import events from '../../data/events.json';
+import { GROUP_TYPE_LABEL, EVENT_TYPE_LABEL, faDigits } from '../../lib/util.js';
+import portraits from '../../data/portraits.json';
+
+export function getStaticPaths() {
+  return people.map((p) => ({ params: { id: p.id }, props: { person: p } }));
+}
+const { person: p } = Astro.props;
+const shot = portraits[p.id];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const evById = Object.fromEntries(events.map((e) => [e.id, e]));
+const myEvents = (links.personEvents[p.id] || [])
+  .map((r) => ({ ...r, ev: evById[r.event_id] }))
+  .filter((r) => r.ev)
+  .sort((a, b) => a.ev.date_sort.localeCompare(b.ev.date_sort));
+const myGroups = links.personGroups[p.id] || [];
+const myRels = links.personRelations[p.id] || [];
+
+const RELATION_LABEL = {
+  ally: ['Ally', 'هم‌پیمان'], rival: ['Rival', 'رقیب'], kin: ['Kin', 'خویشاوند'],
+  assassinated: ['Assassinated', 'ترور کرد'], succeeded: ['Succeeded', 'جانشین'],
+  mentor: ['Mentor / student', 'استاد یا شاگرد'], collaborator: ['Collaborator', 'همکار'],
+};
+const life = [p.birth_display_en, p.death_display_en].filter(Boolean).join(' – ');
+const lifeFa = [p.birth_display_fa, p.death_display_fa].filter(Boolean).join(' – ');
+---
+<Base title={p.name_en}>
+  <div slot="title" class="ph-title">
+    <Avatar id={p.id} nameEn={p.name_en} nameFa={p.name_fa} size={72} link={false} />
+    <span>
+      <span class="en">{p.name_en}</span><span class="fa">{p.name_fa || p.name_en}</span>
+      {!p.is_historical_actor && <em class="ph-flag"><span class="en">cited scholar</span><span class="fa">پژوهشگر مورد استناد</span></em>}
+    </span>
+  </div>
+  <p slot="subtitle" class="ph-sub">
+    <span class="en">{p.role_en || p.title_en}</span>
+    <span class="fa">{p.role_fa || p.title_fa || p.role_en}</span>
+  </p>
+
+  <div class="detail">
+    <div class="detail__main">
+      {(p.biography_en || p.biography_fa) && (
+        <p class="lede">
+          <span class="en">{p.biography_en}</span>
+          <span class="fa">{p.biography_fa || p.biography_en}</span>
+        </p>
+      )}
+
+      {myEvents.length > 0 && (
+        <section>
+          <h2><span class="en">Events</span><span class="fa">رویدادها</span> <em><span class="en">{myEvents.length}</span><span class="fa">{faDigits(myEvents.length)}</span></em></h2>
+          <ol class="tl-mini">
+            {myEvents.map((r) => (
+              <li>
+                <a href={`${base}/events/${r.ev.id}/`}>
+                  <time>
+                    <span class="en">{r.ev.date_display_en}</span>
+                    <span class="fa">{r.ev.date_display_fa || r.ev.date_display_en}</span>
+                  </time>
+                  <b><span class="en">{r.ev.title_en}</span><span class="fa">{r.ev.title_fa || r.ev.title_en}</span></b>
+                </a>
+                {(r.role_en || r.role_fa) && (
+                  <span class="tl-mini__role">
+                    <span class="en">{r.role_en}</span><span class="fa">{r.role_fa || r.role_en}</span>
+                  </span>
+                )}
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+
+      {myRels.length > 0 && (
+        <section>
+          <h2><span class="en">Connections</span><span class="fa">پیوندها</span></h2>
+          <ul class="rels">
+            {myRels.map((r) => {
+              const lab = RELATION_LABEL[r.type] || [r.type, r.type];
+              return (
+                <li>
+                  <span class="tag"><span class="en">{lab[0]}</span><span class="fa">{lab[1]}</span></span>
+                  <a href={`${base}/people/${r.person_b}/`}>
+                    <span class="en">{r.b_en}</span><span class="fa">{r.b_fa || r.b_en}</span>
+                  </a>
+                  {(r.note_en || r.note_fa) && (
+                    <p class="muted">
+                      <span class="en">{r.note_en}</span><span class="fa">{r.note_fa || r.note_en}</span>
+                    </p>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+    </div>
+
+    <aside class="detail__side">
+      <dl class="facts">
+        {p.full_name_en && p.full_name_en !== p.name_en && (
+          <><dt><span class="en">Full name</span><span class="fa">نام کامل</span></dt>
+            <dd><span class="en">{p.full_name_en}</span><span class="fa">{p.full_name_fa || p.full_name_en}</span></dd></>
+        )}
+        {p.title_en && (
+          <><dt><span class="en">Title</span><span class="fa">عنوان</span></dt>
+            <dd><span class="en">{p.title_en}</span><span class="fa">{p.title_fa || p.title_en}</span></dd></>
+        )}
+        {life && (
+          <><dt><span class="en">Life</span><span class="fa">زندگی</span></dt>
+            <dd><span class="en">{life}</span><span class="fa">{lifeFa || life}</span></dd></>
+        )}
+        {(p.death_cause_en || p.death_cause_fa) && (
+          <><dt><span class="en">Death</span><span class="fa">مرگ</span></dt>
+            <dd><span class="en">{p.death_cause_en}</span><span class="fa">{p.death_cause_fa || p.death_cause_en}</span></dd></>
+        )}
+        {p.nationality_en && (
+          <><dt><span class="en">Nationality</span><span class="fa">ملیت</span></dt>
+            <dd><span class="en">{p.nationality_en}</span><span class="fa">{p.nationality_fa || p.nationality_en}</span></dd></>
+        )}
+        {shot && (
+          <><dt><span class="en">Portrait</span><span class="fa">تصویر</span></dt>
+            <dd class="muted"><a href={shot.page_url} target="_blank" rel="noopener">
+              <span class="en">via Wikipedia</span><span class="fa">از ویکی‌پدیا</span></a></dd></>
+        )}
+        {p.book_pages?.length > 0 && (
+          <><dt><span class="en">In the book</span><span class="fa">در کتاب</span></dt>
+            <dd class="muted">
+              <span class="en">pp. {p.book_pages.join(', ')}</span>
+              <span class="fa">ص‌ص {faDigits(p.book_pages.join('، '))}</span>
+            </dd></>
+        )}
+      </dl>
+
+      {myGroups.length > 0 && (
+        <div class="sidebox">
+          <h3><span class="en">Groups</span><span class="fa">گروه‌ها</span></h3>
+          <ul class="sidelist">
+            {myGroups.map((g) => (
+              <li>
+                <a href={`${base}/groups/${g.group_id}/`}>
+                  <span class="en">{g.group_en}</span><span class="fa">{g.group_fa || g.group_en}</span>
+                </a>
+                {(g.role_en || g.role_fa) && (
+                  <em><span class="en">{g.role_en}</span><span class="fa">{g.role_fa || g.role_en}</span></em>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </aside>
+  </div>
+
+  <p class="backlink"><a href={`${base}/people/`}>← <span class="en">All people</span><span class="fa">همهٔ اشخاص</span></a></p>
+
+  <style is:global>
+    .ph-title { display: flex; align-items: center; gap: 1rem; }
+    .ph-flag { display: block; font-size: .68rem; font-style: normal; font-family: var(--fs-ui);
+      color: var(--ink-3); letter-spacing: .05em; text-transform: uppercase; margin-top: .2rem; }
+    .ph-sub { font-size: 1.02rem; }
+    .detail { display: grid; grid-template-columns: 1fr 17rem; gap: 2.5rem; align-items: start; }
+    .detail__main section { margin-bottom: 2.2rem; }
+    .detail h2 { font-size: 1.05rem; margin: 0 0 .8rem; padding-bottom: .35rem;
+      border-bottom: 1px solid var(--line-2); display: flex; gap: .5rem; align-items: baseline; }
+    .detail h2 em { font-style: normal; font-family: var(--fs-ui); font-size: .74rem; color: var(--ink-3); }
+    .lede { font-size: 1.02rem; color: var(--ink-2); margin: 0 0 2rem; }
+
+    .tl-mini { list-style: none; margin: 0; padding: 0; }
+    .tl-mini li { padding: .5rem 0; border-bottom: 1px solid var(--line-2); }
+    .tl-mini a { display: flex; gap: .8rem; align-items: baseline; text-decoration: none; }
+    .tl-mini time { font-family: var(--fs-ui); font-size: .74rem; color: var(--accent);
+      flex: none; width: 9.5rem; font-weight: 600; }
+    .tl-mini b { font-weight: 500; }
+    .tl-mini a:hover b { text-decoration: underline; text-underline-offset: 3px; }
+    .tl-mini__role { display: block; margin-inline-start: 10.3rem; font-size: .82rem; color: var(--ink-3); }
+
+    .rels { list-style: none; margin: 0; padding: 0; }
+    .rels li { padding: .55rem 0; border-bottom: 1px solid var(--line-2); }
+    .rels a { font-weight: 500; margin-inline-start: .5rem; }
+    .rels p { margin: .25rem 0 0; font-size: .84rem; }
+
+    .facts { margin: 0 0 1.6rem; font-size: .86rem; }
+    .facts dt { font-family: var(--fs-ui); font-size: .68rem; text-transform: uppercase;
+      letter-spacing: .05em; color: var(--ink-3); margin-top: .8rem; }
+    .facts dd { margin: .15rem 0 0; }
+    .sidebox { border-top: 1px solid var(--line-2); padding-top: 1rem; }
+    .sidebox h3 { font-size: .78rem; font-family: var(--fs-ui); text-transform: uppercase;
+      letter-spacing: .05em; color: var(--ink-3); margin: 0 0 .6rem; }
+    .sidelist { list-style: none; margin: 0; padding: 0; font-size: .88rem; }
+    .sidelist li { margin-bottom: .55rem; }
+    .sidelist em { display: block; font-style: normal; font-size: .76rem; color: var(--ink-3); }
+    .backlink { margin-top: 2rem; font-family: var(--fs-ui); font-size: .85rem; }
+    .backlink a { text-decoration: none; color: var(--ink-3); }
+    .backlink a:hover { color: var(--accent); }
+
+    @media (max-width: 780px) {
+      .detail { grid-template-columns: 1fr; gap: 1.5rem; }
+      .tl-mini a { flex-direction: column; gap: .1rem; }
+      .tl-mini time { width: auto; }
+      .tl-mini__role { margin-inline-start: 0; }
+    }
+  </style>
+</Base>

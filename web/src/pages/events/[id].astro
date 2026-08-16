@@ -1,0 +1,179 @@
+---
+import Base from '../../layouts/Base.astro';
+import Avatar from '../../components/Avatar.astro';
+import events from '../../data/events.json';
+import links from '../../data/links.json';
+import { EVENT_TYPE_LABEL, GROUP_TYPE_LABEL, faDigits } from '../../lib/util.js';
+
+export function getStaticPaths() {
+  return events.map((e) => ({ params: { id: e.id }, props: { ev: e } }));
+}
+const { ev: e } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const people = links.eventPeople[e.id] || [];
+const grps = links.eventGroups[e.id] || [];
+const places = links.eventPlaces[e.id] || [];
+const type = EVENT_TYPE_LABEL[e.type] || [e.type, e.type];
+
+const sorted = [...events].sort((a, b) => a.date_sort.localeCompare(b.date_sort));
+const idx = sorted.findIndex((x) => x.id === e.id);
+const prev = sorted[idx - 1], next = sorted[idx + 1];
+
+const ROLE_ORDER = ['leader', 'perpetrator', 'author', 'signatory', 'participant',
+                    'mediator', 'target', 'victim', 'opponent', 'witness'];
+const byRole = {};
+for (const p of people) (byRole[p.role_type] ??= []).push(p);
+const roleGroups = ROLE_ORDER.filter((r) => byRole[r]).map((r) => [r, byRole[r]]);
+const ROLE_LABEL = {
+  leader: ['Led by', 'به رهبری'], participant: ['Took part', 'شرکت‌کنندگان'],
+  victim: ['Victims', 'قربانیان'], perpetrator: ['Carried out by', 'عاملان'],
+  signatory: ['Signatories', 'امضاکنندگان'], opponent: ['Opposed by', 'مخالفان'],
+  witness: ['Witnesses', 'شاهدان'], author: ['Authors', 'نویسندگان'],
+  target: ['Targets', 'آماج'], mediator: ['Mediators', 'میانجیان'],
+};
+---
+<Base title={e.title_en}>
+  <div slot="title">
+    <span class="en">{e.title_en}</span><span class="fa">{e.title_fa || e.title_en}</span>
+  </div>
+  <div slot="subtitle" class="ev-dates">
+    <span class="ev-dates__g">
+      <span class="en">{e.date_display_en}</span><span class="fa">{e.date_display_fa || e.date_display_en}</span>
+    </span>
+    {e.type && <span class="tag tag--accent"><span class="en">{type[0]}</span><span class="fa">{type[1]}</span></span>}
+  </div>
+
+  <div class="detail">
+    <div class="detail__main">
+      {(e.summary_en || e.summary_fa) && (
+        <p class="lede">
+          <span class="en">{e.summary_en}</span>
+          <span class="fa">{e.summary_fa || e.summary_en}</span>
+        </p>
+      )}
+
+      {roleGroups.length > 0 && (
+        <section>
+          <h2><span class="en">People</span><span class="fa">اشخاص</span> <em><span class="en">{people.length}</span><span class="fa">{faDigits(people.length)}</span></em></h2>
+          {roleGroups.map(([role, list]) => {
+            const lab = ROLE_LABEL[role] || [role, role];
+            return (
+              <div class="rolegrp">
+                <h4><span class="en">{lab[0]}</span><span class="fa">{lab[1]}</span></h4>
+                <div class="memgrid">
+                  {list.map((m) => (
+                    <a class="mem" href={`${base}/people/${m.person_id}/`}>
+                      <Avatar id={m.person_id} nameEn={m.name_en} nameFa={m.name_fa} size={40} link={false} />
+                      <span class="mem__t">
+                        <b><span class="en">{m.name_en}</span><span class="fa">{m.name_fa || m.name_en}</span></b>
+                        {(m.role_en || m.role_fa) && (
+                          <i><span class="en">{m.role_en}</span><span class="fa">{m.role_fa || m.role_en}</span></i>
+                        )}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </section>
+      )}
+
+      {grps.length > 0 && (
+        <section>
+          <h2><span class="en">Groups</span><span class="fa">گروه‌ها</span> <em><span class="en">{grps.length}</span><span class="fa">{faDigits(grps.length)}</span></em></h2>
+          <ul class="glist">
+            {grps.map((x) => {
+              const lab = GROUP_TYPE_LABEL[x.type] || [x.type, x.type];
+              return (
+                <li>
+                  <a href={`${base}/groups/${x.group_id}/`}>
+                    <span class="en">{x.name_en}</span><span class="fa">{x.name_fa || x.name_en}</span>
+                  </a>
+                  <span class="tag"><span class="en">{lab[0]}</span><span class="fa">{lab[1]}</span></span>
+                  {x.role_type && <em class="muted">{x.role_type}</em>}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+    </div>
+
+    <aside class="detail__side">
+      <dl class="facts">
+        <dt><span class="en">Gregorian</span><span class="fa">میلادی</span></dt>
+        <dd><span class="en">{e.date_display_en}</span><span class="fa">{e.date_display_fa || e.date_display_en}</span></dd>
+
+        {e.date_j_display_en && (
+          <><dt><span class="en">Solar Hijri</span><span class="fa">هجری شمسی</span></dt>
+            <dd><span class="en">{e.date_j_display_en}</span><span class="fa">{e.date_j_display_fa}</span>
+              <small class="muted"> <span class="en">computed</span><span class="fa">محاسبه‌شده</span></small></dd></>
+        )}
+        {e.date_h_display_en && (
+          <><dt><span class="en">Lunar Hijri</span><span class="fa">هجری قمری</span></dt>
+            <dd><span class="en">{e.date_h_display_en}</span><span class="fa">{e.date_h_display_fa}</span>
+              <small class="muted"> {e.date_h_source === 'book'
+                ? (<><span class="en">from the book</span><span class="fa">از خود کتاب</span></>)
+                : (<><span class="en">computed, ±1–2 days</span><span class="fa">محاسبه‌شده، ±۱ تا ۲ روز</span></>)}</small></dd></>
+        )}
+        {e.end_display_en && (
+          <><dt><span class="en">Ended</span><span class="fa">پایان</span></dt><dd>{e.end_display_en}</dd></>
+        )}
+        {places.length > 0 && (
+          <><dt><span class="en">Where</span><span class="fa">مکان</span></dt>
+            <dd>{places.map((p, i) => (<>{i > 0 && ', '}<span class="en">{p.name_en}</span><span class="fa">{p.name_fa || p.name_en}</span></>))}</dd></>
+        )}
+        {e.book_pages?.length > 0 && (
+          <><dt><span class="en">In the book</span><span class="fa">در کتاب</span></dt>
+            <dd class="muted">
+              <span class="en">pp. {e.book_pages.join(', ')}</span>
+              <span class="fa">ص‌ص {faDigits(e.book_pages.join('، '))}</span>
+            </dd></>
+        )}
+      </dl>
+
+      {e.date_issues?.length > 0 && (
+        <div class="sidebox note">
+          <h3><span class="en">Date note</span><span class="fa">یادداشت تاریخ</span></h3>
+          {e.date_issues.map((d) => (
+            <p class="muted">
+              <span class="en">The translation prints <b>{d.book}</b>; the correct conversion is <b>{d.computed}</b>. {d.reason}.</span>
+              <span class="fa">ترجمه <b>{d.book}</b> را آورده است؛ تبدیل درست <b>{d.computed}</b> است.</span>
+            </p>
+          ))}
+        </div>
+      )}
+    </aside>
+  </div>
+
+  <nav class="evnav">
+    {prev && <a href={`${base}/events/${prev.id}/`}>← <span class="en">{prev.title_en}</span><span class="fa">{prev.title_fa || prev.title_en}</span></a>}
+    <a class="evnav__all" href={`${base}/`}><span class="en">Chronology</span><span class="fa">گاه‌شمار</span></a>
+    {next && <a href={`${base}/events/${next.id}/`}><span class="en">{next.title_en}</span><span class="fa">{next.title_fa || next.title_en}</span> →</a>}
+  </nav>
+
+  <style is:global>
+    .ev-dates { display: flex; gap: .7rem; align-items: center; flex-wrap: wrap; }
+    .ev-dates__g { color: var(--accent); font-weight: 600; }
+    .rolegrp { margin-bottom: 1.2rem; }
+    .rolegrp h4 { margin: 0 0 .45rem; font-family: var(--fs-ui); font-size: .7rem;
+      text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); font-weight: 600; }
+    .glist { list-style: none; margin: 0; padding: 0; }
+    .glist li { padding: .45rem 0; border-bottom: 1px solid var(--line-2);
+      display: flex; gap: .6rem; align-items: baseline; flex-wrap: wrap; }
+    .glist a { font-weight: 500; }
+    .glist em { font-style: normal; font-family: var(--fs-ui); font-size: .72rem; }
+    .sidebox.note { background: color-mix(in srgb, var(--gold) 10%, transparent);
+      border: 1px solid color-mix(in srgb, var(--gold) 30%, transparent);
+      border-radius: 8px; padding: .8rem .9rem; }
+    .sidebox.note p { margin: 0; font-size: .8rem; }
+    .evnav { display: flex; gap: 1rem; justify-content: space-between; align-items: center;
+      margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line-2);
+      font-family: var(--fs-ui); font-size: .82rem; }
+    .evnav a { text-decoration: none; color: var(--ink-3); max-width: 15rem; }
+    .evnav a:hover { color: var(--accent); }
+    .evnav__all { font-weight: 600; }
+  </style>
+</Base>

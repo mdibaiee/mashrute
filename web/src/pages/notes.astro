@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import counts from '../data/counts.json';
+import { faDigits } from '../lib/util.js';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="Notes">
+  <Fragment slot="title">
+    <span class="en">Notes</span><span class="fa">یادداشت‌ها</span>
+  </Fragment>
+  <Fragment slot="subtitle">
+    <span class="en">Where the data comes from, and the rules used to convert between the three calendars.</span>
+    <span class="fa">داده‌ها از کجا آمده‌اند و تاریخ‌ها با چه قاعده‌ای میان سه تقویم برگردانده شده‌اند.</span>
+  </Fragment>
+
+  <div class="notes">
+    <section>
+      <h2><span class="en">The source</span><span class="fa">منبع</span></h2>
+      <p>
+        <span class="en">Everything here is extracted from Janet Afary, <em>The Iranian Constitutional Revolution, 1906–1911: Grassroots Democracy, Social Democracy and the Origins of Feminism</em> (Columbia University Press, 1996), read alongside its Persian translation by Reza Rezaei (نشر بیستون, ۱۳۸۵). Both the book's own chronology and the body chapters were mined, together with the index, the deputy rosters and the endnotes.</span>
+        <span class="fa">هرچه در این پایگاه آمده از کتاب ژانت آفاری، <em>انقلاب مشروطهٔ ایران ۱۹۰۶–۱۹۱۱</em> (انتشارات دانشگاه کلمبیا، ۱۹۹۶)، در کنار ترجمهٔ فارسی رضا رضایی (نشر بیستون، ۱۳۸۵) استخراج شده است. هم گاه‌شمار خود کتاب و هم فصل‌های متن، همراه با نمایه، فهرست نمایندگان و یادداشت‌های پایانی، کاوش شده‌اند.</span>
+      </p>
+      <p class="counts">
+        <span class="en">{counts.events} events · {counts.people} people · {counts.groups} groups · {counts.relations} links between them.</span>
+        <span class="fa">{faDigits(counts.events)} رویداد · {faDigits(counts.people)} شخص · {faDigits(counts.groups)} گروه · {faDigits(counts.relations)} پیوند میان آن‌ها.</span>
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="en">On the dates</span><span class="fa">دربارهٔ تاریخ‌ها</span></h2>
+      <p>
+        <span class="en">Gregorian dates are the anchor. Solar Hijri dates are <b>computed</b> from them with the astronomical (equinox) rule rather than copied from the Persian translation, which runs a day late in 1285, 1286, 1289 and 1290 AP. Verified against outside sources: 7 October 1906 = 14 Mehr 1285 = 18 Sha'ban 1324.</span>
+        <span class="fa">مبنا تاریخ میلادی است. تاریخ هجری شمسی از روی آن و با قاعدهٔ نجومی (اعتدال بهاری) <b>محاسبه</b> شده، نه از ترجمهٔ فارسی نقل شده که در سال‌های ۱۲۸۵، ۱۲۸۶، ۱۲۸۹ و ۱۲۹۰ یک روز عقب است. با منابع بیرونی راستی‌آزمایی شده: ۷ اکتبر ۱۹۰۶ برابر ۱۴ مهر ۱۲۸۵ و ۱۸ شعبان ۱۳۲۴.</span>
+      </p>
+      <p>
+        <span class="en">We do not reproduce a wrong conversion merely because the book or its translation prints one. Where the printed date disagrees with the correct conversion, the event's page carries a note saying what the book prints and what the date actually is.</span>
+        <span class="fa">تبدیل نادرست را تنها به این دلیل که در کتاب یا ترجمه‌اش چاپ شده بازتولید نمی‌کنیم. هرجا تاریخ چاپ‌شده با تبدیل درست نخواند، در صفحهٔ آن رویداد یادداشتی آمده که چه چیزی در کتاب چاپ شده و تاریخ درست کدام است.</span>
+      </p>
+
+      <dl class="legend">
+        <dt>✓</dt>
+        <dd>
+          <span class="en">A lunar Hijri date attested in the book itself.</span>
+          <span class="fa">تاریخ هجری قمری که در خود کتاب آمده است.</span>
+        </dd>
+        <dt>~</dt>
+        <dd>
+          <span class="en">A lunar Hijri date we computed, accurate to ±1–2 days: historical Qamari dating was observational, so the start of a month depended on whether the crescent was actually sighted.</span>
+          <span class="fa">تاریخ هجری قمری محاسبه‌شده، با دقت ±۱ تا ۲ روز: تقویم قمری تاریخی رؤیتی بوده و آغاز ماه به دیده‌شدن هلال بستگی داشته است.</span>
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2><span class="en">Precision</span><span class="fa">دقت تاریخ</span></h2>
+      <p>
+        <span class="en">Not every event in the book is dated to the day. Dates are recorded at the precision the source supports — day, month, season or year — and a card that shows only a month or a year is telling you that is as far as the evidence goes, not that the day was lost.</span>
+        <span class="fa">همهٔ رویدادهای کتاب تاریخ روزشمار ندارند. تاریخ‌ها با همان دقتی ثبت شده‌اند که منبع اجازه می‌دهد — روز، ماه، فصل یا سال — و اگر کارتی تنها ماه یا سال را نشان می‌دهد یعنی شواهد بیش از این نبوده، نه اینکه روز آن گم شده باشد.</span>
+      </p>
+    </section>
+
+  </div>
+
+  <p class="backlink">
+    <a href={`${base}/`}>← <span class="en">Chronology</span><span class="fa">گاه‌شمار</span></a>
+  </p>
+
+  <style>
+    .notes { max-width: 46rem; }
+    .notes section { padding: 1.6rem 0; border-bottom: 1px solid var(--line-2); }
+    .notes section:last-child { border-bottom: 0; }
+    .notes h2 { font-size: 1.05rem; margin: 0 0 .7rem; font-family: var(--fs-ui);
+      text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); font-weight: 600; }
+    .notes p { margin: 0 0 .8rem; color: var(--ink-2); }
+    .notes p:last-child { margin-bottom: 0; }
+    .counts { font-family: var(--fs-ui); font-size: .85rem; color: var(--ink-3); }
+    .legend { display: grid; grid-template-columns: auto 1fr; gap: .5rem 1rem;
+      margin: 1.1rem 0 0; align-items: baseline; }
+    .legend dt { font-size: 1.1rem; color: var(--accent); font-weight: 700; }
+    .legend dd { margin: 0; font-size: .9rem; color: var(--ink-2); }
+  </style>
+</Base>

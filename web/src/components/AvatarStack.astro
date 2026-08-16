@@ -1,0 +1,98 @@
+---
+import Avatar from './Avatar.astro';
+
+// Overlapping discs that fan out on hover/focus. Purely CSS so it works before
+// hydration and on keyboard focus, not only mouse.
+const { people = [], size = 34, max = 7 } = Astro.props;
+const shown = people.slice(0, max);
+const extra = people.length - shown.length;
+---
+{people.length > 0 && (
+  <div class="stack" style={`--sz:${size}px`} tabindex="0"
+       aria-label={`${people.length} people involved`}>
+    {shown.map((p, i) => (
+      <span class="stack__item" style={`--i:${i}`}>
+        <Avatar id={p.person_id} nameEn={p.name_en} nameFa={p.name_fa} size={size} />
+        <span class="stack__tip">
+          <b><span class="en">{p.name_en}</span><span class="fa">{p.name_fa || p.name_en}</span></b>
+          {(p.role_en || p.role_fa) && (
+            <i><span class="en">{p.role_en}</span><span class="fa">{p.role_fa || p.role_en}</span></i>
+          )}
+        </span>
+      </span>
+    ))}
+    {extra > 0 && (
+      <span class="stack__item stack__more" style={`--i:${shown.length}`}>
+        <span class="stack__disc">+{extra}</span>
+      </span>
+    )}
+  </div>
+)}
+
+<style>
+  .stack {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+    width: max-content;
+    max-width: 100%;
+    outline: none;
+  }
+  .stack__item {
+    position: relative;
+    display: inline-flex;
+    /* Overlap by 40% of the disc; the first one keeps its place. */
+    margin-inline-start: calc(var(--i) * 0px - (var(--sz) * 0.4));
+    transition: margin .28s cubic-bezier(.2,.9,.3,1), transform .2s ease;
+    z-index: 1;
+  }
+  .stack__item:first-child { margin-inline-start: 0; }
+  .stack:hover .stack__item,
+  .stack:focus-within .stack__item { margin-inline-start: 3px; }
+  .stack:hover .stack__item:first-child,
+  .stack:focus-within .stack__item:first-child { margin-inline-start: 0; }
+  .stack__item:hover, .stack__item:focus-within { z-index: 6; transform: translateY(-2px); }
+
+  .stack__disc {
+    width: var(--sz); height: var(--sz); border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--line-2); color: var(--ink-2);
+    font-family: var(--fs-ui); font-size: calc(var(--sz) * .34); font-weight: 650;
+    outline: 2px solid var(--paper-2); outline-offset: -1px;
+  }
+
+  .stack__tip {
+    position: absolute;
+    bottom: calc(100% + 9px);
+    inset-inline-start: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: var(--ink);
+    color: var(--paper-2);
+    padding: .42rem .6rem;
+    border-radius: 8px;
+    font-family: var(--fs-ui);
+    font-size: .74rem;
+    line-height: 1.35;
+    /* Size to the content, but cap it — otherwise a long role forces the box
+       into a tall narrow column the width of the name. */
+    width: max-content;
+    max-width: 15rem;
+    white-space: normal;
+    text-align: start;
+    opacity: 0; pointer-events: none;
+    transition: opacity .16s ease, transform .16s ease;
+    z-index: 30;
+    box-shadow: 0 6px 18px rgba(0,0,0,.22);
+  }
+  html[dir='rtl'] .stack__tip { transform: translateX(50%) translateY(4px); }
+  .stack__tip b { display: block; font-weight: 650; white-space: nowrap; }
+  .stack__tip i { display: block; font-style: normal; opacity: .75; margin-top: 2px; }
+  .stack__item:hover .stack__tip,
+  .stack__item:focus-within .stack__tip { opacity: 1; transform: translateX(-50%) translateY(0); }
+  html[dir='rtl'] .stack__item:hover .stack__tip,
+  html[dir='rtl'] .stack__item:focus-within .stack__tip { transform: translateX(50%) translateY(0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .stack__item, .stack__tip { transition: none; }
+  }
+</style>
