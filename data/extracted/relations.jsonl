@@ -1087,3 +1087,66 @@
 {"rel":"person_relation","person_a":"sattar-khan","person_b":"rahim-khan-chalbiyanlu","type":"rival","note_en":"Once cellmates before the revolution; they faced each other across the barricades of Tabriz in 1908.","note_fa":"پیش از انقلاب هم‌بند بودند؛ در ۱۲۸۷ در دو سوی سنگرهای تبریز رویاروی هم ایستادند."}
 {"rel":"person_relation","person_a":"amirkhizi-ismail","person_b":"sattar-khan","type":"mentor","note_en":"Brought Sattar Khan and Baqir Khan into the Mujahidin despite Sattar's unsavoury reputation; each agreed to recruit ten others.","note_fa":"با وجود بدنامی ستارخان، او و باقرخان را به مجاهدین آورد؛ هریک پذیرفتند ده تن دیگر را جذب کنند."}
 {"rel":"person_relation","person_a":"taqizadah","person_b":"sattar-khan","type":"rival","note_en":"In besieged Tabriz Taqizadah lectured the fighters against conduct 'unbecoming to the goals of the nation'; the gulf between the intellectual leadership and the mujahidin was theoretical, not merely personal.","note_fa":"در تبریز محاصره‌شده تقی‌زاده جنگاوران را از رفتار «ناشایست با اهداف ملت» برحذر داشت؛ شکاف میان رهبری روشنفکری و مجاهدان نظری بود، نه صرفاً شخصی."}
+{"rel":"person_group","person_id":"karim-khan-rashti","group_id":"sattar-committee","role_type":"leader","role_en":"political director","role_fa":"مدیر سیاسی"}
+{"rel":"person_group","person_id":"sardar-muhyi","group_id":"sattar-committee","role_type":"leader","role_en":"co-leader of the Gilan mujahidin","role_fa":"هم‌رهبر مجاهدان گیلان"}
+{"rel":"person_group","person_id":"husain-kasmai","group_id":"sattar-committee","role_type":"member","role_en":"central committee member","role_fa":"عضو کمیتهٔ مرکزی"}
+{"rel":"person_group","person_id":"tarbiyat-ali-muhammad","group_id":"sattar-committee","role_type":"member","role_en":"central committee member","role_fa":"عضو کمیتهٔ مرکزی"}
+{"rel":"person_group","person_id":"yephrem-khan","group_id":"sattar-committee","role_type":"member","role_en":"member of its War Commission","role_fa":"عضو کمیسیون جنگ آن"}
+{"rel":"person_group","person_id":"sedrak-bonvarian","group_id":"central-revolutionary-committee-tabriz","role_type":"member","role_en":"representative of the Georgian RSDWP fighters","role_fa":"نمایندهٔ جنگاوران گرجی حزب سوسیال‌دموکرات روسیه"}
+{"rel":"person_group","person_id":"zorian-stepan","group_id":"central-revolutionary-committee-tabriz","role_type":"member","role_en":"Dashnak representative","role_fa":"نمایندهٔ داشناک"}
+{"rel":"person_group","person_id":"movsessian-raphael","group_id":"central-revolutionary-committee-tabriz","role_type":"member","role_en":"commander of the Hnchak forces","role_fa":"فرمانده نیروهای هنچاک"}
+{"rel":"person_group","person_id":"movsessian-raphael","group_id":"hnchak-party","role_type":"leader","role_en":"sent to Tiflis for arms and volunteers","role_fa":"برای اسلحه و داوطلب به تفلیس فرستاده شد"}
+{"rel":"person_group","person_id":"sedrak-bonvarian","group_id":"rsdwp","role_type":"member","role_en":"led the Tiflis committee's contingent","role_fa":"رهبر دستهٔ کمیتهٔ تفلیس"}
+{"rel":"person_group","person_id":"panov","group_id":"rsdwp","role_type":"member","role_en":"member of the Baku organisation","role_fa":"عضو سازمان باکو"}
+{"rel":"person_group","person_id":"panov","group_id":"rech","role_type":"editor","role_en":"correspondent","role_fa":"خبرنگار"}
+{"rel":"person_group","person_id":"pokrovski","group_id":"rsdwp","role_type":"representative","role_en":"social democratic deputy in the Duma","role_fa":"نمایندهٔ سوسیال‌دموکرات دوما"}
+{"rel":"person_group","person_id":"lenin","group_id":"international-socialist-bureau","role_type":"representative","role_en":"delegate","role_fa":"نماینده"}
+{"rel":"person_group","person_id":"lenin","group_id":"proletary","role_type":"editor","role_en":"editor","role_fa":"مدیر"}
+{"rel":"person_group","person_id":"jaures-jean","group_id":"lhumanite","role_type":"editor","role_en":"editor","role_fa":"مدیر"}
+{"rel":"person_group","person_id":"jaures-jean","group_id":"french-sfio","role_type":"leader","role_en":"leader","role_fa":"رهبر"}
+{"rel":"person_group","person_id":"kautsky-karl","group_id":"german-spd","role_type":"leader","role_en":"leading theorist","role_fa":"نظریه‌پرداز برجسته"}
+{"rel":"person_group","person_id":"kautsky-karl","group_id":"neue-zeit","role_type":"editor","role_en":"editor","role_fa":"مدیر"}
+{"rel":"person_group","person_id":"ter-hacobian","group_id":"neue-zeit","role_type":"editor","role_en":"contributor","role_fa":"نویسنده"}
+{"rel":"person_group","person_id":"chalangarian-arshavir","group_id":"neue-zeit","role_type":"editor","role_en":"contributor","role_fa":"نویسنده"}
+{"rel":"person_group","person_id":"pavlovitch","group_id":"sotsial-demokrat","role_type":"editor","role_en":"contributor","role_fa":"نویسنده"}
+{"rel":"person_group","person_id":"pavlovitch","group_id":"revue-du-monde-musulman","role_type":"editor","role_en":"contributor","role_fa":"نویسنده"}
+{"rel":"person_group","person_id":"tria-mgeladze","group_id":"sotsial-demokrat","role_type":"editor","role_en":"reported on the Tabriz defence","role_fa":"دربارهٔ دفاع از تبریز گزارش داد"}
+{"rel":"person_group","person_id":"tria-mgeladze","group_id":"second-international","role_type":"representative","role_en":"reported to the Copenhagen Congress","role_fa":"به کنگرهٔ کپنهاگ گزارش داد"}
+{"rel":"person_group","person_id":"yeqikian-grigor","group_id":"hnchak-party","role_type":"leader","role_en":"theoretician","role_fa":"نظریه‌پرداز"}
+{"rel":"group_relation","group_a":"barq-committee","group_b":"sattar-committee","type":"split_from","note_en":"Formed out of the Dashnak–social democrat rivalry over leadership of the Gilan movement."}
+{"rel":"group_relation","group_a":"international-socialist-bureau","group_b":"second-international","type":"branch_of"}
+{"rel":"group_relation","group_a":"german-spd","group_b":"second-international","type":"branch_of"}
+{"rel":"group_relation","group_a":"french-sfio","group_b":"second-international","type":"branch_of"}
+{"rel":"group_relation","group_a":"british-labour-party","group_b":"second-international","type":"branch_of"}
+{"rel":"group_relation","group_a":"british-sdf","group_b":"second-international","type":"branch_of"}
+{"rel":"group_relation","group_a":"rsdwp","group_b":"second-international","type":"branch_of"}
+{"rel":"group_relation","group_a":"proletary","group_b":"rsdwp","type":"branch_of"}
+{"rel":"group_relation","group_a":"sotsial-demokrat","group_b":"rsdwp","type":"branch_of"}
+{"rel":"group_relation","group_a":"saadat-anjuman","group_b":"tabriz-anjuman","type":"allied","note_en":"Daily telegraph communication during the siege."}
+{"rel":"event_group","event_id":"dashnak-vienna-congress-1907","group_id":"dashnak-party","role_type":"participant"}
+{"rel":"event_participant","event_id":"dashnak-vienna-congress-1907","person_id":"yephrem-khan","role_type":"participant","role_en":"attended the Tabriz meeting that led to the resolution","role_fa":"در گردهمایی تبریز که به قطعنامه انجامید حاضر بود"}
+{"rel":"event_participant","event_id":"chalangarian-kautsky-exchange-1908","person_id":"chalangarian-arshavir","role_type":"author","role_en":"wrote to Kautsky","role_fa":"به کائوتسکی نوشت"}
+{"rel":"event_participant","event_id":"chalangarian-kautsky-exchange-1908","person_id":"kautsky-karl","role_type":"author","role_en":"replied on 1 August 1908","role_fa":"در ۱۰ مرداد ۱۲۸۷ پاسخ داد"}
+{"rel":"event_participant","event_id":"transcaucasians-arrive-tabriz-1908","person_id":"sedrak-bonvarian","role_type":"leader","role_en":"led the Georgian contingent","role_fa":"دستهٔ گرجی را رهبری کرد"}
+{"rel":"event_participant","event_id":"transcaucasians-arrive-tabriz-1908","person_id":"tria-mgeladze","role_type":"participant","role_en":"one of Sattar Khan's lieutenants; documented the contingent","role_fa":"از معاونان ستارخان؛ حضور این دسته را ثبت کرد"}
+{"rel":"event_participant","event_id":"transcaucasians-arrive-tabriz-1908","person_id":"zorian-stepan","role_type":"participant","role_en":"chemist and explosives expert who joined the fighters","role_fa":"شیمی‌دان و متخصص مواد منفجره که به جنگاوران پیوست"}
+{"rel":"event_group","event_id":"transcaucasians-arrive-tabriz-1908","group_id":"rsdwp","role_type":"participant"}
+{"rel":"event_group","event_id":"transcaucasians-arrive-tabriz-1908","group_id":"dashnak-party","role_type":"participant"}
+{"rel":"event_group","event_id":"transcaucasians-arrive-tabriz-1908","group_id":"hnchak-party","role_type":"participant"}
+{"rel":"event_group","event_id":"transcaucasians-arrive-tabriz-1908","group_id":"caucasian-mujahidin","role_type":"participant"}
+{"rel":"event_group","event_id":"copenhagen-congress-1910","group_id":"second-international","role_type":"participant"}
+{"rel":"event_participant","event_id":"copenhagen-congress-1910","person_id":"tria-mgeladze","role_type":"author","role_en":"presented one of the two reports on Iran","role_fa":"یکی از دو گزارش دربارهٔ ایران را ارائه کرد"}
+{"rel":"event_participant","event_id":"ordjonikidze-rasht-club-1909","person_id":"ordjonikidze","role_type":"leader","role_en":"founded the club and translated the Communist Manifesto","role_fa":"باشگاه را بنیان نهاد و مانیفست کمونیست را ترجمه کرد"}
+{"rel":"event_participant","event_id":"ordjonikidze-rasht-club-1909","person_id":"karim-khan-rashti","role_type":"participant","role_en":"sheltered him in his house","role_fa":"او را در خانهٔ خود پناه داد"}
+{"rel":"event_participant","event_id":"revolutionaries-take-rasht-1909","person_id":"karim-khan-rashti","role_type":"leader","role_en":"directed the Sattar Committee that planned the coup","role_fa":"کمیتهٔ ستار را که کودتا را طراحی کرد هدایت می‌کرد"}
+{"rel":"event_participant","event_id":"revolutionaries-take-rasht-1909","person_id":"sardar-muhyi","role_type":"leader","role_en":"co-leader of the Gilan mujahidin","role_fa":"هم‌رهبر مجاهدان گیلان"}
+{"rel":"event_participant","event_id":"revolutionaries-take-rasht-1909","person_id":"panov","role_type":"participant","role_en":"helped organise the mujahidin army in Gilan","role_fa":"در سازمان‌دهی ارتش مجاهدین گیلان یاری کرد"}
+{"rel":"event_group","event_id":"revolutionaries-take-rasht-1909","group_id":"barq-committee","role_type":"participant"}
+{"rel":"event_participant","event_id":"dashnak-majlis-meeting-1907","person_id":"zorian-stepan","role_type":"leader","role_en":"headed the Armenian delegation; negotiated for six days","role_fa":"هیئت ارمنی را رهبری کرد؛ شش روز مذاکره نمود"}
+{"rel":"event_participant","event_id":"dashnak-majlis-meeting-1907","person_id":"taqizadah","role_type":"leader","role_en":"credited by Zorian as the initiator of the talks","role_fa":"زوریان او را آغازگر گفت‌وگوها دانست"}
+{"rel":"person_relation","person_a":"karim-khan-rashti","person_b":"sardar-muhyi","type":"kin","note_en":"Brothers; together they led the Gilan mujahidin.","note_fa":"برادران؛ باهم مجاهدان گیلان را رهبری کردند."}
+{"rel":"person_relation","person_a":"karim-khan-rashti","person_b":"yeqikian-grigor","type":"mentor","note_en":"Drawn to social democracy through the Hnchak theoretician.","note_fa":"از راه نظریه‌پرداز هنچاک به سوسیال‌دموکراسی گرایید."}
+{"rel":"person_relation","person_a":"panov","person_b":"yephrem-khan","type":"rival","note_en":"Fell out after the Gilan rising; Panov was sent to Mazandaran and later left the Qazvin force.","note_fa":"پس از قیام گیلان درافتادند؛ پانوف به مازندران فرستاده شد و بعدها نیروی قزوین را ترک کرد."}
+{"rel":"person_relation","person_a":"baqir-khan","person_b":"zorian-stepan","type":"rival","note_en":"Baqir Khan invited Zorian and his colleagues to dine, then asked them to sit separately because they were not Muslims — the most noted instance of prejudice inside a strikingly multiethnic resistance.","note_fa":"باقرخان زوریان و یارانش را به مهمانی خواند و سپس از آنان خواست جدا بنشینند چون مسلمان نبودند — نامدارترین نمونهٔ تبعیض در دل مقاومتی به‌غایت چندقومی."}
+{"rel":"person_relation","person_a":"lenin","person_b":"ordjonikidze","type":"collaborator","note_en":"Ordjonikidze kept Lenin informed from Rasht and passed underground literature through Iran to Baku.","note_fa":"اورجونیکیدزه از رشت لنین را در جریان می‌گذاشت و ادبیات مخفی را از راه ایران به باکو می‌رساند."}
+{"rel":"person_relation","person_a":"luxemburg-rosa","person_b":"jaures-jean","type":"rival","note_en":"Luxemburg attacked Jaurès for welcoming the Anglo-Russian and Franco-Russian agreements as instruments of peace, asking how the government of 'the bloody executioners of the Russian revolution and the insurrection in Persia' could be made a pillar of international peace.","note_fa":"لوکزامبورگ به ژورس تاخت که توافق‌های روس–انگلیس و روس–فرانسه را ابزار صلح خوانده بود و پرسید چگونه می‌توان دولتِ «جلادان خونین انقلاب روسیه و قیام ایران» را ستون صلح جهانی کرد."}

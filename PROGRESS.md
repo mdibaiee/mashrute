@@ -66,7 +66,7 @@ Chapters of the English body (`data/raw/book_en.txt`), printed pages:
 | 5 | Press, satire and revolution | 119–145 | ✅ |
 | 6 | Peasants, artisans and fishermen | 146–176 | ✅ |
 | 7 | Women's anjumans | 177–208 | ✅ |
-| 8 | Civil war in Azerbaijan | 211–227 | ⏳ |
+| 8 | Civil war in Azerbaijan | 211–227 | ✅ |
 | 9 | Solidarity of nations: reconquest of Tehran | 228–253 | ⏳ |
 | 10 | Second Majlis and the Democrat Party | 257–281 | ⏳ |
 | 11 | Assassination, exile, imperialist pressure | 282–303 | ⏳ |
