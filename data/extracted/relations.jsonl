@@ -695,3 +695,76 @@
 {"rel":"person_relation","person_a":"vusuq-al-dawlah","person_b":"qavam-al-saltanah","type":"kin","note_en":"Brothers, and nephews of Amin al-Dawlah.","note_fa":"برادران و خواهرزادگان امین‌الدوله."}
 {"rel":"person_relation","person_a":"sani-al-dawlah","person_b":"muzaffar-al-din-shah","type":"kin","note_en":"Son-in-law.","note_fa":"داماد."}
 {"rel":"person_relation","person_a":"sulaiman-iskandari","person_b":"yahya-iskandari","type":"kin","note_en":"Brothers; Sulaiman took Yahya's seat after his death.","note_fa":"برادران؛ سلیمان پس از مرگ یحیی کرسی او را گرفت."}
+{"rel":"person_group","person_id":"galustian-hartun","group_id":"rasht-anjuman","role_type":"leader","role_en":"in the anjuman's leadership","role_fa":"در هیئت رئیسهٔ انجمن"}
+{"rel":"person_group","person_id":"galustian-hartun","group_id":"armenians","role_type":"member","role_en":"Armenian social democrat","role_fa":"سوسیال‌دموکرات ارمنی"}
+{"rel":"person_group","person_id":"shaikh-salim","group_id":"tabriz-anjuman","role_type":"member","role_en":"member and preacher","role_fa":"عضو و واعظ"}
+{"rel":"person_group","person_id":"mirza-husain-vaiz","group_id":"tabriz-anjuman","role_type":"member","role_en":"member and preacher","role_fa":"عضو و واعظ"}
+{"rel":"person_group","person_id":"mirza-javad-natiq","group_id":"tabriz-anjuman","role_type":"member","role_en":"member and orator","role_fa":"عضو و خطیب"}
+{"rel":"person_group","person_id":"khiabani-shaikh-muhammad","group_id":"tabriz-anjuman","role_type":"member","role_en":"active member","role_fa":"عضو فعال"}
+{"rel":"person_group","person_id":"siqat-al-islam-tabrizi","group_id":"tabriz-anjuman","role_type":"member","role_en":"often its spokesman, though he favoured moderation and withdrew","role_fa":"غالباً سخنگوی آن، هرچند اعتدال می‌خواست و کناره گرفت"}
+{"rel":"person_group","person_id":"siqat-al-islam-tabrizi","group_id":"shaikhi-school","role_type":"leader","role_en":"leader of the Tabriz Shaikhi community","role_fa":"پیشوای جامعهٔ شیخی تبریز"}
+{"rel":"person_group","person_id":"mashhadi-ismail","group_id":"secret-center","role_type":"founder","role_en":"sent from Baku to found it","role_fa":"از باکو برای تأسیس آن فرستاده شد"}
+{"rel":"person_group","person_id":"mashhadi-muhammad-ali-khan","group_id":"secret-center","role_type":"founder","role_en":"sent from Baku to found it","role_fa":"از باکو برای تأسیس آن فرستاده شد"}
+{"rel":"person_group","person_id":"haji-khan","group_id":"secret-center","role_type":"founder","role_en":"sent from Baku to found it","role_fa":"از باکو برای تأسیس آن فرستاده شد"}
+{"rel":"person_group","person_id":"rasul-sadaqiyani","group_id":"secret-center","role_type":"founder","role_en":"founding organiser","role_fa":"از بنیان‌گذاران"}
+{"rel":"person_group","person_id":"ali-davafurush","group_id":"secret-center","role_type":"founder","role_en":"founding organiser","role_fa":"از بنیان‌گذاران"}
+{"rel":"person_group","person_id":"hakkakbashi","group_id":"secret-center","role_type":"founder","role_en":"founding organiser","role_fa":"از بنیان‌گذاران"}
+{"rel":"person_group","person_id":"ali-naqi-ganjahi","group_id":"secret-center","role_type":"founder","role_en":"founding organiser","role_fa":"از بنیان‌گذاران"}
+{"rel":"person_group","person_id":"ali-akbar-sarraj","group_id":"secret-center","role_type":"founder","role_en":"founding organiser","role_fa":"از بنیان‌گذاران"}
+{"rel":"person_group","person_id":"yusif-khazduz","group_id":"secret-center","role_type":"founder","role_en":"founding member, later killed on its orders","role_fa":"از بنیان‌گذاران، که بعدها به فرمان همان مرکز کشته شد"}
+{"rel":"person_group","person_id":"tarbiyat-muhammad-ali","group_id":"secret-center","role_type":"founder","role_en":"founding organiser","role_fa":"از بنیان‌گذاران"}
+{"rel":"person_group","person_id":"abbas-quli-khan-adamiyat","group_id":"adamiyat-society","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"sad-al-dawlah","group_id":"adamiyat-society","role_type":"leader","role_en":"in its leadership; used it to build a power base","role_fa":"در رهبری آن؛ از آن پایگاه قدرت ساخت"}
+{"rel":"person_group","person_id":"amin-al-sultan","group_id":"adamiyat-society","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"ihtisham-al-saltanah","group_id":"adamiyat-society","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"muhammad-ali-shah","group_id":"adamiyat-society","role_type":"member","role_en":"briefly a member in late 1907, when the society mediated between Majlis and shah","role_fa":"در اواخر ۱۲۸۶ مدتی کوتاه عضو بود، هنگامی که انجمن میان مجلس و شاه میانجی شد"}
+{"rel":"person_group","person_id":"ihtisham-al-saltanah","group_id":"khidmat-anjuman","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"ala-al-dawlah","group_id":"khidmat-anjuman","role_type":"founder","role_en":"co-founder","role_fa":"هم‌بنیان‌گذار"}
+{"rel":"person_group","person_id":"kamran-mirza","group_id":"khidmat-anjuman","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"najafi-aqa","group_id":"isfahan-anjuman","role_type":"leader","role_en":"headed the anjuman","role_fa":"ریاست انجمن را داشت"}
+{"rel":"person_group","person_id":"jahangir-khan-shirazi","group_id":"national-revolutionary-committee","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"dihkhuda","group_id":"national-revolutionary-committee","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"vaiz-isfahani","group_id":"national-revolutionary-committee","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"shabastari-muhammad","group_id":"secret-center","role_type":"editor","role_en":"editor of its organ Mujahid","role_fa":"سردبیر ارگان آن، مجاهد"}
+{"rel":"person_group","person_id":"shabastari-muhammad","group_id":"iran-i-naw","role_type":"founder","role_en":"helped found it","role_fa":"در بنیان‌گذاری آن نقش داشت"}
+{"rel":"person_group","person_id":"narimanov","group_id":"social-democrats-organization","role_type":"leader","role_en":"headed the organisation and translated the RSDWP programme into Persian and Azeri","role_fa":"ریاست فرقه را داشت و برنامهٔ حزب سوسیال‌دموکرات روسیه را به فارسی و آذری برگرداند"}
+{"rel":"person_group","person_id":"azizbakov","group_id":"himmat-party","role_type":"member","role_en":"leading activist","role_fa":"از فعالان برجسته"}
+{"rel":"person_group","person_id":"rasulzadah","group_id":"himmat-party","role_type":"member","role_en":"leading intellectual","role_fa":"از روشنفکران برجسته"}
+{"rel":"group_relation","group_a":"anjumans-of-mujahidin","group_b":"social-democrats-organization","type":"branch_of"}
+{"rel":"group_relation","group_a":"anjumans-of-mujahidin","group_b":"mujahidin","type":"allied"}
+{"rel":"group_relation","group_a":"himmat-party","group_b":"rsdwp","type":"branch_of","note_en":"Affiliated with the Baku committee and dominated by its Bolshevik wing; an exception to the RSDWP's rule against intra-party ethnic organisations."}
+{"rel":"group_relation","group_a":"social-democrats-organization","group_b":"himmat-party","type":"allied"}
+{"rel":"group_relation","group_a":"sattar-committee","group_b":"social-democrats-organization","type":"branch_of","note_en":"The most influential of the Gilan coordinating committees, with direct ties to the Baku social democrats."}
+{"rel":"group_relation","group_a":"khidmat-anjuman","group_b":"first-majlis","type":"opposed","note_en":"Conservative landowning deputies joined it as the liberal-radical faction grew stronger in autumn 1907."}
+{"rel":"group_relation","group_a":"rasht-anjuman","group_b":"armenians","type":"allied"}
+{"rel":"group_relation","group_a":"tabriz-anjuman","group_b":"armenians","type":"allied","note_en":"The anjuman sat in the Armenian quarter and the community supported it."}
+{"rel":"event_group","event_id":"tabriz-bast-british-consulate-1906","group_id":"guilds","role_type":"participant"}
+{"rel":"event_group","event_id":"tabriz-bast-british-consulate-1906","group_id":"armenians","role_type":"participant"}
+{"rel":"event_group","event_id":"tabriz-bast-british-consulate-1906","group_id":"kurds","role_type":"participant"}
+{"rel":"event_participant","event_id":"tabriz-bast-british-consulate-1906","person_id":"kasravi","role_type":"witness","role_en":"eyewitness, aged sixteen","role_fa":"شاهد عینی، شانزده‌ساله"}
+{"rel":"event_participant","event_id":"tabriz-anjuman-founded-1906","person_id":"mahdi-khan","role_type":"participant","role_en":"provided the buildings","role_fa":"ساختمان‌ها را واگذاشت"}
+{"rel":"event_participant","event_id":"expulsion-mir-hashim-1906","person_id":"mir-hashim-davachi","role_type":"target","role_en":"expelled on suspicion of collaborating with the crown prince","role_fa":"به ظن همدستی با ولیعهد اخراج شد"}
+{"rel":"event_group","event_id":"expulsion-mir-hashim-1906","group_id":"tabriz-anjuman","role_type":"perpetrator"}
+{"rel":"event_participant","event_id":"expulsion-haj-mirza-karim-1906","person_id":"ali-monsieur","role_type":"perpetrator","role_en":"the Secret Center initiated the expulsion","role_fa":"مرکز غیبی اخراج را آغاز کرد"}
+{"rel":"event_group","event_id":"expulsion-haj-mirza-karim-1906","group_id":"secret-center","role_type":"perpetrator"}
+{"rel":"event_group","event_id":"expulsion-haj-mirza-karim-1906","group_id":"mujahidin","role_type":"perpetrator"}
+{"rel":"event_participant","event_id":"crown-prince-attempts-close-tabriz-anjuman-1906","person_id":"mirza-hasan-mujtahid","role_type":"perpetrator","role_en":"joined the crown prince in calling for the anjuman's dissolution","role_fa":"همراه ولیعهد خواستار انحلال انجمن شد"}
+{"rel":"event_participant","event_id":"crown-prince-attempts-close-tabriz-anjuman-1906","person_id":"ali-monsieur","role_type":"leader","role_en":"directed the resistance through the Secret Center","role_fa":"مقاومت را از راه مرکز غیبی هدایت کرد"}
+{"rel":"event_participant","event_id":"crown-prince-attempts-close-tabriz-anjuman-1906","person_id":"rasul-sadaqiyani","role_type":"leader","role_en":"among the initiators","role_fa":"از آغازگران"}
+{"rel":"event_participant","event_id":"crown-prince-attempts-close-tabriz-anjuman-1906","person_id":"ali-davafurush","role_type":"leader","role_en":"among the initiators","role_fa":"از آغازگران"}
+{"rel":"event_group","event_id":"crown-prince-attempts-close-tabriz-anjuman-1906","group_id":"mujahidin","role_type":"participant"}
+{"rel":"event_participant","event_id":"mujahid-newspaper-1907","person_id":"shabastari-muhammad","role_type":"author","role_en":"editor","role_fa":"سردبیر"}
+{"rel":"event_group","event_id":"social-democrats-petition-majlis-1907","group_id":"social-democrats-organization","role_type":"participant"}
+{"rel":"event_group","event_id":"social-democrats-petition-majlis-1907","group_id":"anjumans-of-mujahidin","role_type":"participant"}
+{"rel":"event_participant","event_id":"assassination-yusif-khazduz-1907","person_id":"yusif-khazduz","role_type":"victim","role_en":"assassinated","role_fa":"ترور شد"}
+{"rel":"event_participant","event_id":"assassination-yusif-khazduz-1907","person_id":"ali-monsieur","role_type":"perpetrator","role_en":"his leadership was the reason for the killing","role_fa":"رهبری او انگیزهٔ قتل بود"}
+{"rel":"event_group","event_id":"assassination-yusif-khazduz-1907","group_id":"secret-center","role_type":"perpetrator"}
+{"rel":"event_participant","event_id":"isfahan-anti-jewish-campaign-1907","person_id":"zill-al-sultan","role_type":"perpetrator","role_en":"instigated the looting and killing","role_fa":"غارت و کشتار را برانگیخت"}
+{"rel":"event_participant","event_id":"isfahan-anti-jewish-campaign-1907","person_id":"najafi-aqa","role_type":"perpetrator","role_en":"demanded Jews and Armenians be forced into subordinate customs","role_fa":"خواستار واداشتن یهودیان و ارمنیان به آداب فرودستانه شد"}
+{"rel":"event_participant","event_id":"isfahan-anti-jewish-campaign-1907","person_id":"kaziruni","role_type":"perpetrator","role_en":"used the campaign to drive Jewish cloth merchants from the market","role_fa":"از کارزار برای راندن پارچه‌فروشان یهودی از بازار بهره برد"}
+{"rel":"event_group","event_id":"isfahan-anti-jewish-campaign-1907","group_id":"jews","role_type":"victim"}
+{"rel":"event_group","event_id":"mashhad-congress-social-democrats-1907","group_id":"anjumans-of-mujahidin","role_type":"participant"}
+{"rel":"person_relation","person_a":"siqat-al-islam-tabrizi","person_b":"taqizadah","type":"rival","note_en":"Privately called Taqizadah and Shaikh Salim dangerous 'anarchists'.","note_fa":"در خفا تقی‌زاده و شیخ سلیم را «آنارشیست‌های خطرناک» خواند."}
+{"rel":"person_relation","person_a":"ali-monsieur","person_b":"narimanov","type":"collaborator","note_en":"Met the Himmat leaders in Tiflis, who encouraged him to open a branch in Tabriz.","note_fa":"در تفلیس با رهبران همت آشنا شد و آنان او را به گشودن شعبه‌ای در تبریز ترغیب کردند."}
+{"rel":"person_relation","person_a":"ali-monsieur","person_b":"yusif-khazduz","type":"rival","note_en":"Khazduz's popularity threatened 'Ali Monsieur's leadership and he was killed for it.","note_fa":"محبوبیت خزدوز رهبری علی مسیو را تهدید می‌کرد و به همین سبب کشته شد."}
+{"rel":"person_relation","person_a":"ihtisham-al-saltanah","person_b":"ala-al-dawlah","type":"kin","note_en":"Brothers; they founded the Khidmat Anjuman together.","note_fa":"برادران؛ انجمن خدمت را باهم بنیان نهادند."}
