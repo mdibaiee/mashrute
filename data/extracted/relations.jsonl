@@ -397,3 +397,119 @@
 {"rel":"event_participant","event_id":"british-ultimatum-1910","person_id":"barclay-george","role_type":"author","role_en":"delivered the ultimatum","role_fa":"اولتیماتوم را ابلاغ کرد"}
 {"rel":"event_participant","event_id":"young-turk-revolution-1908","person_id":"muhammad-ali-shah","role_type":"opponent","role_en":"alarmed by the Ottoman precedent","role_fa":"از نمونهٔ عثمانی نگران شد"}
 {"rel":"event_group","event_id":"young-turk-revolution-1908","group_id":"union-and-progress","role_type":"perpetrator"}
+{"rel":"person_group","person_id":"malkum-khan","group_id":"faramushkhanah","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"amin-al-dawlah","group_id":"faramushkhanah","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"tabatabai-sayyid-sadiq","group_id":"faramushkhanah","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"tabatabai-sayyid-muhammad","group_id":"freemasons","role_type":"member","role_en":"prominent Freemason","role_fa":"فراماسون برجسته"}
+{"rel":"person_group","person_id":"najmabadi-shaikh-hadi","group_id":"faramushkhanah","role_type":"member","role_en":"member; accused of Azali sympathies","role_fa":"عضو؛ متهم به گرایش ازلی"}
+{"rel":"person_group","person_id":"amir-kabir","group_id":"dar-al-funun","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"malkum-khan","group_id":"dar-al-funun","role_type":"member","role_en":"appointed to the faculty","role_fa":"به هیئت علمی پیوست"}
+{"rel":"person_group","person_id":"ahsai-shaikh-ahmad","group_id":"shaikhi-school","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"asadabadi-al-afghani","group_id":"urwa-al-wuthqa","role_type":"founder","role_en":"founder and editor","role_fa":"بنیان‌گذار و مدیر"}
+{"rel":"person_group","person_id":"asadabadi-al-afghani","group_id":"freemasons","role_type":"member","role_en":"associated with masonic organisations","role_fa":"مرتبط با سازمان‌های فراماسونری"}
+{"rel":"person_group","person_id":"amin-al-zarb-father","group_id":"society-of-merchants","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"amin-al-dawlah","group_id":"society-of-learning","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"the-bab","group_id":"babis","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"qurrat-al-ain","group_id":"babis","role_type":"leader","role_en":"leader in the top ranks of the movement","role_fa":"از رهبران ردهٔ نخست جنبش"}
+{"rel":"group_relation","group_a":"azali-babis","group_b":"babis","type":"split_from"}
+{"rel":"group_relation","group_a":"bahais","group_b":"babis","type":"split_from"}
+{"rel":"group_relation","group_a":"shaikhi-school","group_b":"usuli-school","type":"opposed"}
+{"rel":"group_relation","group_a":"babis","group_b":"shaikhi-school","type":"split_from"}
+{"rel":"group_relation","group_a":"faramushkhanah","group_b":"freemasons","type":"branch_of"}
+{"rel":"group_relation","group_a":"adamiyat-society","group_b":"faramushkhanah","type":"successor"}
+{"rel":"event_participant","event_id":"faramushkhanah-founded-1859","person_id":"malkum-khan","role_type":"leader","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"event_participant","event_id":"faramushkhanah-founded-1859","person_id":"nasir-al-din-shah","role_type":"opponent","role_en":"first encouraged, then banned it","role_fa":"نخست تشویق و سپس ممنوع کرد"}
+{"rel":"event_participant","event_id":"society-of-merchants-founded-1883","person_id":"amin-al-zarb-father","role_type":"leader","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"event_participant","event_id":"society-of-merchants-founded-1883","person_id":"mirza-javad-mujtahid","role_type":"opponent","role_en":"attacked the Tabriz branch","role_fa":"به شعبهٔ تبریز حمله کرد"}
+{"rel":"event_participant","event_id":"society-of-merchants-founded-1883","person_id":"mukhbir-al-dawlah","role_type":"opponent","role_en":"commerce minister opposed to it","role_fa":"وزیر تجارت مخالف آن"}
+{"rel":"event_group","event_id":"society-of-merchants-founded-1883","group_id":"society-of-merchants","role_type":"participant"}
+{"rel":"event_group","event_id":"society-of-merchants-founded-1883","group_id":"merchants","role_type":"participant"}
+{"rel":"event_participant","event_id":"tobacco-concession-1890","person_id":"talbot-gf","role_type":"signatory","role_en":"concessionaire","role_fa":"صاحب امتیاز"}
+{"rel":"event_participant","event_id":"tobacco-concession-1890","person_id":"nasir-al-din-shah","role_type":"signatory","role_en":"granted the concession","role_fa":"امتیاز را اعطا کرد"}
+{"rel":"event_participant","event_id":"tobacco-concession-1890","person_id":"drummond-wolff","role_type":"participant","role_en":"British minister who obtained it","role_fa":"وزیرمختار بریتانیا که آن را گرفت"}
+{"rel":"event_participant","event_id":"tobacco-concession-1890","person_id":"amin-al-sultan","role_type":"participant","role_en":"premier who facilitated it","role_fa":"صدراعظمی که آن را تسهیل کرد"}
+{"rel":"event_participant","event_id":"shirazi-fatwa-1891","person_id":"shirazi-mirza-hasan","role_type":"signatory","role_en":"the fatwa carried his signature","role_fa":"فتوا به امضای او بود"}
+{"rel":"event_participant","event_id":"shirazi-fatwa-1891","person_id":"ashtiyani-mirza-hasan","role_type":"author","role_en":"apparently drafted it with a group of merchants","role_fa":"ظاهراً همراه گروهی از تجار آن را نوشت"}
+{"rel":"event_participant","event_id":"shirazi-fatwa-1891","person_id":"bihbahani-sayyid-abdullah","role_type":"opponent","role_en":"flouted the fatwa and smoked in public","role_fa":"فتوا را زیر پا گذاشت و در ملأعام دخانیات کشید"}
+{"rel":"event_participant","event_id":"tobacco-concession-cancelled-1892","person_id":"nasir-al-din-shah","role_type":"signatory","role_en":"cancelled the concession","role_fa":"امتیاز را لغو کرد"}
+{"rel":"event_participant","event_id":"tobacco-concession-cancelled-1892","person_id":"amin-al-sultan","role_type":"opponent","role_en":"advised against cancelling","role_fa":"با لغو مخالفت کرد"}
+{"rel":"event_group","event_id":"first-foreign-loan-1892","group_id":"imperial-bank-of-persia","role_type":"participant"}
+{"rel":"event_participant","event_id":"amin-al-dawlah-premier-1897","person_id":"amin-al-dawlah","role_type":"participant","role_en":"appointed premier","role_fa":"به صدارت رسید"}
+{"rel":"event_participant","event_id":"amin-al-dawlah-premier-1897","person_id":"amin-al-sultan","role_type":"target","role_en":"dismissed","role_fa":"برکنار شد"}
+{"rel":"event_participant","event_id":"amin-al-dawlah-premier-1897","person_id":"muzaffar-al-din-shah","role_type":"participant","role_en":"made the appointment","role_fa":"انتصاب را انجام داد"}
+{"rel":"event_participant","event_id":"qanun-founded-1890","person_id":"malkum-khan","role_type":"author","role_en":"founder and editor","role_fa":"بنیان‌گذار و مدیر"}
+{"rel":"event_participant","event_id":"qanun-founded-1890","person_id":"asadabadi-al-afghani","role_type":"author","role_en":"contributor","role_fa":"نویسنده"}
+{"rel":"event_participant","event_id":"qanun-founded-1890","person_id":"kirmani-mirza-aqa-khan","role_type":"author","role_en":"contributor","role_fa":"نویسنده"}
+{"rel":"event_participant","event_id":"execution-of-the-bab-1850","person_id":"the-bab","role_type":"victim","role_en":"executed","role_fa":"اعدام شد"}
+{"rel":"event_participant","event_id":"babi-suppression-1850","person_id":"amir-kabir","role_type":"perpetrator","role_en":"directed the suppression","role_fa":"سرکوب را هدایت کرد"}
+{"rel":"event_participant","event_id":"babi-suppression-1850","person_id":"qurrat-al-ain","role_type":"victim","role_en":"executed in the repression","role_fa":"در سرکوب کشته شد"}
+{"rel":"event_group","event_id":"babi-suppression-1850","group_id":"babis","role_type":"victim"}
+{"rel":"person_relation","person_a":"asadabadi-al-afghani","person_b":"malkum-khan","type":"collaborator","note_en":"Both adopted the tactic of allying reformers with the 'ulama.","note_fa":"هر دو تاکتیک ائتلاف اصلاح‌طلبان با علما را برگزیدند."}
+{"rel":"person_relation","person_a":"asadabadi-al-afghani","person_b":"ernest-renan","type":"rival","note_en":"Their 1883 exchange on Islam and science."}
+{"rel":"person_relation","person_a":"tabatabai-sayyid-muhammad","person_b":"tabatabai-sayyid-sadiq","type":"kin","note_en":"Son of Sayyid Sadiq Tabataba'i, a Faramushkhanah member.","note_fa":"پسر سید صادق طباطبایی، از اعضای فراموش‌خانه."}
+{"rel":"person_group","person_id":"shabastari-muhammad","group_id":"tarbiyat-library","role_type":"member","role_en":"member of the Tabriz circle","role_fa":"عضو محفل تبریز"}
+{"rel":"person_group","person_id":"shabastari-muhammad","group_id":"mujahid-newspaper","role_type":"editor","role_en":"publisher","role_fa":"ناشر"}
+{"rel":"person_group","person_id":"husain-adalat","group_id":"adalat-newspaper","role_type":"editor","role_en":"publisher","role_fa":"ناشر"}
+{"rel":"person_group","person_id":"husain-adalat","group_id":"tarbiyat-library","role_type":"member","role_en":"member of the Tabriz circle","role_fa":"عضو محفل تبریز"}
+{"rel":"person_group","person_id":"musavat-muhammad-riza","group_id":"revolutionary-committee","role_type":"founder","role_en":"core member","role_fa":"عضو هستهٔ اصلی"}
+{"rel":"person_group","person_id":"musavat-muhammad-riza","group_id":"musavat-newspaper","role_type":"editor","role_en":"editor","role_fa":"مدیر"}
+{"rel":"person_group","person_id":"sulaiman-maikadah","group_id":"revolutionary-committee","role_type":"member","role_en":"core member","role_fa":"عضو هستهٔ اصلی"}
+{"rel":"person_group","person_id":"shaikh-al-rais-qajar","group_id":"revolutionary-committee","role_type":"member","role_en":"core member","role_fa":"عضو هستهٔ اصلی"}
+{"rel":"person_group","person_id":"dawlatabadi-yahya","group_id":"revolutionary-committee","role_type":"member","role_en":"core member","role_fa":"عضو هستهٔ اصلی"}
+{"rel":"person_group","person_id":"shaikh-muhammad-falsafi","group_id":"secret-anjuman-tehran","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"nazim-al-islam-kirmani","group_id":"secret-anjuman-tehran","role_type":"founder","role_en":"founding member and chronicler","role_fa":"عضو بنیان‌گذار و وقایع‌نگار"}
+{"rel":"person_group","person_id":"tabatabai-muhammad-sadiq","group_id":"secret-anjuman-tehran","role_type":"patron","role_en":"backer with his father","role_fa":"پشتیبان همراه پدرش"}
+{"rel":"person_group","person_id":"subh-i-azal","group_id":"azali-babis","role_type":"leader","role_en":"leader of the faction","role_fa":"رهبر شاخه"}
+{"rel":"person_group","person_id":"hadi-dawlatabadi","group_id":"azali-babis","role_type":"leader","role_en":"spiritual leader in Iran","role_fa":"پیشوای معنوی در ایران"}
+{"rel":"person_group","person_id":"kirmani-mirza-aqa-khan","group_id":"kirman-society","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"ruhi-shaikh-ahmad","group_id":"kirman-society","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"kirmani-mirza-reza","group_id":"kirman-society","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"taqizadah","group_id":"tarbiyat-school","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"taqizadah","group_id":"ganjinah-yi-funun","role_type":"founder","role_en":"of the founding circle","role_fa":"از محفل بنیان‌گذار"}
+{"rel":"person_group","person_id":"tarbiyat-muhammad-ali","group_id":"tarbiyat-school","role_type":"founder","role_en":"co-founder","role_fa":"هم‌بنیان‌گذار"}
+{"rel":"person_group","person_id":"dawlatabadi-yahya","group_id":"society-of-learning","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"dawlatabadi-yahya","group_id":"sadat-school","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"amin-al-zarb-son","group_id":"society-of-learning","role_type":"member","role_en":"member and financier","role_fa":"عضو و تأمین‌کنندهٔ مالی"}
+{"rel":"person_group","person_id":"kaziruni","group_id":"islamic-company","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"zill-al-sultan","group_id":"islamic-company","role_type":"patron","role_en":"investor","role_fa":"سرمایه‌گذار"}
+{"rel":"person_group","person_id":"najafi-aqa","group_id":"islamic-company","role_type":"patron","role_en":"investor","role_fa":"سرمایه‌گذار"}
+{"rel":"person_group","person_id":"malik-al-mutikallimin","group_id":"islamic-company","role_type":"affiliate","role_en":"employed to campaign against imported cloth","role_fa":"برای تبلیغ علیه پارچهٔ وارداتی به کار گرفته شد"}
+{"rel":"person_group","person_id":"vaiz-isfahani","group_id":"islamic-company","role_type":"affiliate","role_en":"employed to campaign against imported cloth","role_fa":"برای تبلیغ علیه پارچهٔ وارداتی به کار گرفته شد"}
+{"rel":"person_group","person_id":"malik-al-mutikallimin","group_id":"progress-anjuman","role_type":"founder","role_en":"organiser","role_fa":"سازمان‌دهنده"}
+{"rel":"person_group","person_id":"vaiz-isfahani","group_id":"progress-anjuman","role_type":"founder","role_en":"organiser","role_fa":"سازمان‌دهنده"}
+{"rel":"person_group","person_id":"majd-al-islam-kirmani","group_id":"progress-anjuman","role_type":"founder","role_en":"organiser","role_fa":"سازمان‌دهنده"}
+{"rel":"person_group","person_id":"majd-al-islam-kirmani","group_id":"adab","role_type":"editor","role_en":"editor 1904–1906","role_fa":"مدیر ۱۲۸۳–۱۲۸۵"}
+{"rel":"person_group","person_id":"majd-al-islam-kirmani","group_id":"nida-yi-vatan","role_type":"editor","role_en":"editor 1906–1907","role_fa":"مدیر ۱۲۸۵–۱۲۸۶"}
+{"rel":"person_group","person_id":"majd-al-islam-kirmani","group_id":"kashkul","role_type":"editor","role_en":"editor 1907–1908","role_fa":"مدیر ۱۲۸۶–۱۲۸۷"}
+{"rel":"person_group","person_id":"nasir-al-mulk","group_id":"customs-administration","role_type":"leader","role_en":"as finance minister, invited the Belgian administrators","role_fa":"در مقام وزیر مالیه کارگزاران بلژیکی را دعوت کرد"}
+{"rel":"person_group","person_id":"rushdiyah","group_id":"girls-schools","role_type":"founder","role_en":"pioneer of new-method schooling","role_fa":"پیشگام مدرسهٔ به سبک نو"}
+{"rel":"group_relation","group_a":"tarbiyat-school","group_b":"tarbiyat-library","type":"successor","note_en":"After clerics closed the school, the circle opened the bookstore and library instead."}
+{"rel":"group_relation","group_a":"national-library-tehran","group_b":"revolutionary-committee","type":"allied","note_en":"The committee was recruited from the library's regulars."}
+{"rel":"group_relation","group_a":"ganjinah-yi-funun","group_b":"tarbiyat-library","type":"branch_of"}
+{"rel":"event_participant","event_id":"belgian-administrators-invited-1898","person_id":"nasir-al-mulk","role_type":"author","role_en":"invited them as finance minister","role_fa":"در مقام وزیر مالیه آنان را دعوت کرد"}
+{"rel":"event_participant","event_id":"belgian-administrators-invited-1898","person_id":"naus","role_type":"participant","role_en":"headed the Belgian mission","role_fa":"ریاست هیئت بلژیکی را داشت"}
+{"rel":"event_participant","event_id":"russian-loans-1900-1902","person_id":"amin-al-sultan","role_type":"signatory","role_en":"negotiated the loans","role_fa":"وام‌ها را مذاکره کرد"}
+{"rel":"event_participant","event_id":"russian-loans-1900-1902","person_id":"muzaffar-al-din-shah","role_type":"participant","role_en":"the loans financed his European tours","role_fa":"وام‌ها خرج سفرهای اروپایی او شد"}
+{"rel":"event_group","event_id":"customs-protests-1900-1905","group_id":"merchants","role_type":"participant"}
+{"rel":"event_group","event_id":"customs-protests-1900-1905","group_id":"guilds","role_type":"participant"}
+{"rel":"event_participant","event_id":"customs-protests-1900-1905","person_id":"naus","role_type":"target","role_en":"author of the reforms","role_fa":"طراح اصلاحات"}
+{"rel":"event_group","event_id":"babi-pogroms-1903","group_id":"azali-babis","role_type":"victim"}
+{"rel":"event_group","event_id":"babi-pogroms-1903","group_id":"bahais","role_type":"victim"}
+{"rel":"event_participant","event_id":"tarbiyat-school-founded-1901","person_id":"taqizadah","role_type":"leader","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"event_participant","event_id":"tarbiyat-school-founded-1901","person_id":"tarbiyat-muhammad-ali","role_type":"leader","role_en":"co-founder","role_fa":"هم‌بنیان‌گذار"}
+{"rel":"event_participant","event_id":"ganjinah-yi-funun-1902","person_id":"dawlatabadi-yahya","role_type":"participant","role_en":"backer","role_fa":"پشتیبان"}
+{"rel":"event_participant","event_id":"maarif-anjuman-founded-1897","person_id":"amin-al-dawlah","role_type":"leader","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"event_participant","event_id":"maarif-anjuman-founded-1897","person_id":"dawlatabadi-yahya","role_type":"participant","role_en":"member","role_fa":"عضو"}
+{"rel":"event_participant","event_id":"maarif-anjuman-founded-1897","person_id":"amin-al-zarb-son","role_type":"participant","role_en":"member and financier","role_fa":"عضو و تأمین‌کنندهٔ مالی"}
+{"rel":"event_group","event_id":"national-library-founded-1904","group_id":"national-library-tehran","role_type":"participant"}
+{"rel":"event_participant","event_id":"ruya-yi-sadiqah-published","person_id":"majd-al-islam-kirmani","role_type":"author","role_en":"principal author","role_fa":"نویسندهٔ اصلی"}
+{"rel":"event_participant","event_id":"ruya-yi-sadiqah-published","person_id":"malik-al-mutikallimin","role_type":"author","role_en":"co-author","role_fa":"هم‌نویسنده"}
+{"rel":"event_participant","event_id":"ruya-yi-sadiqah-published","person_id":"vaiz-isfahani","role_type":"author","role_en":"co-author","role_fa":"هم‌نویسنده"}
+{"rel":"person_relation","person_a":"kirmani-mirza-aqa-khan","person_b":"subh-i-azal","type":"kin","note_en":"Son-in-law.","note_fa":"داماد."}
+{"rel":"person_relation","person_a":"ruhi-shaikh-ahmad","person_b":"subh-i-azal","type":"kin","note_en":"Son-in-law.","note_fa":"داماد."}
+{"rel":"person_relation","person_a":"dawlatabadi-yahya","person_b":"hadi-dawlatabadi","type":"kin","note_en":"Son; succeeded him as leader of the Azali community.","note_fa":"پسر؛ پس از او رهبری جامعهٔ ازلی را یافت."}
+{"rel":"person_relation","person_a":"jamalzadah","person_b":"vaiz-isfahani","type":"kin","note_en":"Son.","note_fa":"پسر."}
+{"rel":"person_relation","person_a":"vaiz-isfahani","person_b":"sadr-isfahani","type":"kin","note_en":"Nephew.","note_fa":"برادرزاده."}
+{"rel":"person_relation","person_a":"tarbiyat-muhammad-ali","person_b":"taqizadah","type":"kin","note_en":"Brother-in-law.","note_fa":"باجناق."}
+{"rel":"person_relation","person_a":"tabatabai-muhammad-sadiq","person_b":"dawlatabadi-yahya","type":"rival","note_en":"Tried to expose Dawlatabadi's Azali affiliation to discredit his schools.","note_fa":"کوشید وابستگی ازلی دولت‌آبادی را برملا کند تا مدارسش را بی‌اعتبار سازد."}
+{"rel":"person_relation","person_a":"malik-al-mutikallimin","person_b":"asadabadi-al-afghani","type":"mentor","note_en":"Stayed with Asadabadi for three months on his way back from India.","note_fa":"در راه بازگشت از هند سه ماه نزد اسدآبادی ماند."}
