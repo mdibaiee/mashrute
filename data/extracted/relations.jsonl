@@ -839,3 +839,53 @@
 {"rel":"person_relation","person_a":"tabatabai-sayyid-ahmad","person_b":"tabatabai-sayyid-muhammad","type":"kin","note_en":"Brother, and his political opposite: he resented his brother's influence and denounced the Majlis as full of 'Babis and naturalists'.","note_fa":"برادر و در سیاست نقطهٔ مقابل او: از نفوذ برادرش دلگیر بود و مجلس را پر از «بابی و طبیعی» می‌خواند."}
 {"rel":"person_relation","person_a":"dihkhuda","person_b":"taqizadah","type":"collaborator","note_en":"Taqizadah recommended Dihkhuda to the founders of Sur-i Israfil.","note_fa":"تقی‌زاده دهخدا را به بنیان‌گذاران صور اسرافیل معرفی کرد."}
 {"rel":"person_relation","person_a":"jahangir-khan-shirazi","person_b":"kirmani-mirza-aqa-khan","type":"mentor","note_en":"Jahangir Khan was influenced by Mirza Aqa Khan Kirmani."}
+{"rel":"person_group","person_id":"afindiyev","group_id":"himmat-party","role_type":"member","role_en":"writer","role_fa":"نویسنده"}
+{"rel":"person_group","person_id":"afindiyev","group_id":"irshad","role_type":"editor","role_en":"contributor","role_fa":"نویسنده"}
+{"rel":"person_group","person_id":"narimanov","group_id":"irshad","role_type":"editor","role_en":"contributor","role_fa":"نویسنده"}
+{"rel":"person_group","person_id":"azizbakov","group_id":"irshad","role_type":"editor","role_en":"contributor","role_fa":"نویسنده"}
+{"rel":"person_group","person_id":"sadr-al-ulama","group_id":"constitutionalist-ulama","role_type":"member","role_en":"acted for Bihbahani against judicial reform","role_fa":"به نمایندگی بهبهانی در برابر اصلاح عدلیه ایستاد"}
+{"rel":"person_group","person_id":"yahya-iskandari","group_id":"huquq-anjuman","role_type":"founder","role_en":"co-founder","role_fa":"هم‌بنیان‌گذار"}
+{"rel":"person_group","person_id":"sulaiman-iskandari","group_id":"huquq-anjuman","role_type":"founder","role_en":"co-founder","role_fa":"هم‌بنیان‌گذار"}
+{"rel":"person_group","person_id":"arshad-al-dawlah","group_id":"central-anjuman","role_type":"leader","role_en":"head of the anjuman, expelled on suspicion of collaborating with the shah","role_fa":"رئیس انجمن، که به ظن همدستی با شاه اخراج شد"}
+{"rel":"event_participant","event_id":"prostitutes-demonstration-1907","person_id":"sad-al-dawlah","role_type":"perpetrator","role_en":"staged the march","role_fa":"راهپیمایی را ترتیب داد"}
+{"rel":"event_participant","event_id":"defence-of-majlis-december-1907","person_id":"jahangir-khan-shirazi","role_type":"leader","role_en":"helped coordinate the defence","role_fa":"در سامان‌دهی دفاع نقش داشت"}
+{"rel":"event_participant","event_id":"defence-of-majlis-december-1907","person_id":"musavat-muhammad-riza","role_type":"leader","role_en":"helped coordinate the defence","role_fa":"در سامان‌دهی دفاع نقش داشت"}
+{"rel":"event_participant","event_id":"defence-of-majlis-december-1907","person_id":"nasir-al-mulk","role_type":"victim","role_en":"arrested and jailed as premier","role_fa":"در مقام صدراعظم بازداشت و زندانی شد"}
+{"rel":"event_participant","event_id":"defence-of-majlis-december-1907","person_id":"ala-al-dawlah","role_type":"victim","role_en":"arrested and beaten while interceding","role_fa":"هنگام میانجیگری بازداشت و کتک خورد"}
+{"rel":"event_participant","event_id":"defence-of-majlis-december-1907","person_id":"iqbal-lashgar","role_type":"victim","role_en":"taken hostage in Tabriz and forced to call for his men's surrender","role_fa":"در تبریز گروگان گرفته شد و به فراخواندن تسلیم افرادش واداشته شد"}
+{"rel":"event_participant","event_id":"defence-of-majlis-december-1907","person_id":"abbas-quli-khan-adamiyat","role_type":"mediator","role_en":"mediated between shah and constitutionalists","role_fa":"میان شاه و مشروطه‌خواهان میانجیگری کرد"}
+{"rel":"event_participant","event_id":"defence-of-majlis-december-1907","person_id":"mukhbir-al-saltanah","role_type":"mediator","role_en":"mediated between shah and constitutionalists","role_fa":"میان شاه و مشروطه‌خواهان میانجیگری کرد"}
+{"rel":"event_group","event_id":"defence-of-majlis-december-1907","group_id":"azerbaijan-anjuman-tehran","role_type":"leader"}
+{"rel":"event_group","event_id":"defence-of-majlis-december-1907","group_id":"tabriz-anjuman","role_type":"participant"}
+{"rel":"event_group","event_id":"defence-of-majlis-december-1907","group_id":"adamiyat-society","role_type":"participant"}
+{"rel":"event_group","event_id":"defence-of-majlis-december-1907","group_id":"umara-society","role_type":"participant"}
+{"rel":"event_group","event_id":"defence-of-majlis-december-1907","group_id":"peasants","role_type":"participant"}
+{"rel":"event_participant","event_id":"nizam-al-saltanah-premier-1908","person_id":"nizam-al-saltanah","role_type":"participant","role_en":"appointed premier","role_fa":"به صدارت رسید"}
+{"rel":"event_participant","event_id":"nizam-al-saltanah-premier-1908","person_id":"sad-al-dawlah","role_type":"target","role_en":"exiled at the Majlis's demand","role_fa":"به خواست مجلس تبعید شد"}
+{"rel":"event_participant","event_id":"nizam-al-saltanah-premier-1908","person_id":"amir-bahadur-jang","role_type":"participant","role_en":"his exile refused; protected by the Russian consul","role_fa":"تبعیدش رد شد؛ کنسول روس از او حمایت کرد"}
+{"rel":"event_participant","event_id":"huquq-anjuman-founded-1908","person_id":"yahya-iskandari","role_type":"leader","role_en":"co-founder","role_fa":"هم‌بنیان‌گذار"}
+{"rel":"event_participant","event_id":"huquq-anjuman-founded-1908","person_id":"sulaiman-iskandari","role_type":"leader","role_en":"co-founder","role_fa":"هم‌بنیان‌گذار"}
+{"rel":"event_group","event_id":"huquq-anjuman-founded-1908","group_id":"huquq-anjuman","role_type":"participant"}
+{"rel":"event_group","event_id":"huquq-anjuman-founded-1908","group_id":"adamiyat-society","role_type":"opponent"}
+{"rel":"event_participant","event_id":"zartushti-trial-1908","person_id":"bihbahani-sayyid-abdullah","role_type":"opponent","role_en":"opposed the death penalty because the victim was not a Muslim","role_fa":"چون مقتول مسلمان نبود با حکم اعدام مخالفت کرد"}
+{"rel":"event_group","event_id":"zartushti-trial-1908","group_id":"zoroastrians","role_type":"victim"}
+{"rel":"event_group","event_id":"zartushti-trial-1908","group_id":"musavat-newspaper","role_type":"participant"}
+{"rel":"event_participant","event_id":"press-law-february-1908","person_id":"bihbahani-sayyid-abdullah","role_type":"author","role_en":"drove the law through","role_fa":"قانون را پیش برد"}
+{"rel":"event_participant","event_id":"press-law-february-1908","person_id":"taqizadah","role_type":"opponent","role_en":"objected","role_fa":"مخالفت کرد"}
+{"rel":"event_participant","event_id":"press-law-february-1908","person_id":"ihtisham-al-saltanah","role_type":"opponent","role_en":"objected as Majlis president","role_fa":"در مقام رئیس مجلس مخالفت کرد"}
+{"rel":"event_participant","event_id":"press-law-february-1908","person_id":"mukhbir-al-saltanah","role_type":"opponent","role_en":"objected as justice minister","role_fa":"در مقام وزیر عدلیه مخالفت کرد"}
+{"rel":"event_participant","event_id":"judicial-reform-meeting-1908","person_id":"dawlatabadi-yahya","role_type":"leader","role_en":"convened the meeting","role_fa":"جلسه را فراخواند"}
+{"rel":"event_participant","event_id":"judicial-reform-meeting-1908","person_id":"malik-al-mutikallimin","role_type":"participant","role_en":"as public prosecutor for the Majlis, demanded judicial reform","role_fa":"در مقام مدعی‌العموم مجلس خواستار اصلاح عدلیه شد"}
+{"rel":"event_participant","event_id":"judicial-reform-meeting-1908","person_id":"mukhbir-al-saltanah","role_type":"participant","role_en":"proposed unifying the shari'at laws","role_fa":"یکسان‌سازی قوانین شرع را پیشنهاد کرد"}
+{"rel":"event_participant","event_id":"judicial-reform-meeting-1908","person_id":"sadr-al-ulama","role_type":"perpetrator","role_en":"broke up the meeting on Bihbahani's instigation","role_fa":"به تحریک بهبهانی جلسه را برهم زد"}
+{"rel":"event_participant","event_id":"judicial-reform-meeting-1908","person_id":"bihbahani-sayyid-abdullah","role_type":"opponent","role_en":"blocked judicial reform entirely","role_fa":"اصلاح عدلیه را یکسره سد کرد"}
+{"rel":"event_participant","event_id":"judicial-reform-meeting-1908","person_id":"muayyid-al-saltanah","role_type":"participant","role_en":"minister of justice","role_fa":"وزیر عدلیه"}
+{"rel":"event_group","event_id":"judicial-reform-meeting-1908","group_id":"central-anjuman-of-guilds","role_type":"participant"}
+{"rel":"event_participant","event_id":"powers-warn-majlis-1908","person_id":"hartwig","role_type":"author","role_en":"delivered the warning","role_fa":"هشدار را ابلاغ کرد"}
+{"rel":"event_participant","event_id":"powers-warn-majlis-1908","person_id":"marling-charles","role_type":"author","role_en":"delivered the warning","role_fa":"هشدار را ابلاغ کرد"}
+{"rel":"event_participant","event_id":"powers-warn-majlis-1908","person_id":"grey-edward","role_type":"participant","role_en":"discarded the idea of replacing the shah with Zill al-Sultan","role_fa":"اندیشهٔ جایگزینی شاه با ظل‌السلطان را کنار گذاشت"}
+{"rel":"event_participant","event_id":"attempt-on-muhammad-ali-shah-1908","person_id":"sad-al-dawlah","role_type":"opponent","role_en":"among the shah's collaborators at the time","role_fa":"از همدستان شاه در آن هنگام"}
+{"rel":"event_group","event_id":"attempt-on-muhammad-ali-shah-1908","group_id":"national-revolutionary-committee","role_type":"perpetrator"}
+{"rel":"event_participant","event_id":"anglo-russian-convention-1907","person_id":"stolypin","role_type":"participant","role_en":"argued Russia must settle with Britain and turn to its domestic crisis","role_fa":"استدلال کرد روسیه باید با بریتانیا کنار آید و به بحران داخلی بپردازد"}
+{"rel":"event_group","event_id":"anglo-russian-convention-1907","group_id":"habl-al-matin","role_type":"opponent"}
+{"rel":"person_relation","person_a":"sadr-al-ulama","person_b":"bihbahani-sayyid-abdullah","type":"kin","note_en":"Son-in-law.","note_fa":"داماد."}

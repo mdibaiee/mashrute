@@ -58,11 +58,11 @@ Chapters of the English body (`data/raw/book_en.txt`), printed pages:
 
 | # | chapter | pages | status |
 |---|---|---|---|
-| — | Introduction | 1–14 | ⏳ |
-| 1 | From Dependency to Resistance | 17–33 | ⏳ |
-| 2 | The Tempest of Revolution | 34–58 | ⏳ |
-| 3 | First Majlis, urban anjumans, Social Democrats | 59–90 | ⏳ |
-| 4 | Constitutionalism or Shari'at? | 91–118 | ⏳ |
+| — | Introduction | 1–14 | ⏳ (theory/historiography only) |
+| 1 | From Dependency to Resistance | 17–33 | ✅ |
+| 2 | The Tempest of Revolution | 34–58 | ✅ |
+| 3 | First Majlis, urban anjumans, Social Democrats | 59–90 | ✅ |
+| 4 | Constitutionalism or Shari'at? | 91–118 | ✅ |
 | 5 | Press, satire and revolution | 119–145 | ⏳ |
 | 6 | Peasants, artisans and fishermen | 146–176 | ⏳ |
 | 7 | Women's anjumans | 177–208 | ⏳ |
