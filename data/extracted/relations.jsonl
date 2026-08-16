@@ -1025,7 +1025,7 @@
 {"rel":"person_group","person_id":"husain-adalat","group_id":"tabriz-anjuman","role_type":"member","role_en":"appointed administrator of education in liberated Tabriz","role_fa":"در تبریز آزادشده به ریاست معارف منصوب شد"}
 {"rel":"person_group","person_id":"mirza-hasan-mujtahid","group_id":"islamiyah-anjuman","role_type":"founder","role_en":"co-founder on his return from exile","role_fa":"هم‌بنیان‌گذار پس از بازگشت از تبعید"}
 {"rel":"person_group","person_id":"haj-mirza-karim","group_id":"islamiyah-anjuman","role_type":"founder","role_en":"co-founder on his return from exile","role_fa":"هم‌بنیان‌گذار پس از بازگشت از تبعید"}
-{"rel":"person_group","person_id":"tangistani","group_id":"tribes","role_type":"leader","role_en":"tribal leader at Bushihr"}
+{"rel":"person_group","person_id":"tangistani","group_id":"tangistani-tribes","role_type":"leader","role_en":"tribal leader of the Gulf coast","role_fa":"سرکردهٔ ایلی کرانهٔ خلیج فارس"}
 {"rel":"group_relation","group_a":"central-revolutionary-committee-tabriz","group_b":"tabriz-anjuman","type":"allied"}
 {"rel":"group_relation","group_a":"central-revolutionary-committee-tabriz","group_b":"secret-center","type":"allied"}
 {"rel":"group_relation","group_a":"islamiyah-anjuman","group_b":"royalist-army","type":"allied"}
