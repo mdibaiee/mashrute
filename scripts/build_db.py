@@ -139,6 +139,10 @@ def main() -> None:
         os.remove(DB)
     con = sqlite3.connect(DB)
     con.executescript(open(SCHEMA, encoding="utf-8").read())
+    # Records reference each other freely (a place's parent may be defined later
+    # in the file), so hold foreign keys until COMMIT rather than per statement.
+    con.execute("BEGIN")
+    con.execute("PRAGMA defer_foreign_keys = ON")
 
     stats: dict[str, int] = defaultdict(int)
 
