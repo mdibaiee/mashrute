@@ -889,3 +889,62 @@
 {"rel":"event_participant","event_id":"anglo-russian-convention-1907","person_id":"stolypin","role_type":"participant","role_en":"argued Russia must settle with Britain and turn to its domestic crisis","role_fa":"استدلال کرد روسیه باید با بریتانیا کنار آید و به بحران داخلی بپردازد"}
 {"rel":"event_group","event_id":"anglo-russian-convention-1907","group_id":"habl-al-matin","role_type":"opponent"}
 {"rel":"person_relation","person_a":"sadr-al-ulama","person_b":"bihbahani-sayyid-abdullah","type":"kin","note_en":"Son-in-law.","note_fa":"داماد."}
+{"rel":"person_group","person_id":"shishahbur-rahim","group_id":"abbasi-anjuman","role_type":"founder","role_en":"co-founder","role_fa":"هم‌بنیان‌گذار"}
+{"rel":"person_group","person_id":"shishahbur-rahim","group_id":"rasht-anjuman","role_type":"member","role_en":"member, expelled for siding with the peasants","role_fa":"عضو، که به سبب همراهی با دهقانان اخراج شد"}
+{"rel":"person_group","person_id":"shishahbur-rahim","group_id":"sattar-committee","role_type":"member","role_en":"member of the underground committee","role_fa":"عضو کمیتهٔ زیرزمینی"}
+{"rel":"person_group","person_id":"shishahbur-rahim","group_id":"artisans","role_type":"member","role_en":"glass cutter","role_fa":"شیشه‌بر"}
+{"rel":"person_group","person_id":"shahrashub","group_id":"rasht-anjuman","role_type":"member","role_en":"member, expelled for siding with the peasants","role_fa":"عضو، که به سبب همراهی با دهقانان اخراج شد"}
+{"rel":"person_group","person_id":"shahrashub","group_id":"peasants","role_type":"leader","role_en":"champion of the Gilan peasants","role_fa":"مدافع دهقانان گیلان"}
+{"rel":"person_group","person_id":"kuchik-khan","group_id":"abbasi-anjuman","role_type":"leader","role_en":"in its leadership","role_fa":"در رهبری آن"}
+{"rel":"person_group","person_id":"kuchik-khan","group_id":"jangal-movement","role_type":"founder","role_en":"leader","role_fa":"رهبر"}
+{"rel":"person_group","person_id":"salah-sayyid-abd-al-vahhab","group_id":"abbasi-anjuman","role_type":"leader","role_en":"radical Rasht mujtahid in its leadership","role_fa":"مجتهد رادیکال رشت در رهبری آن"}
+{"rel":"person_group","person_id":"ali-urusiduz-sandalmaker","group_id":"abbasi-anjuman","role_type":"founder","role_en":"named as a founder by the governor of Gilan","role_fa":"حاکم گیلان او را از بنیان‌گذاران نام برد"}
+{"rel":"person_group","person_id":"afsah-al-mutikallimin","group_id":"khair-al-kalam","role_type":"editor","role_en":"editor; the anjuman's accounts appeared in it","role_fa":"مدیر؛ صورت‌حساب انجمن در آن چاپ می‌شد"}
+{"rel":"person_group","person_id":"hisam-al-islam","group_id":"first-majlis","role_type":"representative","role_en":"delegate from Gilan, sent home to quell the peasant revolts","role_fa":"نمایندهٔ گیلان که برای فرونشاندن شورش دهقانی به زادگاهش فرستاده شد"}
+{"rel":"person_group","person_id":"shahshahani","group_id":"first-majlis","role_type":"representative","role_en":"delegate from Khurasan","role_fa":"نمایندهٔ خراسان"}
+{"rel":"person_group","person_id":"muhammad-ismail-tabrizi","group_id":"first-majlis","role_type":"representative","role_en":"merchants' delegate from Tehran","role_fa":"نمایندهٔ تجار تهران"}
+{"rel":"person_group","person_id":"mir-imad","group_id":"first-majlis","role_type":"representative","role_en":"deputy for Tunakabun","role_fa":"نمایندهٔ تنکابن"}
+{"rel":"person_group","person_id":"aqa-shaikh-mahmud","group_id":"first-majlis","role_type":"representative","role_en":"deputy for Qum","role_fa":"نمایندهٔ قم"}
+{"rel":"person_group","person_id":"sardar-mansur","group_id":"customs-administration","role_type":"leader","role_en":"rented the Gilan customs from the central government","role_fa":"گمرک گیلان را از دولت مرکزی اجاره کرده بود"}
+{"rel":"person_group","person_id":"farmanfarma","group_id":"peasants","role_type":"opponent","role_en":"one of Iran's greatest landowners; complained to the Majlis that his peasants 'do not know what constitutionalism means'","role_fa":"از بزرگ‌ترین مالکان ایران؛ به مجلس شکایت کرد که دهقانانش «نمی‌دانند مشروطه یعنی چه»"}
+{"rel":"group_relation","group_a":"mujahidin-anzali","group_b":"anjumans-of-mujahidin","type":"branch_of"}
+{"rel":"group_relation","group_a":"abbasi-anjuman","group_b":"rasht-anjuman","type":"opposed","note_en":"The 'Abbasi Anjuman accused the Rasht Anjuman of rigging its elections; the Rasht Anjuman expelled and arrested its founders."}
+{"rel":"group_relation","group_a":"abbasi-anjuman","group_b":"anjumans-of-mujahidin","type":"allied","note_en":"Formed with the support of the revolutionary Anjuman of the Mujahidin in Rasht."}
+{"rel":"group_relation","group_a":"lianozov-fisheries","group_b":"fishermen","type":"opposed"}
+{"rel":"group_relation","group_a":"abbasi-anjuman","group_b":"jangal-movement","type":"successor","note_en":"Mirza Kuchik Khan moved from the 'Abbasi Anjuman leadership to lead the Jangal Movement."}
+{"rel":"event_participant","event_id":"quchan-girls-sold-1905","person_id":"dihkhuda","role_type":"author","role_en":"wrote a poem about the women of Quchan","role_fa":"دربارهٔ زنان قوچان شعری سرود"}
+{"rel":"event_group","event_id":"quchan-girls-sold-1905","group_id":"peasants","role_type":"victim"}
+{"rel":"event_group","event_id":"rasht-silk-strike-1907","group_id":"peasants","role_type":"participant"}
+{"rel":"event_group","event_id":"rasht-silk-strike-1907","group_id":"ralli-brothers","role_type":"participant"}
+{"rel":"event_participant","event_id":"rasht-general-strike-1907","person_id":"rahim-khan-chalbiyanlu","role_type":"target","role_en":"his grain silos were the target","role_fa":"انبارهای غلهٔ او هدف بود"}
+{"rel":"event_participant","event_id":"shahrashub-lasht-i-nisha-1907","person_id":"shahrashub","role_type":"leader","role_en":"distributed the landlord's rice and voided the back rents","role_fa":"برنج ارباب را تقسیم کرد و اجاره‌های عقب‌افتاده را باطل نمود"}
+{"rel":"event_participant","event_id":"shahrashub-lasht-i-nisha-1907","person_id":"shishahbur-rahim","role_type":"participant","role_en":"told the villagers they owed no back rent; arrested with Shahrashub","role_fa":"به روستاییان گفت اجارهٔ عقب‌افتاده بدهکار نیستند؛ همراه شهرآشوب بازداشت شد"}
+{"rel":"event_group","event_id":"shahrashub-lasht-i-nisha-1907","group_id":"peasants","role_type":"participant"}
+{"rel":"event_group","event_id":"shahrashub-lasht-i-nisha-1907","group_id":"abbasi-anjuman","role_type":"participant"}
+{"rel":"event_group","event_id":"yazd-peasant-sanctuary-1907","group_id":"peasants","role_type":"participant"}
+{"rel":"event_participant","event_id":"yazd-peasant-sanctuary-1907","person_id":"marling-charles","role_type":"witness","role_en":"reported the revolt as near catastrophe and the demand as unjustifiable","role_fa":"شورش را در آستانهٔ فاجعه و خواست آنان را ناموجه گزارش کرد"}
+{"rel":"event_group","event_id":"majlis-closes-village-anjumans-1907","group_id":"first-majlis","role_type":"perpetrator"}
+{"rel":"event_group","event_id":"majlis-closes-village-anjumans-1907","group_id":"cossack-brigade","role_type":"perpetrator"}
+{"rel":"event_group","event_id":"majlis-closes-village-anjumans-1907","group_id":"rasht-anjuman","role_type":"participant"}
+{"rel":"event_group","event_id":"majlis-closes-village-anjumans-1907","group_id":"village-anjumans","role_type":"victim"}
+{"rel":"event_participant","event_id":"shahrashub-summoned-1907","person_id":"shahrashub","role_type":"target","role_en":"accused of causing the rebellion across Gilan","role_fa":"متهم به برانگیختن شورش در سراسر گیلان"}
+{"rel":"event_group","event_id":"shahrashub-summoned-1907","group_id":"abbasi-anjuman","role_type":"participant"}
+{"rel":"event_participant","event_id":"ahsan-al-dawlah-letter-1907","person_id":"ahsan-al-dawlah","role_type":"author","role_en":"wrote the letter","role_fa":"نامه را نوشت"}
+{"rel":"event_group","event_id":"ahsan-al-dawlah-letter-1907","group_id":"peasants","role_type":"participant"}
+{"rel":"event_group","event_id":"first-budget-surplus-1907","group_id":"first-majlis","role_type":"perpetrator"}
+{"rel":"event_participant","event_id":"anzali-fishermen-strike-1906","person_id":"sardar-mansur","role_type":"target","role_en":"governor of Anzali, accused of appropriating the fishermen's share of the catch","role_fa":"حاکم انزلی، متهم به تصاحب سهم صیادان از صید"}
+{"rel":"event_participant","event_id":"anzali-fishermen-strike-1906","person_id":"khumami","role_type":"opponent","role_en":"the ranking cleric of Rasht failed to dissuade the strikers","role_fa":"روحانی ارشد رشت نتوانست اعتصابیون را منصرف کند"}
+{"rel":"event_group","event_id":"anzali-fishermen-strike-1906","group_id":"lianozov-fisheries","role_type":"target"}
+{"rel":"event_group","event_id":"anzali-fishermen-strike-1906","group_id":"mujahidin-anzali","role_type":"participant"}
+{"rel":"event_group","event_id":"abolition-of-tuyul-1907","group_id":"guilds","role_type":"participant"}
+{"rel":"event_participant","event_id":"abolition-of-tuyul-1907","person_id":"taqizadah","role_type":"author","role_en":"argued the peasants' government should also be declared constitutional, but proposed only that excess taxes revert to the centre","role_fa":"گفت حکومت دهقانان نیز باید مشروطه شود، اما تنها بازگشت تفاوت عمل به مرکز را پیشنهاد کرد"}
+{"rel":"event_participant","event_id":"abolition-of-tuyul-1907","person_id":"ahsan-al-dawlah","role_type":"author","role_en":"called tuyul a 'diseased organ' the Majlis had to cut out","role_fa":"تیول را «عضو بیماری» خواند که مجلس باید ببرد"}
+{"rel":"event_participant","event_id":"abolition-of-tuyul-1907","person_id":"husain-tihrani-saqatfurush","role_type":"author","role_en":"objected that tafavut-i 'amal was extorted by force, not a regular tax","role_fa":"اعتراض کرد که تفاوت عمل مالیات عادی نیست بلکه به زور گرفته می‌شود"}
+{"rel":"event_participant","event_id":"abolition-of-tuyul-1907","person_id":"ibrahim-khaiyatbashi","role_type":"author","role_en":"demanded a published budget before any new taxes","role_fa":"خواستار انتشار بودجه پیش از وضع مالیات تازه شد"}
+{"rel":"event_participant","event_id":"abolition-of-tuyul-1907","person_id":"vusuq-al-dawlah","role_type":"author","role_en":"proposed that tafavut-i 'amal revert to the treasury","role_fa":"پیشنهاد کرد تفاوت عمل به خزانه بازگردد"}
+{"rel":"event_participant","event_id":"abolition-of-tuyul-1907","person_id":"mir-imad","role_type":"author","role_en":"proposed banning the excess taxes of village heads and overseers","role_fa":"پیشنهاد منع مالیات‌های اضافی کدخدایان و مباشران را داد"}
+{"rel":"event_participant","event_id":"abolition-of-tuyul-1907","person_id":"aqa-shaikh-mahmud","role_type":"author","role_en":"joined that proposal","role_fa":"با آن پیشنهاد همراه شد"}
+{"rel":"event_participant","event_id":"abolition-of-tuyul-1907","person_id":"farmanfarma","role_type":"opponent","role_en":"as a great landowner, complained of his peasants to the Majlis","role_fa":"در مقام مالکی بزرگ از دهقانانش به مجلس شکایت برد"}
+{"rel":"person_relation","person_a":"shahrashub","person_b":"shishahbur-rahim","type":"collaborator","note_en":"Expelled and arrested together by the Rasht Anjuman; together they built the 'Abbasi Anjuman network.","note_fa":"باهم از انجمن رشت اخراج و بازداشت شدند و باهم شبکهٔ انجمن عباسی را ساختند."}
+{"rel":"person_relation","person_a":"afsah-al-mutikallimin","person_b":"shahrashub","type":"collaborator","note_en":"Backed the 'Abbasi Anjuman through Khair al-Kalam.","note_fa":"از راه خیرالکلام از انجمن عباسی پشتیبانی کرد."}
+{"rel":"person_relation","person_a":"hisam-al-islam","person_b":"shahrashub","type":"rival","note_en":"Shahrashub denounced the Gilan deputy in the streets of Rasht; Hisam al-Islam lost his constituency and needed police protection.","note_fa":"شهرآشوب نمایندهٔ گیلان را در کوچه‌های رشت رسوا کرد؛ حسام‌الاسلام پایگاه مردمی‌اش را از دست داد و به حفاظت پلیس نیاز یافت."}
