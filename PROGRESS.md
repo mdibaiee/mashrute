@@ -23,15 +23,34 @@ Hijri verbatim when the book prints it, else computed and flagged approximate.
 Verified: 7 Oct 1906 = 14 Mehr 1285 = 18 Sha'ban 1324; 15 Nov 1909 = 24 Aban 1288;
 23 Jun 1908 = 2 Tir 1287 = 23 Jumada I 1326. See `docs/DATA_MODEL.md`.
 
-## Curated dataset (`data/extracted/*.jsonl`)
+## Curated dataset (`data/extracted/*.jsonl`) — first pass complete
 
-| file | scope | status |
+| file | rows | status |
 |---|---|---|
-| `places.jsonl` | ~95 places | ⏳ |
-| `groups.jsonl` | ~130 groups | ⏳ |
-| `people.jsonl` | ~390 historical actors + ~70 cited scholars | ⏳ |
-| `events.jsonl` | 98 chronology events + body-derived | ⏳ |
-| `relations.jsonl` | person↔group, event↔person, event↔group, event↔place | ⏳ |
+| `places.jsonl` | 99 | ✅ first pass |
+| `groups.jsonl` | 150 | ✅ first pass |
+| `people.jsonl` | 231 | 🟡 core cast done; long tail of index names outstanding |
+| `events.jsonl` | 111 | 🟡 chronology + context done; body-derived events outstanding |
+| `relations.jsonl` | 399 | 🟡 major links done, thinner on minor figures |
+
+`python3 scripts/build_db.py` builds `mashruteh.db`; `python3 scripts/report.py`
+prints coverage. All names are bilingual (100% `name_fa` coverage); prose
+(`biography_fa`, `summary_fa`) is partial and is the main translation debt.
+
+### Known gaps, in priority order
+1. **101 people and 84 groups have no links yet** — mostly minor index names that
+   need an event or membership edge before they earn a page.
+2. **`biography_fa` on 198 people, `description_fa` on 58 groups** untranslated.
+3. **Body-derived events** — the chronology yields ~100 events; the narrative
+   holds several hundred more (guild strikes, provincial risings, individual
+   anjuman actions, press prosecutions).
+4. **Roster tables not yet mined**: First Majlis guild deputies (EN p. 65–68,
+   scan lines 3552–3589) and Second Majlis Democrat deputies (lines 11599+)
+   give named deputy lists with constituencies and party.
+5. **Lunar Hijri dates are all computed** (±1–2 days). The book prints Qamari
+   dates in the notes and body; harvesting those would let us mark them `book`.
+6. ~70 modern scholars cited by Afary still to be entered with
+   `is_historical_actor = 0` so they stay out of the people directory.
 
 ## Body reading passes
 
