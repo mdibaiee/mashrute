@@ -948,3 +948,70 @@
 {"rel":"person_relation","person_a":"shahrashub","person_b":"shishahbur-rahim","type":"collaborator","note_en":"Expelled and arrested together by the Rasht Anjuman; together they built the 'Abbasi Anjuman network.","note_fa":"باهم از انجمن رشت اخراج و بازداشت شدند و باهم شبکهٔ انجمن عباسی را ساختند."}
 {"rel":"person_relation","person_a":"afsah-al-mutikallimin","person_b":"shahrashub","type":"collaborator","note_en":"Backed the 'Abbasi Anjuman through Khair al-Kalam.","note_fa":"از راه خیرالکلام از انجمن عباسی پشتیبانی کرد."}
 {"rel":"person_relation","person_a":"hisam-al-islam","person_b":"shahrashub","type":"rival","note_en":"Shahrashub denounced the Gilan deputy in the streets of Rasht; Hisam al-Islam lost his constituency and needed police protection.","note_fa":"شهرآشوب نمایندهٔ گیلان را در کوچه‌های رشت رسوا کرد؛ حسام‌الاسلام پایگاه مردمی‌اش را از دست داد و به حفاظت پلیس نیاز یافت."}
+{"rel":"person_group","person_id":"huma-mahmudi","group_id":"ladies-homeland-anjuman","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"huma-mahmudi","group_id":"alam-i-nisvan","role_type":"editor","role_en":"contributor","role_fa":"نویسنده"}
+{"rel":"person_group","person_id":"iftikhar-al-saltanah","group_id":"freedom-of-women-anjuman","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"taj-al-saltanah","group_id":"freedom-of-women-anjuman","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"sadiqah-dawlatabadi","group_id":"freedom-of-women-anjuman","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"sadiqah-dawlatabadi","group_id":"ladies-homeland-anjuman","role_type":"leader","role_en":"secretary","role_fa":"منشی"}
+{"rel":"person_group","person_id":"sadiqah-dawlatabadi","group_id":"zaban-i-zanan","role_type":"founder","role_en":"founder and editor","role_fa":"بنیان‌گذار و مدیر"}
+{"rel":"person_group","person_id":"shams-al-muluk-javahir-kalam","group_id":"freedom-of-women-anjuman","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"shams-al-muluk-javahir-kalam","group_id":"namus-school","role_type":"member","role_en":"pupil","role_fa":"دانش‌آموز"}
+{"rel":"person_group","person_id":"jordan-mary-park","group_id":"freedom-of-women-anjuman","role_type":"member","role_en":"attended the meetings","role_fa":"در جلسات شرکت می‌کرد"}
+{"rel":"person_group","person_id":"jordan-mary-park","group_id":"alburz-college","role_type":"leader","role_en":"co-director","role_fa":"هم‌مدیر"}
+{"rel":"person_group","person_id":"samuel-jordan","group_id":"alburz-college","role_type":"leader","role_en":"director 1898–1940","role_fa":"مدیر ۱۲۷۷–۱۳۱۹"}
+{"rel":"person_group","person_id":"boyce-annie","group_id":"iran-bethel-school","role_type":"leader","role_en":"director","role_fa":"مدیر"}
+{"rel":"person_group","person_id":"boyce-annie","group_id":"alam-i-nisvan","role_type":"editor","role_en":"editor in the 1920s","role_fa":"سردبیر در دههٔ ۱۳۰۰"}
+{"rel":"person_group","person_id":"agha-baigum","group_id":"ladies-homeland-anjuman","role_type":"leader","role_en":"president; lectured to the Anjuman of Women","role_fa":"رئیس؛ در انجمن نسوان سخنرانی کرد"}
+{"rel":"person_group","person_id":"durrat-al-maali","group_id":"ladies-homeland-anjuman","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"durrat-al-maali","group_id":"madrasah-mukhaddarat","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"mahrukh-gawharshinas","group_id":"ladies-homeland-anjuman","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"mahrukh-gawharshinas","group_id":"taraqqi-girls-school","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"mrs-yephrem","group_id":"ladies-homeland-anjuman","role_type":"member","role_en":"member; led the campaign against foreign loans","role_fa":"عضو؛ کارزار علیه وام خارجی را رهبری کرد"}
+{"rel":"person_group","person_id":"mrs-malikian","group_id":"ladies-homeland-anjuman","role_type":"affiliate","role_en":"director of its school and orphanage","role_fa":"مدیر مدرسه و یتیم‌خانهٔ آن"}
+{"rel":"person_group","person_id":"bibi-vazirof","group_id":"dabistan-i-dushizagan","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"tuba-azmudeh","group_id":"namus-school","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"safiyah-yazdi","group_id":"iffatiyah-school","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"safiyah-yazdi","group_id":"freedom-of-women-anjuman","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"person_group","person_id":"muhtaram-iskandari","group_id":"society-patriotic-women","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"shams-kasmai","group_id":"anjuman-i-nisvan","role_type":"affiliate","role_en":"followed the education debates from Ashqabad and demanded women's schools nationwide","role_fa":"از عشق‌آباد بحث‌های آموزش را دنبال می‌کرد و خواستار مدارس زنان در سراسر کشور بود"}
+{"rel":"person_group","person_id":"muhammad-ali-iskandari","group_id":"adamiyat-society","role_type":"founder","role_en":"founding member","role_fa":"از بنیان‌گذاران"}
+{"rel":"person_group","person_id":"muhammad-husain-yazdi","group_id":"constitutionalist-ulama","role_type":"member","role_en":"mujtahid who backed women's education","role_fa":"مجتهدی که از تحصیل زنان پشتیبانی کرد"}
+{"rel":"person_group","person_id":"shushtari-sayyid-ali","group_id":"mashruah-ulama","role_type":"member","role_en":"co-signed the fatwa against girls' schools","role_fa":"هم‌امضای فتوا علیه مدارس دخترانه"}
+{"rel":"group_relation","group_a":"society-patriotic-women","group_b":"ladies-homeland-anjuman","type":"successor"}
+{"rel":"group_relation","group_a":"alam-i-nisvan","group_b":"iran-bethel-school","type":"branch_of"}
+{"rel":"group_relation","group_a":"dabistan-i-dushizagan","group_b":"girls-schools","type":"branch_of"}
+{"rel":"group_relation","group_a":"namus-school","group_b":"girls-schools","type":"branch_of"}
+{"rel":"group_relation","group_a":"iffatiyah-school","group_b":"girls-schools","type":"branch_of"}
+{"rel":"group_relation","group_a":"madrasah-mukhaddarat","group_b":"girls-schools","type":"branch_of"}
+{"rel":"group_relation","group_a":"taraqqi-girls-school","group_b":"girls-schools","type":"branch_of"}
+{"rel":"group_relation","group_a":"girls-schools","group_b":"mashruah-ulama","type":"opposed"}
+{"rel":"event_participant","event_id":"women-fund-national-bank-1906","person_id":"vaiz-isfahani","role_type":"leader","role_en":"appealed from the pulpit for subscriptions","role_fa":"از منبر برای اعانه فراخواند"}
+{"rel":"event_group","event_id":"women-fund-national-bank-1906","group_id":"national-bank","role_type":"participant"}
+{"rel":"event_group","event_id":"women-fund-national-bank-1906","group_id":"anjuman-i-nisvan","role_type":"participant"}
+{"rel":"event_group","event_id":"boycott-foreign-textiles-1906","group_id":"anjuman-i-nisvan","role_type":"participant"}
+{"rel":"event_participant","event_id":"boycott-foreign-textiles-1906","person_id":"durrat-al-maali","role_type":"leader","role_en":"with Sadiqah Dawlatabadi visited tea houses and fabric shops demanding native goods","role_fa":"همراه صدیقه دولت‌آبادی به قهوه‌خانه‌ها و پارچه‌فروشی‌ها رفت و خواستار کالای وطنی شد"}
+{"rel":"event_participant","event_id":"boycott-foreign-textiles-1906","person_id":"sadiqah-dawlatabadi","role_type":"leader","role_en":"campaigned against imported sugar and cloth","role_fa":"علیه قند و پارچهٔ وارداتی کارزار کرد"}
+{"rel":"event_group","event_id":"fifty-girls-schools-1910","group_id":"girls-schools","role_type":"participant"}
+{"rel":"event_group","event_id":"fifty-girls-schools-1910","group_id":"shikufah","role_type":"participant"}
+{"rel":"event_participant","event_id":"fatwa-against-girls-schools","person_id":"shaikh-fazlullah-nuri","role_type":"author","role_en":"issued the fatwa","role_fa":"فتوا را صادر کرد"}
+{"rel":"event_participant","event_id":"fatwa-against-girls-schools","person_id":"shushtari-sayyid-ali","role_type":"author","role_en":"co-signed the fatwa","role_fa":"فتوا را هم‌امضا کرد"}
+{"rel":"event_group","event_id":"fatwa-against-girls-schools","group_id":"girls-schools","role_type":"victim"}
+{"rel":"event_group","event_id":"fatwa-against-girls-schools","group_id":"union-theology-students","role_type":"participant"}
+{"rel":"event_group","event_id":"fatwa-against-girls-schools","group_id":"musavat-newspaper","role_type":"participant"}
+{"rel":"event_group","event_id":"women-protect-ulama-1905","group_id":"anjuman-i-nisvan","role_type":"participant"}
+{"rel":"event_participant","event_id":"womens-demonstration-1911","person_id":"huma-mahmudi","role_type":"leader","role_en":"one of the organisers","role_fa":"از سازمان‌دهندگان"}
+{"rel":"event_group","event_id":"womens-demonstration-1911","group_id":"anjuman-himmat-khavatin","role_type":"participant"}
+{"rel":"event_group","event_id":"womens-demonstration-1911","group_id":"womens-union","role_type":"participant"}
+{"rel":"event_group","event_id":"womens-demonstration-1911","group_id":"central-ladies-committee","role_type":"participant"}
+{"rel":"event_group","event_id":"british-legation-bast-1906","group_id":"anjuman-i-nisvan","role_type":"participant"}
+{"rel":"person_relation","person_a":"agha-baigum","person_b":"najmabadi-shaikh-hadi","type":"kin","note_en":"Daughter.","note_fa":"دختر."}
+{"rel":"person_relation","person_a":"agha-baigum","person_b":"sakinah-kandashlu","type":"kin","note_en":"Daughter.","note_fa":"دختر."}
+{"rel":"person_relation","person_a":"muhtaram-iskandari","person_b":"muhammad-ali-iskandari","type":"kin","note_en":"Daughter.","note_fa":"دختر."}
+{"rel":"person_relation","person_a":"durrat-al-maali","person_b":"ali-shams-al-muali","type":"kin","note_en":"Daughter.","note_fa":"دختر."}
+{"rel":"person_relation","person_a":"safiyah-yazdi","person_b":"muhammad-husain-yazdi","type":"kin","note_en":"Wife; he backed her school against the conservative clerics.","note_fa":"همسر؛ او در برابر روحانیان محافظه‌کار از مدرسه‌اش پشتیبانی کرد."}
+{"rel":"person_relation","person_a":"sadiqah-dawlatabadi","person_b":"dawlatabadi-yahya","type":"kin","note_en":"Sister.","note_fa":"خواهر."}
+{"rel":"person_relation","person_a":"mrs-yephrem","person_b":"yephrem-khan","type":"kin","note_en":"Wife.","note_fa":"همسر."}
+{"rel":"person_relation","person_a":"iftikhar-al-saltanah","person_b":"taj-al-saltanah","type":"kin","note_en":"Sister.","note_fa":"خواهر."}
+{"rel":"person_relation","person_a":"jordan-mary-park","person_b":"samuel-jordan","type":"kin","note_en":"Wife; together they directed Alburz College.","note_fa":"همسر؛ باهم کالج البرز را اداره می‌کردند."}
+{"rel":"person_relation","person_a":"durrat-al-maali","person_b":"iraj-mirza","type":"collaborator","note_en":"Her house was a literary salon frequented by Iraj Mirza and Bahar.","note_fa":"خانه‌اش محفل ادبی‌ای بود که ایرج میرزا و بهار به آن رفت‌وآمد داشتند."}
