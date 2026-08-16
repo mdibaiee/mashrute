@@ -63,9 +63,9 @@ Chapters of the English body (`data/raw/book_en.txt`), printed pages:
 | 2 | The Tempest of Revolution | 34–58 | ✅ |
 | 3 | First Majlis, urban anjumans, Social Democrats | 59–90 | ✅ |
 | 4 | Constitutionalism or Shari'at? | 91–118 | ✅ |
-| 5 | Press, satire and revolution | 119–145 | ⏳ |
-| 6 | Peasants, artisans and fishermen | 146–176 | ⏳ |
-| 7 | Women's anjumans | 177–208 | ⏳ |
+| 5 | Press, satire and revolution | 119–145 | ✅ |
+| 6 | Peasants, artisans and fishermen | 146–176 | ✅ |
+| 7 | Women's anjumans | 177–208 | ✅ |
 | 8 | Civil war in Azerbaijan | 211–227 | ⏳ |
 | 9 | Solidarity of nations: reconquest of Tehran | 228–253 | ⏳ |
 | 10 | Second Majlis and the Democrat Party | 257–281 | ⏳ |
