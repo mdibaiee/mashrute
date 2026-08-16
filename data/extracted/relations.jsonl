@@ -768,3 +768,74 @@
 {"rel":"person_relation","person_a":"ali-monsieur","person_b":"narimanov","type":"collaborator","note_en":"Met the Himmat leaders in Tiflis, who encouraged him to open a branch in Tabriz.","note_fa":"در تفلیس با رهبران همت آشنا شد و آنان او را به گشودن شعبه‌ای در تبریز ترغیب کردند."}
 {"rel":"person_relation","person_a":"ali-monsieur","person_b":"yusif-khazduz","type":"rival","note_en":"Khazduz's popularity threatened 'Ali Monsieur's leadership and he was killed for it.","note_fa":"محبوبیت خزدوز رهبری علی مسیو را تهدید می‌کرد و به همین سبب کشته شد."}
 {"rel":"person_relation","person_a":"ihtisham-al-saltanah","person_b":"ala-al-dawlah","type":"kin","note_en":"Brothers; they founded the Khidmat Anjuman together.","note_fa":"برادران؛ انجمن خدمت را باهم بنیان نهادند."}
+{"rel":"person_group","person_id":"ali-akbar-vakili","group_id":"anjuman-newspaper","role_type":"editor","role_en":"editor","role_fa":"سردبیر"}
+{"rel":"person_group","person_id":"ali-akbar-vakili","group_id":"tabriz-anjuman","role_type":"member","role_en":"editor of its organ","role_fa":"سردبیر ارگان آن"}
+{"rel":"person_group","person_id":"sayyid-hasan-kashani","group_id":"habl-al-matin","role_type":"editor","role_en":"editor of the Tehran edition","role_fa":"مدیر چاپ تهران"}
+{"rel":"person_group","person_id":"muayyid-al-islam","group_id":"habl-al-matin","role_type":"editor","role_en":"editor of the Calcutta edition","role_fa":"مدیر چاپ کلکته"}
+{"rel":"person_group","person_id":"mirza-qasim-tabrizi","group_id":"sur-i-israfil","role_type":"founder","role_en":"financier and co-founder","role_fa":"تأمین‌کنندهٔ مالی و هم‌بنیان‌گذار"}
+{"rel":"person_group","person_id":"khalkhali-abd-al-rahim","group_id":"musavat-newspaper","role_type":"editor","role_en":"co-editor","role_fa":"هم‌سردبیر"}
+{"rel":"person_group","person_id":"musavat-muhammad-riza","group_id":"second-majlis","role_type":"representative","role_en":"deputy for Azerbaijan","role_fa":"نمایندهٔ آذربایجان"}
+{"rel":"person_group","person_id":"haidar-khan-amu-ughlu","group_id":"committee-of-terror","role_type":"leader","role_en":"leader of the twelve-man committee","role_fa":"رهبر کمیتهٔ دوازده‌نفره"}
+{"rel":"person_group","person_id":"haidar-khan-amu-ughlu","group_id":"azerbaijan-anjuman-tehran","role_type":"member","role_en":"active member","role_fa":"عضو فعال"}
+{"rel":"person_group","person_id":"abbas-aqa","group_id":"committee-of-terror","role_type":"member","role_en":"chosen by lot to kill Amin al-Sultan","role_fa":"با قرعه برای قتل امین‌السلطان برگزیده شد"}
+{"rel":"person_group","person_id":"shaikh-fazlullah-nuri","group_id":"comparison-committee","role_type":"leader","role_en":"its moving force","role_fa":"محرک اصلی آن"}
+{"rel":"person_group","person_id":"taqizadah","group_id":"comparison-committee","role_type":"opponent","role_en":"drafted the supplementary laws the committee revised","role_fa":"متممی را نوشت که هیئت آن را بازنویسی کرد"}
+{"rel":"person_group","person_id":"amin-al-zarb-son","group_id":"comparison-committee","role_type":"member","role_en":"on the drafting committee","role_fa":"عضو کمیتهٔ تدوین"}
+{"rel":"person_group","person_id":"mustashar-al-dawlah","group_id":"comparison-committee","role_type":"member","role_en":"on the drafting committee","role_fa":"عضو کمیتهٔ تدوین"}
+{"rel":"person_group","person_id":"sad-al-dawlah","group_id":"comparison-committee","role_type":"member","role_en":"on the drafting committee","role_fa":"عضو کمیتهٔ تدوین"}
+{"rel":"person_group","person_id":"tabatabai-sayyid-ahmad","group_id":"mashruah-ulama","role_type":"member","role_en":"joined Nuri against the Majlis","role_fa":"همراه نوری در برابر مجلس"}
+{"rel":"person_group","person_id":"mirza-hasan-mujtahid","group_id":"mashruah-ulama","role_type":"member","role_en":"joined Nuri from exile","role_fa":"از تبعید به نوری پیوست"}
+{"rel":"person_group","person_id":"khumami","group_id":"mashruah-ulama","role_type":"member","role_en":"joined Nuri from exile","role_fa":"از تبعید به نوری پیوست"}
+{"rel":"person_group","person_id":"yazdi-sayyid-kazim","group_id":"mashruah-ulama","role_type":"patron","role_en":"backed Nuri from Najaf","role_fa":"از نجف پشتیبان نوری"}
+{"rel":"person_group","person_id":"dihkhuda","group_id":"political-college-tehran","role_type":"member","role_en":"graduate","role_fa":"دانش‌آموخته"}
+{"rel":"person_group","person_id":"dihkhuda","group_id":"dar-al-funun","role_type":"member","role_en":"graduate","role_fa":"دانش‌آموخته"}
+{"rel":"person_group","person_id":"jahangir-khan-shirazi","group_id":"dar-al-funun","role_type":"member","role_en":"graduate","role_fa":"دانش‌آموخته"}
+{"rel":"person_group","person_id":"amir-bahadur-jang","group_id":"khidmat-anjuman","role_type":"member","role_en":"member","role_fa":"عضو"}
+{"rel":"group_relation","group_a":"council-of-five-mujtahids","group_b":"majlis","type":"opposed","note_en":"Article 2 gave it a veto over all legislation; it never functioned but its existence marked the failure to separate religion and state."}
+{"rel":"group_relation","group_a":"comparison-committee","group_b":"mashruah-ulama","type":"allied"}
+{"rel":"group_relation","group_a":"committee-of-terror","group_b":"fadain","type":"allied"}
+{"rel":"group_relation","group_a":"futuvvat-anjuman","group_b":"central-anjuman","type":"opposed","note_en":"The Central Anjuman refused to accredit it."}
+{"rel":"event_group","event_id":"tabriz-anjuman-seven-demands-1907","group_id":"tabriz-anjuman","role_type":"leader"}
+{"rel":"event_participant","event_id":"tabriz-anjuman-seven-demands-1907","person_id":"priem","role_type":"target","role_en":"his removal demanded","role_fa":"برکناری‌اش خواسته شد"}
+{"rel":"event_participant","event_id":"tabriz-anjuman-seven-demands-1907","person_id":"larousse","role_type":"target","role_en":"his removal demanded","role_fa":"برکناری‌اش خواسته شد"}
+{"rel":"event_participant","event_id":"tabriz-anjuman-seven-demands-1907","person_id":"naus","role_type":"target","role_en":"his removal demanded","role_fa":"برکناری‌اش خواسته شد"}
+{"rel":"event_group","event_id":"tabriz-telegraph-protest-1907","group_id":"mujahidin","role_type":"participant"}
+{"rel":"event_group","event_id":"tabriz-telegraph-protest-1907","group_id":"tabriz-anjuman","role_type":"leader"}
+{"rel":"event_participant","event_id":"qarahchaman-massacre-1907","person_id":"mirza-hasan-mujtahid","role_type":"perpetrator","role_en":"sanctioned the troops sent against the village","role_fa":"اعزام قشون به ده را تأیید کرد"}
+{"rel":"event_participant","event_id":"qarahchaman-massacre-1907","person_id":"shaikh-salim","role_type":"participant","role_en":"sided with the peasants and walked out of the anjuman","role_fa":"جانب دهقانان را گرفت و انجمن را ترک کرد"}
+{"rel":"event_group","event_id":"qarahchaman-massacre-1907","group_id":"peasants","role_type":"victim"}
+{"rel":"event_group","event_id":"qarahchaman-massacre-1907","group_id":"tabriz-anjuman","role_type":"participant"}
+{"rel":"event_participant","event_id":"amin-al-sultan-blocked-anzali-1907","person_id":"amin-al-sultan","role_type":"target","role_en":"kept aboard ship for six days","role_fa":"شش روز در کشتی نگاه داشته شد"}
+{"rel":"event_group","event_id":"amin-al-sultan-blocked-anzali-1907","group_id":"mujahidin","role_type":"perpetrator"}
+{"rel":"event_participant","event_id":"rahim-khan-plunder-1907","person_id":"rahim-khan-chalbiyanlu","role_type":"perpetrator","role_en":"his son led the plunder","role_fa":"پسرش غارت را رهبری کرد"}
+{"rel":"event_participant","event_id":"rahim-khan-plunder-1907","person_id":"muhammad-ali-shah","role_type":"perpetrator","role_en":"secretly enlisted the brigands","role_fa":"پنهانی راهزنان را به کار گرفت"}
+{"rel":"event_participant","event_id":"rahim-khan-plunder-1907","person_id":"sattar-khan","role_type":"participant","role_en":"among the Mujahidin who prepared to defend the city","role_fa":"از مجاهدانی که آمادهٔ دفاع از شهر شدند"}
+{"rel":"event_group","event_id":"rahim-khan-plunder-1907","group_id":"shahsavan","role_type":"perpetrator"}
+{"rel":"event_group","event_id":"rahim-khan-plunder-1907","group_id":"peasants","role_type":"victim"}
+{"rel":"event_participant","event_id":"women-demand-supplementary-laws-1907","person_id":"sani-al-dawlah","role_type":"witness","role_en":"threatened to resign over their appearance","role_fa":"از حضور آنان تهدید به استعفا کرد"}
+{"rel":"event_participant","event_id":"najaf-ulama-back-nuri-1907","person_id":"khurasani-mulla-kazim","role_type":"signatory","role_en":"cabled his support","role_fa":"پشتیبانی خود را تلگراف کرد"}
+{"rel":"event_participant","event_id":"najaf-ulama-back-nuri-1907","person_id":"mazandarani-shaikh-abdullah","role_type":"signatory","role_en":"cabled his support","role_fa":"پشتیبانی خود را تلگراف کرد"}
+{"rel":"event_participant","event_id":"tehran-demonstration-against-nuri-1907","person_id":"malik-al-mutikallimin","role_type":"leader","role_en":"preached against clerical constitutionalism","role_fa":"علیه مشروطهٔ مشروعه موعظه کرد"}
+{"rel":"event_participant","event_id":"tehran-demonstration-against-nuri-1907","person_id":"tabatabai-sayyid-muhammad","role_type":"mediator","role_en":"pledged in writing to expel Nuri himself if he broke his word","role_fa":"کتباً تعهد کرد اگر نوری پیمان بشکند خود او را براند"}
+{"rel":"event_participant","event_id":"tehran-demonstration-against-nuri-1907","person_id":"shaikh-fazlullah-nuri","role_type":"target","role_en":"his expulsion demanded","role_fa":"اخراجش خواسته شد"}
+{"rel":"event_group","event_id":"tehran-demonstration-against-nuri-1907","group_id":"union-theology-students","role_type":"participant"}
+{"rel":"event_group","event_id":"majlis-budget-reforms-1907","group_id":"first-majlis","role_type":"perpetrator"}
+{"rel":"event_participant","event_id":"musavat-shut-down-1908","person_id":"musavat-muhammad-riza","role_type":"victim","role_en":"prosecuted as editor","role_fa":"به عنوان مدیر تحت پیگرد قرار گرفت"}
+{"rel":"event_participant","event_id":"musavat-shut-down-1908","person_id":"muhammad-ali-shah","role_type":"target","role_en":"the subject of the offending article","role_fa":"موضوع مقالهٔ جنجالی"}
+{"rel":"event_participant","event_id":"assassination-amin-al-sultan-1907","person_id":"haidar-khan-amu-ughlu","role_type":"perpetrator","role_en":"named as ringleader; his memoirs describe the Committee of Terror drawing lots","role_fa":"سردستهٔ توطئه خوانده شد؛ خاطراتش قرعه‌کشی کمیتهٔ ترور را شرح می‌دهد"}
+{"rel":"event_participant","event_id":"assassination-amin-al-sultan-1907","person_id":"sad-al-dawlah","role_type":"perpetrator","role_en":"suspected by Sani' al-Dawlah and Mukhbir al-Saltanah of plotting it with the shah","role_fa":"صنیع‌الدوله و مخبرالسلطنه او را به توطئه با شاه مظنون دانستند"}
+{"rel":"event_group","event_id":"assassination-amin-al-sultan-1907","group_id":"committee-of-terror","role_type":"perpetrator"}
+{"rel":"event_group","event_id":"assassination-amin-al-sultan-1907","group_id":"national-revolutionary-committee","role_type":"perpetrator"}
+{"rel":"event_participant","event_id":"expulsion-mirza-hasan-mujtahid-1907","person_id":"shaikh-salim","role_type":"participant","role_en":"his threatened expulsion triggered the Mujahidin mobilisation","role_fa":"تهدید به اخراج او بسیج مجاهدان را برانگیخت"}
+{"rel":"event_participant","event_id":"expulsion-mirza-hasan-mujtahid-1907","person_id":"siqat-al-islam-tabrizi","role_type":"witness","role_en":"the only ranking cleric still backing the anjuman afterwards","role_fa":"تنها روحانی بلندپایه‌ای که پس از آن همچنان پشتیبان انجمن ماند"}
+{"rel":"event_group","event_id":"expulsion-mirza-hasan-mujtahid-1907","group_id":"mujahidin","role_type":"perpetrator"}
+{"rel":"event_group","event_id":"tabriz-general-strike-1907","group_id":"mujahidin","role_type":"participant"}
+{"rel":"event_group","event_id":"supplementary-laws-ratified-1907","group_id":"council-of-five-mujtahids","role_type":"participant"}
+{"rel":"event_group","event_id":"supplementary-laws-ratified-1907","group_id":"zoroastrians","role_type":"participant"}
+{"rel":"event_participant","event_id":"supplementary-laws-ratified-1907","person_id":"taqizadah","role_type":"author","role_en":"drafted them on Belgian, French and Bulgarian models","role_fa":"آنها را بر الگوی بلژیک، فرانسه و بلغارستان نوشت"}
+{"rel":"event_participant","event_id":"nuri-bast-1907","person_id":"amin-al-sultan","role_type":"participant","role_en":"financed Nuri's sanctuary while mediating with the Majlis","role_fa":"در حال میانجیگری با مجلس، بست نوری را تأمین مالی می‌کرد"}
+{"rel":"person_relation","person_a":"sayyid-hasan-kashani","person_b":"muayyid-al-islam","type":"kin","note_en":"Brothers; they edited the Tehran and Calcutta editions of Habl al-Matin.","note_fa":"برادران؛ چاپ تهران و کلکتهٔ حبل‌المتین را اداره می‌کردند."}
+{"rel":"person_relation","person_a":"nuri-mahdi","person_b":"shaikh-fazlullah-nuri","type":"kin","note_en":"Son. Nuri's family was divided: this son cultivated support for him at the 'Atabat while another joined the constitutionalists.","note_fa":"پسر. خانوادهٔ نوری دو دسته بود: این پسر در عتبات برای او هوادار می‌جست و پسر دیگر به مشروطه‌خواهان پیوست."}
+{"rel":"person_relation","person_a":"tabatabai-sayyid-ahmad","person_b":"tabatabai-sayyid-muhammad","type":"kin","note_en":"Brother, and his political opposite: he resented his brother's influence and denounced the Majlis as full of 'Babis and naturalists'.","note_fa":"برادر و در سیاست نقطهٔ مقابل او: از نفوذ برادرش دلگیر بود و مجلس را پر از «بابی و طبیعی» می‌خواند."}
+{"rel":"person_relation","person_a":"dihkhuda","person_b":"taqizadah","type":"collaborator","note_en":"Taqizadah recommended Dihkhuda to the founders of Sur-i Israfil.","note_fa":"تقی‌زاده دهخدا را به بنیان‌گذاران صور اسرافیل معرفی کرد."}
+{"rel":"person_relation","person_a":"jahangir-khan-shirazi","person_b":"kirmani-mirza-aqa-khan","type":"mentor","note_en":"Jahangir Khan was influenced by Mirza Aqa Khan Kirmani."}
