@@ -1150,3 +1150,78 @@
 {"rel":"person_relation","person_a":"baqir-khan","person_b":"zorian-stepan","type":"rival","note_en":"Baqir Khan invited Zorian and his colleagues to dine, then asked them to sit separately because they were not Muslims — the most noted instance of prejudice inside a strikingly multiethnic resistance.","note_fa":"باقرخان زوریان و یارانش را به مهمانی خواند و سپس از آنان خواست جدا بنشینند چون مسلمان نبودند — نامدارترین نمونهٔ تبعیض در دل مقاومتی به‌غایت چندقومی."}
 {"rel":"person_relation","person_a":"lenin","person_b":"ordjonikidze","type":"collaborator","note_en":"Ordjonikidze kept Lenin informed from Rasht and passed underground literature through Iran to Baku.","note_fa":"اورجونیکیدزه از رشت لنین را در جریان می‌گذاشت و ادبیات مخفی را از راه ایران به باکو می‌رساند."}
 {"rel":"person_relation","person_a":"luxemburg-rosa","person_b":"jaures-jean","type":"rival","note_en":"Luxemburg attacked Jaurès for welcoming the Anglo-Russian and Franco-Russian agreements as instruments of peace, asking how the government of 'the bloody executioners of the Russian revolution and the insurrection in Persia' could be made a pillar of international peace.","note_fa":"لوکزامبورگ به ژورس تاخت که توافق‌های روس–انگلیس و روس–فرانسه را ابزار صلح خوانده بود و پرسید چگونه می‌توان دولتِ «جلادان خونین انقلاب روسیه و قیام ایران» را ستون صلح جهانی کرد."}
+{"rel": "person_group", "person_id": "mirza-abu-al-qasim", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Kirmanshah", "role_fa": "نمایندهٔ کرمانشاه"}
+{"rel": "person_group", "person_id": "mirza-abu-al-qasim", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "davud-ali-abadi", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Tehran", "role_fa": "نمایندهٔ تهران"}
+{"rel": "person_group", "person_id": "davud-ali-abadi", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "muhammad-sadiq-alizadah", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Azerbaijan (Transcaucasia)", "role_fa": "نمایندهٔ آذربایجان (قفقاز)"}
+{"rel": "person_group", "person_id": "muhammad-sadiq-alizadah", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "husain-ardabili", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Khurasan", "role_fa": "نمایندهٔ خراسان"}
+{"rel": "person_group", "person_id": "husain-ardabili", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "jalil-ardabili", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Azerbaijan", "role_fa": "نمایندهٔ آذربایجان"}
+{"rel": "person_group", "person_id": "jalil-ardabili", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "riza-dihkhvariqani", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Azerbaijan", "role_fa": "نمایندهٔ آذربایجان"}
+{"rel": "person_group", "person_id": "riza-dihkhvariqani", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "husain-kazazi", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Kirmanshah", "role_fa": "نمایندهٔ کرمانشاه"}
+{"rel": "person_group", "person_id": "husain-kazazi", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "luqman-nihuray", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for the Jewish community", "role_fa": "نمایندهٔ جامعهٔ یهودی"}
+{"rel": "person_group", "person_id": "luqman-nihuray", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "zia-al-mulk", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Simnan", "role_fa": "نمایندهٔ سمنان"}
+{"rel": "person_group", "person_id": "zia-al-mulk", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "mahdi-najmabadi", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy", "role_fa": "نماینده"}
+{"rel": "person_group", "person_id": "mahdi-najmabadi", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "muhammad-nijat", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Azerbaijan", "role_fa": "نمایندهٔ آذربایجان"}
+{"rel": "person_group", "person_id": "muhammad-nijat", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "ismail-nawbari", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Azerbaijan", "role_fa": "نمایندهٔ آذربایجان"}
+{"rel": "person_group", "person_id": "ismail-nawbari", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "ahmad-qazvini", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Azerbaijan", "role_fa": "نمایندهٔ آذربایجان"}
+{"rel": "person_group", "person_id": "ahmad-qazvini", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "muhammad-sadiq-hazrat", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Tehran", "role_fa": "نمایندهٔ تهران"}
+{"rel": "person_group", "person_id": "muhammad-sadiq-hazrat", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "yaqub-sadr-al-ulama", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Khurasan", "role_fa": "نمایندهٔ خراسان"}
+{"rel": "person_group", "person_id": "yaqub-sadr-al-ulama", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "ibrahim-shirazi", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Fars", "role_fa": "نمایندهٔ فارس"}
+{"rel": "person_group", "person_id": "ibrahim-shirazi", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "ghulam-husain-shahrudi", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Shahrud", "role_fa": "نمایندهٔ شاهرود"}
+{"rel": "person_group", "person_id": "ghulam-husain-shahrudi", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "sadiq-muntasir-al-sultan", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Azerbaijan", "role_fa": "نمایندهٔ آذربایجان"}
+{"rel": "person_group", "person_id": "sadiq-muntasir-al-sultan", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "vahid-al-mulk-shaibani", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Tehran", "role_fa": "نمایندهٔ تهران"}
+{"rel": "person_group", "person_id": "vahid-al-mulk-shaibani", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "hasan-ali-khan", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Tehran", "role_fa": "نمایندهٔ تهران"}
+{"rel": "person_group", "person_id": "hasan-ali-khan", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "hasan-ali-khan", "group_id": "moderate-party", "role_type": "member", "role_en": "originally a Moderate", "role_fa": "در آغاز اعتدالی"}
+{"rel": "person_group", "person_id": "muhammad-hashim-afsar", "group_id": "second-majlis", "role_type": "representative", "role_en": "deputy for Sabzavar", "role_fa": "نمایندهٔ سبزوار"}
+{"rel": "person_group", "person_id": "muhammad-hashim-afsar", "group_id": "democrat-party", "role_type": "member", "role_en": "party member", "role_fa": "عضو حزب"}
+{"rel": "person_group", "person_id": "muhammad-hashim-afsar", "group_id": "moderate-party", "role_type": "member", "role_en": "originally a Moderate", "role_fa": "در آغاز اعتدالی"}
+{"rel":"person_group","person_id":"hakim-al-mulk","group_id":"school-of-arts","role_type":"founder","role_en":"founder","role_fa":"بنیان‌گذار"}
+{"rel":"person_group","person_id":"vahid-al-mulk-shaibani","group_id":"times-of-london","role_type":"editor","role_en":"wrote a series of articles after the 1908 coup","role_fa":"پس از کودتای ۱۲۸۷ رشته مقالاتی نوشت"}
+{"rel":"person_group","person_id":"haidar-khan-amu-ughlu","group_id":"democrat-party","role_type":"leader","role_en":"head of the executive branch; commanded the radical mujahidin the Moderates called 'the anarchists'","role_fa":"رئیس شعبهٔ اجرایی؛ فرمانده مجاهدان رادیکالی که اعتدالیون آنان را «آنارشیست» می‌خواندند"}
+{"rel":"person_group","person_id":"pilusian-vram","group_id":"democrat-party","role_type":"founder","role_en":"wrote the party's internal regulations and organised its Tabriz committees","role_fa":"نظام‌نامهٔ داخلی حزب را نوشت و کمیته‌های تبریز آن را سازمان داد"}
+{"rel":"person_group","person_id":"ter-hacobian","group_id":"democrat-party","role_type":"leader","role_en":"theoretician and consultant to the central committee","role_fa":"نظریه‌پرداز و مشاور کمیتهٔ مرکزی"}
+{"rel":"person_group","person_id":"luqman-nihuray","group_id":"jews","role_type":"representative","role_en":"the community's deputy in the Second Majlis","role_fa":"نمایندهٔ جامعه در مجلس دوم"}
+{"rel":"person_group","person_id":"ahmad-qazvini","group_id":"najaf-ulama","role_type":"member","role_en":"pro-constitutionalist cleric who fought in the siege of Tabriz","role_fa":"روحانی مشروطه‌خواه که در محاصرهٔ تبریز جنگید"}
+{"rel":"person_group","person_id":"sulaiman-iskandari","group_id":"huquq-anjuman","role_type":"editor","role_en":"editor of the journal Huquq","role_fa":"مدیر نشریهٔ حقوق"}
+{"rel":"person_group","person_id":"ter-hacobian","group_id":"national-salvation-committee","role_type":"founder","role_en":"proposed it","role_fa":"آن را پیشنهاد کرد"}
+{"rel":"group_relation","group_a":"national-salvation-committee","group_b":"moderate-party","type":"opposed"}
+{"rel":"group_relation","group_a":"social-democrats-organization","group_b":"democrat-party","type":"opposed","note_en":"The Baku centre opposed European-style parties and publicly broke with the Democrats on 1 February 1910."}
+{"rel":"event_group","event_id":"democrat-party-programme-1911","group_id":"democrat-party","role_type":"participant"}
+{"rel":"event_group","event_id":"democrat-party-programme-1911","group_id":"ulama","role_type":"target"}
+{"rel":"event_group","event_id":"democrat-party-programme-1911","group_id":"tribes","role_type":"target"}
+{"rel":"event_group","event_id":"baku-organisation-breaks-with-democrats-1910","group_id":"social-democrats-organization","role_type":"perpetrator"}
+{"rel":"event_group","event_id":"baku-organisation-breaks-with-democrats-1910","group_id":"democrat-party","role_type":"target"}
+{"rel":"event_group","event_id":"baku-organisation-breaks-with-democrats-1910","group_id":"anjumans-of-mujahidin","role_type":"victim"}
+{"rel":"event_participant","event_id":"baku-organisation-breaks-with-democrats-1910","person_id":"taqizadah","role_type":"target","role_en":"told to 'end the revolutionary turmoil'","role_fa":"به او گفتند «آشوب انقلابی را پایان دهد»"}
+{"rel":"event_participant","event_id":"baku-organisation-breaks-with-democrats-1910","person_id":"bihbahani-sayyid-abdullah","role_type":"target","role_en":"told to stay out of political affairs","role_fa":"به او گفتند از امور سیاسی کنار بکشد"}
+{"rel":"event_participant","event_id":"baku-organisation-breaks-with-democrats-1910","person_id":"dawlatabadi-yahya","role_type":"mediator","role_en":"carried the Baku messages to Tehran","role_fa":"پیام‌های باکو را به تهران برد"}
+{"rel":"event_participant","event_id":"baku-organisation-breaks-with-democrats-1910","person_id":"sipahdar","role_type":"participant","role_en":"benefited: he diluted the Directory and became premier","role_fa":"سود برد: هیئت مدیره را رقیق کرد و رئیس‌الوزرا شد"}
+{"rel":"event_participant","event_id":"armenian-democrats-correspondence-1909","person_id":"pilusian-vram","role_type":"author","role_en":"wrote as 'Bahr' and 'Dihati'","role_fa":"با نام‌های بحر و دهاتی می‌نوشت"}
+{"rel":"event_participant","event_id":"armenian-democrats-correspondence-1909","person_id":"ter-hacobian","role_type":"author","role_en":"wrote as 'Tigran Darvish'","role_fa":"با نام تیگران درویش می‌نوشت"}
+{"rel":"event_participant","event_id":"armenian-democrats-correspondence-1909","person_id":"taqizadah","role_type":"author","role_en":"the Tehran correspondent","role_fa":"طرف تهرانی مکاتبه"}
+{"rel":"event_participant","event_id":"armenian-democrats-correspondence-1909","person_id":"plekhanov","role_type":"participant","role_en":"Ter Hacobian wrote to him in autumn 1908 arguing for a 'democratic' party","role_fa":"ترهاکوبیان پاییز ۱۲۸۷ به او نوشت و حزبی «دموکرات» را پیشنهاد کرد"}
+{"rel":"event_group","event_id":"armenian-democrats-correspondence-1909","group_id":"armenians","role_type":"participant"}
+{"rel":"event_participant","event_id":"second-majlis-opens-1909","person_id":"vahid-al-mulk-shaibani","role_type":"participant","role_en":"among the assembly's most eloquent speakers","role_fa":"از سخنوران برجستهٔ مجلس"}
+{"rel":"event_participant","event_id":"second-majlis-opens-1909","person_id":"luqman-nihuray","role_type":"participant","role_en":"the Jewish community regained a deputy of its own","role_fa":"جامعهٔ یهودی نمایندهٔ خود را بازیافت"}
+{"rel":"person_relation","person_a":"vahid-al-mulk-shaibani","person_b":"browne-edward","type":"mentor","note_en":"Studied at Cambridge with Browne.","note_fa":"در کمبریج نزد براون درس خواند."}
+{"rel":"person_relation","person_a":"pilusian-vram","person_b":"taqizadah","type":"collaborator","note_en":"Their French correspondence of 1909–10 shaped the Democrat Party's organisation.","note_fa":"مکاتبات فرانسوی آنان در ۱۲۸۸–۸۹ به سازمان حزب دموکرات شکل داد."}
+{"rel":"person_relation","person_a":"ter-hacobian","person_b":"taqizadah","type":"collaborator","note_en":"Ter Hacobian supplied much of the party's doctrine from Tabriz and later Tehran.","note_fa":"ترهاکوبیان بخش بزرگی از آموزهٔ حزب را از تبریز و سپس تهران فراهم کرد."}
