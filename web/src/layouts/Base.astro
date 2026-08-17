@@ -201,6 +201,9 @@ const path = Astro.url.pathname;
          language toggle on one line, so the nav drops to its own row and
          scrolls sideways within itself rather than widening the page. */
       @media (max-width: 46rem) {
+        /* Wrapped over two rows the masthead is tall enough that pinning it
+           would eat a real share of a phone screen, so it scrolls away. */
+        header.site { position: static; }
         header.site .shell {
           height: auto; flex-wrap: wrap; row-gap: .35rem;
           column-gap: .75rem; padding-block: .55rem;
