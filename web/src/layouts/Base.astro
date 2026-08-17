@@ -166,7 +166,7 @@ const path = Astro.url.pathname;
       .brand__text { display: flex; flex-direction: column; line-height: 1.1; }
       .brand__text small { font-size: .68rem; color: var(--ink-3); font-weight: 500; letter-spacing: .04em; }
       header nav { display: flex; gap: .25rem; margin-inline-start: auto; }
-      .navlink { font-family: var(--fs-ui); font-size: .88rem; text-decoration: none; padding: .4rem .7rem; border-radius: 99px; color: var(--ink-2); }
+      .navlink { white-space: nowrap; font-family: var(--fs-ui); font-size: .88rem; text-decoration: none; padding: .4rem .7rem; border-radius: 99px; color: var(--ink-2); }
       .navlink:hover { background: var(--line-2); color: var(--ink); }
       .navlink.on { background: var(--accent); color: #fff; }
       .lang { font-family: var(--fs-ui); font-size: .8rem; border: 1px solid var(--line); background: transparent; color: var(--ink-2); padding: .35rem .7rem; border-radius: 99px; cursor: pointer; }
@@ -194,6 +194,25 @@ const path = Astro.url.pathname;
       .muted { color: var(--ink-3); }
       .tag { display: inline-block; font-family: var(--fs-ui); font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; padding: .2rem .5rem; border-radius: 99px; background: var(--line-2); color: var(--ink-2); }
       .tag--accent { background: color-mix(in srgb, var(--turquoise) 20%, transparent); color: #14607a; }
+
+      /* On a phone the masthead cannot hold the brand, four nav links and the
+         language toggle on one line, so the nav drops to its own row and
+         scrolls sideways within itself rather than widening the page. */
+      @media (max-width: 46rem) {
+        header.site .shell {
+          height: auto; flex-wrap: wrap; row-gap: .35rem;
+          column-gap: .75rem; padding-block: .55rem;
+        }
+        .brand { order: 1; }
+        .lang { order: 2; margin-inline-start: auto; }
+        header nav {
+          order: 3; width: 100%; margin-inline-start: 0;
+          overflow-x: auto; scrollbar-width: none; padding-bottom: 2px;
+        }
+        header nav::-webkit-scrollbar { display: none; }
+        .navlink { flex: none; font-size: .84rem; padding: .35rem .6rem; }
+        .pagehead { padding: 1.6rem 0 1rem; }
+      }
     </style>
   </body>
 </html>

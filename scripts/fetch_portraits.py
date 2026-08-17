@@ -32,7 +32,7 @@ OUT = ROOT / "data" / "portraits.jsonl"
 OVERRIDES = ROOT / "data" / "portrait_overrides.json"
 IMG_DIR = ROOT / "web" / "public" / "portraits"
 
-UA = "mashruteh-dataset/1.0 (https://github.com/) python-urllib"
+UA = "mashruteh-dataset/1.0 (https://github.com/mdibaiee/mashrute) python-urllib"
 THUMB_PX = 480
 
 # The book runs from the Qajar period to the aftermath of the revolution. A

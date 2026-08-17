@@ -76,7 +76,7 @@ const extra = people.length - shown.length;
     /* Size to the content, but cap it — otherwise a long role forces the box
        into a tall narrow column the width of the name. */
     width: max-content;
-    max-width: 15rem;
+    max-width: min(15rem, calc(100vw - 2rem));
     white-space: normal;
     text-align: start;
     opacity: 0; pointer-events: none;
@@ -94,5 +94,12 @@ const extra = people.length - shown.length;
 
   @media (prefers-reduced-motion: reduce) {
     .stack__item, .stack__tip { transition: none; }
+  }
+
+  /* An absolutely-positioned tooltip still contributes to the page's scroll
+     width even at opacity 0, which gave narrow phones a horizontal scrollbar.
+     There is no hover on touch anyway — tapping a disc opens the person. */
+  @media (hover: none), (max-width: 30rem) {
+    .stack__tip { display: none; }
   }
 </style>
