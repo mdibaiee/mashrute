@@ -19,6 +19,7 @@ const path = Astro.url.pathname;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title} — The Iranian Constitutional Revolution</title>
     <meta name="description" content="A bilingual database of the Iranian Constitutional Revolution, 1906–1911." />
+    <link rel="stylesheet" href={`${base}/fonts/fonts.css`} />
     <script is:inline>
       // Set language before first paint so there is no flash of the wrong script.
       (function () {
@@ -98,47 +99,6 @@ const path = Astro.url.pathname;
     </script>
 
     <style is:global>
-      @font-face {
-        font-family: 'Open Sans';
-        src: url('/fonts/open-sans-latin-ext-italic.woff2') format('woff2');
-        font-style: italic;
-        font-weight: 300 800;
-        font-display: swap;
-        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Open Sans';
-        src: url('/fonts/open-sans-latin-italic.woff2') format('woff2');
-        font-style: italic;
-        font-weight: 300 800;
-        font-display: swap;
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Open Sans';
-        src: url('/fonts/open-sans-latin-ext-normal.woff2') format('woff2');
-        font-style: normal;
-        font-weight: 300 800;
-        font-display: swap;
-        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Open Sans';
-        src: url('/fonts/open-sans-latin-normal.woff2') format('woff2');
-        font-style: normal;
-        font-weight: 300 800;
-        font-display: swap;
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-
-      @font-face {
-        font-family: 'Gandom';
-        src: url('/fonts/Gandom.woff2') format('woff2'),
-             url('/fonts/Gandom.woff') format('woff');
-        font-weight: 400;
-        font-display: swap;
-      }
-
       /* The palette is the one Persian tilework has used since the Timurids:
          fīrūza turquoise and lāzhvard lapis as the structural pair, with rose
          and garden-green as the two accents that carry the figurative work. */

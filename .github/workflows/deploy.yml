@@ -1,0 +1,53 @@
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # Allows a deploy to be triggered by hand from the Actions tab.
+  workflow_dispatch:
+
+# Allow the workflow to publish to Pages via the OIDC token.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; don't cancel a run that is already publishing.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+# Where the site is published. GitHub Pages serves a repository at one place
+# only, so switching to the custom domain means switching the base path too:
+#
+#   github.io      SITE_URL=https://mdibaiee.github.io  BASE_PATH=/mashrooteh
+#   custom domain  SITE_URL=https://mashrute.ir         BASE_PATH=/
+#
+# To move to mashrute.ir: change the two values below and add web/public/CNAME
+# containing "mashrute.ir". The github.io address then redirects to it.
+env:
+  SITE_URL: https://mdibaiee.github.io
+  BASE_PATH: /mashrooteh
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        uses: withastro/action@v3
+        with:
+          # The Astro project is not at the repository root.
+          path: ./web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,6 +1,9 @@
 __pycache__/
 *.pyc
-mashruteh.db
 node_modules/
 dist/
 .astro/
+
+# The book texts themselves are not ours to publish; the data derived
+# from them is. scripts/ expect them at data/raw/.
+data/raw/
