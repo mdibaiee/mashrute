@@ -54,7 +54,7 @@ const path = Astro.url.pathname;
           ))}
         </nav>
         <button id="langToggle" class="lang" type="button" aria-label="Switch language">
-          <span class="en">فارسی</span><span class="fa">English</span>
+          <span class="en" lang="fa">فارسی</span><span class="fa" lang="en">English</span>
         </button>
       </div>
     </header>
@@ -171,6 +171,8 @@ const path = Astro.url.pathname;
       .navlink.on { background: var(--accent); color: #fff; }
       .lang { font-family: var(--fs-ui); font-size: .8rem; border: 1px solid var(--line); background: transparent; color: var(--ink-2); padding: .35rem .7rem; border-radius: 99px; cursor: pointer; }
       .lang:hover { border-color: var(--accent); color: var(--accent); }
+      .lang [lang='fa'] { font-family: var(--fs-fa); }
+      .lang [lang='en'] { font-family: 'Open Sans', ui-sans-serif, system-ui, sans-serif; }
 
       /* A tile band under the masthead: the four palette colours repeating the
          way a border course (hāshiyeh) runs along the top of a tiled wall. */
