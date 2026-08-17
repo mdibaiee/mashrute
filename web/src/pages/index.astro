@@ -289,9 +289,17 @@ const years = byYear.map((b) => b.year);
     .tl-empty { text-align: center; color: var(--ink-3); padding: 2rem 0; }
 
     @media (max-width: 820px) {
-      .timeline__spine { inset-inline-start: 14px; }
+      /* One column: the spine moves to the start edge and both sides hang off
+         it. The node offset is derived from the spine position and the node's
+         own width, so the larger major-event dots stay centred too — a fixed
+         offset put them 2.5px off the line. */
+      .timeline { --spine-x: 14px; }
+      .timeline__spine { inset-inline-start: var(--spine-x); }
       .tl-item, .tl-item--l, .tl-item--r { width: auto; margin-inline: 0 0; padding-inline-start: 2.6rem; }
-        .tl-item--l .tl-item__node, .tl-item--r .tl-item__node { inset-inline-start: 9px; inset-inline-end: auto; }
+      .tl-item--l .tl-item__node, .tl-item--r .tl-item__node {
+        inset-inline-start: calc(var(--spine-x) - var(--n) / 2);
+        inset-inline-end: auto;
+      }
       .tl-item--l .tl-card__meta, html[dir='rtl'] .tl-item--r .tl-card__meta { justify-content: flex-start; }
       .tl-item--l .tl-card__people, .tl-item--l .tl-card .stack,
       html[dir='rtl'] .tl-item--r .tl-card__people, html[dir='rtl'] .tl-item--r .tl-card .stack { margin-inline-start: 0; }
