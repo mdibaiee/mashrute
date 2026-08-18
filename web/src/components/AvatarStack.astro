@@ -74,7 +74,8 @@ const extra = people.length - max;
     position: absolute;
     bottom: calc(100% + 9px);
     inset-inline-start: 50%;
-    transform: translateX(-50%) translateY(4px);
+    --tip-x: -50%;
+    transform: translateX(var(--tip-x)) translateY(4px);
     background: var(--ink);
     color: var(--paper-2);
     padding: .42rem .6rem;
@@ -91,13 +92,14 @@ const extra = people.length - max;
     z-index: 30;
     box-shadow: 0 6px 18px rgba(0,0,0,.22);
   }
-  html[dir='rtl'] .stack__tip { transform: translateX(50%) translateY(4px); }
+  html[dir='rtl'] .stack__tip { --tip-x: 50%; }
   .stack__tip b { display: block; font-weight: 650; white-space: nowrap; }
   .stack__tip i { display: block; font-style: normal; opacity: .75; margin-top: 2px; }
   .stack__item:hover .stack__tip,
-  .stack__item:focus-within .stack__tip { opacity: 1; transform: translateX(-50%) translateY(0); }
-  html[dir='rtl'] .stack__item:hover .stack__tip,
-  html[dir='rtl'] .stack__item:focus-within .stack__tip { transform: translateX(50%) translateY(0); }
+  .stack__item:focus-within .stack__tip {
+    opacity: 1;
+    transform: translateX(var(--tip-x)) translateY(0);
+  }
 
   /* ---- open state -------------------------------------------------------
      The discs stop overlapping and each carries its name, so on a touch screen
