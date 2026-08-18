@@ -35,7 +35,10 @@ const ROLE_LABEL = {
 ---
 <Base title={e.title_en} titleFa={e.title_fa} suggestKind="event" suggestId={e.id} suggestLabel={e.title_en} suggestLabelFa={e.title_fa}
       shareTitle={e.title_en} shareTitleFa={e.title_fa}
-      shareText={e.summary_en} shareTextFa={e.summary_fa}>
+      shareText={e.summary_en} shareTextFa={e.summary_fa}
+      shareKicker={e.date_display_en} shareKickerFa={e.date_display_fa}
+      shareMeta={places.map((x) => x.name_en).join(' · ')}
+      shareMetaFa={places.map((x) => x.name_fa || x.name_en).join(' · ')}>
   <div slot="title">
     <span class="en">{e.title_en}</span><span class="fa">{e.title_fa || e.title_en}</span>
   </div>

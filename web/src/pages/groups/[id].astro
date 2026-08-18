@@ -32,7 +32,9 @@ const REL = {
 };
 ---
 <Base title={g.name_en} titleFa={g.name_fa} suggestKind="group" suggestId={g.id} suggestLabel={g.name_en} suggestLabelFa={g.name_fa}
-      shareTitle={g.name_en} shareTitleFa={g.name_fa}>
+      shareTitle={g.name_en} shareTitleFa={g.name_fa}
+      shareKicker={label[0]} shareKickerFa={label[1]}
+      shareText={g.description_en} shareTextFa={g.description_fa}>
   <div slot="title" class="gh-title" style={`--c1:${paletteOf(g.id)[0]}; --c2:${paletteOf(g.id)[1]}`}>
     <span class="gh-mark" aria-hidden="true"></span>
     <span>

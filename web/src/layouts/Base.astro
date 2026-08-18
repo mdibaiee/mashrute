@@ -11,7 +11,8 @@ const { title, titleFa = '', subtitle, wide = false,
         // Detail pages pass these; supplying shareTitle moves the suggest
         // button up into a page-actions row beside Share, so it is not also
         // repeated in the footer.
-        shareTitle = '', shareTitleFa = '', shareText = '', shareTextFa = '' } = Astro.props;
+        shareTitle = '', shareTitleFa = '', shareText = '', shareTextFa = '',
+        shareKicker = '', shareKickerFa = '', shareMeta = '', shareMetaFa = '' } = Astro.props;
 const hasActions = Boolean(shareTitle);
 // A page may supply its bilingual heading through the slots instead of the
 // string props; the props are still what the <title> tag uses.
@@ -97,7 +98,9 @@ const fullFa = `${titleFa || title || ''} — ${SITE_FA}`.replace(/^ — /, '');
           {hasActions && (
             <p class="pageacts">
               <ShareButton title={shareTitle} titleFa={shareTitleFa}
-                           text={shareText} textFa={shareTextFa} />
+                           text={shareText} textFa={shareTextFa}
+                           kicker={shareKicker} kickerFa={shareKickerFa}
+                           meta={shareMeta} metaFa={shareMetaFa} />
               <SuggestButton kind={suggestKind} id={suggestId}
                              label={suggestLabel} labelFa={suggestLabelFa} />
             </p>

@@ -10,6 +10,10 @@ const {
   titleFa = '',
   text = '',       // English description, events only
   textFa = '',
+  kicker = '',     // date, life span, or type — the line above the title
+  kickerFa = '',
+  meta = '',       // place, shown small under the body
+  metaFa = '',
   compact = false,
 } = Astro.props;
 ---
@@ -22,6 +26,10 @@ const {
   data-title-fa={titleFa}
   data-text={text}
   data-text-fa={textFa}
+  data-kicker={kicker}
+  data-kicker-fa={kickerFa}
+  data-meta={meta}
+  data-meta-fa={metaFa}
   aria-label="Share · هم‌رسانی"
 >
   <svg viewBox="0 0 20 20" aria-hidden="true">
@@ -33,6 +41,71 @@ const {
 </button>
 
 <script>
+  import { renderStory } from '../lib/story.js';
+
+  // Whether this browser will take a file in the share sheet at all. Probing
+  // needs an actual File, so a one-byte stand-in answers it once.
+  const FILES_OK = (() => {
+    try {
+      const probe = new File([new Uint8Array(1)], 'p.png', { type: 'image/png' });
+      return !!(navigator.canShare && navigator.share && navigator.canShare({ files: [probe] }));
+    } catch { return false; }
+  })();
+
+  // Faces come from the card already on screen rather than from more markup on
+  // every one of two hundred cards.
+  function facesIn(scope: Element | Document) {
+    const nodes = scope.querySelectorAll('.stack__item:not(.stack__more) .av, .mem .av');
+    const all = [...nodes];
+    const faces = all.slice(0, 6).map((av) => {
+      const img = av.querySelector('img.av__img') as HTMLImageElement | null;
+      if (img) return { src: img.currentSrc || img.src };
+      const cs = getComputedStyle(av as Element);
+      const mono = av.querySelector('.av__mono');
+      const shown = mono
+        ? [...mono.children].find((c) => getComputedStyle(c).display !== 'none')
+        : null;
+      return {
+        c1: cs.getPropertyValue('--c1').trim(),
+        c2: cs.getPropertyValue('--c2').trim(),
+        mono: (shown ? shown.textContent : mono?.textContent || '').trim(),
+      };
+    });
+    return { faces, extra: Math.max(0, all.length - faces.length) };
+  }
+
+  function storyFor(btn: HTMLElement) {
+    const fa = document.documentElement.getAttribute('data-lang') === 'fa';
+    const d = btn.dataset;
+    const pick = (en?: string, faV?: string) => ((fa ? faV : en) || en || '').trim();
+    const scope = btn.closest('.tl-card') || document;
+    const { faces, extra } = facesIn(scope);
+    return {
+      fa,
+      kicker: pick(d.kicker, d.kickerFa),
+      title: pick(d.title, d.titleFa) || document.title,
+      body: pick(d.text, d.textFa),
+      meta: pick(d.meta, d.metaFa),
+      faces, extra,
+      brand: fa ? 'مشروطه' : 'Mashruteh',
+      url: location.host,
+    };
+  }
+
+  // Rendering takes a moment, so it starts on the press and is awaited on the
+  // release — by then it is usually done, and the share sheet opens promptly.
+  const warmed = new WeakMap<HTMLElement, Promise<Blob | null>>();
+  function warm(btn: HTMLElement) {
+    if (!FILES_OK || warmed.has(btn)) return warmed.get(btn);
+    const job = renderStory(storyFor(btn)).catch(() => null);
+    warmed.set(btn, job);
+    return job;
+  }
+  document.addEventListener('pointerdown', (ev) => {
+    const btn = (ev.target as HTMLElement).closest('[data-share]') as HTMLElement | null;
+    if (btn) warm(btn);
+  }, { passive: true });
+
   // One delegated listener for every button on the page — the chronology has
   // over two hundred of them.
   document.addEventListener('click', async (ev) => {
@@ -47,12 +120,31 @@ const {
     const body = desc ? `${title}\n\n${desc}` : title;
 
     if (navigator.share) {
-      try {
-        await navigator.share({ title, text: body, url });
-        return;
-      } catch (err) {
-        // Cancelling the share sheet rejects; that is not a failure to report.
-        if ((err as Error).name === 'AbortError') return;
+      // With a picture in the payload the sheet offers the image apps —
+      // Instagram among them, where it can be posted as a story. The page
+      // cannot name that target itself; it can only hand over a real file.
+      let file: File | null = null;
+      if (FILES_OK) {
+        const blob = await (warm(btn) || Promise.resolve(null));
+        warmed.delete(btn);
+        if (blob) {
+          const name = (d.url || 'mashrute').split('/').filter(Boolean).pop() || 'mashrute';
+          file = new File([blob], `${name}.png`, { type: 'image/png' });
+        }
+      }
+
+      const payloads = file
+        ? [{ files: [file], text: body, url }, { files: [file] }, { title, text: body, url }]
+        : [{ title, text: body, url }];
+      for (const payload of payloads) {
+        if (navigator.canShare && !navigator.canShare(payload)) continue;
+        try {
+          await navigator.share(payload);
+          return;
+        } catch (err) {
+          // Cancelling the sheet rejects; that is not a failure to report.
+          if ((err as Error).name === 'AbortError') return;
+        }
       }
     }
 

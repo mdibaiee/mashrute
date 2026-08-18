@@ -147,7 +147,11 @@ const years = byYear.map((b) => b.year);
                 <div class="tl-card__acts">
                   <ShareButton url={`${base}/events/${e.id}/`} title={e.title_en}
                                titleFa={e.title_fa} text={e.summary_en}
-                               textFa={e.summary_fa} compact />
+                               textFa={e.summary_fa}
+                               kicker={e.date_display_en} kickerFa={e.date_display_fa}
+                               meta={places.map((x) => x.name_en).join(' · ')}
+                               metaFa={places.map((x) => x.name_fa || x.name_en).join(' · ')}
+                               compact />
                   <SuggestButton kind="event" id={e.id} label={e.title_en}
                                  labelFa={e.title_fa} compact />
                 </div>

@@ -31,7 +31,9 @@ const life = [p.birth_display_en, p.death_display_en].filter(Boolean).join(' –
 const lifeFa = [p.birth_display_fa, p.death_display_fa].filter(Boolean).join(' – ');
 ---
 <Base title={p.name_en} titleFa={p.name_fa} suggestKind="person" suggestId={p.id} suggestLabel={p.name_en} suggestLabelFa={p.name_fa}
-      shareTitle={p.name_en} shareTitleFa={p.name_fa}>
+      shareTitle={p.name_en} shareTitleFa={p.name_fa}
+      shareKicker={life} shareKickerFa={lifeFa}
+      shareText={p.role_en || p.title_en} shareTextFa={p.role_fa || p.title_fa || p.role_en}>
   <div slot="title" class="ph-title">
     <Avatar id={p.id} nameEn={p.name_en} nameFa={p.name_fa} size={72} link={false} />
     <span>
