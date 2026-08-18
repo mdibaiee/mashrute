@@ -35,7 +35,7 @@ const enrich = (p) => {
 const rows = actors.map(enrich).sort((a, b) =>
   (b.nEvents + b.nGroups) - (a.nEvents + a.nGroups) || a.name_en.localeCompare(b.name_en));
 ---
-<Base title="People" wide
+<Base title="People" titleFa="اشخاص" wide
 >
   <Fragment slot="title">
     <span class="en">People</span><span class="fa">اشخاص</span>

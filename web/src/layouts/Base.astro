@@ -3,7 +3,7 @@ import SuggestButton from '../components/SuggestButton.astro';
 import SuggestDialog from '../components/SuggestDialog.astro';
 import ShareButton from '../components/ShareButton.astro';
 
-const { title, subtitle, wide = false,
+const { title, titleFa = '', subtitle, wide = false,
         // What a suggestion from this page is about. Detail pages pass their
         // own record so the issue names it instead of just the URL.
         suggestKind = 'page', suggestId = '', suggestLabel = '',
@@ -24,13 +24,22 @@ const nav = [
   { href: `${base}/notes/`, en: 'Notes', fa: 'یادداشت‌ها' },
 ];
 const path = Astro.url.pathname;
+
+// The document title has to switch with the language like everything else, but
+// <title> holds text, not markup, so the paired-span trick cannot work here.
+// Both strings are rendered onto <html> and the language script picks one.
+const SITE_EN = 'The Iranian Constitutional Revolution';
+const SITE_FA = 'انقلاب مشروطهٔ ایران';
+const fullEn = title ? `${title} — ${SITE_EN}` : SITE_EN;
+const fullFa = `${titleFa || title || ''} — ${SITE_FA}`.replace(/^ — /, '');
 ---
 <!doctype html>
-<html lang="fa" data-lang="fa" dir="rtl">
+<html lang="fa" data-lang="fa" dir="rtl"
+      data-title-en={fullEn} data-title-fa={fullFa}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title} — The Iranian Constitutional Revolution</title>
+    <title>{fullFa}</title>
     <meta name="description" content="A bilingual database of the Iranian Constitutional Revolution, 1906–1911." />
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
     <link rel="icon" href={`${base}/favicon-32.png`} sizes="32x32" type="image/png" />
@@ -47,6 +56,9 @@ const path = Astro.url.pathname;
         h.setAttribute('data-lang', l);
         h.setAttribute('lang', l === 'fa' ? 'fa' : 'en');
         if (l === 'fa') h.setAttribute('dir', 'rtl'); else h.removeAttribute('dir');
+        // Runs after <title> is parsed, so this wins over the rendered default.
+        var t = l === 'fa' ? h.dataset.titleFa : h.dataset.titleEn;
+        if (t) document.title = t;
       })();
     </script>
   </head>
@@ -127,6 +139,8 @@ const path = Astro.url.pathname;
         h.setAttribute('lang', next);
         if (next === 'fa') h.setAttribute('dir', 'rtl'); else h.removeAttribute('dir');
         localStorage.setItem('mashruteh-lang', next);
+        var t = next === 'fa' ? h.dataset.titleFa : h.dataset.titleEn;
+        if (t) document.title = t;
         document.dispatchEvent(new CustomEvent('langchange', { detail: next }));
       });
     </script>

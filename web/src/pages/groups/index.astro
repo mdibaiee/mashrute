@@ -25,7 +25,7 @@ const rows = groups.map((g) => {
   return { ...g, nMembers: members.length, nEvents: evs.length, label, search, pal: paletteOf(g.id) };
 }).sort((a, b) => (b.nMembers + b.nEvents) - (a.nMembers + a.nEvents) || a.name_en.localeCompare(b.name_en));
 ---
-<Base title="Groups" wide>
+<Base title="Groups" titleFa="گروه‌ها" wide>
   <Fragment slot="title">
     <span class="en">Groups</span><span class="fa">گروه‌ها</span>
   </Fragment>
