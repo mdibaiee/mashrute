@@ -26,8 +26,8 @@ concurrency:
 # To move to mashrute.ir: change the two values below and add web/public/CNAME
 # containing "mashrute.ir". The github.io address then redirects to it.
 env:
-  SITE_URL: https://mdibaiee.github.io
-  BASE_PATH: /mashrute
+  SITE_URL: https://mashrute.wiki
+  BASE_PATH: /
 
 jobs:
   build:
