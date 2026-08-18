@@ -1,0 +1,60 @@
+---
+import { SUGGEST_ENDPOINT } from '../lib/site.js';
+
+// Opens the shared suggestion dialog in Base.astro. Everything the issue needs
+// travels on data- attributes, so no per-button script is emitted — there are
+// 200+ of these on the chronology.
+const { kind = 'page', id = '', label = '', labelFa = '', compact = false } = Astro.props;
+---
+{SUGGEST_ENDPOINT && (
+<button
+  type="button"
+  class:list={['suggest', { 'suggest--compact': compact }]}
+  data-suggest
+  data-kind={kind}
+  data-id={id}
+  data-label={label}
+  data-label-fa={labelFa}
+  aria-label="Suggest a change · پیشنهاد بروزرسانی"
+>
+  <svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="M3 17h4l9.5-9.5a2.1 2.1 0 0 0-3-3L4 14v3z" />
+    <path d="M12.5 5.5 15 8" />
+  </svg>
+  <span class="suggest__t">
+    <span class="en">Suggest a change</span><span class="fa">پیشنهاد بروزرسانی</span>
+  </span>
+</button>
+)}
+
+<style is:global>
+  .suggest {
+    display: inline-flex; align-items: center; gap: .4rem;
+    font-family: var(--fs-ui); font-size: .78rem; font-weight: 500;
+    color: var(--ink-3); background: transparent;
+    border: 1px solid var(--line); border-radius: 99px;
+    padding: .3rem .7rem; cursor: pointer;
+    transition: color .15s, border-color .15s, background .15s;
+  }
+  .suggest:hover, .suggest:focus-visible {
+    color: var(--lapis); border-color: var(--lapis);
+    background: color-mix(in srgb, var(--turquoise) 10%, transparent);
+  }
+  .suggest svg {
+    width: 14px; height: 14px; flex: none;
+    fill: none; stroke: currentColor; stroke-width: 1.6;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+  /* On a timeline card the label would compete with the event title, so only
+     the pencil shows until the card is hovered or the button focused. */
+  .suggest--compact { border-color: transparent; padding: .25rem .4rem; }
+  .suggest--compact .suggest__t {
+    max-width: 0; overflow: hidden; white-space: nowrap; opacity: 0;
+    transition: max-width .2s ease, opacity .2s ease;
+  }
+  .tl-card:hover .suggest--compact .suggest__t,
+  .suggest--compact:focus-visible .suggest__t { max-width: 12rem; opacity: 1; }
+  @media (prefers-reduced-motion: reduce) {
+    .suggest, .suggest--compact .suggest__t { transition: none; }
+  }
+</style>

@@ -33,7 +33,7 @@ const ROLE_LABEL = {
   target: ['Targets', 'آماج'], mediator: ['Mediators', 'میانجیان'],
 };
 ---
-<Base title={e.title_en}>
+<Base title={e.title_en} suggestKind="event" suggestId={e.id} suggestLabel={e.title_en} suggestLabelFa={e.title_fa}>
   <div slot="title">
     <span class="en">{e.title_en}</span><span class="fa">{e.title_fa || e.title_en}</span>
   </div>

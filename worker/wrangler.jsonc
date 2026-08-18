@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mashrute-suggestions",
+  "main": "src/index.js",
+  "compatibility_date": "2025-01-01",
+  "observability": { "enabled": true },
+
+  "vars": {
+    "REPO": "mdibaiee/mashrute",
+    "ALLOWED_ORIGIN": "https://mashrute.wiki"
+  },
+
+  // Rate-limit counters. Replace id with the one printed by:
+  //   npx wrangler kv namespace create RL
+  "kv_namespaces": [
+    { "binding": "RL", "id": "REPLACE_WITH_KV_NAMESPACE_ID" }
+  ]
+}
