@@ -18,13 +18,14 @@ concurrency:
   cancel-in-progress: false
 
 # Where the site is published. GitHub Pages serves a repository at one place
-# only, so switching to the custom domain means switching the base path too:
+# only, so the base path follows the domain:
 #
+#   custom domain  SITE_URL=https://mashrute.wiki       BASE_PATH=/
 #   github.io      SITE_URL=https://mdibaiee.github.io  BASE_PATH=/mashrute
-#   custom domain  SITE_URL=https://mashrute.ir         BASE_PATH=/
 #
-# To move to mashrute.ir: change the two values below and add web/public/CNAME
-# containing "mashrute.ir". The github.io address then redirects to it.
+# Set here rather than as variables on the github-pages environment: variables
+# scoped to an environment are only visible to jobs that declare that
+# environment, so the build job would not see them.
 env:
   SITE_URL: https://mashrute.wiki
   BASE_PATH: /

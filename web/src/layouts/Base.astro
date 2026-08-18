@@ -39,7 +39,6 @@ const path = Astro.url.pathname;
           <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__text">
             <span class="en">Mashruteh</span><span class="fa">مشروطه</span>
-            <small><span class="en">1906–1911</span><span class="fa">۱۲۸۵–۱۲۹۰</span></small>
           </span>
         </a>
         <nav>
@@ -163,8 +162,7 @@ const path = Astro.url.pathname;
         background: linear-gradient(135deg, var(--turquoise), var(--lapis));
       }
       .brand__mark::after { transform: rotate(45deg); }
-      .brand__text { display: flex; flex-direction: column; line-height: 1.1; }
-      .brand__text small { font-size: .68rem; color: var(--ink-3); font-weight: 500; letter-spacing: .04em; }
+      .brand__text { font-size: 1.05rem; line-height: 1.1; }
       header nav { display: flex; gap: .25rem; margin-inline-start: auto; }
       .navlink { white-space: nowrap; font-family: var(--fs-ui); font-size: .88rem; text-decoration: none; padding: .4rem .7rem; border-radius: 99px; color: var(--ink-2); }
       .navlink:hover { background: var(--line-2); color: var(--ink); }
