@@ -88,9 +88,6 @@ const years = byYear.map((b) => b.year);
                     <span class="fa">{e.date_display_fa || e.date_display_en}</span>
                   </time>
                   {e.type && <span class="tag"><span class="en">{type[0]}</span><span class="fa">{type[1]}</span></span>}
-                  <ShareButton url={`${base}/events/${e.id}/`} title={e.title_en} titleFa={e.title_fa}
-                               text={e.summary_en} textFa={e.summary_fa} compact />
-                  <SuggestButton kind="event" id={e.id} label={e.title_en} labelFa={e.title_fa} compact />
                 </div>
 
                 <h3>
@@ -146,6 +143,14 @@ const years = byYear.map((b) => b.year);
                     {groups.length > 4 && <span class="muted"> +{groups.length - 4}</span>}
                   </p>
                 )}
+
+                <div class="tl-card__acts">
+                  <ShareButton url={`${base}/events/${e.id}/`} title={e.title_en}
+                               titleFa={e.title_fa} text={e.summary_en}
+                               textFa={e.summary_fa} compact />
+                  <SuggestButton kind="event" id={e.id} label={e.title_en}
+                                 labelFa={e.title_fa} compact />
+                </div>
               </div>
             </article>
           );
@@ -288,6 +293,11 @@ const years = byYear.map((b) => b.year);
     .tl-card__sum { margin: 0 0 .6rem; font-size: .92rem; color: var(--ink-2); }
     .tl-card__where { margin: 0 0 .55rem; font-family: var(--fs-ui); font-size: .74rem; color: var(--ink-3); }
     .tl-card__people { display: flex; margin: .1rem 0 .55rem; }
+    .tl-card__acts {
+      display: flex; gap: .15rem; width: max-content;
+      margin-inline-start: auto; margin-top: .5rem;
+      margin-inline-end: -.35rem; margin-bottom: -.3rem;
+    }
     .tl-card__groups { margin: 0; font-family: var(--fs-ui); font-size: .76rem; }
     .tl-card__groups a { color: var(--ink-2); text-decoration: none; border-bottom: 1px dotted var(--line); }
     .tl-card__groups a:hover { color: var(--accent); border-color: var(--accent); }
