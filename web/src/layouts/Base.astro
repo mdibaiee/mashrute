@@ -20,6 +20,9 @@ const path = Astro.url.pathname;
     <title>{title} — The Iranian Constitutional Revolution</title>
     <meta name="description" content="A bilingual database of the Iranian Constitutional Revolution, 1906–1911." />
     <link rel="stylesheet" href={`${base}/fonts/fonts.css`} />
+    <!-- Umami: cookieless page views, no personal data, so no consent banner. -->
+    <script is:inline defer src="https://cloud.umami.is/script.js"
+            data-website-id="8ef07471-780d-4e99-ade6-9ecc7baa7567"></script>
     <script is:inline>
       // Set language before first paint so there is no flash of the wrong script.
       (function () {
