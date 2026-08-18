@@ -56,11 +56,13 @@ const extra = people.length - max;
   .stack__item:first-child { margin-inline-start: 0; }
   /* Hidden until the card opens, so a collapsed stack stays a stack. */
   .stack__item--extra { display: none; }
-  .stack:hover .stack__item,
-  .stack:focus-within .stack__item { margin-inline-start: 3px; }
-  .stack:hover .stack__item:first-child,
-  .stack:focus-within .stack__item:first-child { margin-inline-start: 0; }
-  .stack__item:hover, .stack__item:focus-within { z-index: 6; transform: translateY(-2px); }
+  @media (hover: hover) {
+    .stack:hover .stack__item,
+    .stack:focus-within .stack__item { margin-inline-start: 3px; }
+    .stack:hover .stack__item:first-child,
+    .stack:focus-within .stack__item:first-child { margin-inline-start: 0; }
+    .stack__item:hover, .stack__item:focus-within { z-index: 6; transform: translateY(-2px); }
+  }
 
   .stack__disc {
     width: var(--sz); height: var(--sz); border-radius: 50%;
@@ -95,10 +97,16 @@ const extra = people.length - max;
   html[dir='rtl'] .stack__tip { --tip-x: 50%; }
   .stack__tip b { display: block; font-weight: 650; white-space: nowrap; }
   .stack__tip i { display: block; font-style: normal; opacity: .75; margin-top: 2px; }
-  .stack__item:hover .stack__tip,
-  .stack__item:focus-within .stack__tip {
-    opacity: 1;
-    transform: translateX(var(--tip-x)) translateY(0);
+  /* Only where there is a real pointer. A touch browser latches :hover on tap
+     and focuses the link, which fired this floating tooltip the moment a photo
+     was touched — before the card had opened, and instead of opening it. On
+     touch the names arrive with the open state instead. */
+  @media (hover: hover) {
+    .stack__item:hover .stack__tip,
+    .stack__item:focus-within .stack__tip {
+      opacity: 1;
+      transform: translateX(var(--tip-x)) translateY(0);
+    }
   }
 
   /* ---- open state -------------------------------------------------------

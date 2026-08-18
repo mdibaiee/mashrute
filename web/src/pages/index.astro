@@ -174,7 +174,12 @@ const years = byYear.map((b) => b.year);
     function closeCards(except) {
       var open = document.querySelectorAll('.tl-card.is-active');
       for (var i = 0; i < open.length; i++) {
-        if (open[i] !== except) open[i].classList.remove('is-active');
+        if (open[i] === except) continue;
+        open[i].classList.remove('is-active');
+        // The open state is also bound to :focus-within, so a link left
+        // focused inside would keep the card open after it was closed.
+        var focused = document.activeElement;
+        if (focused && open[i].contains(focused) && focused.blur) focused.blur();
       }
     }
 
