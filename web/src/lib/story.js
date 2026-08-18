@@ -189,8 +189,9 @@ export async function renderStory(d) {
   // On a person's own page the portrait is the subject, so it leads at a size
   // worth looking at instead of sitting in a row of thumbnails.
   const LEAD = d.lead && faces.length ? 240 : 0;
+  const LEAD_GAP = 84;
   const blockH =
-    (LEAD ? LEAD + 44 : 0) +
+    (LEAD ? LEAD + LEAD_GAP : 0) +
     (d.kicker ? 84 : 0) +
     titleLines.length * 100 +
     26 + 6 + 76 +
@@ -209,7 +210,7 @@ export async function renderStory(d) {
     if (img) circleImage(ctx, img, cx, cy, LEAD);
     else circleMono(ctx, faces[0], cx, cy, LEAD, fa);
     ctx.textAlign = fa ? 'right' : 'left';
-    y += LEAD + 44;
+    y += LEAD + LEAD_GAP;
   }
 
   if (d.kicker) {
