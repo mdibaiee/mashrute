@@ -31,7 +31,8 @@ const REL = {
   merged_into: ['Merged into', 'ادغام در'], successor: ['Successor to', 'جانشین'],
 };
 ---
-<Base title={g.name_en} suggestKind="group" suggestId={g.id} suggestLabel={g.name_en} suggestLabelFa={g.name_fa}>
+<Base title={g.name_en} suggestKind="group" suggestId={g.id} suggestLabel={g.name_en} suggestLabelFa={g.name_fa}
+      shareTitle={g.name_en} shareTitleFa={g.name_fa}>
   <div slot="title" class="gh-title" style={`--c1:${paletteOf(g.id)[0]}; --c2:${paletteOf(g.id)[1]}`}>
     <span class="gh-mark" aria-hidden="true"></span>
     <span>

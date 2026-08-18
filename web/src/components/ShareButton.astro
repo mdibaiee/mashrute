@@ -1,0 +1,109 @@
+---
+// Shares the page's title, link and — for an event — its description.
+//
+// navigator.share opens the platform's own share sheet, which is where this
+// belongs on a phone. Desktop browsers mostly lack it, so there the link is
+// copied to the clipboard instead and the button says so.
+const {
+  url = '',        // path to share; resolved against the current origin
+  title = '',      // English title
+  titleFa = '',
+  text = '',       // English description, events only
+  textFa = '',
+  compact = false,
+} = Astro.props;
+---
+<button
+  type="button"
+  class:list={['share', { 'share--compact': compact }]}
+  data-share
+  data-url={url}
+  data-title={title}
+  data-title-fa={titleFa}
+  data-text={text}
+  data-text-fa={textFa}
+  aria-label="Share · هم‌رسانی"
+>
+  <svg viewBox="0 0 20 20" aria-hidden="true">
+    <circle cx="15" cy="4.5" r="2.2" /><circle cx="5" cy="10" r="2.2" /><circle cx="15" cy="15.5" r="2.2" />
+    <path d="M12.9 5.6 7.1 8.9M7.1 11.1l5.8 3.3" />
+  </svg>
+  <span class="share__t"><span class="en">Share</span><span class="fa">هم‌رسانی</span></span>
+  <span class="share__done"><span class="en">Link copied</span><span class="fa">نشانی کپی شد</span></span>
+</button>
+
+<script>
+  // One delegated listener for every button on the page — the chronology has
+  // over two hundred of them.
+  document.addEventListener('click', async (ev) => {
+    const btn = (ev.target as HTMLElement).closest('[data-share]') as HTMLElement | null;
+    if (!btn) return;
+
+    const fa = document.documentElement.getAttribute('data-lang') === 'fa';
+    const d = btn.dataset;
+    const title = (fa ? d.titleFa : d.title) || d.title || document.title;
+    const desc = (fa ? d.textFa : d.text) || d.text || '';
+    const url = new URL(d.url || location.href, location.href).href;
+    const body = desc ? `${title}\n\n${desc}` : title;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, text: body, url });
+        return;
+      } catch (err) {
+        // Cancelling the share sheet rejects; that is not a failure to report.
+        if ((err as Error).name === 'AbortError') return;
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(`${body}\n${url}`);
+      btn.classList.add('is-copied');
+      setTimeout(() => btn.classList.remove('is-copied'), 2200);
+    } catch {
+      // Clipboard blocked (insecure context, or permission denied): fall back
+      // to selecting the text so it can at least be copied by hand.
+      window.prompt('Copy this link · این نشانی را کپی کنید', url);
+    }
+  });
+</script>
+
+<style is:global>
+  .share {
+    display: inline-flex; align-items: center; gap: .4rem;
+    font-family: var(--fs-ui); font-size: .78rem; font-weight: 500;
+    color: var(--ink-3); background: transparent;
+    border: 1px solid var(--line); border-radius: 99px;
+    padding: .3rem .7rem; cursor: pointer;
+    transition: color .15s, border-color .15s, background .15s;
+  }
+  .share:hover, .share:focus-visible {
+    color: var(--lapis); border-color: var(--lapis);
+    background: color-mix(in srgb, var(--turquoise) 10%, transparent);
+  }
+  .share svg {
+    width: 14px; height: 14px; flex: none;
+    fill: none; stroke: currentColor; stroke-width: 1.6;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+  .share__done { display: none; }
+  .share.is-copied { color: var(--green); border-color: var(--green); }
+  .share.is-copied .share__t { display: none; }
+  .share.is-copied .share__done { display: inline; }
+
+  /* On a timeline card the label would compete with the event title. */
+  .share--compact { border-color: transparent; padding: .25rem .4rem; }
+  .share--compact .share__t, .share--compact .share__done {
+    max-width: 0; overflow: hidden; white-space: nowrap; opacity: 0;
+    transition: max-width .2s ease, opacity .2s ease;
+  }
+  .tl-card:hover .share--compact .share__t,
+  .share--compact:focus-visible .share__t,
+  .share--compact.is-copied .share__done {
+    max-width: 12rem; opacity: 1;
+  }
+  .share--compact.is-copied .share__t { max-width: 0; opacity: 0; }
+  @media (prefers-reduced-motion: reduce) {
+    .share, .share--compact .share__t, .share--compact .share__done { transition: none; }
+  }
+</style>

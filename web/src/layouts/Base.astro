@@ -1,12 +1,18 @@
 ---
 import SuggestButton from '../components/SuggestButton.astro';
 import SuggestDialog from '../components/SuggestDialog.astro';
+import ShareButton from '../components/ShareButton.astro';
 
 const { title, subtitle, wide = false,
         // What a suggestion from this page is about. Detail pages pass their
         // own record so the issue names it instead of just the URL.
         suggestKind = 'page', suggestId = '', suggestLabel = '',
-        suggestLabelFa = '' } = Astro.props;
+        suggestLabelFa = '',
+        // Detail pages pass these; supplying shareTitle moves the suggest
+        // button up into a page-actions row beside Share, so it is not also
+        // repeated in the footer.
+        shareTitle = '', shareTitleFa = '', shareText = '', shareTextFa = '' } = Astro.props;
+const hasActions = Boolean(shareTitle);
 // A page may supply its bilingual heading through the slots instead of the
 // string props; the props are still what the <title> tag uses.
 const hasSub = subtitle || Astro.slots.has('subtitle');
@@ -76,6 +82,14 @@ const path = Astro.url.pathname;
         <div class={wide ? 'shell shell--wide' : 'shell'}>
           <h1><slot name="title">{title}</slot></h1>
           {hasSub && <p class="sub"><slot name="subtitle">{subtitle}</slot></p>}
+          {hasActions && (
+            <p class="pageacts">
+              <ShareButton title={shareTitle} titleFa={shareTitleFa}
+                           text={shareText} textFa={shareTextFa} />
+              <SuggestButton kind={suggestKind} id={suggestId}
+                             label={suggestLabel} labelFa={suggestLabelFa} />
+            </p>
+          )}
           <slot name="head-extra" />
         </div>
       </div>
@@ -95,9 +109,11 @@ const path = Astro.url.pathname;
           <span class="en">Gregorian dates are the anchor; Solar Hijri dates are computed astronomically, not copied from the translation. <a href={`${base}/notes/`}>Notes on the sources and the dates →</a></span>
           <span class="fa">تاریخ میلادی مبناست؛ تاریخ هجری شمسی به‌روش نجومی محاسبه شده و از ترجمه نقل نشده است. <a href={`${base}/notes/`}>← یادداشت‌ها دربارهٔ منابع و تاریخ‌ها</a></span>
         </p>
-        <p class="foot-suggest">
-          <SuggestButton kind={suggestKind} id={suggestId} label={suggestLabel} labelFa={suggestLabelFa} />
-        </p>
+        {!hasActions && (
+          <p class="foot-suggest">
+            <SuggestButton kind={suggestKind} id={suggestId} label={suggestLabel} labelFa={suggestLabelFa} />
+          </p>
+        )}
       </div>
     </footer>
 
@@ -213,6 +229,7 @@ const path = Astro.url.pathname;
       .tag { display: inline-block; font-family: var(--fs-ui); font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; padding: .2rem .5rem; border-radius: 99px; background: var(--line-2); color: var(--ink-2); }
       .tag--accent { background: color-mix(in srgb, var(--turquoise) 20%, transparent); color: #14607a; }
       .foot-suggest { margin-top: 1.1rem; }
+      .pageacts { display: flex; gap: .5rem; flex-wrap: wrap; margin: 1rem 0 0; }
 
       /* On a phone the masthead cannot hold the brand, four nav links and the
          language toggle on one line, so the nav drops to its own row and
