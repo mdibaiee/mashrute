@@ -164,6 +164,37 @@ const years = byYear.map((b) => b.year);
   </p>
 
   <script is:inline>
+    // Without a pointer there is no hover, so a card gets an explicit active
+    // state instead: the first tap opens it — un-stacking the faces, naming
+    // them, and revealing the button labels — and only then does a tap act.
+    // Otherwise the overlapping discs are a row of ~13px targets, and you
+    // cannot see whose face you are about to open.
+    var coarse = window.matchMedia('(hover: none)');
+
+    function closeCards(except) {
+      var open = document.querySelectorAll('.tl-card.is-active');
+      for (var i = 0; i < open.length; i++) {
+        if (open[i] !== except) open[i].classList.remove('is-active');
+      }
+    }
+
+    // Capture, so this runs before the link under the finger navigates.
+    document.addEventListener('click', function (ev) {
+      if (!coarse.matches) return;
+      var card = ev.target.closest ? ev.target.closest('.tl-card') : null;
+      if (!card) { closeCards(null); return; }
+      if (!card.classList.contains('is-active')) {
+        ev.preventDefault();
+        ev.stopPropagation();
+        closeCards(card);
+        card.classList.add('is-active');
+      }
+    }, true);
+
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape') closeCards(null);
+    });
+
     // <option> cannot hold the paired .en/.fa spans the rest of the page uses,
     // so swap the option text by hand whenever the language changes.
     function relabelOptions() {
@@ -281,6 +312,7 @@ const years = byYear.map((b) => b.year);
       box-shadow: var(--shadow); transition: border-color .18s ease, transform .18s ease;
     }
     .tl-card:hover { border-color: var(--line); transform: translateY(-1px); }
+    .tl-card.is-active { border-color: var(--lapis); }
     .tl-item--major .tl-card { border-inline-start: 3px solid var(--rose); }
 
     .tl-card__meta { display: flex; gap: .5rem; align-items: baseline; flex-wrap: wrap; font-family: var(--fs-ui); }

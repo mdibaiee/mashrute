@@ -1,35 +1,40 @@
 ---
 import Avatar from './Avatar.astro';
 
-// Overlapping discs that fan out on hover/focus. Purely CSS so it works before
-// hydration and on keyboard focus, not only mouse.
+// Overlapping discs, which fan out on hover and open into a wrapped list of
+// named chips when the card is active. Every person is rendered; the ones past
+// `max` are hidden until then, so opening the card reveals the whole cast
+// rather than a "+9" that cannot be tapped.
 const { people = [], size = 34, max = 7 } = Astro.props;
-const shown = people.slice(0, max);
-const extra = people.length - shown.length;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const extra = people.length - max;
 ---
 {people.length > 0 && (
-  <div class="stack" style={`--sz:${size}px`} tabindex="0"
+  <div class="stack" style={`--sz:${size}px`}
        aria-label={`${people.length} people involved`}>
-    {shown.map((p, i) => (
-      <span class="stack__item" style={`--i:${i}`}>
-        <Avatar id={p.person_id} nameEn={p.name_en} nameFa={p.name_fa} size={size} />
+    {people.map((p, i) => (
+      <a class:list={['stack__item', { 'stack__item--extra': i >= max }]}
+         style={`--i:${Math.min(i, max)}`}
+         href={`${base}/people/${p.person_id}/`}>
+        <Avatar id={p.person_id} nameEn={p.name_en} nameFa={p.name_fa}
+                size={size} link={false} />
         <span class="stack__tip">
           <b><span class="en">{p.name_en}</span><span class="fa">{p.name_fa || p.name_en}</span></b>
           {(p.role_en || p.role_fa) && (
             <i><span class="en">{p.role_en}</span><span class="fa">{p.role_fa || p.role_en}</span></i>
           )}
         </span>
-      </span>
+      </a>
     ))}
     {extra > 0 && (
-      <span class="stack__item stack__more" style={`--i:${shown.length}`}>
+      <span class="stack__item stack__more" style={`--i:${max}`} aria-hidden="true">
         <span class="stack__disc">+{extra}</span>
       </span>
     )}
   </div>
 )}
 
-<style>
+<style is:global>
   .stack {
     display: flex;
     align-items: center;
@@ -41,12 +46,16 @@ const extra = people.length - shown.length;
   .stack__item {
     position: relative;
     display: inline-flex;
+    align-items: center;
+    text-decoration: none;
     /* Overlap by 40% of the disc; the first one keeps its place. */
     margin-inline-start: calc(var(--i) * 0px - (var(--sz) * 0.4));
     transition: margin .28s cubic-bezier(.2,.9,.3,1), transform .2s ease;
     z-index: 1;
   }
   .stack__item:first-child { margin-inline-start: 0; }
+  /* Hidden until the card opens, so a collapsed stack stays a stack. */
+  .stack__item--extra { display: none; }
   .stack:hover .stack__item,
   .stack:focus-within .stack__item { margin-inline-start: 3px; }
   .stack:hover .stack__item:first-child,
@@ -73,8 +82,6 @@ const extra = people.length - shown.length;
     font-family: var(--fs-ui);
     font-size: .74rem;
     line-height: 1.35;
-    /* Size to the content, but cap it — otherwise a long role forces the box
-       into a tall narrow column the width of the name. */
     width: max-content;
     max-width: min(15rem, calc(100vw - 2rem));
     white-space: normal;
@@ -92,14 +99,53 @@ const extra = people.length - shown.length;
   html[dir='rtl'] .stack__item:hover .stack__tip,
   html[dir='rtl'] .stack__item:focus-within .stack__tip { transform: translateX(50%) translateY(0); }
 
+  /* ---- open state -------------------------------------------------------
+     The discs stop overlapping and each carries its name, so on a touch screen
+     there is something big enough to hit and something to read before hitting
+     it. The role is dropped here: it is too long to sit on one line. */
+  .tl-card.is-active .stack,
+  .tl-card:focus-within .stack {
+    flex-wrap: wrap;
+    gap: .3rem;
+    width: auto;
+  }
+  .tl-card.is-active .stack__item,
+  .tl-card:focus-within .stack__item {
+    margin-inline-start: 0;
+    background: var(--paper);
+    border: 1px solid var(--line-2);
+    border-radius: 99px;
+    /* The disc is nearly as tall as the chip, so without this inset the pill's
+       curve traces the same arc as the photo and looks like it cuts into it. */
+    padding: 2px;
+    padding-inline-end: .5rem;
+    transform: none;
+  }
+  .tl-card.is-active .stack__item--extra,
+  .tl-card:focus-within .stack__item--extra { display: inline-flex; }
+  .tl-card.is-active .stack__more,
+  .tl-card:focus-within .stack__more { display: none; }
+  .tl-card.is-active .stack__tip,
+  .tl-card:focus-within .stack__tip {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    background: transparent;
+    color: var(--ink-2);
+    box-shadow: none;
+    padding: 0 .4rem;
+    max-width: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .tl-card.is-active .stack__tip i,
+  .tl-card:focus-within .stack__tip i { display: none; }
+  .tl-card.is-active .stack__item:hover,
+  .tl-card:focus-within .stack__item:hover { border-color: var(--lapis); }
+
   @media (prefers-reduced-motion: reduce) {
     .stack__item, .stack__tip { transition: none; }
-  }
-
-  /* An absolutely-positioned tooltip still contributes to the page's scroll
-     width even at opacity 0, which gave narrow phones a horizontal scrollbar.
-     There is no hover on touch anyway — tapping a disc opens the person. */
-  @media (hover: none), (max-width: 30rem) {
-    .stack__tip { display: none; }
   }
 </style>

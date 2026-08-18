@@ -53,6 +53,8 @@ const { kind = 'page', id = '', label = '', labelFa = '', compact = false } = As
     transition: max-width .2s ease, opacity .2s ease;
   }
   .tl-card:hover .suggest--compact .suggest__t,
+  .tl-card.is-active .suggest--compact .suggest__t,
+  .tl-card:focus-within .suggest--compact .suggest__t,
   .suggest--compact:focus-visible .suggest__t { max-width: 12rem; opacity: 1; }
   @media (prefers-reduced-motion: reduce) {
     .suggest, .suggest--compact .suggest__t { transition: none; }

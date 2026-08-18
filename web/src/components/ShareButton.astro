@@ -98,6 +98,8 @@ const {
     transition: max-width .2s ease, opacity .2s ease;
   }
   .tl-card:hover .share--compact .share__t,
+  .tl-card.is-active .share--compact .share__t,
+  .tl-card:focus-within .share--compact .share__t,
   .share--compact:focus-visible .share__t,
   .share--compact.is-copied .share__done {
     max-width: 12rem; opacity: 1;
