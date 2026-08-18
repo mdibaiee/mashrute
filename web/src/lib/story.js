@@ -186,17 +186,31 @@ export async function renderStory(d) {
 
   const faces = (d.faces || []).slice(0, 6);
   const D = 128;
+  // On a person's own page the portrait is the subject, so it leads at a size
+  // worth looking at instead of sitting in a row of thumbnails.
+  const LEAD = d.lead && faces.length ? 240 : 0;
   const blockH =
+    (LEAD ? LEAD + 44 : 0) +
     (d.kicker ? 84 : 0) +
     titleLines.length * 100 +
     26 + 6 + 76 +
     bodyLines.length * 72 +
     (d.meta ? 78 : 0) +
-    (faces.length ? 60 + D : 0);
+    (!LEAD && faces.length ? 60 + D : 0);
 
   const TOP = 360;              // clear of the masthead
   const BOTTOM = H - 250;       // clear of the address
   let y = Math.max(TOP, Math.round((TOP + BOTTOM - blockH) / 2));
+
+  if (LEAD) {
+    const cx = fa ? W - PAD - LEAD / 2 : PAD + LEAD / 2;
+    const cy = y + LEAD / 2;
+    const img = faces[0].src ? await loadImage(faces[0].src) : null;
+    if (img) circleImage(ctx, img, cx, cy, LEAD);
+    else circleMono(ctx, faces[0], cx, cy, LEAD, fa);
+    ctx.textAlign = fa ? 'right' : 'left';
+    y += LEAD + 44;
+  }
 
   if (d.kicker) {
     ctx.fillStyle = LAPIS;
@@ -228,7 +242,7 @@ export async function renderStory(d) {
     y += 60;
   }
 
-  if (faces.length) {
+  if (faces.length && !LEAD) {
     const step = D * 0.8;
     const imgs = await Promise.all(faces.map((f) => (f.src ? loadImage(f.src) : null)));
     const baseY = y + 60 + D / 2;

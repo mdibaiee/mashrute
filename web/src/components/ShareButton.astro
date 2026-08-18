@@ -55,7 +55,11 @@ const {
   // Faces come from the card already on screen rather than from more markup on
   // every one of two hundred cards.
   function facesIn(scope: Element | Document) {
-    const nodes = scope.querySelectorAll('.stack__item:not(.stack__more) .av, .mem .av');
+    // .pagehead first, and in document order, so a person's own portrait leads
+    // their story. Event and group pages have no avatar in the heading and fall
+    // through to the cast or the membership below it.
+    const nodes = scope.querySelectorAll(
+      '.pagehead .av, .stack__item:not(.stack__more) .av, .mem .av');
     const all = [...nodes];
     const faces = all.slice(0, 6).map((av) => {
       const img = av.querySelector('img.av__img') as HTMLImageElement | null;
@@ -71,7 +75,12 @@ const {
         mono: (shown ? shown.textContent : mono?.textContent || '').trim(),
       };
     });
-    return { faces, extra: Math.max(0, all.length - faces.length) };
+    // A face taken from the heading is the subject of the page, not a
+    // participant, so the story leads with it rather than listing it.
+    const lead = all.length > 0 && !!all[0].closest('.pagehead');
+    return { faces: lead ? faces.slice(0, 1) : faces,
+             extra: lead ? 0 : Math.max(0, all.length - faces.length),
+             lead };
   }
 
   function storyFor(btn: HTMLElement) {
@@ -79,14 +88,14 @@ const {
     const d = btn.dataset;
     const pick = (en?: string, faV?: string) => ((fa ? faV : en) || en || '').trim();
     const scope = btn.closest('.tl-card') || document;
-    const { faces, extra } = facesIn(scope);
+    const { faces, extra, lead } = facesIn(scope);
     return {
       fa,
       kicker: pick(d.kicker, d.kickerFa),
       title: pick(d.title, d.titleFa) || document.title,
       body: pick(d.text, d.textFa),
       meta: pick(d.meta, d.metaFa),
-      faces, extra,
+      faces, extra, lead,
       brand: fa ? 'مشروطه' : 'Mashruteh',
       url: location.host,
     };
