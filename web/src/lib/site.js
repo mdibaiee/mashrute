@@ -4,7 +4,7 @@
 // Set this to the URL `wrangler deploy` prints, then rebuild. While it is
 // empty the suggestion box is not rendered at all, so readers are never shown
 // a form that cannot deliver.
-export const SUGGEST_ENDPOINT = '';
+export const SUGGEST_ENDPOINT = 'https://mashrute-suggestions.mdibaiee.workers.dev';
 
 // Which file in the repo backs each kind of record, so a suggestion names the
 // place the correction has to be made.
