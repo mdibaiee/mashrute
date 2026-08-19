@@ -141,7 +141,7 @@ const REL = {
         {g.book_pages?.length > 0 && (
           <><dt>{fa ? "در کتاب" : "In the book"}</dt>
             <dd class="muted">
-              {fa ? "ص‌ص {faDigits(g.book_pages.join('، '))}" : "pp. {g.book_pages.join(', ')}"}
+              {fa ? `ص‌ص ${faDigits(g.book_pages.join('، '))}` : `pp. ${g.book_pages.join(', ')}`}
             </dd></>
         )}
       </dl>

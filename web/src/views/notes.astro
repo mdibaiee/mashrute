@@ -24,7 +24,7 @@ const L = fa ? base : `${base}/en`;
         {fa ? (<>هرچه در این پایگاه آمده از کتاب ژانت آفاری، <em>انقلاب مشروطهٔ ایران ۱۹۰۶–۱۹۱۱</em> (انتشارات دانشگاه کلمبیا، ۱۹۹۶)، در کنار ترجمهٔ فارسی رضا رضایی (نشر بیستون، ۱۳۸۵) استخراج شده است. هم گاه‌شمار خود کتاب و هم فصل‌های متن، همراه با نمایه، فهرست نمایندگان و یادداشت‌های پایانی، کاوش شده‌اند.</>) : (<>Everything here is extracted from Janet Afary, <em>The Iranian Constitutional Revolution, 1906–1911: Grassroots Democracy, Social Democracy and the Origins of Feminism</em> (Columbia University Press, 1996), read alongside its Persian translation by Reza Rezaei (نشر بیستون, ۱۳۸۵). Both the book's own chronology and the body chapters were mined, together with the index, the deputy rosters and the endnotes.</>)}
       </p>
       <p class="counts">
-        {fa ? "{faDigits(counts.events)} رویداد · {faDigits(counts.people)} شخص · {faDigits(counts.groups)} گروه · {faDigits(counts.relations)} پیوند میان آن‌ها." : "{counts.events} events · {counts.people} people · {counts.groups} groups · {counts.relations} links between them."}
+        {fa ? `${faDigits(counts.events)} رویداد، ${faDigits(counts.people)} شخص، ${faDigits(counts.groups)} گروه و ${faDigits(counts.relations)} پیوند میان آن‌ها.` : `${counts.events} events, ${counts.people} people, ${counts.groups} groups and ${counts.relations} links between them.`}
       </p>
     </section>
 

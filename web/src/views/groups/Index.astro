@@ -34,7 +34,7 @@ const rows = groups.map((g) => {
     {fa ? "گروه‌ها" : "Groups"}
   </Fragment>
   <Fragment slot="subtitle">
-    {fa ? "{faDigits(groups.length)} تشکل: انجمن‌ها و جمعیت‌های سری، احزاب و دسته‌های مسلح، اصناف و ایلات، جماعت‌های دینی و قومی، روزنامه‌ها، مدارس و دولت‌های خارجی." : "{groups.length} organisations: councils and secret societies, parties and militias, guilds and tribes, confessional and ethnic communities, newspapers, schools and the foreign powers."}
+    {fa ? `${faDigits(groups.length)} تشکل: انجمن‌ها و جمعیت‌های سری، احزاب و دسته‌های مسلح، اصناف و ایلات، جماعت‌های دینی و قومی، روزنامه‌ها، مدارس و دولت‌های خارجی.` : `${groups.length} organisations: councils and secret societies, parties and militias, guilds and tribes, confessional and ethnic communities, newspapers, schools and the foreign powers.`}
   </Fragment>
 
   <DirectoryControls

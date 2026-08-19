@@ -45,7 +45,7 @@ const rows = actors.map(enrich).sort((a, b) =>
     {fa ? "اشخاص" : "People"}
   </Fragment>
   <Fragment slot="subtitle">
-    {fa ? "{faDigits(actors.length)} تن که در انقلاب نقش داشتند — نمایندگان، روحانیان، مجاهدان، روزنامه‌نگاران، معلمان و دیپلمات‌ها. {faDigits(scholars.length)} پژوهشگر معاصر که آفاری به آنان ارجاع داده، جداگانه در پایین صفحه آمده‌اند." : "{actors.length} people who acted in the revolution — deputies, clerics, fighters, journalists, teachers, diplomats. {scholars.length} modern scholars Afary cites are listed separately at the foot of the page."}
+    {fa ? `${faDigits(actors.length)} تن که در انقلاب نقش داشتند — نمایندگان، روحانیان، مجاهدان، روزنامه‌نگاران، معلمان و دیپلمات‌ها. ${faDigits(scholars.length)} پژوهشگر معاصر که آفاری به آنان ارجاع داده، جداگانه در پایین صفحه آمده‌اند.` : `${actors.length} people who acted in the revolution — deputies, clerics, fighters, journalists, teachers, diplomats. ${scholars.length} modern scholars Afary cites are listed separately at the foot of the page.`}
   </Fragment>
 
   <DirectoryControls
@@ -96,7 +96,7 @@ const rows = actors.map(enrich).sort((a, b) =>
 
   <details class="scholars">
     <summary>
-      {fa ? "{faDigits(scholars.length)} مورخ و نظریه‌پرداز معاصر که آفاری به آنان استناد کرده است" : "{scholars.length} modern historians and theorists cited by Afary"}
+      {fa ? `${faDigits(scholars.length)} مورخ و نظریه‌پرداز معاصر که آفاری به آنان استناد کرده است` : `${scholars.length} modern historians and theorists cited by Afary`}
     </summary>
     <ul>
       {scholars.sort((a, b) => a.name_en.localeCompare(b.name_en)).map((s) => (

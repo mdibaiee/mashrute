@@ -166,7 +166,7 @@ const lifeFa = [p.birth_display_fa, p.death_display_fa].filter(Boolean).join(' �
         {p.book_pages?.length > 0 && (
           <><dt>{fa ? "در کتاب" : "In the book"}</dt>
             <dd class="muted">
-              {fa ? "ص‌ص {faDigits(p.book_pages.join('، '))}" : "pp. {p.book_pages.join(', ')}"}
+              {fa ? `ص‌ص ${faDigits(p.book_pages.join('، '))}` : `pp. ${p.book_pages.join(', ')}`}
             </dd></>
         )}
       </dl>
