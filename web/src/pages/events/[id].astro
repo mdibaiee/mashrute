@@ -4,6 +4,7 @@ import Avatar from '../../components/Avatar.astro';
 import events from '../../data/events.json';
 import links from '../../data/links.json';
 import { EVENT_TYPE_LABEL, GROUP_TYPE_LABEL, faDigits } from '../../lib/util.js';
+import { breadcrumbs } from '../../lib/seo.js';
 
 export function getStaticPaths() {
   return events.map((e) => ({ params: { id: e.id }, props: { ev: e } }));
@@ -25,6 +26,36 @@ const ROLE_ORDER = ['leader', 'perpetrator', 'author', 'signatory', 'participant
 const byRole = {};
 for (const p of people) (byRole[p.role_type] ??= []).push(p);
 const roleGroups = ROLE_ORDER.filter((r) => byRole[r]).map((r) => [r, byRole[r]]);
+const origin = String(Astro.site).replace(/\/$/, '');
+
+// date_iso is already cut to the precision the source supports — a year for a
+// year-precision event — which is valid ISO 8601 and avoids inventing a day.
+const ld = [
+  {
+    '@type': 'Event',
+    '@id': `${origin}${base}/events/${e.id}/#event`,
+    name: e.title_fa || e.title_en,
+    alternateName: e.title_en,
+    url: `${origin}${base}/events/${e.id}/`,
+    ...(e.date_iso ? { startDate: e.date_iso } : {}),
+    ...(e.end_iso ? { endDate: e.end_iso } : {}),
+    ...(e.summary_fa || e.summary_en ? { description: e.summary_fa || e.summary_en } : {}),
+    ...(places.length
+      ? { location: places.map((pl) => ({ '@type': 'Place', name: pl.name_fa || pl.name_en })) }
+      : {}),
+    ...(people.length
+      ? { attendee: people.slice(0, 20).map((m) => ({
+            '@type': 'Person', name: m.name_fa || m.name_en,
+            url: `${origin}${base}/people/${m.person_id}/`,
+          })) }
+      : {}),
+  },
+  breadcrumbs(origin, base, [
+    { name: 'گاه‌شمار', path: '/' },
+    { name: e.title_fa || e.title_en, path: `/events/${e.id}/` },
+  ]),
+];
+
 const ROLE_LABEL = {
   leader: ['Led by', 'به رهبری'], participant: ['Took part', 'شرکت‌کنندگان'],
   victim: ['Victims', 'قربانیان'], perpetrator: ['Carried out by', 'عاملان'],
@@ -33,12 +64,15 @@ const ROLE_LABEL = {
   target: ['Targets', 'آماج'], mediator: ['Mediators', 'میانجیان'],
 };
 ---
-<Base title={e.title_en} titleFa={e.title_fa} suggestKind="event" suggestId={e.id} suggestLabel={e.title_en} suggestLabelFa={e.title_fa}
+<Base title={e.title_en} titleFa={e.title_fa}
+      description={[e.date_display_en, e.summary_en].filter(Boolean).join(' — ')}
+      descriptionFa={[e.date_display_fa, e.summary_fa].filter(Boolean).join(' — ')} suggestKind="event" suggestId={e.id} suggestLabel={e.title_en} suggestLabelFa={e.title_fa}
       shareTitle={e.title_en} shareTitleFa={e.title_fa}
       shareText={e.summary_en} shareTextFa={e.summary_fa}
       shareKicker={e.date_display_en} shareKickerFa={e.date_display_fa}
       shareMeta={places.map((x) => x.name_en).join(' · ')}
-      shareMetaFa={places.map((x) => x.name_fa || x.name_en).join(' · ')}>
+      shareMetaFa={places.map((x) => x.name_fa || x.name_en).join(' · ')}
+      ogType="article" jsonld={ld}>
   <div slot="title">
     <span class="en">{e.title_en}</span><span class="fa">{e.title_fa || e.title_en}</span>
   </div>

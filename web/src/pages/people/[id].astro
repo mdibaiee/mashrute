@@ -6,6 +6,7 @@ import links from '../../data/links.json';
 import events from '../../data/events.json';
 import { GROUP_TYPE_LABEL, EVENT_TYPE_LABEL, faDigits } from '../../lib/util.js';
 import portraits from '../../data/portraits.json';
+import { breadcrumbs } from '../../lib/seo.js';
 
 export function getStaticPaths() {
   return people.map((p) => ({ params: { id: p.id }, props: { person: p } }));
@@ -22,6 +23,34 @@ const myEvents = (links.personEvents[p.id] || [])
 const myGroups = links.personGroups[p.id] || [];
 const myRels = links.personRelations[p.id] || [];
 
+const origin = String(Astro.site).replace(/\/$/, '');
+
+// Wikipedia and Wikidata identify the same human, which is the strongest way to
+// say who this record is about rather than merely what it is called.
+const sameAs = [shot?.page_url, shot?.wikidata_id && `https://www.wikidata.org/wiki/${shot.wikidata_id}`]
+  .filter(Boolean);
+
+const ld = [
+  {
+    '@type': 'Person',
+    '@id': `${origin}${base}/people/${p.id}/#person`,
+    name: p.name_fa || p.name_en,
+    alternateName: [p.name_en, p.full_name_en, p.full_name_fa].filter(Boolean),
+    url: `${origin}${base}/people/${p.id}/`,
+    ...(p.birth_iso ? { birthDate: p.birth_iso } : {}),
+    ...(p.death_iso ? { deathDate: p.death_iso } : {}),
+    ...(p.role_fa || p.role_en ? { description: p.role_fa || p.role_en } : {}),
+    ...(p.biography_fa || p.biography_en ? { disambiguatingDescription: p.biography_fa || p.biography_en } : {}),
+    ...(shot ? { image: `${origin}${shot.src}` } : {}),
+    ...(sameAs.length ? { sameAs } : {}),
+    ...(myGroups.length ? { memberOf: myGroups.map((g) => ({ '@type': 'Organization', name: g.group_fa || g.group_en })) } : {}),
+  },
+  breadcrumbs(origin, base, [
+    { name: 'اشخاص', path: '/people/' },
+    { name: p.name_fa || p.name_en, path: `/people/${p.id}/` },
+  ]),
+];
+
 const RELATION_LABEL = {
   ally: ['Ally', 'هم‌پیمان'], rival: ['Rival', 'رقیب'], kin: ['Kin', 'خویشاوند'],
   assassinated: ['Assassinated', 'ترور کرد'], succeeded: ['Succeeded', 'جانشین'],
@@ -30,7 +59,11 @@ const RELATION_LABEL = {
 const life = [p.birth_display_en, p.death_display_en].filter(Boolean).join(' – ');
 const lifeFa = [p.birth_display_fa, p.death_display_fa].filter(Boolean).join(' – ');
 ---
-<Base title={p.name_en} titleFa={p.name_fa} suggestKind="person" suggestId={p.id} suggestLabel={p.name_en} suggestLabelFa={p.name_fa}
+<Base title={p.name_en} titleFa={p.name_fa}
+      description={[life, p.role_en || p.title_en, p.biography_en].filter(Boolean).join(' — ')}
+      descriptionFa={[lifeFa, p.role_fa || p.title_fa, p.biography_fa].filter(Boolean).join(' — ')}
+      image={shot ? new URL(shot.src, Astro.site).href : ''}
+      ogType="profile" jsonld={ld} suggestKind="person" suggestId={p.id} suggestLabel={p.name_en} suggestLabelFa={p.name_fa}
       shareTitle={p.name_en} shareTitleFa={p.name_fa}
       shareKicker={life} shareKickerFa={lifeFa}
       shareText={p.role_en || p.title_en} shareTextFa={p.role_fa || p.title_fa || p.role_en}>

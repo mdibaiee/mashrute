@@ -20,10 +20,14 @@ const attrs = link ? { href: `${base}/people/${id}/` } : {};
 <Tag class="av" style={style} {...attrs} data-name-en={nameEn} data-name-fa={nameFa}>
   <span class="av__disc" class:list={[{ 'av__disc--ring': ring }]} aria-hidden="true">
     {shot
-      ? <img class="av__img" src={`${base}${shot.src}`} alt="" loading="lazy" decoding="async" width={size} height={size} />
+      ? <img class="av__img" src={`${base}${shot.src}`} loading="lazy" decoding="async"
+             width={size} height={size}
+             alt={nameEn ? `Portrait of ${nameEn}` : ''} />
       : <span class="av__mono"><span class="en">{mono}</span><span class="fa">{monoFa}</span></span>}
   </span>
-  <span class="av__sr"><span class="en">{nameEn}</span><span class="fa">{nameFa || nameEn}</span></span>
+  {!shot && (
+    <span class="av__sr"><span class="en">{nameEn}</span><span class="fa">{nameFa || nameEn}</span></span>
+  )}
 </Tag>
 
 <style>

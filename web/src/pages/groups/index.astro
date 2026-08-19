@@ -25,7 +25,9 @@ const rows = groups.map((g) => {
   return { ...g, nMembers: members.length, nEvents: evs.length, label, search, pal: paletteOf(g.id) };
 }).sort((a, b) => (b.nMembers + b.nEvents) - (a.nMembers + a.nEvents) || a.name_en.localeCompare(b.name_en));
 ---
-<Base title="Groups" titleFa="گروه‌ها" wide>
+<Base title="Groups" titleFa="گروه‌ها" wide
+      description="Directory of the anjumans, secret societies, parties, militias, guilds, tribes and confessional communities of the Iranian Constitutional Revolution."
+      descriptionFa="فهرست انجمن‌ها، جمعیت‌های سری، احزاب، دسته‌های مسلح، اصناف، ایلات و جماعت‌های دینی انقلاب مشروطهٔ ایران.">
   <Fragment slot="title">
     <span class="en">Groups</span><span class="fa">گروه‌ها</span>
   </Fragment>

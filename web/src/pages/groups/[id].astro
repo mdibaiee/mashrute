@@ -5,6 +5,7 @@ import groups from '../../data/groups.json';
 import events from '../../data/events.json';
 import links from '../../data/links.json';
 import { GROUP_TYPE_LABEL, paletteOf, faDigits } from '../../lib/util.js';
+import { breadcrumbs } from '../../lib/seo.js';
 
 export function getStaticPaths() {
   return groups.map((g) => ({ params: { id: g.id }, props: { group: g } }));
@@ -25,16 +26,45 @@ const parent = g.parent_id ? byId[g.parent_id] : null;
 const children = groups.filter((x) => x.parent_id === g.id);
 const label = GROUP_TYPE_LABEL[g.type] || [g.type, g.type];
 
+const origin = String(Astro.site).replace(/\/$/, '');
+const ld = [
+  {
+    '@type': 'Organization',
+    '@id': `${origin}${base}/groups/${g.id}/#org`,
+    name: g.name_fa || g.name_en,
+    alternateName: [g.name_en, g.short_name_en, g.short_name_fa].filter(Boolean),
+    url: `${origin}${base}/groups/${g.id}/`,
+    ...(g.founded_iso ? { foundingDate: g.founded_iso } : {}),
+    ...(g.dissolved_iso ? { dissolutionDate: g.dissolved_iso } : {}),
+    ...(g.description_fa || g.description_en ? { description: g.description_fa || g.description_en } : {}),
+    ...(g.place_fa || g.place_en
+      ? { location: { '@type': 'Place', name: g.place_fa || g.place_en } } : {}),
+    ...(members.length
+      ? { member: members.slice(0, 30).map((m) => ({
+            '@type': 'Person', name: m.person_fa || m.person_en,
+            url: `${origin}${base}/people/${m.person_id}/`,
+          })) }
+      : {}),
+  },
+  breadcrumbs(origin, base, [
+    { name: 'گروه‌ها', path: '/groups/' },
+    { name: g.name_fa || g.name_en, path: `/groups/${g.id}/` },
+  ]),
+];
+
 const REL = {
   branch_of: ['Branch of', 'شعبه‌ای از'], allied: ['Allied with', 'هم‌پیمان با'],
   opposed: ['Opposed to', 'در برابر'], split_from: ['Split from', 'انشعاب از'],
   merged_into: ['Merged into', 'ادغام در'], successor: ['Successor to', 'جانشین'],
 };
 ---
-<Base title={g.name_en} titleFa={g.name_fa} suggestKind="group" suggestId={g.id} suggestLabel={g.name_en} suggestLabelFa={g.name_fa}
+<Base title={g.name_en} titleFa={g.name_fa}
+      description={[label[0], g.place_en, g.description_en].filter(Boolean).join(' — ')}
+      descriptionFa={[label[1], g.place_fa, g.description_fa].filter(Boolean).join(' — ')} suggestKind="group" suggestId={g.id} suggestLabel={g.name_en} suggestLabelFa={g.name_fa}
       shareTitle={g.name_en} shareTitleFa={g.name_fa}
       shareKicker={label[0]} shareKickerFa={label[1]}
-      shareText={g.description_en} shareTextFa={g.description_fa}>
+      shareText={g.description_en} shareTextFa={g.description_fa}
+      ogType="article" jsonld={ld}>
   <div slot="title" class="gh-title" style={`--c1:${paletteOf(g.id)[0]}; --c2:${paletteOf(g.id)[1]}`}>
     <span class="gh-mark" aria-hidden="true"></span>
     <span>

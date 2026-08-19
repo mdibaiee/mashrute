@@ -1,9 +1,18 @@
 ---
+import { clamp, absolute, DEFAULT_DESC_EN, DEFAULT_DESC_FA } from '../lib/seo.js';
 import SuggestButton from '../components/SuggestButton.astro';
 import SuggestDialog from '../components/SuggestDialog.astro';
 import ShareButton from '../components/ShareButton.astro';
 
 const { title, titleFa = '', subtitle, wide = false,
+        // What this page is about, for search results and link previews.
+        description = '', descriptionFa = '',
+        // Absolute URL of an image for link previews; falls back to the site card.
+        image = '',
+        // schema.org description of what this page is about, as an array of nodes.
+        jsonld = [],
+        // profile for a person, article for a record, website for an index.
+        ogType = 'website',
         // What a suggestion from this page is about. Detail pages pass their
         // own record so the issue names it instead of just the URL.
         suggestKind = 'page', suggestId = '', suggestLabel = '',
@@ -33,15 +42,45 @@ const SITE_EN = 'The Iranian Constitutional Revolution';
 const SITE_FA = 'انقلاب مشروطهٔ ایران';
 const fullEn = title ? `${title} — ${SITE_EN}` : SITE_EN;
 const fullFa = `${titleFa || title || ''} — ${SITE_FA}`.replace(/^ — /, '');
+
+// The served markup is Persian, so that is what a crawler sees; the language
+// script swaps both title and description for a reader who chooses English.
+const descEn = clamp(description || DEFAULT_DESC_EN);
+const descFa = clamp(descriptionFa || description || DEFAULT_DESC_FA);
+const canonical = absolute(Astro.site, Astro.url.pathname);
+const ogImage = image || absolute(Astro.site, `${base}/og-default.png`);
+// The site card is 1.91:1 and suits a wide card; a portrait would be cropped
+// through the face by one, so those get the square summary instead.
+const cardType = image ? 'summary' : 'summary_large_image';
 ---
 <!doctype html>
 <html lang="fa" data-lang="fa" dir="rtl"
-      data-title-en={fullEn} data-title-fa={fullFa}>
+      data-title-en={fullEn} data-title-fa={fullFa}
+      data-desc-en={descEn} data-desc-fa={descFa}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullFa}</title>
-    <meta name="description" content="A bilingual database of the Iranian Constitutional Revolution, 1906–1911." />
+    <meta name="description" content={descFa} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={SITE_FA} />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:title" content={fullFa} />
+    <meta property="og:description" content={descFa} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content={cardType} />
+    <meta name="twitter:title" content={fullFa} />
+    <meta name="twitter:description" content={descFa} />
+    <meta name="twitter:image" content={ogImage} />
+
+    {jsonld.length > 0 && (
+      <script type="application/ld+json" is:inline
+              set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': jsonld })} />
+    )}
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
     <link rel="icon" href={`${base}/favicon-32.png`} sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href={`${base}/apple-touch-icon.png`} />
@@ -60,6 +99,9 @@ const fullFa = `${titleFa || title || ''} — ${SITE_FA}`.replace(/^ — /, '');
         // Runs after <title> is parsed, so this wins over the rendered default.
         var t = l === 'fa' ? h.dataset.titleFa : h.dataset.titleEn;
         if (t) document.title = t;
+        var m = document.querySelector('meta[name="description"]');
+        var dsc = l === 'fa' ? h.dataset.descFa : h.dataset.descEn;
+        if (m && dsc) m.setAttribute('content', dsc);
       })();
     </script>
   </head>
@@ -144,6 +186,9 @@ const fullFa = `${titleFa || title || ''} — ${SITE_FA}`.replace(/^ — /, '');
         localStorage.setItem('mashruteh-lang', next);
         var t = next === 'fa' ? h.dataset.titleFa : h.dataset.titleEn;
         if (t) document.title = t;
+        var m = document.querySelector('meta[name="description"]');
+        var dsc = next === 'fa' ? h.dataset.descFa : h.dataset.descEn;
+        if (m && dsc) m.setAttribute('content', dsc);
         document.dispatchEvent(new CustomEvent('langchange', { detail: next }));
       });
     </script>

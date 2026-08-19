@@ -149,6 +149,9 @@ def main() -> None:
                 portraits[r["person_id"]] = {
                     "src": r["file"],
                     "page_url": r.get("page_url"),
+                    # Wikidata names the entity itself, which is the strongest
+                    # way for a search engine to tell one namesake from another.
+                    "wikidata_id": r.get("wikidata_id"),
                     "commons_url": r.get("commons_url"),
                     "license": r.get("license"),
                     "license_url": r.get("license_url"),
