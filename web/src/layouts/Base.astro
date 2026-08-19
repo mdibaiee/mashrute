@@ -1,8 +1,10 @@
 ---
 import { clamp, absolute, DEFAULT_DESC_EN, DEFAULT_DESC_FA } from '../lib/seo.js';
+import { counterpart, localePath, neutralPath } from '../lib/locale.js';
 import SuggestButton from '../components/SuggestButton.astro';
 import SuggestDialog from '../components/SuggestDialog.astro';
 import ShareButton from '../components/ShareButton.astro';
+const fa = (Astro.currentLocale ?? 'fa') === 'fa';
 
 const { title, titleFa = '', subtitle, wide = false,
         // What this page is about, for search results and link previews.
@@ -27,54 +29,60 @@ const hasActions = Boolean(shareTitle);
 // string props; the props are still what the <title> tag uses.
 const hasSub = subtitle || Astro.slots.has('subtitle');
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const L = fa ? base : `${base}/en`;
+const locale = fa ? 'fa' : 'en';
 const nav = [
-  { href: `${base}/`, en: 'Chronology', fa: 'گاه‌شمار' },
-  { href: `${base}/people/`, en: 'People', fa: 'اشخاص' },
-  { href: `${base}/groups/`, en: 'Groups', fa: 'گروه‌ها' },
-  { href: `${base}/notes/`, en: 'Notes', fa: 'یادداشت‌ها' },
-];
+  { path: '/', en: 'Chronology', fa: 'گاه‌شمار' },
+  { path: '/people/', en: 'People', fa: 'اشخاص' },
+  { path: '/groups/', en: 'Groups', fa: 'گروه‌ها' },
+  { path: '/notes/', en: 'Notes', fa: 'یادداشت‌ها' },
+].map((n) => ({ ...n, href: localePath(n.path, locale, base) }));
 const path = Astro.url.pathname;
+const here = neutralPath(path, base);
 
-// The document title has to switch with the language like everything else, but
-// <title> holds text, not markup, so the paired-span trick cannot work here.
-// Both strings are rendered onto <html> and the language script picks one.
+// The same page in the other language, and both addresses for hreflang, so a
+// search engine is told these are translations rather than duplicates.
+const otherHref = counterpart(path, locale, base);
+const altFa = absolute(Astro.site, localePath(here, 'fa', base));
+const altEn = absolute(Astro.site, localePath(here, 'en', base));
+
 const SITE_EN = 'The Iranian Constitutional Revolution';
 const SITE_FA = 'انقلاب مشروطهٔ ایران';
-const fullEn = title ? `${title} — ${SITE_EN}` : SITE_EN;
-const fullFa = `${titleFa || title || ''} — ${SITE_FA}`.replace(/^ — /, '');
-
-// The served markup is Persian, so that is what a crawler sees; the language
-// script swaps both title and description for a reader who chooses English.
-const descEn = clamp(description || DEFAULT_DESC_EN);
-const descFa = clamp(descriptionFa || description || DEFAULT_DESC_FA);
-const canonical = absolute(Astro.site, Astro.url.pathname);
+const site = fa ? SITE_FA : SITE_EN;
+const heading = fa ? (titleFa || title || '') : (title || '');
+const fullTitle = heading ? `${heading} — ${site}` : site;
+const desc = fa
+  ? clamp(descriptionFa || description || DEFAULT_DESC_FA)
+  : clamp(description || DEFAULT_DESC_EN);
+const canonical = absolute(Astro.site, path);
 const ogImage = image || absolute(Astro.site, `${base}/og-default.png`);
 // The site card is 1.91:1 and suits a wide card; a portrait would be cropped
 // through the face by one, so those get the square summary instead.
 const cardType = image ? 'summary' : 'summary_large_image';
 ---
 <!doctype html>
-<html lang="fa" data-lang="fa" dir="rtl"
-      data-title-en={fullEn} data-title-fa={fullFa}
-      data-desc-en={descEn} data-desc-fa={descFa}>
+<html lang={locale} data-lang={locale} dir={fa ? 'rtl' : 'ltr'}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{fullFa}</title>
-    <meta name="description" content={descFa} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={desc} />
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="fa" href={altFa} />
+    <link rel="alternate" hreflang="en" href={altEn} />
+    <link rel="alternate" hreflang="x-default" href={altFa} />
 
     <meta property="og:type" content={ogType} />
-    <meta property="og:site_name" content={SITE_FA} />
-    <meta property="og:locale" content="fa_IR" />
-    <meta property="og:locale:alternate" content="en_US" />
-    <meta property="og:title" content={fullFa} />
-    <meta property="og:description" content={descFa} />
+    <meta property="og:site_name" content={site} />
+    <meta property="og:locale" content={fa ? 'fa_IR' : 'en_US'} />
+    <meta property="og:locale:alternate" content={fa ? 'en_US' : 'fa_IR'} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content={cardType} />
-    <meta name="twitter:title" content={fullFa} />
-    <meta name="twitter:description" content={descFa} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={desc} />
     <meta name="twitter:image" content={ogImage} />
 
     {jsonld.length > 0 && (
@@ -88,31 +96,15 @@ const cardType = image ? 'summary' : 'summary_large_image';
     <!-- Umami: cookieless page views, no personal data, so no consent banner. -->
     <script is:inline defer src="https://cloud.umami.is/script.js"
             data-website-id="8ef07471-780d-4e99-ade6-9ecc7baa7567"></script>
-    <script is:inline>
-      // Set language before first paint so there is no flash of the wrong script.
-      (function () {
-        var l = localStorage.getItem('mashruteh-lang') || 'fa';
-        var h = document.documentElement;
-        h.setAttribute('data-lang', l);
-        h.setAttribute('lang', l === 'fa' ? 'fa' : 'en');
-        if (l === 'fa') h.setAttribute('dir', 'rtl'); else h.removeAttribute('dir');
-        // Runs after <title> is parsed, so this wins over the rendered default.
-        var t = l === 'fa' ? h.dataset.titleFa : h.dataset.titleEn;
-        if (t) document.title = t;
-        var m = document.querySelector('meta[name="description"]');
-        var dsc = l === 'fa' ? h.dataset.descFa : h.dataset.descEn;
-        if (m && dsc) m.setAttribute('content', dsc);
-      })();
-    </script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <header class="site">
       <div class={wide ? 'shell shell--wide' : 'shell'}>
-        <a class="brand" href={`${base}/`}>
+        <a class="brand" href={`${L}/`}>
           <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__text">
-            <span class="en">Mashruteh</span><span class="fa">مشروطه</span>
+            {fa ? "مشروطه" : "Mashruteh"}
           </span>
         </a>
         <nav>
@@ -120,15 +112,16 @@ const cardType = image ? 'summary' : 'summary_large_image';
             <a href={n.href} class:list={['navlink', {
               // The chronology lives at the root, which every path starts with,
               // so it has to match exactly rather than by prefix.
-              on: n.href === `${base}/` ? path === n.href : path.startsWith(n.href),
+              on: n.href === `${L}/` ? path === n.href : path.startsWith(n.href),
             }]}>
-              <span class="en">{n.en}</span><span class="fa">{n.fa}</span>
+              {fa ? n.fa : n.en}
             </a>
           ))}
         </nav>
-        <button id="langToggle" class="lang" type="button" aria-label="Switch language">
-          <span class="en" lang="fa">فارسی</span><span class="fa" lang="en">English</span>
-        </button>
+        <a class="lang" href={otherHref} lang={fa ? 'en' : 'fa'}
+           hreflang={fa ? 'en' : 'fa'} rel="alternate">
+          {fa ? 'English' : 'فارسی'}
+        </a>
       </div>
     </header>
 
@@ -159,12 +152,10 @@ const cardType = image ? 'summary' : 'summary_large_image';
     <footer class="site">
       <div class={wide ? 'shell shell--wide' : 'shell'}>
         <p>
-          <span class="en">Data extracted from Janet Afary, <em>The Iranian Constitutional Revolution, 1906–1911</em> (Columbia University Press, 1996) and its Persian translation by Reza Rezaei (نشر بیستون, ۱۳۸۵).</span>
-          <span class="fa">داده‌ها برگرفته از ژانت آفاری، <em>انقلاب مشروطهٔ ایران ۱۹۰۶–۱۹۱۱</em> (انتشارات دانشگاه کلمبیا، ۱۹۹۶) و ترجمهٔ فارسی رضا رضایی (نشر بیستون، ۱۳۸۵).</span>
+          {fa ? (<>داده‌ها برگرفته از ژانت آفاری، <em>انقلاب مشروطهٔ ایران ۱۹۰۶–۱۹۱۱</em> (انتشارات دانشگاه کلمبیا، ۱۹۹۶) و ترجمهٔ فارسی رضا رضایی (نشر بیستون، ۱۳۸۵).</>) : (<>Data extracted from Janet Afary, <em>The Iranian Constitutional Revolution, 1906–1911</em> (Columbia University Press, 1996) and its Persian translation by Reza Rezaei (نشر بیستون, ۱۳۸۵).</>)}
         </p>
         <p class="fine">
-          <span class="en">Gregorian dates are the anchor; Solar Hijri dates are computed astronomically, not copied from the translation. <a href={`${base}/notes/`}>Notes on the sources and the dates →</a></span>
-          <span class="fa">تاریخ میلادی مبناست؛ تاریخ هجری شمسی به‌روش نجومی محاسبه شده و از ترجمه نقل نشده است. <a href={`${base}/notes/`}>← یادداشت‌ها دربارهٔ منابع و تاریخ‌ها</a></span>
+          {fa ? (<>تاریخ میلادی مبناست؛ تاریخ هجری شمسی به‌روش نجومی محاسبه شده و از ترجمه نقل نشده است. <a href={`${L}/notes/`}>← یادداشت‌ها دربارهٔ منابع و تاریخ‌ها</a></>) : (<>Gregorian dates are the anchor; Solar Hijri dates are computed astronomically, not copied from the translation. <a href={`${L}/notes/`}>Notes on the sources and the dates →</a></>)}
         </p>
         {!hasActions && (
           <p class="foot-suggest">
@@ -176,22 +167,6 @@ const cardType = image ? 'summary' : 'summary_large_image';
 
     <SuggestDialog />
 
-    <script is:inline>
-      document.getElementById('langToggle')?.addEventListener('click', function () {
-        var h = document.documentElement;
-        var next = h.getAttribute('data-lang') === 'fa' ? 'en' : 'fa';
-        h.setAttribute('data-lang', next);
-        h.setAttribute('lang', next);
-        if (next === 'fa') h.setAttribute('dir', 'rtl'); else h.removeAttribute('dir');
-        localStorage.setItem('mashruteh-lang', next);
-        var t = next === 'fa' ? h.dataset.titleFa : h.dataset.titleEn;
-        if (t) document.title = t;
-        var m = document.querySelector('meta[name="description"]');
-        var dsc = next === 'fa' ? h.dataset.descFa : h.dataset.descEn;
-        if (m && dsc) m.setAttribute('content', dsc);
-        document.dispatchEvent(new CustomEvent('langchange', { detail: next }));
-      });
-    </script>
 
     <style is:global>
       /* The palette is the one Persian tilework has used since the Timurids:
@@ -235,8 +210,6 @@ const cardType = image ? 'summary' : 'summary_large_image';
         font-family: var(--fs-en); font-size: 17px; line-height: 1.6;
       }
       html[data-lang='fa'] body { font-family: var(--fs-fa); line-height: 1.85; }
-      html[data-lang='en'] .fa, html[data-lang='fa'] .en { display: none !important; }
-      html[data-lang='fa'] .en-only { display: none !important; }
 
       .shell { max-width: 62rem; margin: 0 auto; padding: 0 1.25rem; }
       .shell--wide { max-width: 78rem; }
@@ -263,7 +236,7 @@ const cardType = image ? 'summary' : 'summary_large_image';
       .navlink { white-space: nowrap; font-family: var(--fs-ui); font-size: .88rem; text-decoration: none; padding: .4rem .7rem; border-radius: 99px; color: var(--ink-2); }
       .navlink:hover { background: var(--line-2); color: var(--ink); }
       .navlink.on { background: var(--accent); color: #fff; }
-      .lang { font-family: var(--fs-ui); font-size: .8rem; border: 1px solid var(--line); background: transparent; color: var(--ink-2); padding: .35rem .7rem; border-radius: 99px; cursor: pointer; }
+      .lang { text-decoration: none; display: inline-block; font-family: var(--fs-ui); font-size: .8rem; border: 1px solid var(--line); background: transparent; color: var(--ink-2); padding: .35rem .7rem; border-radius: 99px; cursor: pointer; }
       .lang:hover { border-color: var(--accent); color: var(--accent); }
       .lang [lang='fa'] { font-family: var(--fs-fa); }
       .lang [lang='en'] { font-family: 'Open Sans', ui-sans-serif, system-ui, sans-serif; }

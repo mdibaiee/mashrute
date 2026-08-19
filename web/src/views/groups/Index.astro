@@ -1,0 +1,128 @@
+---
+import Base from '../../layouts/Base.astro';
+import DirectoryControls from '../../components/DirectoryControls.astro';
+import groups from '../../data/groups.json';
+import links from '../../data/links.json';
+import { GROUP_TYPE_LABEL, paletteOf, faDigits } from '../../lib/util.js';
+const fa = (Astro.currentLocale ?? 'fa') === 'fa';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const L = fa ? base : `${base}/en`;
+
+const counts = {};
+for (const g of groups) counts[g.type] = (counts[g.type] || 0) + 1;
+const facets = Object.entries(counts)
+  .sort((a, b) => b[1] - a[1])
+  .map(([value, count]) => ({ value, count,
+     labelEn: (GROUP_TYPE_LABEL[value] || [value, value])[0],
+     labelFa: (GROUP_TYPE_LABEL[value] || [value, value])[1] }));
+
+const rows = groups.map((g) => {
+  const members = links.groupPeople[g.id] || [];
+  const evs = links.groupEvents[g.id] || [];
+  const label = GROUP_TYPE_LABEL[g.type] || [g.type, g.type];
+  const search = [g.name_en, g.name_fa, g.short_name_en, g.short_name_fa,
+                  g.description_en, g.description_fa, label[0], label[1],
+                  g.place_en, g.place_fa].filter(Boolean).join(' ');
+  return { ...g, nMembers: members.length, nEvents: evs.length, label, search, pal: paletteOf(g.id) };
+}).sort((a, b) => (b.nMembers + b.nEvents) - (a.nMembers + a.nEvents) || a.name_en.localeCompare(b.name_en));
+---
+<Base title="Groups" titleFa="گروه‌ها" wide
+      description="Directory of the anjumans, secret societies, parties, militias, guilds, tribes and confessional communities of the Iranian Constitutional Revolution."
+      descriptionFa="فهرست انجمن‌ها، جمعیت‌های سری، احزاب، دسته‌های مسلح، اصناف، ایلات و جماعت‌های دینی انقلاب مشروطهٔ ایران.">
+  <Fragment slot="title">
+    {fa ? "گروه‌ها" : "Groups"}
+  </Fragment>
+  <Fragment slot="subtitle">
+    {fa ? "{faDigits(groups.length)} تشکل: انجمن‌ها و جمعیت‌های سری، احزاب و دسته‌های مسلح، اصناف و ایلات، جماعت‌های دینی و قومی، روزنامه‌ها، مدارس و دولت‌های خارجی." : "{groups.length} organisations: councils and secret societies, parties and militias, guilds and tribes, confessional and ethnic communities, newspapers, schools and the foreign powers."}
+  </Fragment>
+
+  <DirectoryControls
+    slot="head-extra"
+    facets={facets}
+    facetLabelEn="Type" facetLabelFa="دسته"
+    placeholderEn="Search groups, types, places…"
+    placeholderFa="جست‌وجوی گروه، دسته، مکان…"
+  />
+
+  <div id="dirGrid" class="dir" data-view="gallery">
+    {rows.map((g) => (
+      <a class="gcard" href={`${L}/groups/${g.id}/`} data-search={g.search} data-facet={g.type}
+         style={`--c1:${g.pal[0]}; --c2:${g.pal[1]}`}>
+        <span class="gcard__spine" aria-hidden="true"></span>
+        <div class="gcard__body">
+          <span class="tag">{fa ? g.label[1] : g.label[0]}</span>
+          <h3>
+            {fa ? g.name_fa || g.name_en : g.name_en}
+          </h3>
+          {(g.founded_display_en || g.place_en) && (
+            <p class="gcard__meta">
+              {g.founded_display_en && (
+                <>{fa ? g.founded_display_fa || g.founded_display_en : g.founded_display_en}</>
+              )}
+              {g.founded_display_en && g.place_en && <span> · </span>}
+              {g.place_en && (
+                <>{fa ? g.place_fa || g.place_en : g.place_en}</>
+              )}
+            </p>
+          )}
+          {(g.description_en || g.description_fa) && (
+            <p class="gcard__desc">
+              {fa ? g.description_fa || g.description_en : g.description_en}
+            </p>
+          )}
+          <p class="gcard__stats">
+            {g.nMembers > 0 && (
+              <span>
+                {fa ? "{faDigits(g.nMembers)} عضو" : g.nMembers} {g.nMembers === 1 ? 'member' : 'members'}
+              </span>
+            )}
+            {g.nMembers > 0 && g.nEvents > 0 && <span class="sep"> · </span>}
+            {g.nEvents > 0 && (
+              <span>
+                {fa ? "{faDigits(g.nEvents)} رویداد" : g.nEvents} {g.nEvents === 1 ? 'event' : 'events'}
+              </span>
+            )}
+          </p>
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <p id="dirEmpty" class="dir-empty" hidden>
+    {fa ? "گروهی با این جست‌وجو یافت نشد." : "No group matches that search."}
+  </p>
+
+  <style is:global>
+    .gcard {
+      position: relative; display: flex; text-decoration: none; overflow: hidden;
+      background: var(--paper-2); border: 1px solid var(--line-2); border-radius: var(--radius);
+      transition: border-color .16s ease, transform .16s ease, box-shadow .16s ease;
+    }
+    .gcard:hover { border-color: var(--line); transform: translateY(-1px); box-shadow: var(--shadow); }
+    .gcard__spine { width: 4px; flex: none; background: linear-gradient(to bottom, var(--c1), var(--c2)); }
+    .gcard__body { padding: .8rem .95rem .85rem; min-width: 0; }
+    .gcard h3 { margin: .35rem 0 0; font-size: 1rem; line-height: 1.3; }
+    .gcard__meta { margin: .2rem 0 0; font-family: var(--fs-ui); font-size: .72rem; color: var(--ink-3); }
+    .gcard__desc { margin: .4rem 0 0; font-size: .84rem; color: var(--ink-2);
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .gcard__stats { margin: .45rem 0 0; font-family: var(--fs-ui); font-size: .7rem; color: var(--ink-3); }
+
+    .dir[data-view='list'] .gcard { border-radius: 0; border-inline: 0; border-top: 0; background: transparent; }
+    .dir[data-view='list'] .gcard:first-child { border-top: 1px solid var(--line-2); }
+    .dir[data-view='list'] .gcard:hover { transform: none; box-shadow: none; background: var(--paper-2); }
+    .dir[data-view='list'] .gcard__desc { -webkit-line-clamp: 1; }
+    .dir[data-view='list'] .gcard__body { display: grid; grid-template-columns: 8.5rem 1fr auto; gap: .1rem .9rem;
+      align-items: baseline; width: 100%; padding: .55rem .8rem; }
+    .dir[data-view='list'] .gcard h3 { margin: 0; grid-column: 2; }
+    .dir[data-view='list'] .gcard .tag { grid-row: 1; grid-column: 1; }
+    .dir[data-view='list'] .gcard__meta { grid-row: 2; grid-column: 1; }
+    .dir[data-view='list'] .gcard__desc { grid-row: 2; grid-column: 2; margin: 0; }
+    .dir[data-view='list'] .gcard__stats { grid-row: 1 / span 2; grid-column: 3; margin: 0; white-space: nowrap; }
+    @media (max-width: 760px) {
+      .dir[data-view='list'] .gcard__body { grid-template-columns: 1fr; }
+      .dir[data-view='list'] .gcard h3, .dir[data-view='list'] .gcard__desc,
+      .dir[data-view='list'] .gcard__meta, .dir[data-view='list'] .gcard__stats { grid-column: 1; grid-row: auto; }
+    }
+  </style>
+</Base>

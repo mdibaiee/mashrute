@@ -1,5 +1,6 @@
 ---
 import Avatar from './Avatar.astro';
+const fa = (Astro.currentLocale ?? 'fa') === 'fa';
 
 // Overlapping discs, which fan out on hover and open into a wrapped list of
 // named chips when the card is active. Every person is rendered; the ones past
@@ -7,6 +8,7 @@ import Avatar from './Avatar.astro';
 // rather than a "+9" that cannot be tapped.
 const { people = [], size = 34, max = 7 } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const L = fa ? base : `${base}/en`;
 const extra = people.length - max;
 ---
 {people.length > 0 && (
@@ -15,13 +17,13 @@ const extra = people.length - max;
     {people.map((p, i) => (
       <a class:list={['stack__item', { 'stack__item--extra': i >= max }]}
          style={`--i:${Math.min(i, max)}`}
-         href={`${base}/people/${p.person_id}/`}>
+         href={`${L}/people/${p.person_id}/`}>
         <Avatar id={p.person_id} nameEn={p.name_en} nameFa={p.name_fa}
                 size={size} link={false} />
         <span class="stack__tip">
-          <b><span class="en">{p.name_en}</span><span class="fa">{p.name_fa || p.name_en}</span></b>
+          <b>{fa ? p.name_fa || p.name_en : p.name_en}</b>
           {(p.role_en || p.role_fa) && (
-            <i><span class="en">{p.role_en}</span><span class="fa">{p.role_fa || p.role_en}</span></i>
+            <i>{fa ? p.role_fa || p.role_en : p.role_en}</i>
           )}
         </span>
       </a>

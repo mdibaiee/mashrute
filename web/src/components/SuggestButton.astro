@@ -1,5 +1,6 @@
 ---
 import { SUGGEST_ENDPOINT } from '../lib/site.js';
+const fa = (Astro.currentLocale ?? 'fa') === 'fa';
 
 // Opens the shared suggestion dialog in Base.astro. Everything the issue needs
 // travels on data- attributes, so no per-button script is emitted — there are
@@ -13,16 +14,16 @@ const { kind = 'page', id = '', label = '', labelFa = '', compact = false } = As
   data-suggest
   data-kind={kind}
   data-id={id}
-  data-label={label}
-  data-label-fa={labelFa}
-  aria-label="Suggest a change · پیشنهاد بروزرسانی"
+  data-label={fa ? (labelFa || label) : label}
+  data-en-label={label}
+  aria-label={fa ? 'پیشنهاد بروزرسانی' : 'Suggest a change'}
 >
   <svg viewBox="0 0 20 20" aria-hidden="true">
     <path d="M3 17h4l9.5-9.5a2.1 2.1 0 0 0-3-3L4 14v3z" />
     <path d="M12.5 5.5 15 8" />
   </svg>
   <span class="suggest__t">
-    <span class="en">Suggest a change</span><span class="fa">پیشنهاد بروزرسانی</span>
+    {fa ? "پیشنهاد بروزرسانی" : "Suggest a change"}
   </span>
 </button>
 )}

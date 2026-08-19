@@ -1,22 +1,23 @@
 ---
 import { SUGGEST_ENDPOINT } from '../lib/site.js';
+const fa = (Astro.currentLocale ?? 'fa') === 'fa';
 ---
 {SUGGEST_ENDPOINT && (
 <dialog id="sgDlg" class="sg" aria-labelledby="sgTitle" data-endpoint={SUGGEST_ENDPOINT}>
   <div class="sg__box">
     <h2 id="sgTitle">
-      <span class="en">Suggest a change</span><span class="fa">پیشنهاد بروزرسانی</span>
+      {fa ? "پیشنهاد بروزرسانی" : "Suggest a change"}
     </h2>
     <p class="sg__about" id="sgAbout"></p>
 
     <div id="sgFields">
       <label class="sg__label" for="sgText">
-        <span class="en">What should be corrected or added?</span>
-        <span class="fa">چه چیزی باید اصلاح یا افزوده شود؟</span>
+        {fa ? "چه چیزی باید اصلاح یا افزوده شود؟" : "What should be corrected or added?"}
       </label>
       <textarea id="sgText" rows="7"
-        data-ph-en="Describe the correction. If you can name a source, please do — it makes the change far easier to verify."
-        data-ph-fa="اصلاح مورد نظر را بنویسید. اگر منبعی می‌شناسید ذکر کنید؛ راستی‌آزمایی را بسیار آسان‌تر می‌کند."></textarea>
+        placeholder={fa
+          ? 'اصلاح مورد نظر را بنویسید. اگر منبعی می‌شناسید ذکر کنید؛ راستی‌آزمایی را بسیار آسان‌تر می‌کند.'
+          : 'Describe the correction. If you can name a source, please do — it makes the change far easier to verify.'}></textarea>
 
       <!-- Hidden from people; anything typed here came from a bot. -->
       <div class="sg__hp" aria-hidden="true">
@@ -25,8 +26,7 @@ import { SUGGEST_ENDPOINT } from '../lib/site.js';
       </div>
 
       <p class="sg__note">
-        <span class="en">Sent anonymously — no name, email or account needed.</span>
-        <span class="fa">به‌صورت ناشناس فرستاده می‌شود — نام، ایمیل یا حساب کاربری لازم نیست.</span>
+        {fa ? "به‌صورت ناشناس فرستاده می‌شود — نام، ایمیل یا حساب کاربری لازم نیست." : "Sent anonymously — no name, email or account needed."}
       </p>
     </div>
 
@@ -34,10 +34,10 @@ import { SUGGEST_ENDPOINT } from '../lib/site.js';
 
     <div class="sg__actions">
       <button type="button" id="sgClose" class="sg__btn sg__btn--ghost">
-        <span class="en">Cancel</span><span class="fa">انصراف</span>
+        {fa ? "انصراف" : "Cancel"}
       </button>
       <button type="button" id="sgSend" class="sg__btn sg__btn--go">
-        <span class="en">Send suggestion</span><span class="fa">فرستادن پیشنهاد</span>
+        {fa ? "فرستادن پیشنهاد" : "Send suggestion"}
       </button>
     </div>
   </div>
@@ -70,11 +70,6 @@ import { SUGGEST_ENDPOINT } from '../lib/site.js';
     };
     const say = (k) => (isFa() ? SAYS[k][1] : SAYS[k][0]);
 
-    function setPlaceholder() {
-      text.placeholder = isFa() ? text.dataset.phFa : text.dataset.phEn;
-    }
-    setPlaceholder();
-    document.addEventListener('langchange', setPlaceholder);
 
     function show(kind, key) {
       msg.hidden = false;
@@ -86,16 +81,14 @@ import { SUGGEST_ENDPOINT } from '../lib/site.js';
       const btn = ev.target.closest('[data-suggest]');
       if (!btn) return;
       current = { ...btn.dataset };
-      const shown = (isFa() ? current.labelFa : current.label) || current.label
-        || document.title;
-      about.textContent = (isFa() ? 'درباره: ' : 'About: ') + shown;
+      about.textContent = (isFa() ? 'درباره: ' : 'About: ')
+        + (current.label || document.title);
       text.value = '';
       hp.value = '';
       msg.hidden = true;
       fields.hidden = false;
       send.hidden = false;
       send.disabled = false;
-      setPlaceholder();
       dlg.showModal();
       text.focus();
     });
@@ -119,8 +112,10 @@ import { SUGGEST_ENDPOINT } from '../lib/site.js';
             hp: hp.value,
             kind: current.kind || 'page',
             id: current.id || '',
-            label: current.label || document.title,
-            labelFa: current.labelFa || '',
+            // The reader sees their own language; the issue is titled in
+            // English so the maintainer's list stays sorted predictably.
+            label: current.enLabel || current.label || document.title,
+            labelFa: isFa() ? (current.label || '') : '',
             page: location.href,
             lang: isFa() ? 'fa' : 'en',
           }),

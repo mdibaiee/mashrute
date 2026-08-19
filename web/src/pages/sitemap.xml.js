@@ -10,27 +10,36 @@ import groups from '../data/groups.json';
 export function GET({ site }) {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   const origin = String(site).replace(/\/$/, '');
-  const url = (path) => `${origin}${base}${path}`;
+  // Persian at the root, English under /en/. Each entry declares both, so the
+  // two are read as translations of one page rather than as duplicates.
+  const url = (path, locale) => `${origin}${base}${locale === 'en' ? '/en' : ''}${path}`;
 
-  const entries = [
-    { loc: url('/'), priority: '1.0', changefreq: 'weekly' },
-    { loc: url('/people/'), priority: '0.8', changefreq: 'weekly' },
-    { loc: url('/groups/'), priority: '0.8', changefreq: 'weekly' },
-    { loc: url('/notes/'), priority: '0.4', changefreq: 'yearly' },
-    ...events.map((e) => ({ loc: url(`/events/${e.id}/`), priority: '0.7', changefreq: 'monthly' })),
+  const pages = [
+    { path: '/', priority: '1.0', changefreq: 'weekly' },
+    { path: '/people/', priority: '0.8', changefreq: 'weekly' },
+    { path: '/groups/', priority: '0.8', changefreq: 'weekly' },
+    { path: '/notes/', priority: '0.4', changefreq: 'yearly' },
+    ...events.map((e) => ({ path: `/events/${e.id}/`, priority: '0.7', changefreq: 'monthly' })),
     // Modern scholars Afary cites are listed but are not the subject here.
     ...people.map((p) => ({
-      loc: url(`/people/${p.id}/`),
+      path: `/people/${p.id}/`,
       priority: p.is_historical_actor ? '0.7' : '0.3',
       changefreq: 'monthly',
     })),
-    ...groups.map((g) => ({ loc: url(`/groups/${g.id}/`), priority: '0.6', changefreq: 'monthly' })),
+    ...groups.map((g) => ({ path: `/groups/${g.id}/`, priority: '0.6', changefreq: 'monthly' })),
   ];
 
+  const entries = pages.flatMap((pg) =>
+    ['fa', 'en'].map((locale) => ({ ...pg, loc: url(pg.path, locale) })));
+
   const body = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${entries.map((e) => `  <url>
     <loc>${e.loc}</loc>
+    <xhtml:link rel="alternate" hreflang="fa" href="${url(e.path, 'fa')}" />
+    <xhtml:link rel="alternate" hreflang="en" href="${url(e.path, 'en')}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${url(e.path, 'fa')}" />
     <changefreq>${e.changefreq}</changefreq>
     <priority>${e.priority}</priority>
   </url>`).join('\n')}

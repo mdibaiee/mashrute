@@ -1,7 +1,7 @@
 ---
 // Mounted for both languages; the view reads Astro.currentLocale.
-import View from '../../views/groups/Detail.astro';
-import records from '../../data/groups.json';
+import View from '../../../views/groups/Detail.astro';
+import records from '../../../data/groups.json';
 
 export function getStaticPaths() {
   return records.map((r) => ({ params: { id: r.id }, props: { group: r } }));

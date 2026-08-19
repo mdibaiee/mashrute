@@ -1,0 +1,202 @@
+---
+import Base from '../../layouts/Base.astro';
+import Avatar from '../../components/Avatar.astro';
+import groups from '../../data/groups.json';
+import events from '../../data/events.json';
+import links from '../../data/links.json';
+import { GROUP_TYPE_LABEL, paletteOf, faDigits } from '../../lib/util.js';
+import { breadcrumbs } from '../../lib/seo.js';
+const fa = (Astro.currentLocale ?? 'fa') === 'fa';
+
+const { group: g } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const L = fa ? base : `${base}/en`;
+
+const byId = Object.fromEntries(groups.map((x) => [x.id, x]));
+const evById = Object.fromEntries(events.map((e) => [e.id, e]));
+const members = (links.groupPeople[g.id] || [])
+  .sort((a, b) => a.person_en.localeCompare(b.person_en));
+const myEvents = (links.groupEvents[g.id] || [])
+  .map((r) => ({ ...r, ev: evById[r.event_id] }))
+  .filter((r) => r.ev)
+  .sort((a, b) => a.ev.date_sort.localeCompare(b.ev.date_sort));
+const rels = links.groupRelations[g.id] || [];
+const parent = g.parent_id ? byId[g.parent_id] : null;
+const children = groups.filter((x) => x.parent_id === g.id);
+const label = GROUP_TYPE_LABEL[g.type] || [g.type, g.type];
+
+const origin = String(Astro.site).replace(/\/$/, '');
+const ld = [
+  {
+    '@type': 'Organization',
+    '@id': `${origin}${L}/groups/${g.id}/#org`,
+    name: fa ? (g.name_fa || g.name_en) : g.name_en,
+    alternateName: (fa ? [g.name_en, g.short_name_en] : [g.name_fa, g.short_name_fa])
+      .filter(Boolean),
+    url: `${origin}${L}/groups/${g.id}/`,
+    ...(g.founded_iso ? { foundingDate: g.founded_iso } : {}),
+    ...(g.dissolved_iso ? { dissolutionDate: g.dissolved_iso } : {}),
+    ...((fa ? g.description_fa : g.description_en)
+      ? { description: fa ? g.description_fa : g.description_en } : {}),
+    ...((fa ? g.place_fa : g.place_en)
+      ? { location: { '@type': 'Place', name: fa ? g.place_fa : g.place_en } } : {}),
+    ...(members.length
+      ? { member: members.slice(0, 30).map((m) => ({
+            '@type': 'Person', name: fa ? (m.person_fa || m.person_en) : m.person_en,
+            url: `${origin}${L}/people/${m.person_id}/`,
+          })) }
+      : {}),
+  },
+  breadcrumbs(origin, fa ? base : `${base}/en`, [
+    { name: fa ? 'گروه‌ها' : 'Groups', path: '/groups/' },
+    { name: fa ? (g.name_fa || g.name_en) : g.name_en, path: `/groups/${g.id}/` },
+  ]),
+];
+
+const REL = {
+  branch_of: ['Branch of', 'شعبه‌ای از'], allied: ['Allied with', 'هم‌پیمان با'],
+  opposed: ['Opposed to', 'در برابر'], split_from: ['Split from', 'انشعاب از'],
+  merged_into: ['Merged into', 'ادغام در'], successor: ['Successor to', 'جانشین'],
+};
+---
+<Base title={g.name_en} titleFa={g.name_fa}
+      description={[label[0], g.place_en, g.description_en].filter(Boolean).join(' — ')}
+      descriptionFa={[label[1], g.place_fa, g.description_fa].filter(Boolean).join(' — ')} suggestKind="group" suggestId={g.id} suggestLabel={g.name_en} suggestLabelFa={g.name_fa}
+      shareTitle={g.name_en} shareTitleFa={g.name_fa}
+      shareKicker={label[0]} shareKickerFa={label[1]}
+      shareText={g.description_en} shareTextFa={g.description_fa}
+      ogType="article" jsonld={ld}>
+  <div slot="title" class="gh-title" style={`--c1:${paletteOf(g.id)[0]}; --c2:${paletteOf(g.id)[1]}`}>
+    <span class="gh-mark" aria-hidden="true"></span>
+    <span>
+      {fa ? g.name_fa || g.name_en : g.name_en}
+    </span>
+  </div>
+  <p slot="subtitle" class="gh-sub">
+    <span class="tag tag--accent">{fa ? label[1] : label[0]}</span>
+    {g.place_en && <span class="gh-place">{fa ? g.place_fa || g.place_en : g.place_en}</span>}
+  </p>
+
+  <div class="detail">
+    <div class="detail__main">
+      {(g.description_en || g.description_fa) && (
+        <p class="lede">
+          {fa ? g.description_fa || g.description_en : g.description_en}
+        </p>
+      )}
+
+      {members.length > 0 && (
+        <section>
+          <h2>{fa ? "اشخاص" : "People"} <em>{fa ? faDigits(members.length) : members.length}</em></h2>
+          <div class="memgrid">
+            {members.map((m) => (
+              <a class="mem" href={`${L}/people/${m.person_id}/`}>
+                <Avatar id={m.person_id} nameEn={m.person_en} nameFa={m.person_fa} size={40} link={false} />
+                <span class="mem__t">
+                  <b>{fa ? m.person_fa || m.person_en : m.person_en}</b>
+                  {(m.role_en || m.role_fa) && (
+                    <i>{fa ? m.role_fa || m.role_en : m.role_en}</i>
+                  )}
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {myEvents.length > 0 && (
+        <section>
+          <h2>{fa ? "رویدادها" : "Events"} <em>{fa ? faDigits(myEvents.length) : myEvents.length}</em></h2>
+          <ol class="tl-mini">
+            {myEvents.map((r) => (
+              <li>
+                <a href={`${L}/events/${r.ev.id}/`}>
+                  <time>
+                    {fa ? r.ev.date_display_fa || r.ev.date_display_en : r.ev.date_display_en}
+                  </time>
+                  <b>{fa ? r.ev.title_fa || r.ev.title_en : r.ev.title_en}</b>
+                </a>
+                {r.role_type && <span class="tl-mini__role">{r.role_type}</span>}
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+    </div>
+
+    <aside class="detail__side">
+      <dl class="facts">
+        {g.founded_display_en && (
+          <><dt>{fa ? "تأسیس" : "Founded"}</dt>
+            <dd>{fa ? g.founded_display_fa || g.founded_display_en : g.founded_display_en}</dd></>
+        )}
+        {g.dissolved_display_en && (
+          <><dt>{fa ? "انحلال" : "Dissolved"}</dt>
+            <dd>{fa ? g.dissolved_display_fa || g.dissolved_display_en : g.dissolved_display_en}</dd></>
+        )}
+        {(g.ideology_en || g.ideology_fa) && (
+          <><dt>{fa ? "مرام" : "Ideology"}</dt>
+            <dd>{fa ? g.ideology_fa || g.ideology_en : g.ideology_en}</dd></>
+        )}
+        {g.book_pages?.length > 0 && (
+          <><dt>{fa ? "در کتاب" : "In the book"}</dt>
+            <dd class="muted">
+              {fa ? "ص‌ص {faDigits(g.book_pages.join('، '))}" : "pp. {g.book_pages.join(', ')}"}
+            </dd></>
+        )}
+      </dl>
+
+      {(parent || children.length > 0 || rels.length > 0) && (
+        <div class="sidebox">
+          <h3>{fa ? "گروه‌های مرتبط" : "Related groups"}</h3>
+          <ul class="sidelist">
+            {parent && (
+              <li>
+                <a href={`${L}/groups/${parent.id}/`}>
+                  {fa ? parent.name_fa || parent.name_en : parent.name_en}
+                </a>
+                <em>{fa ? "گروه مادر" : "parent"}</em>
+              </li>
+            )}
+            {children.map((c) => (
+              <li>
+                <a href={`${L}/groups/${c.id}/`}>
+                  {fa ? c.name_fa || c.name_en : c.name_en}
+                </a>
+                <em>{fa ? "زیرمجموعه" : "part of this"}</em>
+              </li>
+            ))}
+            {rels.map((r) => {
+              const lab = REL[r.type] || [r.type, r.type];
+              return (
+                <li>
+                  <a href={`${L}/groups/${r.group_b}/`}>
+                    {fa ? r.b_fa || r.b_en : r.b_en}
+                  </a>
+                  <em>{fa ? lab[1] : lab[0]}</em>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
+    </aside>
+  </div>
+
+  <p class="backlink"><a href={`${L}/groups/`}>← {fa ? "همهٔ گروه‌ها" : "All groups"}</a></p>
+
+  <style is:global>
+    .gh-title { display: flex; align-items: center; gap: .9rem; }
+    .gh-mark { width: 34px; height: 34px; border-radius: 9px; flex: none;
+      background: linear-gradient(145deg, var(--c1), var(--c2)); }
+    .gh-sub { display: flex; gap: .7rem; align-items: center; flex-wrap: wrap; }
+    .gh-place { font-family: var(--fs-ui); font-size: .8rem; color: var(--ink-3); }
+    .memgrid { display: grid; gap: .5rem; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); }
+    .mem { display: flex; gap: .6rem; align-items: center; text-decoration: none;
+      padding: .35rem; border-radius: 8px; }
+    .mem:hover { background: var(--paper-2); }
+    .mem__t { min-width: 0; }
+    .mem__t b { display: block; font-weight: 500; font-size: .9rem; line-height: 1.25; }
+    .mem__t i { display: block; font-style: normal; font-size: .74rem; color: var(--ink-3); }
+  </style>
+</Base>

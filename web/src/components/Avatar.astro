@@ -1,12 +1,14 @@
 ---
 import { paletteOf, initials, initialsFa } from '../lib/util.js';
 import portraits from '../data/portraits.json';
+const fa = (Astro.currentLocale ?? 'fa') === 'fa';
 
 // We have no photographs of these people, so rather than invent likenesses we
 // draw a deterministic monogram: initials over a colour derived from the id, so
 // a given person always looks the same everywhere on the site.
 const { id, nameEn, nameFa, size = 40, link = true, ring = true } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const L = fa ? base : `${base}/en`;
 const [c1, c2] = paletteOf(id);
 const mono = initials(nameEn || id);
 const monoFa = initialsFa(nameFa) || mono;
@@ -15,7 +17,7 @@ const style = `--c1:${c1}; --c2:${c2}; --sz:${size}px;`;
 // fallback, not a placeholder waiting to be replaced.
 const shot = portraits[id];
 const Tag = link ? 'a' : 'span';
-const attrs = link ? { href: `${base}/people/${id}/` } : {};
+const attrs = link ? { href: `${L}/people/${id}/` } : {};
 ---
 <Tag class="av" style={style} {...attrs} data-name-en={nameEn} data-name-fa={nameFa}>
   <span class="av__disc" class:list={[{ 'av__disc--ring': ring }]} aria-hidden="true">
@@ -23,10 +25,10 @@ const attrs = link ? { href: `${base}/people/${id}/` } : {};
       ? <img class="av__img" src={`${base}${shot.src}`} loading="lazy" decoding="async"
              width={size} height={size}
              alt={nameEn ? `Portrait of ${nameEn}` : ''} />
-      : <span class="av__mono"><span class="en">{mono}</span><span class="fa">{monoFa}</span></span>}
+      : <span class="av__mono">{fa ? monoFa : mono}</span>}
   </span>
   {!shot && (
-    <span class="av__sr"><span class="en">{nameEn}</span><span class="fa">{nameFa || nameEn}</span></span>
+    <span class="av__sr">{fa ? nameFa || nameEn : nameEn}</span>
   )}
 </Tag>
 
