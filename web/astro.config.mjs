@@ -18,9 +18,6 @@ export default defineConfig({
   base,
   build: { format: 'directory' },
   devToolbar: { enabled: false },
-  // The chronology was promoted to the site root; keep the old path working.
-  redirects: { '/chronology': '/' },
-
   // Persian is the default and stays at the root, so every URL already indexed
   // or shared keeps working; English is added under /en/.
   i18n: {
