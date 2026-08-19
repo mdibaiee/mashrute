@@ -74,13 +74,15 @@ const rows = groups.map((g) => {
           <p class="gcard__stats">
             {g.nMembers > 0 && (
               <span>
-                {fa ? "{faDigits(g.nMembers)} عضو" : g.nMembers} {g.nMembers === 1 ? 'member' : 'members'}
+                {fa ? `${faDigits(g.nMembers)} عضو`
+                    : `${g.nMembers} ${g.nMembers === 1 ? 'member' : 'members'}`}
               </span>
             )}
             {g.nMembers > 0 && g.nEvents > 0 && <span class="sep"> · </span>}
             {g.nEvents > 0 && (
               <span>
-                {fa ? "{faDigits(g.nEvents)} رویداد" : g.nEvents} {g.nEvents === 1 ? 'event' : 'events'}
+                {fa ? `${faDigits(g.nEvents)} رویداد`
+                    : `${g.nEvents} ${g.nEvents === 1 ? 'event' : 'events'}`}
               </span>
             )}
           </p>

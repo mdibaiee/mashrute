@@ -75,13 +75,15 @@ const rows = actors.map(enrich).sort((a, b) =>
           <p class="pcard__stats">
             {p.nEvents > 0 && (
               <span>
-                {fa ? "{faDigits(p.nEvents)} رویداد" : p.nEvents} {p.nEvents === 1 ? 'event' : 'events'}
+                {fa ? `${faDigits(p.nEvents)} رویداد`
+                    : `${p.nEvents} ${p.nEvents === 1 ? 'event' : 'events'}`}
               </span>
             )}
             {p.nEvents > 0 && p.nGroups > 0 && <span class="sep">·</span>}
             {p.nGroups > 0 && (
               <span>
-                {fa ? "{faDigits(p.nGroups)} گروه" : p.nGroups} {p.nGroups === 1 ? 'group' : 'groups'}
+                {fa ? `${faDigits(p.nGroups)} گروه`
+                    : `${p.nGroups} ${p.nGroups === 1 ? 'group' : 'groups'}`}
               </span>
             )}
           </p>
