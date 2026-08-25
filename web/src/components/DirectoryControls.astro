@@ -120,6 +120,11 @@ const { facets = [], facetLabelEn = 'Type', facetLabelFa = 'دسته', placehold
     grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
   }
   .dir[data-view='list'] { display: flex; flex-direction: column; gap: 0; }
+
+  /* The cards set their own `display`, which beats the user-agent rule for
+     [hidden] — so filtering set the attribute and hid nothing. One class plus
+     one attribute outranks the card's single class without needing !important. */
+  .dir > [hidden] { display: none; }
   .dir-empty { color: var(--ink-3); font-family: var(--fs-ui); padding: 2rem 0; }
 
   .dir-controls { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin: 1.2rem 0 0; }
