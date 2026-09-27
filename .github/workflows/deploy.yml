@@ -1,56 +1,37 @@
-name: Deploy site to GitHub Pages
-
+name: Deploy through Tailscale
 on:
   push:
     branches: [main]
-  # Allows a deploy to be triggered by hand from the Actions tab.
   workflow_dispatch:
-
-# Allow the workflow to publish to Pages via the OIDC token.
 permissions:
   contents: read
-  pages: write
   id-token: write
-
-# One deploy at a time; don't cancel a run that is already publishing.
 concurrency:
-  group: pages
+  group: production-mashrute
   cancel-in-progress: false
-
-# Where the site is published. GitHub Pages serves a repository at one place
-# only, so the base path follows the domain:
-#
-#   custom domain  SITE_URL=https://mashrute.wiki       BASE_PATH=/
-#   github.io      SITE_URL=https://mdibaiee.github.io  BASE_PATH=/mashrute
-#
-# Set here rather than as variables on the github-pages environment: variables
-# scoped to an environment are only visible to jobs that declare that
-# environment, so the build job would not see them.
-env:
-  SITE_URL: https://mashrute.wiki
-  BASE_PATH: /
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Build
-        uses: withastro/action@v3
-        with:
-          # The Astro project is not at the repository root.
-          path: ./web
-
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Connect private deployment network
+        uses: tailscale/github-action@d1b6cd204f8dceda5b3eaad7f1f767be390056cd # v4
+        with:
+          oauth-client-id: ${{ vars.TS_CLIENT_ID }}
+          audience: ${{ vars.TS_AUDIENCE }}
+          tags: tag:ci-mashrute
+          version: 1.98.10
+      - name: Build and deploy on the server
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.TAILSCALE_DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ vars.TAILSCALE_DEPLOY_KNOWN_HOSTS }}
+          DEPLOY_NAME: mashrute
+          DEPLOY_TARGET: 10.77.10.2
+          DEPLOY_USER: deploy-mashrute
+        run: bash scripts/deploy-tailscale.sh
+      - name: Verify public website
+        run: curl -4 --fail --silent --show-error --location --retry 5 --retry-all-errors --retry-delay 3 --max-time 30 -o /dev/null https://mashrute.wiki/
