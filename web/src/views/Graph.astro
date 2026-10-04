@@ -1,0 +1,175 @@
+---
+import Base from '../layouts/Base.astro';
+import { NODE_TYPES } from '../lib/graph-model.js';
+import { wikiGraph } from '../lib/graph-data.js';
+const fa = (Astro.currentLocale ?? 'fa') === 'fa';
+const locale = fa ? 'fa' : 'en';
+const graph = wikiGraph(locale, import.meta.env.BASE_URL);
+const number = (n) => n.toLocaleString(fa ? 'fa-IR' : 'en');
+const t = (en, persian) => fa ? persian : en;
+---
+<Base title="Graph" titleFa="نمودار" wide
+      description="Explore the Constitutional Revolution through historical periods, landmark events, and the people and groups that connect them."
+      descriptionFa="انقلاب مشروطه را از راه دوره‌های تاریخی، رویدادهای مهم و اشخاص و گروه‌های مرتبط با آن‌ها کشف کنید.">
+  <span slot="title">{t('The revolution, connected', 'مشروطه؛ تاریخی به‌هم‌پیوسته')}</span>
+  <span slot="subtitle">{t('Start with a period. Follow its events, people, and groups to see how the story unfolds.', 'از یک دوره آغاز کنید. رویدادها، اشخاص و گروه‌هایش را دنبال کنید تا مسیر تاریخ آشکار شود.')}</span>
+  <section class="graph" data-graph data-locale={locale} aria-label={t('Explore the revolution', 'کاوش انقلاب مشروطه')}>
+    <div class="graph__toolbar">
+      <div class="graph__breadcrumb">
+        <button type="button" data-back hidden>{t('← Overview', 'نمای کلی ←')}</button>
+        <strong data-view-title></strong>
+      </div>
+      <div class="graph__tools" role="group" aria-label={t('Map controls', 'ابزارهای نقشه')}>
+        <button type="button" data-zoom="in" aria-label={t('Zoom in', 'بزرگ‌نمایی')}>+</button>
+        <button type="button" data-zoom="out" aria-label={t('Zoom out', 'کوچک‌نمایی')}>−</button>
+        <button type="button" data-fit>{t('Recenter', 'بازگشت به مرکز')}</button>
+        <button type="button" data-reset>{t('Reset', 'بازنشانی')}</button>
+      </div>
+    </div>
+    <div class="graph__key">
+      <div class="graph__legend" role="group" aria-label={t('Show entry types', 'نمایش نوع مدخل‌ها')}>
+        {Object.entries(NODE_TYPES).map(([kind, type]) => (
+          <label class="graph__filter">
+            <input type="checkbox" value={kind} checked data-type />
+            <span class:list={['graph__shape', `graph__shape--${kind}`]} aria-hidden="true" />
+            {fa ? type.fa : type.en}
+          </label>
+        ))}
+      </div>
+      <p class="graph__edge-key"><span class="graph__line graph__line--dashed" aria-hidden="true"></span>{t('Context', 'زمینه')}<span class="graph__line" aria-hidden="true"></span>{t('Recorded relationship', 'پیوند ثبت‌شده')}</p>
+    </div>
+    <div class="graph__workspace">
+      <div class="graph__map-wrap">
+        <div class="graph__canvas" data-canvas tabindex="0" role="region"
+             aria-label={t('Interactive history map', 'نقشهٔ تعاملی تاریخ')}
+             aria-describedby="graph-help"></div>
+        <div class="graph__loading" data-loading role="status">{t('Opening the map…', 'در حال نمایش نقشه…')}</div>
+        <div class="graph__empty" data-empty hidden>{t('Enable a type to explore this period.', 'برای کاوش این دوره، یک نوع مدخل را فعال کنید.')}</div>
+        <div class="graph__tooltip" data-tooltip hidden></div>
+        <div class="graph__map-actions">
+          <p data-stats aria-live="polite"></p>
+          <button type="button" data-more hidden>{t('Reveal more entries', 'نمایش گره‌ها و پیوند‌های بیشتر')}</button>
+        </div>
+      </div>
+      <aside class="graph__sidebar" aria-label={t('Explore the history', 'کاوش در تاریخ')}>
+        <label class="graph__search-label" for="graph-search">{t('Find a person, group, or event', 'یافتن شخص، گروه یا رویداد')}</label>
+        <input id="graph-search" type="search" data-search autocomplete="off"
+               placeholder={t('Search in English or Persian…', 'جست‌وجو به فارسی یا انگلیسی…')}
+               aria-controls="graph-results" />
+        <div data-search-area hidden>
+          <p class="graph__fine" data-result-count aria-live="polite"></p>
+          <ul id="graph-results" class="graph__results" data-results></ul>
+        </div>
+        <div data-intro class="graph__intro">
+          <h2 data-intro-title></h2>
+          <p data-intro-summary></p>
+          <h3 data-milestones-title hidden>{t('Landmark events', 'رویدادهای مهم')}</h3>
+          <ul class="graph__connections" data-milestones></ul>
+          <p class="graph__fine" data-intro-note></p>
+        </div>
+        <section class="graph__detail" data-detail hidden aria-labelledby="graph-node-title">
+          <p class="graph__kicker" data-kind></p>
+          <h2 id="graph-node-title" data-title tabindex="-1"></h2>
+          <p class="graph__meta" data-meta></p>
+          <p data-summary></p>
+          <a class="graph__record" data-record>{t('Read full wiki entry →', 'خواندن مدخل کامل ←')}</a>
+          <div class="graph__detail-actions">
+            <button type="button" data-neighborhood>{t('Explore connections', 'کاوش پیوندها')}</button>
+            <button type="button" data-clear>{t('Clear selection', 'پاک کردن انتخاب')}</button>
+          </div>
+          <h3>{t('Historical context', 'زمینهٔ تاریخی')}</h3>
+          <div class="graph__memberships" data-period-memberships></div>
+          <p class="graph__fine" data-period-basis></p>
+          <button type="button" data-period-open hidden>{t('Open this period', 'باز کردن این دوره')}</button>
+          <h3 data-connections-title></h3>
+          <p class="graph__fine" data-connection-note></p>
+          <ul class="graph__connections" data-connections></ul>
+        </section>
+        <nav class="graph__periods" aria-label={t('Historical periods', 'دوره‌های تاریخی')}>
+          <h3>{t('Explore the periods', 'کاوش در دوره‌ها')}</h3>
+          {graph.periods.map((period) => (
+            <button type="button" data-era={period.id} class="graph__period" aria-pressed="false">
+              <span class="graph__period-number" style={`--period-color:${period.color}`}>{number(period.index)}</span>
+              <span><b>{period.label}</b><small>{period.years} · {number(period.counts.event)} {t('events', 'رویداد')}</small></span>
+              <span aria-hidden="true">{fa ? '‹' : '›'}</span>
+            </button>
+          ))}
+          <p class="graph__fine">{t('Years are Gregorian. An entry can belong to several periods.', 'سال‌ها میلادی‌اند. یک مدخل می‌تواند به چند دوره مرتبط باشد.')}</p>
+        </nav>
+      </aside>
+    </div>
+    <p id="graph-help" class="graph__help">{t('Open a period to explore its clusters. Drag to pan, scroll or pinch to zoom, and drag nodes to move them. Labels reveal themselves where there is room; hover for the full title. Arrow keys pan, + / − zoom, and Escape returns to the period.', 'برای کاوش خوشه‌ها، دوره‌ای را باز کنید. برای جابه‌جایی بکشید و برای بزرگ‌نمایی از چرخ ماوس یا دو انگشت استفاده کنید. گره‌ها را هم می‌توانید جابه‌جا کنید. برچسب‌ها در فضای کافی آشکار می‌شوند؛ برای عنوان کامل روی گره بروید. کلیدهای جهت‌نما برای حرکت، + و − برای بزرگ‌نمایی و Escape برای بازگشت به دوره‌اند.')}</p>
+    <noscript><p>{t('Enable JavaScript to explore the interactive map.', 'برای کاوش در نقشهٔ تعاملی، جاوااسکریپت را فعال کنید.')}</p></noscript>
+    <script type="application/json" is:inline data-graph-data set:html={JSON.stringify(graph).replace(/</g, '\\u003c')} />
+  </section>
+  <script>
+    import { initGraph } from '../lib/graph-client.js';
+    initGraph();
+  </script>
+</Base>
+
+<style>
+  .graph { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--paper); box-shadow: var(--shadow); }
+  .graph [hidden] { display: none !important; }
+  .graph__toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .65rem; padding: .85rem 1rem; border-bottom: 1px solid var(--line-2); }
+  .graph__breadcrumb, .graph__tools, .graph__legend, .graph__key { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem; }
+  .graph__breadcrumb strong { font-size: .85rem; }
+  .graph__key { justify-content: space-between; padding: .65rem 1rem; border-bottom: 1px solid var(--line); background: var(--paper-2); }
+  .graph__filter { display: flex; align-items: center; gap: .4rem; font-size: .78rem; cursor: pointer; }
+  .graph__filter input { width: 15px; height: 15px; accent-color: var(--lapis); }
+  .graph :global(.graph__shape) { display: inline-block; width: 12px; height: 12px; flex: none; background: #69738b; border-radius: 50%; }
+  .graph :global(.graph__shape--group) { border-radius: 3px; }
+  .graph :global(.graph__shape--event) { border-radius: 0; transform: rotate(45deg); width: 10px; height: 10px; margin-inline: 2px; }
+  .graph__edge-key { display: flex; align-items: center; gap: .5rem; margin: 0; color: var(--ink-2); font-size: .72rem; }
+  .graph__line { width: 24px; border-top: 2px solid #69738b; display: inline-block; }
+  .graph__line--dashed { border-top-style: dashed; border-color: #a7b0c3; }
+  .graph :global(button) { font: inherit; font-size: .8rem; border: 1px solid var(--line); border-radius: 7px; color: var(--ink-2); background: var(--paper); padding: .4rem .65rem; cursor: pointer; }
+  .graph :global(button:hover) { border-color: var(--lapis); color: var(--lapis); background: #f3f5fc; }
+  .graph :global(button:focus-visible), input:focus-visible, .graph__canvas:focus-visible, a:focus-visible { outline: 3px solid var(--turquoise); outline-offset: 2px; }
+  .graph__tools button[data-zoom] { font-size: 1.1rem; line-height: 1; min-width: 36px; min-height: 36px; }
+  .graph__workspace { display: grid; grid-template-columns: minmax(0, 1fr) 19rem; }
+  .graph__map-wrap { position: relative; min-width: 0; background: radial-gradient(#dce1ed .7px, transparent .7px) 0 0 / 20px 20px, #fbfcff; }
+  .graph__canvas { height: clamp(600px, 75vh, 850px); width: 100%; touch-action: none; direction: ltr; }
+  .graph__sidebar { border-inline-start: 1px solid var(--line); padding: 1.1rem; max-height: clamp(600px, 75vh, 850px); overflow-y: auto; font-size: .85rem; }
+  .graph__search-label { display: block; font-size: .76rem; font-weight: 600; margin-bottom: .45rem; }
+  input[type='search'] { width: 100%; min-width: 0; padding: .65rem; background: var(--paper-2); color: var(--ink); font: inherit; font-size: .78rem; border: 1px solid var(--line); border-radius: 7px; }
+  .graph__intro { margin-top: 1.2rem; color: var(--ink-2); }
+  h2 { font-size: 1.12rem; line-height: 1.5; color: var(--ink); margin: .6rem 0; }
+  h3 { font-size: .82rem; margin: 1.2rem 0 .5rem; }
+  .graph__fine, .graph :global(.graph__row-meta) { font-size: .71rem; color: #64708a; }
+  .graph__kicker { color: var(--lapis); font-size: .72rem; margin: 1.2rem 0 0; }
+  .graph__meta { color: var(--ink-3); font-size: .75rem; }
+  .graph__record { display: inline-block; color: var(--lapis); font-size: .8rem; font-weight: 600; padding-block: .3rem; }
+  .graph__detail-actions, .graph__memberships { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .8rem; }
+  .graph__results, .graph__connections { list-style: none; padding: 0; margin: .5rem 0 0; }
+  .graph__results { max-height: 16rem; overflow-y: auto; }
+  .graph__connections li, .graph__results li { border-bottom: 1px solid var(--line-2); }
+  .graph__results :global(button), .graph__connections :global(button) { display: flex; align-items: start; gap: .6rem; width: 100%; text-align: start; border: 0; padding: .65rem .2rem; border-radius: 4px; }
+  .graph__results :global(.graph__shape), .graph__connections :global(.graph__shape) { margin-top: .35rem; }
+  .graph :global(.graph__row-label) { display: block; color: var(--ink); font-weight: 600; }
+  .graph :global(.graph__row-meta) { display: block; margin-top: .2rem; }
+  .graph__periods { border-top: 1px solid var(--line); margin-top: 1.3rem; }
+  .graph .graph__period { display: flex; align-items: center; gap: .65rem; width: 100%; text-align: start; padding: .7rem .2rem; border: 0; border-bottom: 1px solid var(--line-2); border-radius: 0; }
+  .graph__period b { display: block; font-size: .8rem; }
+  .graph__period small { display: block; font-size: .68rem; color: #69758c; margin-top: .2rem; }
+  .graph__period > span:last-child { margin-inline-start: auto; }
+  .graph__period-number { display: grid; place-items: center; width: 26px; height: 26px; flex: none; border-radius: 50%; color: var(--period-color); border: 1px solid var(--period-color); font-size: .75rem; }
+  .graph .graph__period[aria-pressed='true'] { background: var(--line-2); }
+  .graph__loading, .graph__empty { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 1.5rem; color: var(--ink-2); pointer-events: none; }
+  .graph__loading { background: #fbfcff; }
+  .graph__tooltip { position: absolute; max-width: min(20rem, 85%); transform: translate(-50%, -100%); background: #fff; border: 1px solid var(--line); border-radius: 7px; box-shadow: var(--shadow); font-size: .78rem; padding: .4rem .7rem; pointer-events: none; z-index: 2; }
+  .graph__map-actions { position: absolute; bottom: .7rem; inset-inline: .7rem; display: flex; flex-wrap: wrap; gap: .5rem; justify-content: space-between; align-items: center; pointer-events: none; }
+  .graph__map-actions p { margin: 0; background: rgba(255,255,255,.94); border: 1px solid var(--line-2); border-radius: 6px; padding: .4rem .6rem; color: var(--ink-2); font-size: .7rem; }
+  .graph__map-actions button { pointer-events: auto; background: var(--lapis); border-color: var(--lapis); color: #fff; }
+  .graph__help { border-top: 1px solid var(--line); background: var(--paper-2); font-size: .74rem; padding: .8rem 1rem; margin: 0; color: var(--ink-2); }
+  @media (max-width: 60rem) { .graph__workspace { grid-template-columns: minmax(0, 1fr) 17rem; } }
+  @media (max-width: 46rem) {
+    .graph__workspace { grid-template-columns: 1fr; }
+    .graph__canvas { height: 72vh; min-height: 480px; max-height: 660px; }
+    .graph__sidebar { border-inline-start: 0; border-top: 1px solid var(--line); max-height: none; }
+    .graph__connections { max-height: 23rem; overflow-y: auto; }
+    .graph__toolbar, .graph__key { padding: .7rem; }
+    .graph__tools { gap: .35rem; }
+    .graph__periods { display: block; }
+  }
+</style>

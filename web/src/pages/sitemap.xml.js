@@ -18,6 +18,7 @@ export function GET({ site }) {
     { path: '/', priority: '1.0', changefreq: 'weekly' },
     { path: '/people/', priority: '0.8', changefreq: 'weekly' },
     { path: '/groups/', priority: '0.8', changefreq: 'weekly' },
+    { path: '/graph/', priority: '0.8', changefreq: 'weekly' },
     { path: '/notes/', priority: '0.4', changefreq: 'yearly' },
     ...events.map((e) => ({ path: `/events/${e.id}/`, priority: '0.7', changefreq: 'monthly' })),
     // Modern scholars Afary cites are listed but are not the subject here.

@@ -35,6 +35,7 @@ const nav = [
   { path: '/', en: 'Chronology', fa: 'گاه‌شمار' },
   { path: '/people/', en: 'People', fa: 'اشخاص' },
   { path: '/groups/', en: 'Groups', fa: 'گروه‌ها' },
+  { path: '/graph/', en: 'Graph', fa: 'نمودار' },
   { path: '/notes/', en: 'Notes', fa: 'یادداشت‌ها' },
 ].map((n) => ({ ...n, href: localePath(n.path, locale, base) }));
 const path = Astro.url.pathname;
