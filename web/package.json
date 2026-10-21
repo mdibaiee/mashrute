@@ -11,7 +11,7 @@
     "data": "cd .. && python3 scripts/build_db.py && python3 scripts/export_web.py"
   },
   "dependencies": {
-    "astro": "^5.14.1",
-    "cytoscape": "^3.34.3"
+    "astro": "7.4.2",
+    "cytoscape": "3.34.4"
   }
 }
