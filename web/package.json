@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "astro": "^5.14.1",
-    "cytoscape": "^3.34.3"
+    "cytoscape": "3.34.4"
   }
 }
