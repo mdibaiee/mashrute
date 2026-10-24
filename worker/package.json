@@ -10,5 +10,8 @@
   "devDependencies": {
     "wrangler": "4.151.3"
   },
-  "type": "module"
+  "type": "module",
+  "overrides": {
+    "undici": "7.30.1"
+  }
 }
