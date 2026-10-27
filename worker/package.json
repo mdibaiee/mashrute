@@ -8,7 +8,10 @@
     "test": "node test/worker.test.mjs"
   },
   "devDependencies": {
-    "wrangler": "4.151.3"
+    "wrangler": "4.153.0"
   },
-  "type": "module"
+  "type": "module",
+  "overrides": {
+    "undici": "7.30.1"
+  }
 }
