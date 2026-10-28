@@ -24,7 +24,7 @@ jobs:
           oauth-client-id: ${{ vars.TS_CLIENT_ID }}
           audience: ${{ vars.TS_AUDIENCE }}
           tags: tag:ci-mashrute
-          version: 1.98.10
+          version: 1.104.4
       - name: Build and deploy on the server
         env:
           DEPLOY_SSH_KEY: ${{ secrets.TAILSCALE_DEPLOY_SSH_KEY }}
